@@ -1,0 +1,21 @@
+# name: "daemon-project"
+navbar:
+  title: "The Daemon Project"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Mind Map"
+      href: wisemapping
+    - text: "Wiki"
+      href: wiki
+output:
+# prettydoc looks nice, but does not support Bootstrap and is thus not recommnended for multi-page sites
+#  prettydoc::html_pretty:
+#    # theme: architect
+#    theme: cayman
+#    highlight: github
+  html_document:
+    theme: cosmo
+    # theme: null
+    # highlight: textmate
+    css: style.css
