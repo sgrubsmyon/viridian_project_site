@@ -19,6 +19,7 @@ The goal is to create a computer network that provides the following things:
 * **Encryption:** The network shall be end-to-end encrpypted to provide security and privacy.
 * **Transactions:** Economic transactions shall be performed via the network, i.e. tokens of value (a currency) shall be exchanged via the network.
 * **Sustainability:** Sustainable and socially responsible business and commerce shall be incentivized, e.g. by including external costs of economic activity in the prices.
+* **Democracy:** By the fostering of decentralized nodes, economy and society shall also become more democratic and more equal, because concentration of resources and power is (partially) prevented. In the same way as cryptocurrencies promise to move power away from centralized banks and towards the decentralized people using the currency.
 
 
 ## Tools
@@ -48,7 +49,7 @@ Already existing concepts of sustainable economy typically lack some or all of t
 
 * **Tech:** The use of computer network technology (web, digitization, cryptocurrencies, IoT, etc.) to algorithmically enforce the rules of the new economy (whether this is feasible or not remains to be seen)
 * **Coolness:** For the alternative technology to be successful, it must be cool enough to be adopted by a large (but minority) group of "early adopters". In the Daemon novels, this was achieved by addressing the gamer community and transferring concepts of comupter games to the real world.
-* **Benefit:** The alternative economy will only be widely adopted if it provides real benefit for the individual. In the Daemon novels, people in rural areas discover that they can earn a much better living by using the Daemon economy, while in conventional economy, they struggle to survive (e.g. farmers that need to pay large amounts to corporations like Monsanto for GMO seeds, fertilizer, and pesiticides, while not earning much with their crops on the free market).
+* **Benefit:** The alternative economy will only be widely adopted if it provides real benefit for the individual. Mere moral superiority is probably not enough. In the Daemon novels, people in rural areas discover that they can earn a much better living by using the Daemon economy, while in conventional economy, they struggle to survive (e.g. farmers that need to pay large amounts to corporations like Monsanto for GMO seeds, fertilizer, and pesiticides, while not earning much with their crops on the free market).
 
 <!-- ## New Styles -->
 
