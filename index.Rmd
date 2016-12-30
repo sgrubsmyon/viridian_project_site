@@ -28,8 +28,8 @@ This website shall provide tools to develop the daemon network.
 
 The tools are:
 
-* **Mind Map:** As a first step, brainstorming can be done with the web-based mindmapping software `wisemapping`.
-* **Wiki:** More details can be given in wiki articles, including pictures, tables, and links to external resources. In the mind map, links to wiki articles can be used whenever the space in the mind map is too limited.
+* [**Mind Map:**](wisemapping) As a first step, brainstorming can be done with the web-based mindmapping software `wisemapping`.
+* [**Wiki:**](wiki) More details can be given in wiki articles, including pictures, tables, and links to external resources. In the mind map, links to wiki articles can be used whenever the space in the mind map is too limited.
 
 
 ## How is this any different from what already exists?
