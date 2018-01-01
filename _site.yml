@@ -1,13 +1,17 @@
-# name: "daemon-project"
+# name: "viridian-project"
 navbar:
-  title: "The Daemon Project"
+  title: "<img src='viridian_logo_gray_with_text.png'>"
   left:
     - text: "Home"
       href: index.html
-    - text: "Mind Map"
-      href: wisemapping
-    - text: "Wiki"
-      href: wiki
+    - text: "White paper"
+      href: paper
+    - text: "FAQ"
+      href: faq.html
+    - text: "About us"
+      href: aboutus.html
+    #- text: "Wiki"
+    #  href: wiki
 output:
 # prettydoc looks nice, but does not support Bootstrap and is thus not recommnended for multi-page sites
 #  prettydoc::html_pretty:
@@ -19,3 +23,6 @@ output:
     # theme: null
     # highlight: textmate
     css: style.css
+    include:
+      in_header: javascript.html
+      after_body: footer.html

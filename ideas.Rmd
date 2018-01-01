@@ -1,0 +1,142 @@
+Viridian Project
+================
+  
+Idea
+----
+  
+Encrypted computer network as base for alternative economy, which is
+more sustainable, fair, and democratic. Shift of power from corporations
+to people, from centralized to decentralized, from oligarchy to
+democracy, from exploitation to solidarity.
+
+Concept of Transition Towns implemented using a computer network.
+
+Role model: novels written by Daniel Suarez called "Daemon" and "Freedom™".
+More: https://en.wikipedia.org/wiki/Daemon_(novel_series)
+
+I think what might be new is the connection between the transition idea
+and cryptocurrencies (e.g. bitcoin). Both communities want to have more
+democratic, decentralized structures, but they are not connected with
+each other. Even in the Daemon novels, cryptocurrencies are not
+mentioned, only automation, computer networks and computer games. This
+might be because bitcoin is younger than the novels.
+
+Related:
+
+* "Demain": http://www.demain-lefilm.com/en, documentary movie on
+  solutions to global problems shows examples of Transition Town projects,
+  complementary local currencies, local economy, permaculture organic
+  farming, urban gardening, renewable energy, decentralization,
+  strenghtening democracy, and improving education.
+
+* More information on Transition Towns:
+  https://en.wikipedia.org/wiki/Transition_town,
+  https://transitionnetwork.org/
+  
+  
+Currency
+--------
+  
+There needs to be one (or many) alternative currencies. This is because
+the value of products and services shall be calculated differently. The
+new currency will have different value than the old. People must find a
+value surplus in the new currency for some products, or maybe some
+products can be bought only with the new currency,  therefore
+encouraging people to use the new  currency. Also, money created in the
+Viridian economy shall not leave the system, but be reinvested within. The
+same is used in the Transition Town initiatives, e.g. the Totnes Pound.
+The currency shall be electronic and be used within the Viridian network.
+Maybe a cryptocurrency like Bitcoin could be used.
+
+
+Bitcoin
+-------
+  
+Interesting electronic (crypto)currency. Also called "digital cash" or
+"digital gold". It is decentralized, therefore interesting for the
+Viridian project.  Bitcoin, or rather the blockchain, which is a public
+database of all bitcoin transactions, can be used for other things as
+well, e.g. for authentication. One could also use it for democratic
+voting. One of the most interesting features is that the independency
+and decentralization is kind of built into the system: because the
+confirmation of transactions needs computing power, which is (resource)
+expensive, one would need to set up more than half of the computing
+power of all bitcoin hubs to outvote the majority of hubs and therefore
+manipulate bitcoin. A similar built-in instrument would be needed to
+e.g. ensure that sustainability and social rules are enforced within the
+Viridian economy, or rather to include external costs into the prices.
+Maybe swarm intelligence/crowd could be used to do this? One needs to
+find a stable optimum that is robust against manipulations and is
+democratic and in the interest of the community.  Even though the
+majority's interest should be followed (democracy), one needs to make
+sure that  minorities are not discriminated, but their interests are
+protected.
+
+Pros of Bitcoin:
+
++ Decentralized
++ Robust against manipulation
+
+Cons of Bitcoin:
+
+- Very resource intensive (bitcoin network needs as much energy as Ireland)
+- Does not scale well (blockchain can get too large)
+
+More on bitcoin:
+
+* https://bitcoin.org
+* https://bitcoin.org/en/how-it-works
+* The bitcoin paper by Satoshi Nakamoto: https://bitcoin.org/bitcoin.pdf
+* Youtube videos: https://www.youtube.com/watch?v=l9jOJk30eQs,
+  https://www.youtube.com/watch?v=Lx9zgZCMqXE
+
+Prices
+------
+
+A fundamental difference to conventional economy is that in the Viridian
+economy, costs created by environmental or social exploitation and
+damage, i.e. external costs, should be included in product prices.
+Consequently, unsustainable solutions will automatically be disfavoured
+as they're less economic. In the Daemon novel, credit points/levels are
+used like in a role playing computer game. More sustainable and
+resilient solutions are given more credit/level rating, e.g. the solar
+hydrogen economy of a native American community. How the internalization
+of external costs should be implemented in general for every product and
+service is one of the central problems to be solved.
+
+See also:
+
+* https://en.wikipedia.org/wiki/Externality
+
+
+Democracy
+---------
+  
+Political decisions should involve citizens to use swarm/crowd
+intelligence.  This might be done using electronic forums where people
+can post suggestions that others can up/downvote or edit, i.e. post new
+suggestions. A similar tool, Findeco, was developed by the German pirate
+party, but it did not work well because of too low
+participation/involvement. It must be thought about how to involve
+people and encourage them to contribute to the political process because
+swarm intelligence only works with large numbers of individuals.
+
+More on Findeco:
+
+* https://www.heise.de/ct/ausgabe/2016-13-Produktiv-online-diskutieren-mit-Findeco-3228017.html
+* http://www.findeco.de/
+* https://github.com/Qwlouse/Findeco
+* Example installation: http://findeco.piraten-rlp.de/
+  
+  
+Local Workshops
+---------------
+  
+Economy should as much as possible be decentralized to be resilient, to
+reduce environmental impact and be affordable by locals because there
+are no currency exchange rates/taxes/transportation costs involved. For
+a decentralized industry, there could be local workshops with 3D
+printing and similar automated technology to manufacture also more
+complicated goods without the need for specialized machinery or
+engineering knowledge. Local raw materials should be used as much as
+possible.

@@ -25,7 +25,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71
+  color: #606c71;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -40,10 +40,53 @@ a:hover {
   text-decoration: underline
 }
 
-/* navbar scrolling */
+/* navbar scrolling * /
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   position: absolute;
+}
+*/
+
+/* navbar smaller on scrolling */
+.navbar {
+  /*width: 100%;*/
+  height: 100px;
+  /*background: #26b;
+  color: #fff;*/
+  /*position: fixed;
+  top: 0;
+  left: 0;*/
+  border-bottom-width: 0;
+  transition: height 500ms, background 500ms;
+}
+.navbar img {
+  height: 90px;
+  transition: height 500ms;
+}
+.navbar-nav > li > a {
+  padding: 39px 15px 39px 15px;
+  font-size: 22px;
+  transition: padding 500ms, font-size 500ms;
+}
+.navbar-brand {
+  padding: 4.5px 35px; /*30px*/
+  transition: padding 500ms;
+}
+
+.navbar-tiny {
+  height: 40px;
+  /*background: #aaa;*/
+}
+.navbar-tiny img {
+  height: 40px;
+}
+.navbar-nav-tiny > li > a {
+  padding: 14.5px 15px 14.5px 15px;
+  margin-top: 0;
+  font-size: 16px;
+}
+.navbar-brand-tiny {
+  padding: 4.5px 35px;
 }
 
 /* head line */
@@ -53,17 +96,25 @@ a:hover {
   left: 0;
   color: #fff;
   text-align: center;
-  background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957);
+  background-color: #40826d;
+  background-image: linear-gradient(15deg, #e95cba, #1eb4e6);
   padding: 1.5rem 2rem;
 }
 .title {
   margin-top: 0;
   margin-bottom: 0.1rem;
-  font-size: 2rem
+  font-size: 2rem;
+  padding: 110px 0 50px 0;
 }
-#first-section {
-  margin-top: 123.8px;
+.title span {
+  background-color: #40826d;
+  padding: 10px 20px;
+}
+#first-section-front { /* on front page */
+  margin-top: 550px;
+}
+#first-section { /* on other pages */
+  margin-top: 300px;
 }
 @media screen and (max-width: 42em) {
   #header {
@@ -80,7 +131,7 @@ a:hover {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: normal;
-  color: #159957;
+  color: #40826d;
 }
 .section p {
   margin-bottom: 1em;
@@ -186,7 +237,7 @@ a:hover {
 }
 .section, .toc {
   max-width: 64rem;
-  padding: 2rem 4rem;
+  padding: 2rem 0;
   margin: 0 auto;
   font-size: 1.1rem;
 }
@@ -225,6 +276,15 @@ a:hover {
   margin-top: 2rem;
   border-top: solid 1px #eff0f1;
   font-size: 1rem;
+  
+  position: absolute;
+  right: 0;
+  left: 0;
+  color: #333;
+  text-align: center;
+  background-color: #40826d;
+  background-image: linear-gradient(15deg, #e95cba, #1eb4e6);
+  padding: 1.5rem 2rem;
 }
 .site-footer-owner {
   display: block;

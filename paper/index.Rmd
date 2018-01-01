@@ -442,16 +442,18 @@ economics has taught us that it is a law of nature that every human must act "se
 in the economy [see @AdamSmith, Book I, Chapter II, p. 32]. This leads, in the
 absence of peer pressure, to the famous "tragedy of the commmons" [@wiki:Tragedy_of_the_commons].
 However, communication between individuals, applying peer pressure, can solve
-this tragedy [@NobelOstrom]. So, if some kind of peer pressure would be incorporated
-into economic transactions by means of cryptocurrency algorithms, it might also
-help to make economic decisions more balanced and less one-dimensional. The
-colorization of money transactions might be seen as an application of social peer
-pressure to trade. Because who would openly deny a societal consensus that takes
-into account social and environmental values, leading to benefits for everyone?
-If not using the colored currency would make that person appear to be an immoral
-misanthrope, then there might be a strong socio-psychological incentive to use it.
-The psychological effect might be strengthened by showing the transaction color
-to the customer before the transaction is carried out.
+this tragedy and it works for many commons across the world [@NobelOstrom].
+
+Thus, if some kind of peer pressure would be incorporated into economic transactions
+by means of cryptocurrency algorithms, it might also help to make economic decisions
+more balanced and less one-dimensional. The colorization of money transactions might
+be seen as an application of social peer pressure (via the color determining community)
+to trade. Because who would openly deny a societal consensus that takes into account
+social and environmental values, leading to benefits for everyone? If not using the
+colored currency would make that person appear to be an immoral misanthrope, then
+there might be a strong socio-psychological incentive to use it. The psychological
+effect might be even stronger when showing the transaction color to the customer
+before the transaction is carried out.
 
 
 # Possible implementation

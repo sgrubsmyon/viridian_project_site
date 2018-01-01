@@ -1,30 +1,53 @@
 ---
-title: "The Daemon Project Index"
+title: "<img src='viridian_logo_with_text.png'><br><span>The Viridian Project</span>"
 # author: "Markus Voge"
 # date: "`r Sys.Date()`"
 ---
 
-## A New World Economy {#first-section}
+## A New World Economy {#first-section-front}
 
-`The Daemon Project` is an attempt to implement an alternative way of economic interactions between humans. The new economy shall take into account not only economical, but also environmental and social concerns. The main motivation is to have an economy that creates strong incentives to pursue "sutainable" and "fair" business. To achieve this and to make sure that the new economoy's rules are enforced, a computer network shall be implemented, in which the desired incentives (and perhaps penalties) are algorithmically inherent. That means it shall be ruled by mathematical concepts (algorithms) rather than the decisions of single or small groups of humans, and thus be very difficult to change or to interpret in an unintended way. Of course, these algorithms mut be very carefully designed, transparent and agreed by everyone and also continually debated and adjusted if needed.
+The *Viridian Project* is an attempt to implement an alternative way of economic
+activity. The new economy shall take into account not only economical, but also
+environmental and social concerns. The main motivation is to have an economy
+that creates strong incentives to pursue "sustainable" and "fair" business.
+To achieve this, a computer network shall be implemented, in which the desired
+incentives are algorithmically inherent and governed collectively by the crowd.
+These algorithms mut be very carefully designed, transparent and
+agreed upon by everyone. They must also be continually debated and adjusted
+as soon as needed.
 
-The idea is based on the [novels](http://thedaemon.com/) ["Daemon"](https://en.wikipedia.org/wiki/Daemon_(novel_series)) and ["Freedom™"](https://en.wikipedia.org/wiki/Freedom%E2%84%A2) by Daniel Suarez. In the books, especially Freedom™, a decentralized computer program with artificial intelligence is described that provides an alternative society and economy similar to that found inside computer games. People can earn *experience* and *credit points* and they earn more credit by creating a resilient, autonomous community that acts sustainably.
+The main goal is to internalize external costs using a new digital currency,
+making social and environmental concerns a normal part of every business model.
+This would incentivize business that is not harmful for society. When social
+peer pressure is included into economic activity (via the alternative digital
+currency), people will act more responsibly automatically. This is similar to
+the way that "commons" work, where a group of people collectively cares for a
+common resource, making every individual act responsibly.
+
+<a href="paper" type="button" class="btn btn-info">Read the white paper</a>
 
 
 ## Goals
 
 The goal is to create a computer network that provides the following things:
 
-* **Decentralization:** The network shall be decentralized for resilience. There shall be no single points of failure. It must also be spread to prevent too much concentration of power. The network shall be operated by and in the hands of all people, not of single corporations or governments.
-* **Encryption:** The network shall be end-to-end encrpypted to provide security and privacy.
-* **Transactions:** Economic transactions shall be performed via the network, i.e. tokens of value (a currency) shall be exchanged via the network.
-* **Sustainability:** Sustainable and socially responsible business and commerce shall be incentivized, e.g. by including external costs of economic activity in the prices.
+* **Decentralization:** The network shall be decentralized for increased resilience.
+  There shall be no single points of failure. It must also be spread to prevent
+  too much concentration of power. The network shall be operated by and in the
+  hands of all people, not of single (or few) corporations or governments.
+* **Encryption:** The network shall be end-to-end encrpypted to provide security
+  and privacy.
+* **Transactions:** Economic transactions shall be performed via the network,
+  i.e. tokens of value (a currency) shall be exchanged via the network.
+* **Sustainability:** Sustainable and socially responsible business and commerce
+  shall be incentivized, e.g. by including external costs of economic activity
+  in the prices.
 * **Democracy:** By the fostering of decentralized nodes, economy and society shall also become more democratic and more equal, because concentration of resources and power is (partially) prevented. In the same way as cryptocurrencies promise to move power away from centralized banks and towards the decentralized people using the currency.
 
 
 ## Tools
 
-This website shall provide tools to develop the daemon network.
+This website shall provide tools to develop the Viridian network.
 
 The tools are:
 
