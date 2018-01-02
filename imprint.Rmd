@@ -8,13 +8,46 @@ title: "Imprint"
 
 ## Angaben gemäß § 5 TMG:
 
-Markus Voge
-Bornheimerstr. 77
-53119 Bonn
+<img src="caddr.png">
 
 ## Kontakt:
 
-E-Mail: mvoge@posteo.de<br>
+E-Mail:
+<script type="text/javascript" language="javascript">
+<!--
+{ 
+  jskwe = "tkfYi@wfcxif.Fi"
+  yui = "bTuJ4VzNI0rkmwFl2DOW7ynG5M9tZABqg3eK1REaXsxLojHYUi8PQChSc6vfpd"
+  whosd=jskwe.length
+  zyqm=""
+  for (i=0; i<jskwe.length; i++) {
+    if (yui.indexOf(jskwe.charAt(i))==-1) {
+      ltr = jskwe.charAt(i)
+      zyqm += (ltr)
+    }
+    else {     
+      ltr = (yui.indexOf(jskwe.charAt(i))-whosd+yui.length) % yui.length
+      zyqm += (yui.charAt(ltr))
+    }
+  }
+  aowlr = "nfyjNc:ngcIo@ac6Noc.Go"
+  qtr = "gnkfYRMs9B2EVZ5oqCPHwpIiQKzdl6u0WUTh4c1tvmJabyFr8GjA37OeXSLxDN"
+  pqmzb=aowlr.length
+  mfpx=""
+  for (i=0; i<aowlr.length; i++) {
+    if (qtr.indexOf(aowlr.charAt(i))==-1) {
+      ltr = aowlr.charAt(i)
+      mfpx += (ltr)
+    }
+    else {     
+      ltr = (qtr.indexOf(aowlr.charAt(i))-pqmzb+qtr.length) % qtr.length
+      mfpx += (qtr.charAt(ltr))
+    }
+  }
+  document.write("<a href='"+mfpx+"'>"+zyqm+"</a>")
+}
+//-->
+</script><noscript><img src="ceaddr.png"></noscript><br>
 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV: Markus Voge
 
 Quelle: http://www.e-recht24.de
