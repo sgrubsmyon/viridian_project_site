@@ -39,7 +39,7 @@ as soon as needed.
 
 ## Goals
 
-The goal is to create a computer network for economic transactions that provides
+The objective is to create a computer network for economic transactions providing
 the following:
 
 * **Decentralization:** The network shall be decentralized for increased resilience.
@@ -52,23 +52,27 @@ the following:
   verified in a resource-intensive proof-of-work process, but in an alternative
   way with an ecological footprint as small as possible.
 * **Fairness:** When external costs are included in the price calculation,
-  the market is fairer and closer to an idealized free market. Because the
-  supply chain must be made visible, the usage of bad quality components can be
-  revealed as well. Customers do not have to rely on good reputation of a
-  producer, but can choose the best option available. This makes it easier for
-  newcomers, accelerates the introduction of alternative technologies, thereby
-  increasing innovation and reducing market monopolies.
+  the market is fairer and closer to an idealized free market. Also, because the
+  supply chain can be revealed in the process, inferior quality can be revealed as
+  well. Customers do not have to trust the reputation of a producer, but can
+  choose the best option available. This makes it easier for newcomers and
+  accelerates the introduction of alternative technologies, thereby increasing
+  innovation and reducing market monopolies.
 * **Democratization:** Running on decentralized nodes, economy and society
   become more democratic and more equal, because concentration of resources and
   power can be prevented. Cryptocurrencies enable to move power away from
   centralized banks and towards the people using the currency. In addition,
-  the rules of the network shall be set by the people using it, in an open,
+  the rules of the network shall be set by the people using it: in an open,
   collaborative process, similar to the development of open source software.
 * **Encryption:** The network shall be end-to-end encrypted to provide security
   and privacy. Private data shall be kept private.
 * **Transparency:** It shall be visible at all times how the rules of the network
-  are and *why* they are like that. Changes to the algorithms must be accompanied
-  by legitimizing information. Public data shall be made open to everyone.
+  are and *why* they are like that, including the internalization of external
+  costs. Changes to the algorithms must be accompanied by legitimizing information.
+  Public data shall be made open to everyone. Because of its importance for
+  society, information on the external costs of ony economic activity must be
+  public and cannot be kept secret XXX "Betriebsgeheimnis". Because people are
+  more important than profits, there cannot be such "investor protection".
 <!-- * **Transactions:** Economic transactions shall be performed via the network, -->
 <!--   i.e. tokens of value (a currency) shall be exchanged via the network. -->
 
@@ -87,22 +91,42 @@ the following:
 
 There already are many concepts of sustainable economy, e.g.:
 
-* Transition Towns / Permaculture
-* "Gemeinwohlökonomie" (German)
+* Transition Towns and Permaculture
+* *Gemeinwohlökonomie* (German)
 * Cradle to cradle
-* Öko-Bilanzierung ("Richtig rechnen - Externe Kosten internalisieren")
+* *Öko-Bilanzierung* (German) ("Richtig rechnen - Externe Kosten internalisieren")
 * True cost
 * [Bioökonomie](https://de.wikipedia.org/wiki/Bio%C3%B6konomie)
 * [Nachhaltige Ökonomie](http://www.nachhaltige-oekonomie.de/nachhaltige-oekonomie)
 * Ecological economy
 * ...
 
-Already existing concepts of sustainable economy typically lack some or all of
-the following elements described in the Daemon novels:
+While these are very good approaches, already existing concepts of sustainable
+economy typically lack some or all of the following elements:
 
-* **Tech:** The use of computer network technology (web, digitization, cryptocurrencies, IoT, etc.) to algorithmically enforce the rules of the new economy (whether this is feasible or not remains to be seen)
-* **Coolness:** For the alternative technology to be successful, it must be cool enough to be adopted by a large (but minority) group of "early adopters". In the Daemon novels, this was achieved by addressing the gamer community and transferring concepts of comupter games to the real world.
-* **Benefit:** The alternative economy will only be widely adopted if it provides real benefit for the individual. Mere moral superiority is probably not enough. In the Daemon novels, people in rural areas discover that they can earn a much better living by using the Daemon economy, while in conventional economy, they struggle to survive (e.g. farmers that need to pay large amounts to corporations like Monsanto for GMO seeds, fertilizer, and pesiticides, while not earning much with their crops on the free market).
+* **Tech:** While technology alone cannot solve our problems and social
+  innovation is needed, computer network technology (web, digitization,
+  cryptocurrencies, IoT, etc.) has a vast potential to support or even enable
+  societal transformation. For example, it can be critical to organize humans in
+  a way to efficiently collaborate and exchange information. It might also be used
+  to algorithmically enforce sustainability (whether this is feasible or not
+  remains to be seen).
+* **Coolness:** For the alternative technology to be successful, it must be "cool"
+  enough to be adopted by a large (but minority) group of "early adopters".
+  If the new technology "goes viral", it will spread very fast and be talked
+  about a lot. This would be the first stage towards mass adoption.
+  <!-- In the Daemon novels, this was achieved by addressing the gamer community and -->
+  <!-- transferring concepts of comupter games to the real world. -->
+* **Benefit:** The alternative economy will only be widely adopted if it provides
+  real benefit for the individual. Mere moral superiority is probably not enough.
+  One example might be farmers: Many farmers need to pay large amounts to corporations
+  to buy seeds, fertilizers, and pesiticides, while not earning much with their
+  crops on the market. If they discover that they can earn a much better living
+  by using the alternative economy, both for buying goods and selling their
+  produce, they will start using it. This would be the second stage towards mass
+  adoption. When more and more groups of people join the new economy, eventually
+  a critical mass will be reached and there will be a tipping point with a full
+  transition to the new economy.
 
 <!-- ## New Styles -->
 
