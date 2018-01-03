@@ -14,3 +14,5 @@ A wizard to generate this code is at http://www.jottings.com/obfuscator/
 
 Use https://stackoverflow.com/questions/748780/best-way-to-obfuscate-an-e-mail-address-on-a-website
 to improve it.
+
+Also: http://www.wmtips.com/tools/html-obfuscator/

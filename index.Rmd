@@ -42,37 +42,90 @@ as soon as needed.
 The objective is to create a computer network for economic transactions providing
 the following:
 
-* **Decentralization:** The network shall be decentralized for increased resilience.
-  There should not be any single points of failure. It must also be spread to prevent
-  too much concentration of power. The network shall be operated by and in the
-  hands of all people, not of few (or single) corporations or governments.
-* **Sustainability:** Sustainable and socially responsible business and commerce
-  shall be incentivized by including external costs of economic activity
-  in the prices. In addition, the cryptocurrency transactions shall not be
-  verified in a resource-intensive proof-of-work process, but in an alternative
-  way with an ecological footprint as small as possible.
-* **Fairness:** When external costs are included in the price calculation,
-  the market is fairer and closer to an idealized free market. Also, because the
-  supply chain can be revealed in the process, inferior quality can be revealed as
-  well. Customers do not have to trust the reputation of a producer, but can
-  choose the best option available. This makes it easier for newcomers and
-  accelerates the introduction of alternative technologies, thereby increasing
-  innovation and reducing market monopolies.
-* **Democratization:** Running on decentralized nodes, economy and society
-  become more democratic and more equal, because concentration of resources and
-  power can be prevented. Cryptocurrencies enable to move power away from
-  centralized banks and towards the people using the currency. In addition,
-  the rules of the network shall be set by the people using it: in an open,
-  collaborative process, similar to the development of open source software.
-* **Encryption:** The network shall be end-to-end encrypted to provide security
-  and privacy. Private data shall be kept private.
-* **Transparency:** It shall be visible at all times how the rules of the network
-  are and *why* they are like that, including the internalization of external
-  costs. Changes to the algorithms must be accompanied by legitimizing information.
-  Public data shall be made open to everyone. Because of its importance for
-  society, information on the external costs of ony economic activity must be
-  public and cannot be kept secret XXX "Betriebsgeheimnis". Because people are
-  more important than profits, there cannot be such "investor protection".
+####
+
+<div class="row">
+<div class="col-md-6">
+
+#### Decentralization
+
+The network shall be decentralized for increased resilience.
+There should not be any single points of failure. It must also be spread to prevent
+too much concentration of power. The network shall be operated by and in the
+hands of all people, not of few (or single) corporations or governments.
+
+</div>
+<div class="col-md-6">
+
+#### Democratization
+
+Running on decentralized nodes, economy and society
+become more democratic and more equal, because concentration of resources and
+power can be prevented. Cryptocurrencies enable to move power away from
+centralized banks and towards the people using the currency. In addition,
+the rules of the network shall be set by the people using it: in an open,
+collaborative process, similar to the development of open source software.
+
+</div>
+</div>
+
+####
+
+<div class="row">
+<div class="col-md-6">
+
+#### Sustainability
+
+Sustainable and socially responsible business and commerce
+shall be incentivized by including external costs of economic activity
+in the prices. In addition, the cryptocurrency transactions shall not be
+verified in a resource-intensive proof-of-work process, but in an alternative
+way with an ecological footprint as small as possible.
+
+</div>
+<div class="col-md-6">
+
+#### Privacy
+
+The network shall be end-to-end encrypted to provide security
+and privacy. People should have full control over their data.
+Private data shall be kept private, instead of being a commodity,
+which is harvested for profit.
+
+</div>
+</div>
+
+####
+
+<div class="row">
+<div class="col-md-6">
+
+#### Fairness
+
+When external costs are included in the price calculation,
+the market is fairer and closer to an idealized free market. Also, because the
+supply chain can be revealed in the process, inferior quality can be revealed as
+well. Customers do not have to trust the reputation of a producer, but can
+choose the best option available. This makes it easier for newcomers and
+accelerates the introduction of alternative technologies, thereby increasing
+innovation and reducing market monopolies.
+
+</div>
+<div class="col-md-6">
+
+#### Transparency
+
+It shall be visible at all times how the rules of the network
+are and *why* they are like that, including the internalization of external
+costs. Changes to the algorithms must be accompanied by legitimizing information.
+Public data shall be made open to everyone. Because of its importance for
+society, information on the external costs of ony economic activity must be
+public and cannot be kept a company secret. Because people are
+more important than profits, there cannot be such "investor protection".
+
+</div>
+</div>
+
 <!-- * **Transactions:** Economic transactions shall be performed via the network, -->
 <!--   i.e. tokens of value (a currency) shall be exchanged via the network. -->
 
