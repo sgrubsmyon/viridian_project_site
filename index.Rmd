@@ -47,6 +47,8 @@ the following:
 <div class="row">
 <div class="col-md-6">
 
+<img src="network.svg" style="height: 100px;">
+
 #### Decentralization
 
 The network shall be decentralized for increased resilience.
@@ -54,8 +56,13 @@ There should not be any single points of failure. It must also be spread to prev
 too much concentration of power. The network shall be operated by and in the
 hands of all people, not of few (or single) corporations or governments.
 
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+
 </div>
 <div class="col-md-6">
+
+<img src="like.svg" style="height: 100px;">
+<img src="dislike.svg" style="height: 100px;">
 
 #### Democratization
 
@@ -66,13 +73,18 @@ centralized banks and towards the people using the currency. In addition,
 the rules of the network shall be set by the people using it: in an open,
 collaborative process, similar to the development of open source software.
 
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+
 </div>
 </div>
 
 ####
 
+
 <div class="row">
 <div class="col-md-6">
+
+<img src="sprout.svg" style="height: 100px;">
 
 #### Sustainability
 
@@ -82,8 +94,12 @@ in the prices. In addition, the cryptocurrency transactions shall not be
 verified in a resource-intensive proof-of-work process, but in an alternative
 way with an ecological footprint as small as possible.
 
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/retinaicons" title="Retinaicons">Retinaicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+
 </div>
 <div class="col-md-6">
+
+<img src="block.svg" style="height: 100px;">
 
 #### Privacy
 
@@ -92,6 +108,8 @@ and privacy. People should have full control over their data.
 Private data shall be kept private, instead of being a commodity,
 which is harvested for profit.
 
+<!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+
 </div>
 </div>
 
@@ -99,6 +117,8 @@ which is harvested for profit.
 
 <div class="row">
 <div class="col-md-6">
+
+<img src="handshake.svg" style="height: 100px;">
 
 #### Fairness
 
@@ -110,8 +130,12 @@ choose the best option available. This makes it easier for newcomers and
 accelerates the introduction of alternative technologies, thereby increasing
 innovation and reducing market monopolies.
 
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+
 </div>
 <div class="col-md-6">
+
+<img src="search.svg" style="height: 100px;">
 
 #### Transparency
 
@@ -123,12 +147,17 @@ society, information on the external costs of ony economic activity must be
 public and cannot be kept a company secret. Because people are
 more important than profits, there cannot be such "investor protection".
 
+<!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+
 </div>
 </div>
 
 <!-- * **Transactions:** Economic transactions shall be performed via the network, -->
 <!--   i.e. tokens of value (a currency) shall be exchanged via the network. -->
 
+####
+
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/retinaicons" title="Retinaicons">Retinaicons</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>.</div>
 
 <!-- ## Tools -->
 
