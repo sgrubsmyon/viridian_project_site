@@ -306,11 +306,18 @@ a:hover {
   color: #819198;
 }
 
+.panel-title {
+  margin-bottom: auto !important;
+}
+
 /* vertical centering with the help of CSS tables: https://css-tricks.com/vertically-center-multi-lined-text/ */
 .btn-tile {
   width: 100%;
-  height: 100px;
+  height: 200px;
+  font-size: 20px;
   display: table;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .btn-tile p {
   display: table-cell; 
@@ -320,8 +327,20 @@ a:hover {
   white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
   white-space: pre-wrap;      /* current browsers */
 }
-/*.btn-tile {
-  word-wrap: break-word;      /* IE 5.5-7 * /
-  white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 * /
-  white-space: pre-wrap;      /* current browsers * /
+
+/* http://nicolasgallagher.com/jump-links-and-viewport-positioning/ */
+.anchor {
+   /*position: relative;*/
+   border-top: 70px solid transparent;
+   margin: -70px 0 0;
+   /*-webkit-background-clip: padding-box;
+   -moz-background-clip: padding;
+   background-clip: padding-box;*/
+}
+/*.anchor:before {
+   content: "";
+   position: absolute;
+   top: -2px;
+   left: 0;
+   right: 0;
 }*/
