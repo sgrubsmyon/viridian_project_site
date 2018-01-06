@@ -179,6 +179,108 @@ getting involved.
 htmltools::includeHTML("tiles.html")
 ```
 
+<div style="margin-bottom: 30px;"></div>
+
+<div id="cryptocurrencies" class="anchor">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Cryptocurrencies</h3>
+</div>
+<div class="panel-body">
+Panel content
+</div>
+</div>
+</div>
+
+<div id="software-development" class="anchor">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Software development</h3>
+</div>
+<div class="panel-body">
+Panel content
+</div>
+</div>
+</div>
+
+<div id="monetary" class="anchor">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Currencies and monetary policy</h3>
+</div>
+<div class="panel-body">
+Panel content
+</div>
+</div>
+</div>
+
+<div id="economics" class="anchor">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Economics</h3>
+</div>
+<div class="panel-body">
+Panel content
+</div>
+</div>
+</div>
+
+<div id="law" class="anchor">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Law</h3>
+</div>
+<div class="panel-body">
+Panel content
+</div>
+</div>
+</div>
+
+<div id="lca" class="anchor">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Life cycle analysis, external costs, sustainability</h3>
+</div>
+<div class="panel-body">
+Panel content
+</div>
+</div>
+</div>
+
+<div id="auditing" class="anchor">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Auditing, e.g. organic or fair trade</h3>
+</div>
+<div class="panel-body">
+Panel content
+</div>
+</div>
+</div>
+
+<div id="sociology" class="anchor">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Sociology and socio-psychology</h3>
+</div>
+<div class="panel-body">
+Panel content
+</div>
+</div>
+</div>
+
+<div id="politics" class="anchor">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Politics: Democracy and voting</h3>
+</div>
+<div class="panel-body">
+Panel content
+</div>
+</div>
+</div>
+
+
 ## How is this any different from what already exists?
 
 There already are many concepts of sustainable economy, e.g.:
