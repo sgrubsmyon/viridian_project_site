@@ -47,6 +47,10 @@ a:hover {
 }
 */
 
+#navbar {
+  background-color: #222222;
+}
+
 /* navbar smaller on scrolling */
 /* https://stackoverflow.com/questions/16442016/jquery-sticky-header-that-shrinks-when-scrolling-down */
 .navbar {
@@ -64,6 +68,10 @@ a:hover {
   height: 90px;
   transition: height 500ms;
 }
+.navbar-header {
+  height: 100px;
+  transition: height 500ms;
+}
 .navbar-nav > li > a {
   padding: 39px 15px 39px 15px;
   font-size: 22px;
@@ -79,6 +87,9 @@ a:hover {
   /*background: #aaa;*/
 }
 .navbar-tiny img {
+  height: 40px;
+}
+.navbar-header-tiny {
   height: 40px;
 }
 .navbar-nav-tiny > li > a {
@@ -294,3 +305,23 @@ a:hover {
 .site-footer-credits {
   color: #819198;
 }
+
+/* vertical centering with the help of CSS tables: https://css-tricks.com/vertically-center-multi-lined-text/ */
+.btn-tile {
+  width: 100%;
+  height: 100px;
+  display: table;
+}
+.btn-tile p {
+  display: table-cell; 
+  vertical-align: middle; 
+  
+  word-wrap: break-word;      /* IE 5.5-7 */
+  white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+  white-space: pre-wrap;      /* current browsers */
+}
+/*.btn-tile {
+  word-wrap: break-word;      /* IE 5.5-7 * /
+  white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 * /
+  white-space: pre-wrap;      /* current browsers * /
+}*/

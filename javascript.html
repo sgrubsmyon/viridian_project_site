@@ -2,6 +2,7 @@
 // https://stackoverflow.com/questions/16442016/jquery-sticky-header-that-shrinks-when-scrolling-down
 $(window).on('scroll touchmove', function () {
   $('.navbar').toggleClass('navbar-tiny', $(document).scrollTop() > 0);
+  $('.navbar-header').toggleClass('navbar-header-tiny', $(document).scrollTop() > 0);
   $('.navbar-nav').toggleClass('navbar-nav-tiny', $(document).scrollTop() > 0);
   $('.navbar-brand').toggleClass('navbar-brand-tiny', $(document).scrollTop() > 0);
 });

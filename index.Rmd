@@ -1,5 +1,5 @@
 ---
-title: "<img src='viridian_logo_with_text.png'><br><span>The Viridian Project</span>"
+title: "<img src='viridian_logo_with_text.png'><br>The Viridian Project"
 # author: "Markus Voge"
 # date: "`r Sys.Date()`"
 ---
@@ -34,7 +34,7 @@ agreed upon by everyone. They must also be continually debated and adjusted
 as soon as needed.
 -->
 
-<a href="paper" type="button" class="btn btn-info">Read the white paper</a>
+<a href="paper" class="btn btn-info" role="button">Read the white paper</a>
 
 
 ## Goals
@@ -169,6 +169,16 @@ more important than profits, there cannot be such "investor protection".
 <!-- * [**Wiki:**](wiki) More details can be given in wiki articles, including pictures, tables, and links to external resources. In the mind map, links to wiki articles can be used whenever the space in the mind map is too limited. -->
 
 
+## Get involved
+
+There are many open questions and unsolved problems. Are you inspired by the
+idea of the project? You can help! Just pick your area of interest and start
+getting involved.
+
+```{r, echo=FALSE}
+htmltools::includeHTML("tiles.html")
+```
+
 ## How is this any different from what already exists?
 
 There already are many concepts of sustainable economy, e.g.:
@@ -189,10 +199,10 @@ economy typically lack some or all of the following elements:
 * **Tech:** While technology alone cannot solve our problems and social
   innovation is needed, computer network technology (web, digitization,
   cryptocurrencies, IoT, etc.) has a vast potential to support or even enable
-  societal transformation. For example, it can be critical to organize humans in
-  a way to efficiently collaborate and exchange information. It might also be used
-  to algorithmically enforce sustainability (whether this is feasible or not
-  remains to be seen).
+  societal transformation. For example, technology can be critical for allowing
+  humans to efficiently collaborate and exchange information. It might
+  also be used to algorithmically enforce sustainability (whether this is feasible
+  or not remains to be seen).
 * **Coolness:** For the alternative technology to be successful, it must be "cool"
   enough to be adopted by a large (but minority) group of "early adopters".
   If the new technology "goes viral", it will spread very fast and be talked
