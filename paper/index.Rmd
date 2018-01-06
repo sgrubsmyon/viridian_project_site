@@ -105,7 +105,7 @@ cryptocurrencies. If cryptocurrencies can be designed as one sees fit, then it m
 be possible to solve the problems of conventional monetary systems.
 
 As a starting point, one can try to incorporate external costs into prices of
-products and services. External costs are those that are not part of the economic
+goods and services. External costs are those that are not part of the economic
 calculation when a price is determined, however they still arise (sometimes at a
 different place and/or time, harming third parties) and have to be paid by someone,
 usually the tax payer or residents of affected areas. Examples of external costs
