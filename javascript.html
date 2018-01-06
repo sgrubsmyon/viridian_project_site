@@ -1,9 +1,36 @@
 <script>
 // https://stackoverflow.com/questions/16442016/jquery-sticky-header-that-shrinks-when-scrolling-down
-$(window).on('scroll touchmove', function () {
+$(window).on('scroll touchmove', function() {
   $('.navbar').toggleClass('navbar-tiny', $(document).scrollTop() > 0);
   $('.navbar-header').toggleClass('navbar-header-tiny', $(document).scrollTop() > 0);
   $('.navbar-nav').toggleClass('navbar-nav-tiny', $(document).scrollTop() > 0);
   $('.navbar-brand').toggleClass('navbar-brand-tiny', $(document).scrollTop() > 0);
+});
+
+// put jQuery stuff inside the document ready function
+$(document).ready(function(){ 
+  // Hide all anchor targets:
+  $('.anchor').hide();
+  
+  // Smooth scrolling:
+  /* https://css-tricks.com/snippets/jquery/smooth-scrolling/ (comment by Devin Sturgeon) */
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+      || location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        //
+        $('.anchor').fadeOut(1000); // hide all (other) anchor targets
+        $('.anchor').hide(); // hide all (other) anchor targets
+        target.fadeIn(1000); // show this particular target
+        //
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });
 </script>
