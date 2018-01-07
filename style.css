@@ -318,6 +318,8 @@ a:hover {
   display: table;
   margin-top: 10px;
   margin-bottom: 10px;
+  border: none;
+  background-color: #40826d;
 }
 .btn-tile p {
   display: table-cell; 
@@ -326,6 +328,34 @@ a:hover {
   word-wrap: break-word;      /* IE 5.5-7 */
   white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
   white-space: pre-wrap;      /* current browsers */
+}
+
+.btn-gradient-ll {
+  background-image: linear-gradient(15deg, #37EB2A, #28c868);
+}
+.btn-gradient-lc {
+  background-image: linear-gradient(15deg, #32df40, #25c077);
+}
+.btn-gradient-lr {
+  background-image: linear-gradient(15deg, #25c077, #20b48b);
+}
+.btn-gradient-ml {
+  background-image: linear-gradient(15deg, #2acd5e, #20b48b);
+}
+.btn-gradient-mc {
+  background-image: linear-gradient(15deg, #32df40, #25c077);
+}
+.btn-gradient-mr {
+  background-image: linear-gradient(15deg, #32df40, #25c077);
+}
+.btn-gradient-ul {
+  background-image: linear-gradient(15deg, #32df40, #25c077);
+}
+.btn-gradient-uc {
+  background-image: linear-gradient(15deg, #32df40, #25c077);
+}
+.btn-gradient-ur {
+  background-image: linear-gradient(15deg, #32df40, #25c077);
 }
 
 /* http://nicolasgallagher.com/jump-links-and-viewport-positioning/ */
