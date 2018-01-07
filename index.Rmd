@@ -56,7 +56,7 @@ There should not be any single points of failure. It must also be spread to prev
 too much concentration of power. The network shall be operated by and in the
 hands of all people, not of few (or single) corporations or governments.
 
-<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+<!-- <div>Icon made by me!</div> -->
 
 </div>
 <div class="col-md-6">
@@ -143,7 +143,7 @@ It shall be visible at all times how the rules of the network
 are and *why* they are like that, including the internalization of external
 costs. Changes to the algorithms must be accompanied by legitimizing information.
 Public data shall be made open to everyone. Because of its importance for
-society, information on the external costs of ony economic activity must be
+society, information on the external costs of any economic activity must be
 public and cannot be kept a company secret. Because people are
 more important than profits, there cannot be such "investor protection".
 
