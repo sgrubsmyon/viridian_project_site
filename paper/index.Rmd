@@ -1,12 +1,39 @@
 ---
 title: "The Viridian Project: A digital currency to internalize external costs for a more sustainable economy"
 author: "Markus Voge"
-date: "`r Sys.Date()`"
+date: "`r Sys.Date()` --- v1"
 bibliography: references.bib
 csl: elsevier-with-titles-alphabetical.csl
 # http://editor.citationstyles.org/searchByName/
-output: html_document
+output: 
+  html_document: 
+    fig_caption: yes
+    number_sections: yes
+    self_contained: no
 ---
+
+```{r functions, include=FALSE}
+# A function for captioning and referencing images
+# https://stackoverflow.com/questions/13848137/figure-captions-references-using-knitr-and-markdown-to-html
+# fig <- local({
+#     i <- 0
+#     ref <- list()
+#     list(
+#         cap=function(refName, text) {
+#             i <<- i + 1
+#             ref[[refName]] <<- i
+#             paste("Figure ", i, ": ", text, sep="")
+#         },
+#         ref=function(refName) {
+#             ref[[refName]]
+#         })
+# })
+# Easier solution: captioner package
+# http://derekogle.com/fishR/2015-09-17-Figure-Table-Captions-in-Markdown
+library(captioner)
+figs <- captioner(prefix="Figure")
+tbls <- captioner(prefix="Table")
+``` 
 
 # Introduction
 
@@ -55,7 +82,8 @@ aims to build a post-fossil, sustainable, and resilient economy and by the degro
 movement [@Douthwaite2012; @Dittmer2013; @Hornborg2017] that aims to put an end to
 unlimited economic growth. Complementary currencies are already in use at some places
 and prove to strengthen regional and more sustainable value generation. In addition,
-there are more ideas to redesign our monetary systems, e.g. *The Chicago Plan Revisited* [@wiki:The_Chicago_Plan_Revisited; @IMF2012],
+there are more ideas to redesign our monetary systems, e.g.
+*The Chicago Plan Revisited* [@wiki:The_Chicago_Plan_Revisited; @IMF2012],
 a report issued by the International Monetary Fund (IMF) in 2012, suggesting that
 private banks should only be allowed to lend money that they have in deposits
 (100% reserve banking), reducing both public and private debt and resulting in a
@@ -143,75 +171,6 @@ When the money enters a wallet, it is automatically projected onto a single axis
 This means that red money is valued down, while green money is valued up, which
 corresponds to a diagonal movement in the 2D money space.
 
-XXX Add Figure to visualize color of money (2 axes: y axis is value, x axis is color)
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-library(fields)
-library(grImport)
-library(igraph)
-
-# https://stackoverflow.com/questions/28042220/how-to-make-custom-plot-symbols-from-vector-graphics-in-r
-PostScriptTrace("coin.eps") # creates .xml in the working directory
-coin <- readPicture("coin.eps.xml")
-
-y <- c(0, 2000, 1500, 300)
-x <- rep(0, length(y))
-plot(x, y, bty="n", xlab = "Color c (Quality)",
-     ylab = "Quantity: $/€/£/¥/...", ylim = (max(y) - min(y)) * c(-0.187, 1.119))
-xx = grconvertX(x = x, from = 'user', to = 'ndc')
-yy = grconvertY(y = y, from = 'user', to = 'ndc')
-grid.symbols(coin, x = xx, y = yy, size = 0.05)
-# par(new=TRUE)
-# plot(c(-1, 1), c(0, 0), axes = FALSE, xlab = "", ylab = "")
-colorbar.plot(0, -0.149 * (max(y) - min(y)), seq(-1, 1, 0.01), strip.length = 1.7,
-              col = colorRampPalette(c("#009900", "#990000"))(256))
-# https://kbroman.wordpress.com/2012/10/11/curved-arrows-in-r/
-invisible(igraph:::igraph.Arrows(0, y[1], 0, y[2], h.lwd=2, sh.lwd=2,
-                                 curve=-0.3e-3, width=1, size=0.7))
-invisible(igraph:::igraph.Arrows(0, y[2], 0, y[3], h.lwd=2, sh.lwd=2,
-                       curve=0, width=1, size=0.7))
-invisible(igraph:::igraph.Arrows(0, y[3], 0, y[4], h.lwd=2, sh.lwd=2,
-                       curve=0, width=1, size=0.7))
-# https://stackoverflow.com/questions/30658177/r-plot-with-axes-in-the-center
-# arrows(-1, 0, 1, 0, lwd=1, length=0.15)
-# arrows(0, 0, 0, 15, lwd=1, length=0.15)
-```
-
-XXX Add Figure to visualize money revaluation by projection on y axis
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-library(fields)
-library(grImport)
-library(igraph)
-
-# https://stackoverflow.com/questions/28042220/how-to-make-custom-plot-symbols-from-vector-graphics-in-r
-PostScriptTrace("coin.eps") # creates .xml in the working directory
-coin <- readPicture("coin.eps.xml")
-
-y <- c(0, 2000, 1500, 300)
-x <- rep(0, length(y))
-plot(x, y, bty="n", xlab = "Color c (Quality)",
-     ylab = "Quantity: $/€/£/¥/...", ylim = (max(y) - min(y)) * c(-0.187, 1.119))
-xx = grconvertX(x = x, from = 'user', to = 'ndc')
-yy = grconvertY(y = y, from = 'user', to = 'ndc')
-grid.symbols(coin, x = xx, y = yy, size = 0.05)
-# par(new=TRUE)
-# plot(c(-1, 1), c(0, 0), axes = FALSE, xlab = "", ylab = "")
-colorbar.plot(0, -0.149 * (max(y) - min(y)), seq(-1, 1, 0.01), strip.length = 1.7,
-              col = colorRampPalette(c("#009900", "#990000"))(256))
-invisible(igraph:::igraph.Arrows(0, y[1], 0, y[2], h.lwd=2, sh.lwd=2,
-                                 curve=-0.3e-3, width=1, size=0.7))
-invisible(igraph:::igraph.Arrows(0, y[2], 0, y[3], h.lwd=2, sh.lwd=2,
-                       curve=0, width=1, size=0.7))
-invisible(igraph:::igraph.Arrows(0, y[3], 0, y[4], h.lwd=2, sh.lwd=2,
-                       curve=0, width=1, size=0.7))
-# https://stackoverflow.com/questions/30658177/r-plot-with-axes-in-the-center
-# arrows(-1, 0, 1, 0, lwd=1, length=0.15)
-# arrows(0, 0, 0, 15, lwd=1, length=0.15)
-```
-
-<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
 [^colored_coins]: Within the cryptocurrency community, already since 2013 there
 exists the term "colored coins" (see e.g. http://coloredcoins.org/, https://www.coinprism.com/),
 which has nothing to do with the concept described here. "Colored coins" are
@@ -222,6 +181,83 @@ is linked to a cryptocurrency coin, it can be easily transferred to another acou
 This enables the realization of "smart contracts", where digital or real world
 assets can be sold securely using a blockchain. Colored coins are similar to
 Ethereum, however not using a seperate blockchain, but the bitcoin blockchain.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap=figs("transactions-conventional", "Conventional money transactions are completely one-dimensional.")}
+# fig$cap("transactions-conventional", "Conventional money transactions are completely one-dimensional.")
+library(fields)
+library(grImport)
+library(igraph)
+
+# https://stackoverflow.com/questions/28042220/how-to-make-custom-plot-symbols-from-vector-graphics-in-r
+PostScriptTrace("coin.eps") # creates .xml in the working directory
+coin <- readPicture("coin.eps.xml")
+
+y <- c(0, 1000, 1700)
+x <- rep(0, length(y))
+plot(x, y, bty="n", xlab = "Color c (Quality)",
+     ylab = "Quantity: $/€/£/¥/...", xlim = c(-1, 1),
+     ylim = c(-374, 2238)) # ylim = (max(y) - min(y)) * c(-0.187, 1.119)
+xx = grconvertX(x = x, from = 'user', to = 'ndc')
+yy = grconvertY(y = y, from = 'user', to = 'ndc')
+grid.symbols(coin, x = xx, y = yy, size = 0.05)
+# par(new=TRUE)
+# plot(c(-1, 1), c(0, 0), axes = FALSE, xlab = "", ylab = "")
+colorbar.plot(0, -300, seq(-1, 1, 0.01), strip.length = 1.7, # 0, -0.149 * (max(y) - min(y))
+              col = colorRampPalette(c("#990000", "#009900"))(256))
+# https://kbroman.wordpress.com/2012/10/11/curved-arrows-in-r/
+invisible(igraph:::igraph.Arrows(x[1], y[1], x[2], y[2], sh.lwd = 2,
+                                 sh.col = "gray")) # width = 1, size = 1, 
+invisible(igraph:::igraph.Arrows(x[2], y[2], x[3], y[3], sh.lwd = 2,
+                                 sh.col = "gray"))
+# https://stackoverflow.com/questions/30658177/r-plot-with-axes-in-the-center
+# arrows(-1, 0, 1, 0, lwd=1, length=0.15)
+# arrows(0, 0, 0, 15, lwd=1, length=0.15)
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap=figs("transactions-colorized", "With colorized transactions, money transactions are two-dimensional: When a seller obtains money, the transaction's color shifts the value to the right or left. A diagonal projection onto the value axis (y-axis) follows, leading to an increased or decreased value.")}
+library(fields)
+library(grImport)
+library(igraph)
+
+# https://stackoverflow.com/questions/28042220/how-to-make-custom-plot-symbols-from-vector-graphics-in-r
+PostScriptTrace("coin.eps") # creates .xml in the working directory
+coin <- readPicture("coin.eps.xml")
+
+# y <- c(0, 2000,  2000, 1500, 1000, 1000, 1300, 300,  300, 600)
+# x <- c(0,    0, -0.25,    0,    0,  0.3,    0,   0,  0.5,   0)
+y <- c(0, 1000,  1000, 1300, 2000, 2000, 1650)
+x <- c(0,    0,   0.3,    0,    0, -0.5,    0)
+plot(x, y, bty="n", xlab = "Color c (Quality)",
+     ylab = "Quantity: $/€/£/¥/...", xlim = c(-1, 1),
+     ylim = c(-374, 2238)) # ylim = (max(y) - min(y)) * c(-0.187, 1.119)
+xx = grconvertX(x = x, from = 'user', to = 'ndc')
+yy = grconvertY(y = y, from = 'user', to = 'ndc')
+grid.symbols(coin, x = xx, y = yy, size = 0.05)
+# par(new=TRUE)
+# plot(c(-1, 1), c(0, 0), axes = FALSE, xlab = "", ylab = "")
+colorbar.plot(0, -300, seq(-1, 1, 0.01), strip.length = 1.7, # 0, -0.149 * (max(y) - min(y))
+              col = colorRampPalette(c("#990000", "#009900"))(256))
+# https://kbroman.wordpress.com/2012/10/11/curved-arrows-in-r/
+# Type head(igraph:::igraph.Arrows) to get all (undocumented) arguments of this internal function
+invisible(igraph:::igraph.Arrows(x[1], y[1], x[2], y[2], sh.lwd = 2,
+                                 sh.col = "gray")) # width = 1, size = 1, 
+invisible(igraph:::igraph.Arrows(x[2], y[2], x[3], y[3], sh.lwd = 2,
+                                 sh.col = "#009900"))
+invisible(igraph:::igraph.Arrows(x[3], y[3], x[4], y[4], sh.lwd = 2,
+                                 sh.col = "#009900"))
+invisible(igraph:::igraph.Arrows(x[4], y[4], x[5], y[5], sh.lwd = 2,
+                                 curved = -0.3e-3, sh.col = "gray"))
+invisible(igraph:::igraph.Arrows(x[5], y[5], x[6], y[6], sh.lwd = 2,
+                                 sh.col = "#990000"))
+invisible(igraph:::igraph.Arrows(x[6], y[6], x[7], y[7], sh.lwd = 2,
+                                 sh.col = "#990000"))
+# curve=-0.3e-3
+# https://stackoverflow.com/questions/30658177/r-plot-with-axes-in-the-center
+# arrows(-1, 0, 1, 0, lwd=1, length=0.15)
+# arrows(0, 0, 0, 15, lwd=1, length=0.15)
+```
+
+*(Icon made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>.)*
 
 It can be argued how exactly this projection should be done, e.g. in a linear or
 non-linear way. It is also debatable if there should be upper and lower limits to
@@ -473,15 +509,15 @@ to make the currency system work:
 
 The color database gives a unique ID to each product. It is updated frequently
 and always returns the current color when queried. It may or may not be a blockchain.
-A blockchain would have added benefits like tamper resistance as well as
-version control and traceability. If it is a blockchain, then there would be an
-"account" for every product and the acount's balance would be the current color
-value, which can be changed with "color transactions" by the color determiners,
-with added meta-data on why the color is changed. Perhaps, it makes sense to store
-not only the resulting color itself, but also "subcolors" for relevant aspects:
-social sustainability, environmental sustainability, longevity of the product etc.
-Maybe the color database can incorporate user ratings as well, e.g. rating the
-usefulness or the quality of the prduct in use.
+A blockchain would have added benefits like tamper resistance and dectralization
+as well as version control and traceability. If it is a blockchain, then there
+would be an "account" for every product and the acount's balance would be the
+current color value, which can be changed with "color transactions" by the color
+determiners, with added meta-data on why the color is changed. Perhaps, it makes
+sense to store not only the resulting color itself, but also "subcolors" for
+relevant aspects: social sustainability, environmental sustainability, longevity
+of the product etc. Maybe the color database can incorporate user ratings as well,
+e.g. rating the usefulness or the quality of the prduct in use.
 <!-- XXX Or would the color be part of the cryptocurrency itself, so not an oracle -->
 <!-- for a smart contract, but be stored in the transaction blockchain as well? This -->
 <!-- way, the currency's blockchain would also provide supply chain tracking, at least -->

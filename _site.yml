@@ -26,3 +26,4 @@ output:
     include:
       in_header: javascript.html
       after_body: footer.html
+    self_contained: no
