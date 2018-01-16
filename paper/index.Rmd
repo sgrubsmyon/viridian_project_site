@@ -296,16 +296,16 @@ As a concrete example for a transaction in the new currency, buying an emission-
 car with a fossil fuel burning engine might involve red money, while an emission-free
 electric vehicle is bought with green money. 
 
-Let's assume that the seller of the red money car had to pay 9,000 coins to buy
-the car from the producer. The car seller needs a profit margin of 1,000 coins,
-so would sell it for 10,000 coins without considering color. The color of the
-transaction is -0.5, meaning that the yield $y$ will come out 50% lower than the
-price $p$. For $y$ to be 10,000, $p$ must be $p = y / (1 + c)$, so the car must
-be sold for 20,000 coins.
+Let's assume that the seller of the red money car had to pay $9000$ coins to buy
+the car from the producer. The car seller needs a profit margin of $1000$ coins,
+so would sell it for $10000$ coins without considering color. The color of the
+transaction is $-0.5$, meaning that the yield $y$ will come out 50% lower than the
+price $p$. For $y$ to be $10000$, $p$ must be $p = y / (1 + c)$, so the car must
+be sold for $20000$ coins.
 
-On the other hand, the green car seller might have paid 15,000 coins to the
-producer and wants to earn 1,000 coins as well. The color is 0.1, translating
-into a price of $16,000/1.1 = 14,545.45$ coins, making the car cheaper for the
+On the other hand, the green car seller might have paid $15000$ coins to the
+producer and wants to earn $1000$ coins as well. The color is $0.1$, translating
+into a price of $16000/1.1 = 14545.45$ coins, making the car cheaper for the
 consumer even though it was more costly to produce.
 
 Upon entering the seller's wallet, the red money loses some of its value, while
@@ -338,7 +338,7 @@ is paid to the color determiners to reward them for their services.
 ## Managed by the crowd
 
 While a similar effect to that of colored money can be reached by taxation and
-subsidization, the interesting aspect is that a cryptocurrency offers a possibility
+subsidization, the interesting aspect is that computing technology offers a possibility
 to do this without a central authority involved. The main problem of transforming
 the economy towards sustainable development is to do it in a way that is fair
 and socially accepted by everyone. 
@@ -353,7 +353,7 @@ by polluters like the fossil fuel companies, system change never comes.
 
 This is why such important decisions like the color of money cannot be placed
 into the hand of a few privileged, or a single person. It must be done
-collaboratively by the crowd, in a way that is acceptable by everyone.
+collectively by the crowd, in a way that is acceptable by everyone.
 
 This is an attemt to bypass government and any centralized institutions or elites:
 Like the Bitcoin miners perform the service of validating transactions and keeping
@@ -482,14 +482,33 @@ this tragedy and it works for many commons across the world [@NobelOstrom].
 
 Thus, if some kind of peer pressure would be incorporated into economic transactions
 by means of cryptocurrency algorithms, it might also help to make economic decisions
-more balanced and less one-dimensional. The colorization of money transactions might
-be seen as an application of social peer pressure (via the color determining community)
-to trade. Because who would openly deny a societal consensus that takes into account
-social and environmental values, leading to benefits for everyone? If not using the
-colored currency would make that person appear to be an immoral misanthrope, then
-there might be a strong socio-psychological incentive to use it. The psychological
-effect might be even stronger when showing the transaction color to the customer
-before the transaction is carried out.
+more balanced and less one-dimensional.
+The human brain consists of different parts, some of which are responsible for
+rational, others for emotional behavior. One idea behind the colorization of money
+is that the process of spending money stimulates the rational side of the brain,
+so that emotional aspects such as empathy are not considered. However, when people
+have the task of determining the color of a certain good---without being in the
+situation of buying it---aspects such as the effect on other people
+and on the environment will be more important and the emotional side of the brain
+will be stimulated as well. This might offer a counterbalance to the
+consumerism of today.[^yinyang]
+Thus, the colorization of money transactions might be seen as an application
+of social peer pressure (via the color determining community) to trade. 
+
+<!-- Who would openly deny a societal consensus that takes into account
+social and environmental values, leading to benefits for everyone? -->
+If not using the colored currency would appear immoral and misanthropic, then
+there might be a strong socio-psychological incentive to use it.
+The psychological effect might be even stronger when showing the transaction color
+to the customer before the transaction is carried out.
+
+[^yinyang]: Bernard Lietaer [@Lietaer2012] refers to the duality of *yin* and *yang*
+from Chinese philosophy and speaks of money being almost entirely associated with
+*yang* attributes like aggressiveness, strength, competition (considered dominantly
+male) and not with *yin* attributes like care, empathy, softness (considered dominantly
+female). Lietaer perceives a lack of appreciation of *yin* values in modern society,
+caused by the dominance of money. In this sense, colorized money might add a
+missing *yin* component.
 
 
 # Possible implementation
@@ -502,8 +521,9 @@ to make the currency system work:
 2. A collaborative platform, from which the color database can be edited,
    perhaps similar to Github.
 3. The cryptocurrency itself (a distributed ledger storing the transactions),
-   which is relatively easy to implement, for example as a blockchain in a
-   framework like Ethereum.
+   for example as a blockchain in a framework like Ethereum.
+4. Applications for making transactions and interact with the cryptocurrency.
+
 
 ## The color database or "color blockchain"
 
@@ -538,6 +558,7 @@ other miners' "color transactions" before they become a legitimate part of the
 blockchain. Each color miner registers an account on the transaction blockchain, to
 which rewards for their work are transferred.
 
+
 ## The collaborative platform
 
 It must be open to anyone. For reading the platform's content, no registration is
@@ -549,7 +570,7 @@ only done by trusted members. For this purpose, one could introduce a user permi
 system like a "web of trust", where only high rated members have permission to
 create new work spaces and assign write permissions of certain workspaces to
 certain members. The downside is that this makes the system more complicated,
-increases the threshold to add new products and introduces a hierarchy. Any better
+increases the threshold to add new products and introduces hierarchy. Any better
 ideas are appreciated.
 
 
@@ -562,19 +583,91 @@ bitcoin, and has its own blockchain and its own cryptocurrency called *ether*,
 which is not used as a currency, but merely as a means of carrying out smart contracts.
 With smart contracts, computer code can be attached to the blockchain, which is
 executed by the miners when the transaction is validated. Therefore, it can be
-made sure that the content of a contract is carried out as intended and this is
-stored, secure from manipulation, in the blockchain.
+made sure that the content of a contract is carried out as intended because the
+code is stored, secure from manipulation and distributed, in the blockchain.
 
-The most simple thing that can be implemented with Ethereum is a new cryptocurrency.
-Taking a kind of *Hello World!* example of an Ethereum smart contract [@etherdoc]
-and changing it slightly, one arrives at a first rather trivial implementation
-of the new cryptocurrency:
 
+One of the simplest things that can be implemented with Ethereum is a new cryptocurrency.
+Ethereum features an own programming language for smart contracts (a bit similar to
+JavaScript): Solidity. Taking a sort of *Hello World!* example of an Ethereum
+smart contract [@etherdoc] and changing it slightly, one arrives at a first
+rather crude implementation of the new cryptocurrency:
+
+```javascript
+contract Coin {
+    address public minter;
+    mapping (address => uint) public balances;
+    Product public product;
+
+    event Sent(address from, address to, uint amount);
+
+    function Coin() public {
+        minter = msg.sender;
+        product = Product(msg.prod_id);
+    }
+
+    function mint(address receiver, uint amount) public {
+        if (msg.sender != minter) return;
+        balances[receiver] += amount;
+    }
+
+    function send(address receiver, uint amount) public {
+        if (balances[msg.sender] < amount) return;
+        balances[msg.sender] -= amount;
+        c = product.getColor();
+        balances[receiver] += colorize(amount, c);
+        Sent(msg.sender, receiver, amount);
+    }
+    
+    function colorize(uint amount, double c) public {
+        return uint(amount * (1 + c));
+    }
+}
+
+contract Product {
+    address public id;
+    
+    function Product(address prod_id) public {
+        id = prod_id;
+    }
+    
+    function getColor() public {
+        ... // query color DB
+    }
+}
+```
+
+The key function is the still unimplemented `getColor()`. The color of the
+transaction is an information that must be fetched from the outside non-digital
+world. In smart contract jargon, a provider of such "external information" is
+called an *oracle*, e.g. see http://www.oraclize.it/. It is such an oracle that
+needs to be built in form of the collaborative platform where the colors are
+determined, stored in the distributed color blockchain, which would be queried
+by the function `getColor()` to fetch the currently valid color value of the
+product.
+
+
+## Interfaces to the "transaction blockchain"
+
+Of course, aside of the blockchain backend, there must be frontend applications
+("wallets") for interacting with the blockchain, i.e. for making transactions
+and paying things. There should also be very easy to use mobile applications
+available for all smartphone operating systems, in addition to platform-independent
+computer software.
+
+In addition to conventional crypto-wallet features, there can be features
+enhancing the information and awareness of the users. The color of the
+transaction can be made visible, along with information on different components
+(social, ecological, etc.) of the color decision and maybe even supporting
+information leading to the decision and the history of the color value.
 
 
 # Conclusion
 
-Leveraging the wisdom of crowds and the power of cryptocurrencies, perhaps one can reach a societal consensus towards a world that is more worth living in for everyone, preserving life for future generations, while not giving up modern lifestyles.
+Leveraging the wisdom of crowds and the power of cryptocurrencies, perhaps one
+can reach a societal consensus towards a world that is more worth living in for
+everyone, preserving life for future generations, while not giving up modern
+lifestyles.
 
 These are the requirements that must be fulfilled by the alternative currency:
 
@@ -584,7 +677,14 @@ These are the requirements that must be fulfilled by the alternative currency:
 4. It must be fun to use and/or provide a real advantage.
 5. It must be relatively hard to break the rules or abuse the system.
 
-I assume that (1) would be a consequence of all the other points fulfilled, if the currency would be designed similar to what is described above. (2) is the main problem remaining to be solved: how to determine the external costs of goods in a socially acceptable way. The idea to use crowdsourcing was only vaguely described here. More thoughts on this would be greatly appreciated. (5) would only partly be fulfilled by the use of cryptocurrencies, how to secure the crowdsourcing against abuse is another problem to be solved. (3) and (4) have only been merely touched on the surface.
+I assume that (1) would be a consequence of all the other points fulfilled, if
+the currency would be designed similar to what is described above. (2) is the
+main problem remaining to be solved: how to determine the external costs of goods
+in a socially acceptable way? The idea to use crowdsourcing was only vaguely
+described here. More thoughts on this would be greatly appreciated. (5) would only
+be partly fulfilled by the use of cryptocurrencies, how to secure the crowdsourcing
+against abuse is another problem to be solved. (3) and (4) have only been merely
+scratched at the surface.
 
 Therefore, we are still at the very beginning, but I hope that something good will evolve out of this.
 
