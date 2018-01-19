@@ -182,7 +182,7 @@ This enables the realization of "smart contracts", where digital or real world
 assets can be sold securely using a blockchain. Colored coins are similar to
 Ethereum, however not using a seperate blockchain, but the bitcoin blockchain.
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap=figs("transactions-conventional", "Conventional money transactions are completely one-dimensional.")}
+```{r trans-conv, echo=FALSE, message=FALSE, warning=FALSE, fig.cap=figs("trans-conv", "Conventional money transactions are completely one-dimensional.")}
 # fig$cap("transactions-conventional", "Conventional money transactions are completely one-dimensional.")
 library(fields)
 library(grImport)
@@ -209,12 +209,14 @@ invisible(igraph:::igraph.Arrows(x[1], y[1], x[2], y[2], sh.lwd = 2,
                                  sh.col = "gray")) # width = 1, size = 1, 
 invisible(igraph:::igraph.Arrows(x[2], y[2], x[3], y[3], sh.lwd = 2,
                                  sh.col = "gray"))
+text(0.15, 0.5*(y[1] + y[2]), "+1000")
+text(0.1, 0.5*(y[2] + y[3]), "+700")
 # https://stackoverflow.com/questions/30658177/r-plot-with-axes-in-the-center
 # arrows(-1, 0, 1, 0, lwd=1, length=0.15)
 # arrows(0, 0, 0, 15, lwd=1, length=0.15)
 ```
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap=figs("transactions-colorized", "With colorized transactions, money transactions are two-dimensional: When a seller obtains money, the transaction's color shifts the value to the right or left. A diagonal projection onto the value axis (y-axis) follows, leading to an increased or decreased value.")}
+```{r trans-col, echo=FALSE, message=FALSE, warning=FALSE, fig.cap=figs("trans-col", "With colorized transactions, money transactions are two-dimensional: When a seller obtains money, the transaction's color shifts the value to the right or left. A diagonal projection onto the value axis (y-axis) follows, leading to an increased or decreased value.")}
 library(fields)
 library(grImport)
 library(igraph)
@@ -252,9 +254,8 @@ invisible(igraph:::igraph.Arrows(x[5], y[5], x[6], y[6], sh.lwd = 2,
 invisible(igraph:::igraph.Arrows(x[6], y[6], x[7], y[7], sh.lwd = 2,
                                  sh.col = "#990000"))
 # curve=-0.3e-3
-# https://stackoverflow.com/questions/30658177/r-plot-with-axes-in-the-center
-# arrows(-1, 0, 1, 0, lwd=1, length=0.15)
-# arrows(0, 0, 0, 15, lwd=1, length=0.15)
+text(0.15, 0.5*(y[1] + y[2]), "+1000")
+text(0.2, 1.1*0.5*(y[3] + y[4]), "+300")
 ```
 
 *(Icon made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>.)*
@@ -392,15 +393,20 @@ should at least take a closer look, which takes time. A lot of manpower is
 required to do the audits, which might need to include travels and on-site
 visits. Some might argue that the work of the auditors would be so expensive
 that it would be hard for society to pay for it. On the other hand, it should be
-questioned if an ethical and fair economy is worth the price. However, any
-idea to simplify the color determination process and save (human) resources as
-much as possible would be very welcome.
+considered if an ethical and fair (and thus socially stable) economy is worth the
+price. Thinking in degrowth terms, people in post-industrial economies ought to
+work only half as much, both because the economy should be less "productive" and
+because it would free a lot of "off-market" time. This freed time could be partly
+used for the color determination. But still, any idea to simplify the color
+determination process and save (human) resources as much as possible would be
+very welcome.
 
 A third problem is that of changing time: The color of a product can never be
 constant, but must continuously adapt and react to changes in the production.
-This is important, to reward producers when they improve, to create good
+This is important: to reward producers when they improve, to create good
 incentives. But also to prevent fraud where producers change the production
-shortly after the audit.
+shortly after the audit. This adds to the colossal nature of the endeavour
+and makes it a kind of "Sisyphos' work".
 
 A fourth problem is that one must make sure that the system is not corrupted or
 gamed. Of course, there will be strong motivation to come out "as green as
@@ -410,22 +416,36 @@ might help, but probably will not be enough. It is clear that the color determin
 would be in an easily corruptible position and it might be a good idea to reward
 them well to make them more independent from "gifts" from the industry.
 
+
 <!-- Even though not completely secure from corruption and manipulation, the open nature of the color determination -->
 <!-- might force stakeholders to accept a bad color, because an interference would be -->
 <!-- visible to the public. Another aspect would be to show the color of a purchase -->
 <!-- to each consumer before payment (or already on the price tag), therefore allowing -->
 <!-- consumers to buy more consciously, apart from the perhaps existing price advantage. -->
 
+### Summary of open questions
 
-XXX Make actual enumeration of open questions
-1. How to transition the economy to the use of the new currency? How to attract
-   consumers? How to attract producers?
-2. How to determine color for "everything"? (Too much work?)
-3. How to keep track of changes in the real world?
-4. How to prevent corruption?
-5. Who decides about the overall up and down valuation?
-6. Who decides what the "red money fund" is used for? (What external costs are alleviated?)
+To summarize the afore-mentioned open questions:
 
+1. *Hen-egg:* How to transition the economy to the use of the new currency?
+   How to attract consumers? How to attract producers?
+2. *Scalability:* How to determine color for "everything"? (Too much work?)
+3. *Updates:* How to keep track of changes in the real world?
+4. *Corruption:* How to prevent corruption and misuse?
+
+<!-- 5. Who decides about the overall up and down valuation? -->
+<!-- 6. Who decides what the "red money fund" is used for? (What external costs -->
+<!--    should be alleviated?) -->
+
+This is not meant to be a complete list. There may be many additional issues.
+For instance, a whole category of open questions revolves around the democratic,
+decentralized organization of the network. One must find ways to efficiently
+make collective decisions, without introducing centralized structures and
+hierarchy that would involve a lot of trust and opportunity for corruption.
+An interesting idea might be the concept of "liquid democracy". XXX Add reference to liquid democracy
+
+There might be many technical hurdles as well, for example energy-efficient,
+secure, distributed validation of the blockchain(s).
 
 ## Attracting a critical mass
 
@@ -440,7 +460,7 @@ interface. The subculture embracing the new technology could cause the public to
 talk about this new phenomenon, raising more and more interest. Eventually, the
 subculture may blend into the mainstream and become part of everyone's lives.
 
-However, more important than good-looking design will be usability: ease of use
+However, more important than appealing design will be usability: ease of use
 on one hand (paying with the app must be as or even more intuitive than writing
 a text message), and a perceived gain on the other hand. If the new technology
 can buy you nothing you can buy with your trusted currency already, and if prices
@@ -507,8 +527,8 @@ from Chinese philosophy and speaks of money being almost entirely associated wit
 *yang* attributes like aggressiveness, strength, competition (considered dominantly
 male) and not with *yin* attributes like care, empathy, softness (considered dominantly
 female). Lietaer perceives a lack of appreciation of *yin* values in modern society,
-caused by the dominance of money. In this sense, colorized money might add a
-missing *yin* component.
+caused by the dominance of *yang* money. In this sense, colorized money might add a
+missing *yin* component. XXX Look up if this is mentioned in Lietaer2012
 
 
 # Possible implementation
@@ -516,12 +536,12 @@ missing *yin* component.
 From a software architecture point of view, there need to be different components
 to make the currency system work:
 
-1. A distributed lookup table database to store the colors that can be queried
-   during transactions.
+1. A distributed database to store the colors that can be queried during
+   transactions.
 2. A collaborative platform, from which the color database can be edited,
    perhaps similar to Github.
 3. The cryptocurrency itself (a distributed ledger storing the transactions),
-   for example as a blockchain in a framework like Ethereum.
+   for example as a blockchain.
 4. Applications for making transactions and interact with the cryptocurrency.
 
 
@@ -537,7 +557,7 @@ determiners, with added meta-data on why the color is changed. Perhaps, it makes
 sense to store not only the resulting color itself, but also "subcolors" for
 relevant aspects: social sustainability, environmental sustainability, longevity
 of the product etc. Maybe the color database can incorporate user ratings as well,
-e.g. rating the usefulness or the quality of the prduct in use.
+e.g. rating the usefulness or the quality of the product in use.
 <!-- XXX Or would the color be part of the cryptocurrency itself, so not an oracle -->
 <!-- for a smart contract, but be stored in the transaction blockchain as well? This -->
 <!-- way, the currency's blockchain would also provide supply chain tracking, at least -->
@@ -576,22 +596,26 @@ ideas are appreciated.
 
 ## The cryptocurrency or "transaction blockchain"
 
+For illustrative purposes and for a more "hands-on" feeling, I will draft a
+minimal implementation of the cryptocurrency in the Ethereum framework. Keep
+in mind, however, that the properties of the Ethereum blockchain may not be
+suitable for the endeavour.
+
 Ethereum is a programming framework for smart contracts. Smart contracts are a
 generalization of cryptocurrencies, where a blockchain can be used for different
 purposes. Ethereum is completely independent of the most prominent cryptocurrency,
 bitcoin, and has its own blockchain and its own cryptocurrency called *ether*,
-which is not used as a currency, but merely as a means of carrying out smart contracts.
+which is not really used as a currency, but merely as a means of carrying out smart contracts.
 With smart contracts, computer code can be attached to the blockchain, which is
 executed by the miners when the transaction is validated. Therefore, it can be
 made sure that the content of a contract is carried out as intended because the
 code is stored, secure from manipulation and distributed, in the blockchain.
 
-
 One of the simplest things that can be implemented with Ethereum is a new cryptocurrency.
 Ethereum features an own programming language for smart contracts (a bit similar to
 JavaScript): Solidity. Taking a sort of *Hello World!* example of an Ethereum
 smart contract [@etherdoc] and changing it slightly, one arrives at a first
-rather crude implementation of the new cryptocurrency:
+rather trivial implementation of the new cryptocurrency:
 
 ```javascript
 contract Coin {
@@ -620,7 +644,7 @@ contract Coin {
     }
     
     function colorize(uint amount, double c) public {
-        return uint(amount * (1 + c));
+        return uint(amount * (1. + c));
     }
 }
 
@@ -637,14 +661,84 @@ contract Product {
 }
 ```
 
-The key function is the still unimplemented `getColor()`. The color of the
-transaction is an information that must be fetched from the outside non-digital
-world. In smart contract jargon, a provider of such "external information" is
-called an *oracle*, e.g. see http://www.oraclize.it/. It is such an oracle that
-needs to be built in form of the collaborative platform where the colors are
-determined, stored in the distributed color blockchain, which would be queried
-by the function `getColor()` to fetch the currently valid color value of the
-product.
+The application of the product's color is capsuled in the function `colorize()`.
+This is the place where the used algorithm, here simply $y = (1 + c) \; p$, would
+be adjusted.
+
+The key function is the still unimplemented function `getColor()` in the `Product`
+contract. The color of the transaction is an information that must be fetched
+from the outside non-digital world. In smart contract jargon, a provider of such
+"external information" is called an *oracle*, e.g. see http://www.oraclize.it/.
+It is such an oracle that needs to be built in form of the collaborative platform
+where the colors are determined, stored in the distributed color database, which
+would be queried by the function `getColor()` to fetch the currently valid color
+value of the product.
+
+### Blockchain validation or "mining"
+
+With the blockchain being a *distributed* ledger, there is no central authority
+to decide about the validity of transactions. This leads to the famous
+"double-spend" problem of cryptocurrencies. How to prevent an attacker from
+spending an amount of money multiple times? When a bank supervises transactions,
+it is in charge of the only central ledger and can allow the first transaction
+(emptying the bank account), but will cancel the second transaction (because the
+account is already empty). With a distributed ledger, there is one copy of the
+ledger on each node participating in the distributed network. In principle, one
+could send the first transaction to one node and then, before the first node has
+had a chance to spread the information, send a second transaction to another node.
+The second node will not know that the account was already emptied in the first
+transaction. Therefore, there must be a process of consolidation between all nodes.
+
+<h4>Proof-of-work</h4>
+
+The ultimate question is: Who is to decide about what set of transactions is
+accepted (and added to the blockchain)? Because we don't want to trust a central
+authority, this power has to be spread across the network. Usually, it passes
+from node to node for each new block, where a block is a small part of the blockchain
+comprising a certain number of transactions. There are different algorithms to
+decide about the next node whose turn it is to validate a block of transactions.
+In Bitcoin [@Nakamoto] and some other cryptocurrencies, this algorithm is called
+*proof-of-work*. It involves computing a number ("work"), which must have a
+certain property, by random trial and error. The more computing power one has,
+the sooner one will (on average) find a suitable number by chance. The fraction
+of transactions one can validate is proprtional to the owned fraction of
+computing power of the total network. The result of this is that, given many
+participants, it is extremely resource-intensive and therefore expensive to gain
+control over the network. One would need to contribute more than 50% of the entire
+computing power to take over the network and make it accept fraudulent
+transactions.[^bitcoin_detail] In the end,  The elegance of this is that Bitcoin stays honest
+and secure without the need to trust anyone.
+
+[^bitcoin_detail]: To understand this, one needs to know that the nodes can
+disagree on the blockchain validation. If a dishonest node validates a block of 
+transactions containing a fraud (e.g. a double-spend), then the other honest nodes
+will not accept that block and will create an alternate version of the blockchain
+where the fraudulent transaction is removed. The blockchain splits into two
+versions. This is called a *fork*. The nodes will choose the blockchain version
+that is longer, because it means more nodes have trust in this version. The
+dishonest attacker needs to add more blocks to the chain than all the honest
+nodes together, therefore more than 50% of the computing power is needed.
+
+One downside is that it is not only extremely resource-intensive to take over
+the network, it is also extremely resource-intensive to run it in the first
+place. Because the block validating nodes are rewarded with new bitcoins, they
+are also called "miners" (they mine for digital gold). The proof-of-work system
+incentivizes the installation of a lot of computing power because the more
+computing power one owns, the more often one will validate a block and obtain
+the reward. The result is an energy consumption as high as an entire country's
+[@BitcoinEnergy], not for computing anything valuable, but only for the
+validation of transactions. Another downside is that the system increases
+inequality: the rich can afford to install a lot of computing power, by which
+they get even richer because they obtain a large share of the reward. Because of
+that, there is even a dangerous tendency towards mining monopolies or oligarchies,
+where big mining farms buy smaller competitors until only few (or one) very large
+players are left.
+
+<h4>Proof-of-stake</h4>
+
+A variation of the proof-of-work algorithm is called *proof-of-stake*, in which
+the expensive computation is omitted. The validator of the next block is selected
+randomly, however favoring the nodes
 
 
 ## Interfaces to the "transaction blockchain"
