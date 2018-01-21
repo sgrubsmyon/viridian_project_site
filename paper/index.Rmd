@@ -169,7 +169,10 @@ money involves vector calculus, which is simple, but not convenient for many peo
 the color should only come into play during a transaction, on the receiver's side.
 When the money enters a wallet, it is automatically projected onto a single axis.
 This means that red money is valued down, while green money is valued up, which
-corresponds to a diagonal movement in the 2D money space.
+corresponds to a diagonal movement in the 2D money space. Figures
+`r figs("trans-conv", display = "num")` and `r figs("trans-col", display = "num")`
+visualize the movement in 2D money space for conventional and colorized
+transactions.
 
 [^colored_coins]: Within the cryptocurrency community, already since 2013 there
 exists the term "colored coins" (see e.g. http://coloredcoins.org/, https://www.coinprism.com/),
@@ -182,7 +185,7 @@ This enables the realization of "smart contracts", where digital or real world
 assets can be sold securely using a blockchain. Colored coins are similar to
 Ethereum, however not using a seperate blockchain, but the bitcoin blockchain.
 
-```{r trans-conv, echo=FALSE, message=FALSE, warning=FALSE, fig.cap=figs("trans-conv", "Conventional money transactions are completely one-dimensional.")}
+```{r trans-conv, echo=FALSE, message=FALSE, warning=FALSE, fig.cap=figs("trans-conv", "Conventional money transactions are completely one-dimensional. In this simple example, a seller earns first 1000, then 700 coins.")}
 # fig$cap("transactions-conventional", "Conventional money transactions are completely one-dimensional.")
 library(fields)
 library(grImport)
@@ -195,7 +198,7 @@ coin <- readPicture("coin.eps.xml")
 y <- c(0, 1000, 1700)
 x <- rep(0, length(y))
 plot(x, y, bty="n", xlab = "Color c (Quality)",
-     ylab = "Quantity: $/€/£/¥/...", xlim = c(-1, 1),
+     ylab = "Seller's yield y (Quantity)", xlim = c(-1, 1),
      ylim = c(-374, 2238)) # ylim = (max(y) - min(y)) * c(-0.187, 1.119)
 xx = grconvertX(x = x, from = 'user', to = 'ndc')
 yy = grconvertY(y = y, from = 'user', to = 'ndc')
@@ -216,21 +219,14 @@ text(0.1, 0.5*(y[2] + y[3]), "+700")
 # arrows(0, 0, 0, 15, lwd=1, length=0.15)
 ```
 
-```{r trans-col, echo=FALSE, message=FALSE, warning=FALSE, fig.cap=figs("trans-col", "With colorized transactions, money transactions are two-dimensional: When a seller obtains money, the transaction's color shifts the value to the right or left. A diagonal projection onto the value axis (y-axis) follows, leading to an increased or decreased value.")}
-library(fields)
-library(grImport)
-library(igraph)
-
-# https://stackoverflow.com/questions/28042220/how-to-make-custom-plot-symbols-from-vector-graphics-in-r
-PostScriptTrace("coin.eps") # creates .xml in the working directory
-coin <- readPicture("coin.eps.xml")
+```{r trans-col, echo=FALSE, message=FALSE, warning=FALSE, fig.cap=figs("trans-col", "The same example as in the previous figure, but colorized. With colorized transactions, money transactions are two-dimensional: When a seller obtains money, the transaction's color shifts the value to the right or left. A diagonal projection onto the value axis (y-axis) follows, leading to an increased or decreased value.")}
 
 # y <- c(0, 2000,  2000, 1500, 1000, 1000, 1300, 300,  300, 600)
 # x <- c(0,    0, -0.25,    0,    0,  0.3,    0,   0,  0.5,   0)
 y <- c(0, 1000,  1000, 1300, 2000, 2000, 1650)
 x <- c(0,    0,   0.3,    0,    0, -0.5,    0)
 plot(x, y, bty="n", xlab = "Color c (Quality)",
-     ylab = "Quantity: $/€/£/¥/...", xlim = c(-1, 1),
+     ylab = "Seller's yield y (Quantity)", xlim = c(-1, 1),
      ylim = c(-374, 2238)) # ylim = (max(y) - min(y)) * c(-0.187, 1.119)
 xx = grconvertX(x = x, from = 'user', to = 'ndc')
 yy = grconvertY(y = y, from = 'user', to = 'ndc')
@@ -255,7 +251,9 @@ invisible(igraph:::igraph.Arrows(x[6], y[6], x[7], y[7], sh.lwd = 2,
                                  sh.col = "#990000"))
 # curve=-0.3e-3
 text(0.15, 0.5*(y[1] + y[2]), "+1000")
-text(0.2, 1.1*0.5*(y[3] + y[4]), "+300")
+text(0.2, 1.1*0.5*(y[3] + y[4]), "+300", col = "#009900")
+text(0.15, 0.5*(y[4] + y[5]), "+700")
+text(-0.25, 0.9*0.5*(y[6] + y[7]), "-350", col = "#990000")
 ```
 
 *(Icon made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>.)*
@@ -327,14 +325,18 @@ reevaluations must be undone accordingly.
 
 ## Redistribution of value
 
+All transactions regardless of color should include a small transaction fee that
+is paid to the color determiners to reward them for their services.
+
 The red money transactions may take a part of the buyer's money and pay it into
 a fund to alleviate side-effect damages like environmental disasters or increased
 health costs and can also fund dedicated projects supporting unemployed people
 during structural change. This would adhere to the principle of "the polluter pays"
 [see @Klein2014 pages 110--19] and would be considered fair by most people.
 
-All transactions regardless of color should include a small transaction fee that
-is paid to the color determiners to reward them for their services.
+If one introduces demurrage (s.a.), one could also choose not to simply "destroy"
+the money, but to redistribute the demurrage evenly across all accounts. This
+would act similar to a property tax that reduces inequality.
 
 ## Managed by the crowd
 
@@ -366,6 +368,24 @@ way. There should be an online platform, a "Github of the economy", where the co
 determination takes place and is documented. Every interested individual can view
 how the decision on color was reached and can make suggestions, even though only
 few have the required experience and the time to actually make decisions.
+
+
+## More possibilities
+
+If the community wants to, it can incorporate more into the colors than simply
+social and environmental sustainability. For instance, few large corporations
+usually create a distorted market situation. Large corporations often have
+advantages due to their bargaining power and "economy of scale" effects. However,
+when these advantages lead to a monopoly or an oligopoly, there is no fair price
+determination any more. Consequences can be too high prices and exploitation.
+
+If one wants to avoid oligopolies and create a more diverse market with many
+small or medium sized players, then one could add a component to the color that
+considers the company size (or rather its "market power"). With that, the
+competetive advantage of large corporations could be reduced or removed so that
+small companies might enter the market more easily and be more competetive
+despite of their small size.
+
 
 
 ## The hard problem of finding color
@@ -442,10 +462,11 @@ For instance, a whole category of open questions revolves around the democratic,
 decentralized organization of the network. One must find ways to efficiently
 make collective decisions, without introducing centralized structures and
 hierarchy that would involve a lot of trust and opportunity for corruption.
-An interesting idea might be the concept of "liquid democracy". XXX Add reference to liquid democracy
+An interesting idea might be the concept of "liquid democracy" [@Ford2002; @Ford2014; @Bauwens2014].
 
 There might be many technical hurdles as well, for example energy-efficient,
 secure, distributed validation of the blockchain(s).
+
 
 ## Attracting a critical mass
 
@@ -485,6 +506,12 @@ auditors). Only if one can buy things, buyers can start using it. Naturally, sma
 companies that already today care a lot about sustainability might be the first
 adopters. Conservative companies that would be forced to change their behavior
 will only join when they absolutely have to if they want to survive.
+
+The CoinSence community (see http://coinsence.org/) is similar to the Viridian
+project and aims to establish complementary social currencies. Within the CoinSence
+community, there already exist more developed plans on how to attract people and
+businesses and how to achieve adoption. There might be opportunities to cooperate
+with CoinSence or to incorporate Viridian into CoinSence.
 
 ### Challenging the *homo oeconomicus*
 
@@ -556,8 +583,9 @@ current color value, which can be changed with "color transactions" by the color
 determiners, with added meta-data on why the color is changed. Perhaps, it makes
 sense to store not only the resulting color itself, but also "subcolors" for
 relevant aspects: social sustainability, environmental sustainability, longevity
-of the product etc. Maybe the color database can incorporate user ratings as well,
-e.g. rating the usefulness or the quality of the product in use.
+of the product, size (or "market power") of the company, etc. Maybe the color
+database can incorporate user ratings as well, e.g. rating the usefulness or the
+quality of the product in use.
 <!-- XXX Or would the color be part of the cryptocurrency itself, so not an oracle -->
 <!-- for a smart contract, but be stored in the transaction blockchain as well? This -->
 <!-- way, the currency's blockchain would also provide supply chain tracking, at least -->
@@ -584,14 +612,33 @@ which rewards for their work are transferred.
 It must be open to anyone. For reading the platform's content, no registration is
 necessary. Anyone registering on the platform is becoming a "color miner"
 who helps in the determination of colors. Like there can be "projects" in Github,
-there are workspaces for each product and service. One has to make sure that there is only
-one "genuine" product workspace and that changes to the color of a product are
-only done by trusted members. For this purpose, one could introduce a user permission
-system like a "web of trust", where only high rated members have permission to
-create new work spaces and assign write permissions of certain workspaces to
-certain members. The downside is that this makes the system more complicated,
-increases the threshold to add new products and introduces hierarchy. Any better
-ideas are appreciated.
+there are workspaces for each product and service.
+
+One has to make sure that there is only one "genuine" product workspace and that
+changes to the color of a product are only done by trusted members. For this
+purpose, one could introduce a user permission system like a "web of trust",
+where only high rated members have permission to create new work spaces and assign
+write permissions of certain workspaces to certain members. The downside is that
+this makes the system more complicated, increases the threshold to add new products
+and introduces hierarchy. Any better ideas are appreciated.
+
+An interesting idea for the decisions on colors is the use of liquid democracy
+tools, which represent "a fast, decentralized, collaborative question-answering
+system, which works by enabling chained answer recommendation" [@Bauwens2014].
+This would allow a broader group of people to do informed votings on colors,
+even though only a small group of experts provides the relevant background
+information (e.g. from audits and visits). When a broader group decides
+democratically about color, it makes abuse more difficult. Another idea to prevent
+abuse is to establish peer review within the group of color miners. For example,
+one could establish that each new information or decision about color has to be
+approved by at least two other randomly selected independent color miners.
+
+The CoinSence community (see http://coinsence.org/) has developed a working
+online platform for information exchange, collaboration and the creation and
+exchange of complementary (social) currencies. They plan to incorporate
+liquid democracy tools into their community platform (https://community.coinsence.org),
+so it might be viable to build the color determination platform on top of
+the CoinSence platform.
 
 
 ## The cryptocurrency or "transaction blockchain"
@@ -726,19 +773,76 @@ are also called "miners" (they mine for digital gold). The proof-of-work system
 incentivizes the installation of a lot of computing power because the more
 computing power one owns, the more often one will validate a block and obtain
 the reward. The result is an energy consumption as high as an entire country's
-[@BitcoinEnergy], not for computing anything valuable, but only for the
-validation of transactions. Another downside is that the system increases
+[@BitcoinEnergy], not for computing anything valuable, but only for winning the
+right to validate transactions. Another downside is that the system increases
 inequality: the rich can afford to install a lot of computing power, by which
 they get even richer because they obtain a large share of the reward. Because of
-that, there is even a dangerous tendency towards mining monopolies or oligarchies,
+that, there is even a dangerous tendency towards mining monopolies or oligopolies,
 where big mining farms buy smaller competitors until only few (or one) very large
 players are left.
 
 <h4>Proof-of-stake</h4>
 
-A variation of the proof-of-work algorithm is called *proof-of-stake*, in which
-the expensive computation is omitted. The validator of the next block is selected
-randomly, however favoring the nodes
+A variation of the proof-of-work algorithm is called *proof-of-stake* [@wiki:Proof-of-stake],
+in which the expensive computation is omitted. The creator of the next block is
+selected randomly, however favoring nodes that have higher "stakes", i.e. own more
+of the cryptocurrency. Also, the "age" of the coins can be considered,
+not just the amount of coins. The idea behind this is that nodes that hold higher
+stakes (for a longer time) have contributed longer and are thus more trustworthy
+than recently joined nodes. Another advantage of proof-of-stake is that the owners
+of the currency are the ones that have the right to secure it. In proof-of-work,
+the miners might sell their entire rewards for another currency and thus have
+little incentive to use the complementary currency and invest in its ecosystem.
+
+A disadvantage is that, similar to proof-of-work, rich participants are preferred
+so that again inequality tends to increase. Most cryptocurrencies that use proof-of-stake,
+e.g. BlackCoin [@Vasin] and Peercoin [@King2012], use mechanisms to prevent too
+much domination from single rich members, however. The Ethereum blockchain also
+uses proof-of-stake.
+
+<h4>Proof-of-whatever?</h4>
+
+It is important to come up with a well-designed validation algorithm that minimizes
+energy consumption as much as possible (for sustainability), that prevents
+inequality, oligopolies and centralization, and that is reasonably secure (i.e.
+not too much prone to fraud).
+
+More ideas for improved alternatives to proof-of-work and proof-of-stake exist
+already. A promising approach may be the *proof-of-cooperation* [@König2016;
+@König2017] of FairCoin, a cryptocurrency developed by the FairCoop cooperative.
+Both proof-of-work and proof-of-stake rely on competition between miners.
+Proof-of-cooperation, however, relies on the assumption that cooperation is more
+efficient than competition. It works roughly like this: Block creation is evenly
+shared between nodes. Every node decides independently about the node whose
+last block creation lies furthest back in the past (by looking at the blockchain
+history). The node sends a
+<!-- cryptographically signed -->
+message with its decision over the network. When an assigned node has received
+enough messages from the other nodes approving it, it goes ahead and creates the
+new block. This mehcanism could still lead to centralization when a single
+entity participates with a very large number of nodes. This is currently prevented
+in FairCoin by validating each node (by talking to them and perhaps even visit
+them in real life) before it goes online. This validation, as well as decisions
+about blockchain management, are performed by a single central organization, the
+FairCoop assembly and administrators appointed by the assembly, which means that
+it is not truly decentralized and might have a vulnerable point that may be
+corruptible by very powerful entities. I also suspect that the FairCoin
+infrastructure does not scale well. FairCoin has a goal of operating 40--50
+validated nodes, with a hardcoded maximum of 100 nodes, mostly running on
+low-power Raspberry Pis. This can hardly be suitable for running the entire
+world economy. But still, it's a very interesting concept that may be a good
+starting point.
+
+There are also other ideas, even beyond the blockchain. For example, there are
+cryptocurrencies that use *directed acyclic graphs* (DAGs), a sort of
+generalization of the blockchain. The most prominent are currently IOTA [@wiki:IOTA;
+Popov2017] (https://iota.org/) and Hashgraph [@Baird2016] (https://hashgraph.com/),
+however, the latter is patented, which poses a problem for accessibility and wide-spread
+adoption. IOTA comes from the IOT community as a zero-cost micro-payments
+cryptocurrency. It claims to be much more scalable than a Bitcoin-like blockchain,
+with transaction validation becoming faster with the number of transactions, not
+slower like in Bitcoin. IOTA also claims to be, like FairCoin, cooperative instead
+of competetive [@Semko2017].
 
 
 ## Interfaces to the "transaction blockchain"
