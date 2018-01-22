@@ -553,13 +553,13 @@ there might be a strong socio-psychological incentive to use it.
 The psychological effect might be even stronger when showing the transaction color
 to the customer before the transaction is carried out.
 
-[^yinyang]: Bernard Lietaer [@Lietaer2012] refers to the duality of *yin* and *yang*
+[^yinyang]: Bernard Lietaer [@LietaerYinYang] refers to the duality of *yin* and *yang*
 from Chinese philosophy and speaks of money being almost entirely associated with
 *yang* attributes like aggressiveness, strength, competition (considered dominantly
 male) and not with *yin* attributes like care, empathy, softness (considered dominantly
 female). Lietaer perceives a lack of appreciation of *yin* values in modern society,
 caused by the dominance of *yang* money. In this sense, colorized money might add a
-missing *yin* component. XXX Look up if this is mentioned in Lietaer2012
+missing *yin* component.
 
 
 # Possible implementation
