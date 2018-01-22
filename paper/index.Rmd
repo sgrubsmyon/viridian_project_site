@@ -3,8 +3,10 @@ title: "The Viridian Project: A digital currency to internalize external costs f
 author: "Markus Voge"
 date: "`r Sys.Date()` --- v1"
 bibliography: references.bib
-csl: elsevier-with-titles-alphabetical.csl
+csl: elsevier-with-titles.csl
 # http://editor.citationstyles.org/searchByName/
+# https://www.zotero.org/styles?q=elsevier
+link-citations: yes # see https://github.com/jgm/pandoc-citeproc/issues/141 and https://github.com/jgm/pandoc/issues/1117
 output: 
   html_document: 
     fig_caption: yes
@@ -58,7 +60,7 @@ As a result, often small elites are becoming wealthier, while a majority's well-
 stagnating or even declining. Another result is the acceptance (also by the suffering majority)
 of environmental damage as an inevitable consequence of economic activity and progress,
 even when it is risking to destroy the very foundation of life and when healthier
-alternatives are both available and financeable by society [see @Klein2014 pages 12ff., 113ff., 117ff.].
+alternatives are both available and financeable by society (see @Klein2014 pages 12ff., 113ff., 117ff.).
 One problem of established monetary systems is the inevitability of unlimited economic
 growth, which is, as many have pointed out [@Meadows1974; @Georgescu-Roegen1971; @Schneider2010; @Hopkins2014],
 opposed to the fact of living on a planet with limited resources. The economic growth
@@ -66,7 +68,8 @@ is largely driven by the financial sector and the habit of paying interest rate 
 return of investment: companies acquiring money are forced to grow to reel in more
 than they invested and pay back their donors. For instance, this drives fossil fuel
 companies to ever riskier extraction practices, such as fracking, deep sea drilling,
-or drilling in the Arctic, with sometimes catastrophic consequences [see @Klein2014 pages 146--48, 332f., 144].
+or drilling in the Arctic, with sometimes catastrophic consequences
+(see @Klein2014 pages 146--48, 332f., 144).
 
 # Changing the monetary system
 
@@ -332,7 +335,7 @@ The red money transactions may take a part of the buyer's money and pay it into
 a fund to alleviate side-effect damages like environmental disasters or increased
 health costs and can also fund dedicated projects supporting unemployed people
 during structural change. This would adhere to the principle of "the polluter pays"
-[see @Klein2014 pages 110--19] and would be considered fair by most people.
+(see @Klein2014 pages 110--19) and would be considered fair by most people.
 
 If one introduces demurrage (s.a.), one could also choose not to simply "destroy"
 the money, but to redistribute the demurrage evenly across all accounts. This
@@ -462,7 +465,8 @@ For instance, a whole category of open questions revolves around the democratic,
 decentralized organization of the network. One must find ways to efficiently
 make collective decisions, without introducing centralized structures and
 hierarchy that would involve a lot of trust and opportunity for corruption.
-An interesting idea might be the concept of "liquid democracy" [@Ford2002; @Ford2014; @Bauwens2014].
+An interesting idea might be the concept of "liquid democracy"
+[@Ford2002; @Ford2014; @Bauwens2014].
 
 There might be many technical hurdles as well, for example energy-efficient,
 secure, distributed validation of the blockchain(s).
@@ -517,12 +521,12 @@ with CoinSence or to incorporate Viridian into CoinSence.
 
 On a side note, there are more motivations for people's actions than selfish advantage.
 Many surveys have shown that, when being asked openly, a vast majority of
-individuals agrees to support social or environmental issues [see @Klein2014, p. 118; @Eurobarometer].
+individuals agrees to support social or environmental issues (see @Klein2014, p. 118; @Eurobarometer).
 This is because everyone wants to appear as a "moral", "good", and "social" person towards others.
 One might call this a kind of "social peer pressure". But this social peer pressure
-is completely removed from economic activity. Instead, the neoclassical view of
-economics has taught us that it is a law of nature that every human must act "selfish"
-in the economy [see @AdamSmith, Book I, Chapter II, p. 32]. This leads, in the
+is completely removed from economic activity. Instead, the classical view of
+economics includes the assumption that every human acts "selfish"
+in the economy (see @AdamSmith, Book I, Chapter II, p. 32). This leads, in the
 absence of peer pressure, to the famous "tragedy of the commmons" [@wiki:Tragedy_of_the_commons].
 However, communication between individuals, applying peer pressure, can solve
 this tragedy and it works for many commons across the world [@NobelOstrom].
@@ -836,7 +840,7 @@ starting point.
 There are also other ideas, even beyond the blockchain. For example, there are
 cryptocurrencies that use *directed acyclic graphs* (DAGs), a sort of
 generalization of the blockchain. The most prominent are currently IOTA [@wiki:IOTA;
-Popov2017] (https://iota.org/) and Hashgraph [@Baird2016] (https://hashgraph.com/),
+@Popov2017] (https://iota.org/) and Hashgraph [@Baird2016] (https://hashgraph.com/),
 however, the latter is patented, which poses a problem for accessibility and wide-spread
 adoption. IOTA comes from the IOT community as a zero-cost micro-payments
 cryptocurrency. It claims to be much more scalable than a Bitcoin-like blockchain,
