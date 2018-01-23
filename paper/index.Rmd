@@ -8,6 +8,8 @@ csl: elsevier-with-titles.csl
 # https://www.zotero.org/styles?q=elsevier
 link-citations: yes # see https://github.com/jgm/pandoc-citeproc/issues/141 and https://github.com/jgm/pandoc/issues/1117
 output: 
+  pdf_document: 
+    number_sections: yes
   html_document: 
     fig_caption: yes
     number_sections: yes
