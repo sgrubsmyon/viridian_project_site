@@ -4,6 +4,17 @@ title: "<img src='viridian_logo_with_text.png'><br>The Viridian Project"
 # date: "`r Sys.Date()`"
 ---
 
+```{r copy-paper, include=FALSE}
+# Copy the files of the paper that shall be published to the paper directory inside _site
+# (because usage of exclude does not work in subdirs like `paper`)
+if (!dir.exists("_site/paper")) {
+  dir.create("_site/paper", mode = "0775")
+}
+file.copy(c("paper/index.html", "paper/index.pdf"),
+          c("_site/paper/index.html", "_site/paper/viridian.pdf"),
+          overwrite = TRUE)
+```
+
 ## A New World Economy {#first-section-front}
 
 The *Viridian Project* is an attempt to implement an alternative way of economic
@@ -99,7 +110,7 @@ way with an ecological footprint as small as possible.
 </div>
 <div class="col-md-6">
 
-<img src="block.svg" style="height: 100px;">
+<img src="lock.svg" style="height: 100px;">
 
 #### Privacy
 

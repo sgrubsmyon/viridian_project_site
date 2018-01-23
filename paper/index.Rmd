@@ -1,19 +1,20 @@
 ---
 title: "The Viridian Project: A digital currency to internalize external costs for a more sustainable economy"
 author: "Markus Voge"
-date: "`r Sys.Date()` --- v1"
+date: "`r Sys.Date()` --- v0"
 bibliography: references.bib
 csl: elsevier-with-titles.csl
 # http://editor.citationstyles.org/searchByName/
 # https://www.zotero.org/styles?q=elsevier
 link-citations: yes # see https://github.com/jgm/pandoc-citeproc/issues/141 and https://github.com/jgm/pandoc/issues/1117
 output: 
-  pdf_document: 
-    number_sections: yes
+  # Add for PDF creation, remove for HTML creation (font problem):
+  #pdf_document: 
+  #  number_sections: yes
   html_document: 
     fig_caption: yes
     number_sections: yes
-    self_contained: no
+    self_contained: yes
 ---
 
 ```{r functions, include=FALSE}
@@ -38,6 +39,24 @@ library(captioner)
 figs <- captioner(prefix="Figure")
 tbls <- captioner(prefix="Table")
 ``` 
+
+<style>
+#download-box {
+  position: absolute;
+  right: 20px;
+  top: 130px;
+  padding: 20px;
+  background-color: #dddddd;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+</style>
+
+<div id="download-box"><a href="viridian.pdf"><span class="glyphicon glyphicon-download"></span> Download PDF</a></div>
+<!-- <button type="button" class="btn btn-default btn-lg"> -->
+<!--   <span class="glyphicon glyphicon-download"></span> Download -->
+<!-- </button> -->
+
 
 # Introduction
 
@@ -304,7 +323,7 @@ Let's assume that the seller of the red money car had to pay $9000$ coins to buy
 the car from the producer. The car seller needs a profit margin of $1000$ coins,
 so would sell it for $10000$ coins without considering color. The color of the
 transaction is $-0.5$, meaning that the yield $y$ will come out 50% lower than the
-price $p$. For $y$ to be $10000$, $p$ must be $p = y / (1 + c)$, so the car must
+price $p$. For $y$ to be $10000$ coins, $p$ must be $p = y / (1 + c)$, so the car must
 be sold for $20000$ coins.
 
 On the other hand, the green car seller might have paid $15000$ coins to the
@@ -328,36 +347,63 @@ It is important to note that, similar to value added tax, the colorization shoul
 probably not be applied multiple times, but only at the end consumer. Intermediate
 reevaluations must be undone accordingly.
 
+
 ## Redistribution of value
 
 All transactions regardless of color should include a small transaction fee that
 is paid to the color determiners to reward them for their services.
 
-The red money transactions may take a part of the buyer's money and pay it into
-a fund to alleviate side-effect damages like environmental disasters or increased
-health costs and can also fund dedicated projects supporting unemployed people
-during structural change. This would adhere to the principle of "the polluter pays"
-(see @Klein2014 pages 110--19) and would be considered fair by most people.
+A part of the ("disappeared") money from red transactions may be taken and paid
+into a fund to alleviate side-effect damages like environmental disasters or
+increased health costs and can also fund dedicated projects like supporting unemployed
+people during (necessary) structural change. This would adhere to the principle
+of "the polluter pays" (see @Klein2014 pages 110--19) and would be considered
+fair by most people.
 
 If one introduces demurrage (s.a.), one could also choose not to simply "destroy"
 the money, but to redistribute the demurrage evenly across all accounts. This
 would act similar to a property tax that reduces inequality.
 
+
+## More possibilities
+
+If one wants to, one can incorporate more into the colors than simply
+social and environmental sustainability. For instance, few large corporations
+usually create a distorted market situation. Large corporations often have
+advantages due to their bargaining power and "economy of scale" effects and
+therefore many sectors of the economy tend towards few huge players. However,
+when these advantages lead to a monopoly or an oligopoly, there is no fair price
+determination any more (because it is no free market). Consequences can be too
+high prices and exploitation.
+
+If one wants to avoid oligopolies and create a more diverse market with many
+small or medium sized players, then one could add a component to the color that
+considers the company size (or rather its "market power"). With that, the
+competetive advantage of large corporations could be reduced or removed so that
+small companies might enter the market more easily and be more competetive
+despite of their smaller size.
+
+
 ## Managed by the crowd
 
 While a similar effect to that of colored money can be reached by taxation and
 subsidization, the interesting aspect is that computing technology offers a possibility
-to do this without a central authority involved. The main problem of transforming
-the economy towards sustainable development is to do it in a way that is fair
-and socially accepted by everyone. 
+to do this without a central authority involved.
 
-Past policies have failed to do so. The less wealthy will not accept a change
-that feels like they have to give up their standard of living, while the wealthiest,
-the ones most responsible, e.g. those profiting from extraction of resources, are not
-paying their toll. The fear of losing jobs due to a necessary system change is
-quickly sparked in the public and surely must be addressed, e.g. by dedicated projects.
+The main problem with the transformation of the economy towards sustainable
+development is to do it in a way that is fair and socially accepted by everyone.
+Past policies have failed to do so and have placed the burden of societal tasks
+like climate action and recovery from financial crises mostly on the less wealthy
+majority, even though they are not responsible and not profiting much from the economy
+that created these problems.
+Of course, the majority of people will not accept a change that feels like they
+have to give up their standard of living, while the wealthiest, the ones most
+responsible, e.g. those profiting from the extraction of resources, are not
+paying their toll (see @Klein2014 p. 118).
+In this situation, the fear of losing jobs due to a system change is quickly
+sparked in the public and surely must be addressed, e.g. by dedicated projects.
 But because governance fails to introduce such projects, which should be paid for
-by polluters like the fossil fuel companies, system change never comes.
+by responsible polluters like the fossil fuel companies, system change never comes.
 
 This is why such important decisions like the color of money cannot be placed
 into the hand of a few privileged, or a single person. It must be done
@@ -369,28 +415,11 @@ the currency's network secure, dedicated decentralized groups could determine th
 transaction colors. Much like developers of open source software, there could be
 groups of people dedicated to auditing certain products or producers in terms of
 sustainability. Collaboratively, they determine the color in an open and transparent
-way. There should be an online platform, a "Github of the economy", where the color
-determination takes place and is documented. Every interested individual can view
-how the decision on color was reached and can make suggestions, even though only
-few have the required experience and the time to actually make decisions.
-
-
-## More possibilities
-
-If the community wants to, it can incorporate more into the colors than simply
-social and environmental sustainability. For instance, few large corporations
-usually create a distorted market situation. Large corporations often have
-advantages due to their bargaining power and "economy of scale" effects. However,
-when these advantages lead to a monopoly or an oligopoly, there is no fair price
-determination any more. Consequences can be too high prices and exploitation.
-
-If one wants to avoid oligopolies and create a more diverse market with many
-small or medium sized players, then one could add a component to the color that
-considers the company size (or rather its "market power"). With that, the
-competetive advantage of large corporations could be reduced or removed so that
-small companies might enter the market more easily and be more competetive
-despite of their small size.
-
+way. There should be an online platform (a "[Github](https://www.github.com) of
+the economy"), where the color determination takes place and is documented. Every
+interested individual can view how the decision on color was reached and can make
+suggestions, even though only few have the required experience and the time to
+actually make decisions.
 
 
 ## The hard problem of finding color
@@ -436,10 +465,11 @@ and makes it a kind of "Sisyphos' work".
 A fourth problem is that one must make sure that the system is not corrupted or
 gamed. Of course, there will be strong motivation to come out "as green as
 possible", so producers will "do their best", both on legal and illegal paths.
-The transparency of making all color decisions public on a Github-like platform
-might help, but probably will not be enough. It is clear that the color determiners
-would be in an easily corruptible position and it might be a good idea to reward
-them well to make them more independent from "gifts" from the industry.
+The transparency of making all color decisions public on a
+Github-like platform might help, but probably will not
+be enough. It is clear that the color determiners would be in an easily
+corruptible position and it might be a good idea to reward them well to make
+them more independent from "gifts" from the industry.
 
 
 <!-- Even though not completely secure from corruption and manipulation, the open nature of the color determination -->
@@ -523,7 +553,7 @@ with CoinSence or to incorporate Viridian into CoinSence.
 
 On a side note, there are more motivations for people's actions than selfish advantage.
 Many surveys have shown that, when being asked openly, a vast majority of
-individuals agrees to support social or environmental issues (see @Klein2014, p. 118; @Eurobarometer).
+individuals agrees to support social or environmental issues (see @Klein2014 p. 118; @Eurobarometer).
 This is because everyone wants to appear as a "moral", "good", and "social" person towards others.
 One might call this a kind of "social peer pressure". But this social peer pressure
 is completely removed from economic activity. Instead, the classical view of
@@ -572,7 +602,7 @@ to make the currency system work:
 1. A distributed database to store the colors that can be queried during
    transactions.
 2. A collaborative platform, from which the color database can be edited,
-   perhaps similar to Github.
+   perhaps similar to [Github](https://www.github.com).
 3. The cryptocurrency itself (a distributed ledger storing the transactions),
    for example as a blockchain.
 4. Applications for making transactions and interact with the cryptocurrency.
@@ -617,8 +647,8 @@ which rewards for their work are transferred.
 
 It must be open to anyone. For reading the platform's content, no registration is
 necessary. Anyone registering on the platform is becoming a "color miner"
-who helps in the determination of colors. Like there can be "projects" in Github,
-there are workspaces for each product and service.
+who helps in the determination of colors. Like there can be "projects" in
+Github, there are workspaces for each product and service.
 
 One has to make sure that there is only one "genuine" product workspace and that
 changes to the color of a product are only done by trusted members. For this
