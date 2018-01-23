@@ -40,23 +40,9 @@ figs <- captioner(prefix="Figure")
 tbls <- captioner(prefix="Table")
 ``` 
 
-<style>
-#download-box {
-  position: absolute;
-  right: 20px;
-  top: 130px;
-  padding: 20px;
-  background-color: #dddddd;
-  border-radius: 15px;
-  opacity: 0.8;
-}
-</style>
-
-<div id="download-box"><a href="viridian.pdf"><span class="glyphicon glyphicon-download"></span> Download PDF</a></div>
-<!-- <button type="button" class="btn btn-default btn-lg"> -->
-<!--   <span class="glyphicon glyphicon-download"></span> Download -->
-<!-- </button> -->
-
+<a href="viridian.pdf" type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-download"></span> Download PDF
+</a>
 
 # Introduction
 
