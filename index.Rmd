@@ -196,6 +196,25 @@ htmltools::includeHTML("tiles.html")
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">Cryptocurrencies</h3>
+
+### Which solution to choose?
+
+Bitcoin, Litecoin, Ethereum, IOTA, blockchain, DAG, smart contracts, DAOs,
+proof-of-work, proof-of-stake, proof-of-cooperation, proof-of-interest, ... ---
+the world of cryptocurrencies is full of innovative ideas, with new ones
+springing up monthly.
+
+If you are enthusiastic about all things crypto, then you might be able to help
+us decide which solution is best suitable for the Viridian project.
+
+We want transaction validation to have an as small resource footprint as
+possible. The incentive system must be designed such that there is no motivation
+for running a lot of computing power, however there must be motivation to
+contribute to the network in the long term. Of course, the system shall be as
+decentralized and trustless as possible to keep it secure and scalable.
+
+If you think you can help, contact us at XXX
+
 </div>
 <div class="panel-body">
 Panel content
@@ -207,6 +226,25 @@ Panel content
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">Software development</h3>
+
+### Good design is the key
+
+The Viridian project relies heavily on computer technology and software. All
+this software still has to be built, both on the backend side and on the
+frontend/UI/UX side.
+
+A clear vision and good design choices are crucial for an infrastructure that
+is secure and maintainable and that scales well.
+
+One should build upon existing work wherever possible. Especially when it comes
+to cryptography, there is a good rule of thumb that one should not "come up
+with a home-brew solution". Therefore, a first step would be, together with
+creating the vision, to carefully evaluate which components could be based on
+what, and how these components must be able to interact with each other, keeping
+in mind maintainability, security and scalability.
+
+If you think you can help, contact us at XXX
+
 </div>
 <div class="panel-body">
 Panel content
@@ -242,7 +280,28 @@ Panel content
 <h3 class="panel-title">Law</h3>
 </div>
 <div class="panel-body">
-Panel content
+
+### What are the legal implications of creating an alternative currency?
+
+What are the legal risks? Are there any subtle differences that would make it
+legal or illegal?
+
+### Transparency vs. secrecy
+
+Are there any laws protecting company secrets that would conflict with an open
+and transparent economy like in the Viridian project?
+
+Of course, one cannot force companies to reveal information unless one changes
+the law, in which case the conflict would be removed. But in an ideal world,
+one would manage to encourage companies to reveal information voluntarily until
+everyone is doing it and it becomes normal practice.
+
+But still, are there any legal obstacles to the whole process?
+
+### Any other law problems we didn't think about?
+
+If you think you can help, contact us at XXX
+
 </div>
 </div>
 </div>
