@@ -8,7 +8,7 @@ title: "Imprint"
 
 ## Angaben gemäß § 5 TMG:
 
-<img src="caddr.png">
+<img src="images/caddr.png">
 
 ## Kontakt:
 
@@ -47,7 +47,7 @@ E-Mail:
   document.write("<a href='"+mfpx+"'>"+zyqm+"</a>")
 }
 //-->
-</script><noscript><img src="ceaddr.png"></noscript><br>
+</script><noscript><img src="images/ceaddr.png"></noscript><br>
 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV: Markus Voge
 
 Quelle: http://www.e-recht24.de

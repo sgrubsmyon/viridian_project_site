@@ -1,7 +1,7 @@
 # name: "viridian-project"
 exclude: ["logo", "paper", "*.html"]
 navbar:
-  title: "<img src='viridian_logo_gray_with_text.png'>"
+  title: "<img src='images/viridian_logo_gray_with_text.png'>"
   left:
     - text: "Home"
       href: index.html

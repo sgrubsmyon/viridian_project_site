@@ -1,5 +1,5 @@
 ---
-title: "<img src='viridian_logo_with_text.png'><br>The Viridian Project"
+title: "<img src='images/viridian_logo_with_text.png'><br>The Viridian Project"
 # author: "Markus Voge"
 # date: "`r Sys.Date()`"
 ---
@@ -58,7 +58,7 @@ the following:
 <div class="row">
 <div class="col-md-6">
 
-<img src="network.svg" style="height: 100px;">
+<img src="images/network.svg" style="height: 100px;">
 
 #### Decentralization
 
@@ -72,8 +72,8 @@ hands of all people, not of few (or single) corporations or governments.
 </div>
 <div class="col-md-6">
 
-<img src="like.svg" style="height: 100px;">
-<img src="dislike.svg" style="height: 100px;">
+<img src="images/like.svg" style="height: 100px;">
+<img src="images/dislike.svg" style="height: 100px;">
 
 #### Democratization
 
@@ -95,7 +95,7 @@ collaborative process, similar to the development of open source software.
 <div class="row">
 <div class="col-md-6">
 
-<img src="sprout.svg" style="height: 100px;">
+<img src="images/sprout.svg" style="height: 100px;">
 
 #### Sustainability
 
@@ -110,7 +110,7 @@ way with an ecological footprint as small as possible.
 </div>
 <div class="col-md-6">
 
-<img src="lock.svg" style="height: 100px;">
+<img src="images/lock.svg" style="height: 100px;">
 
 #### Privacy
 
@@ -129,7 +129,7 @@ which is harvested for profit.
 <div class="row">
 <div class="col-md-6">
 
-<img src="handshake.svg" style="height: 100px;">
+<img src="images/handshake.svg" style="height: 100px;">
 
 #### Fairness
 
@@ -146,7 +146,7 @@ innovation and reducing market monopolies.
 </div>
 <div class="col-md-6">
 
-<img src="search.svg" style="height: 100px;">
+<img src="images/search.svg" style="height: 100px;">
 
 #### Transparency
 

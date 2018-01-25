@@ -1,8 +1,8 @@
 ## Deploy
 
 ```
-$ rsync -rtlPvi --delete _site guavapi:.
-$ ssh -t guavapi sudo rsync -rtlPvi --delete _site/ /var/www/html/www.viridian-project.org/
+$ rsync -rtlPvi --delete _site/ guavapi:www.viridian-project.org/
+$ ssh -t guavapi sudo rsync -rtlPvi --delete www.viridian-project.org/ /var/www/html/www.viridian-project.org/
 ```
 
 ## Email obfuscation:
