@@ -281,10 +281,14 @@ time?
 
 ### What role will the financial system play?
 
-In the Viridian economy, will banks still be important players? How shall banks
-be treated? Will banks' services also have associated colors? Will banks be
-superseded by innovative new concepts, e.g. peer-to-peer credit systems with
-risk scattering by spreading investment money on many actors?
+In the Viridian economy, will banks still be important players? Private banks
+currently create almost all the money that enters the economy. With a decentralized
+cryptocurrency as dominant payment medium, this would not be the case anymore.
+
+So, how shall banks be treated in the Viridian economy? Will banks' services also
+have associated colors? Will banks be superseded by innovative new concepts, e.g.
+peer-to-peer credit systems with risk scattering by spreading investment money
+on many actors?
 
 What to do with interest rates on investments? Shall there still be interest rates?
 Or are interest rates not acceptable anymore since they are drivers of limitless
