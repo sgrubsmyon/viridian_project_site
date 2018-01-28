@@ -415,7 +415,7 @@ seems like such a colossal task that it might well be deemed impossible. It migh
 mean performing audits similar to what is done currently for products to obtain
 certain labels on sustainability or fair trade, but not for some specific products,
 but for everything. On the other hand, there already exist software tools and databases
-for performing lifecycle analyses (LCA), which could be leveraged to estimate products'
+for performing life-cycle analyses (LCA), which could be leveraged to estimate products'
 environmental impact, an important part of the color determination. Also, if products
 consist of components, then the color can partly be a composite. If the same
 components are used in other products, one can re-use their color.
@@ -598,7 +598,7 @@ to make the currency system work:
 
 The color database gives a unique ID to each product. It is updated frequently
 and always returns the current color when queried. It may or may not be a blockchain.
-A blockchain would have added benefits like tamper resistance and dectralization
+A blockchain would have added benefits like tamper resistance and decentralization
 as well as version control and traceability. If it is a blockchain, then there
 would be an "account" for every product and the acount's balance would be the
 current color value, which can be changed with "color transactions" by the color
@@ -607,7 +607,10 @@ sense to store not only the resulting color itself, but also "subcolors" for
 relevant aspects: social sustainability, environmental sustainability, longevity
 of the product, size (or "market power") of the company, etc. Maybe the color
 database can incorporate user ratings as well, e.g. rating the usefulness or the
-quality of the product in use.
+quality of the product in use. It might also be an option to trace the entire
+supply chain of a product in the blockchain, giving customers maximal transparency
+about the nature and quality of the used components.
+
 <!-- XXX Or would the color be part of the cryptocurrency itself, so not an oracle -->
 <!-- for a smart contract, but be stored in the transaction blockchain as well? This -->
 <!-- way, the currency's blockchain would also provide supply chain tracking, at least -->
