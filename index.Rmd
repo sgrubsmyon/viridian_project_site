@@ -1,7 +1,5 @@
 ---
 title: "<img src='images/viridian_logo_with_text.png'><br>The Viridian Project"
-# author: "Markus Voge"
-# date: "`r Sys.Date()`"
 ---
 
 ```{r copy-paper, include=FALSE}
@@ -170,15 +168,6 @@ which is harvested for profit.
 ####
 
 <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/retinaicons" title="Retinaicons">Retinaicons</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>.</div>
-
-<!-- ## Tools -->
-
-<!-- This website shall provide tools to develop the Viridian network. -->
-
-<!-- The tools are: -->
-
-<!-- * [**Mind Map:**](wisemapping) As a first step, brainstorming can be done with the web-based mindmapping software `wisemapping`. -->
-<!-- * [**Wiki:**](wiki) More details can be given in wiki articles, including pictures, tables, and links to external resources. In the mind map, links to wiki articles can be used whenever the space in the mind map is too limited. -->
 
 
 ## Get involved

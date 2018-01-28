@@ -1,7 +1,5 @@
 ---
 title: "Imprint"
-# author: "Markus Voge"
-# date: "`r Sys.Date()`"
 ---
   
 # Imprint / Impressum {#first-section}

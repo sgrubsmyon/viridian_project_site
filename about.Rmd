@@ -1,7 +1,5 @@
 ---
 title: "About the Viridian Project"
-# author: "Markus Voge"
-# date: "`r Sys.Date()`"
 ---
 
 ## Where did the idea for the Viridian project come from? {#first-section}
