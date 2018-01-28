@@ -1,0 +1,12 @@
+---
+title: "Contact Us"
+---
+
+## {#first-section}
+
+You can get in touch with the project using this email address:
+```{r, echo=FALSE}
+htmltools::includeHTML("email.html")
+```
+
+<div style="height: 700px;">

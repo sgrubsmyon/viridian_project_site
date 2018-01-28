@@ -11,6 +11,8 @@ navbar:
     #  href: faq.html
     - text: "About the project"
       href: about.html
+    - text: "Contact"
+      href: contact.html
     #- text: "Wiki"
     #  href: wiki
 output:
