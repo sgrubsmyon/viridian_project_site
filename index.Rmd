@@ -77,12 +77,14 @@ hands of all people, not of few (or single) corporations or governments.
 
 #### Democratization
 
-Running on decentralized nodes, economy and society
-become more democratic and more equal, because concentration of resources and
-power can be prevented. Cryptocurrencies enable to move power away from
-centralized banks and towards the people using the currency. In addition,
-the rules of the network shall be set by the people using it: in an open,
-collaborative process, similar to the development of open source software.
+Running on decentralized nodes, economy and society become more democratic and
+more equal, because concentration of resources and power can be prevented.
+Cryptocurrencies enable to move power away from centralized banks and towards
+the people using the currency. In addition, the rules of the network shall be
+set by the people using it: in an open, collaborative process, similar to the
+development of open source software. The use of computer networks allows the
+usage of innovative democratic consensus tools like liquid democracy.
+
 
 <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 
@@ -90,7 +92,6 @@ collaborative process, similar to the development of open source software.
 </div>
 
 ####
-
 
 <div class="row">
 <div class="col-md-6">
@@ -110,25 +111,6 @@ way with an ecological footprint as small as possible.
 </div>
 <div class="col-md-6">
 
-<img src="images/lock.svg" style="height: 100px;">
-
-#### Privacy
-
-The network shall be end-to-end encrypted to provide security
-and privacy. People should have full control over their data.
-Private data shall be kept private, instead of being a commodity,
-which is harvested for profit.
-
-<!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
-
-</div>
-</div>
-
-####
-
-<div class="row">
-<div class="col-md-6">
-
 <img src="images/handshake.svg" style="height: 100px;">
 
 #### Fairness
@@ -144,6 +126,11 @@ innovation and reducing market monopolies.
 <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 
 </div>
+</div>
+
+####
+
+<div class="row">
 <div class="col-md-6">
 
 <img src="images/search.svg" style="height: 100px;">
@@ -157,6 +144,20 @@ Public data shall be made open to everyone. Because of its importance for
 society, information on the external costs of any economic activity must be
 public and cannot be kept a company secret. Because people are
 more important than profits, there cannot be such "investor protection".
+
+<!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+
+</div>
+<div class="col-md-6">
+
+<img src="images/lock.svg" style="height: 100px;">
+
+#### Privacy
+
+The network shall be end-to-end encrypted to provide security
+and privacy. People should have full control over their data.
+Private data shall be kept private, instead of being a commodity,
+which is harvested for profit.
 
 <!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 
@@ -196,6 +197,8 @@ htmltools::includeHTML("tiles.html")
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">Cryptocurrencies</h3>
+</div>
+<div class="panel-body">
 
 ### Which solution to choose?
 
@@ -213,11 +216,13 @@ for running a lot of computing power, however there must be motivation to
 contribute to the network in the long term. Of course, the system shall be as
 decentralized and trustless as possible to keep it secure and scalable.
 
-If you think you can help, contact us at XXX
+### Contact us
 
-</div>
-<div class="panel-body">
-Panel content
+If you think you can help, contact us at
+```{r, echo=FALSE}
+htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+```
+
 </div>
 </div>
 </div>
@@ -226,12 +231,14 @@ Panel content
 <div class="panel panel-default">
 <div class="panel-heading">
 <h3 class="panel-title">Software development</h3>
+</div>
+<div class="panel-body">
 
 ### Good design is the key
 
-The Viridian project relies heavily on computer technology and software. All
-this software still has to be built, both on the backend side and on the
-frontend/UI/UX side.
+The Viridian project's concept relies heavily on the use of computer technology
+and software. All this software still has to be built, both on the backend side
+and on the frontend/UI/UX side.
 
 A clear vision and good design choices are crucial for an infrastructure that
 is secure and maintainable and that scales well.
@@ -243,11 +250,19 @@ creating the vision, to carefully evaluate which components could be based on
 what, and how these components must be able to interact with each other, keeping
 in mind maintainability, security and scalability.
 
-If you think you can help, contact us at XXX
+Once these general points are sorted out and the roadmap is clear, one can set
+up the requirements for the various components and can start implementing them
+(perhaps just making adjustments or additions to already existing code).
 
-</div>
-<div class="panel-body">
-Panel content
+A slick UI/UX will also be a crucial part of attracting users.
+
+### Contact us
+
+If you think you can help, contact us at
+```{r, echo=FALSE}
+htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+```
+
 </div>
 </div>
 </div>
@@ -258,7 +273,30 @@ Panel content
 <h3 class="panel-title">Currencies and monetary policy</h3>
 </div>
 <div class="panel-body">
-Panel content
+
+### What are the rules of a good currency?
+
+In traditional fiat currencies, a central bank is in charge of controlling the
+currency, e.g. by regulating the amount of money in circulation, or in fact by
+setting the key interest rate.
+
+In a decentralized cryptocurrency, there is no central bank, which is a good thing
+because it prevents corruption and dependency on centralized entities.
+Instead, the network's mathematical algorithms take over the role of a central bank.
+
+An important question is: How to design these algorithmic rules? For instance,
+what is the optimal supply of fresh money? Shall there be a fixed amount of money?
+Or shall the amount of money increase (causing inflation) or decrease? Shall
+there be a demurrage imposed on the currency, constantly devaluating it over
+time?
+
+### Contact us
+
+If you think you can help, contact us at
+```{r, echo=FALSE}
+htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+```
+
 </div>
 </div>
 </div>
@@ -269,7 +307,75 @@ Panel content
 <h3 class="panel-title">Economics</h3>
 </div>
 <div class="panel-body">
-Panel content
+
+### Would the Viridian economy be closer to an "ideal" free market?
+
+The concept of *free market economy* goes back to the influential economists
+Adam Smith and David Ricardo. Smith introduced the idea that a free market
+results in fair conditions for all participants. Ricardo formalized and abstracted
+Smith's ideas and had to simplify it a lot. This resulted in a well working
+theory, but many people also started to neglect the limitations of the model
+and the fact that it does not necessarily represent reality.
+
+Adam Smith was very aware of the limitations of his concept and warned about them.
+For instance, a market with few corporations is a bad idea because the corporations
+can choose to require higher prices than they need to. It becomes even worse when
+big business and government make each other gifts, abusing their power, leading
+to high profits for few capitalist leaders and corrupt politics. This is why
+Smith was a fierce opponent of corporations and preferred an economy with many
+small competitors (like most of economy still was at Smith's time, which changed
+over the course of the 19th century).
+
+The Viridian economy, with its decentralized power and easily adjustable rules,
+might help to prevent such situations and create a market that is closer to
+Smith's ideal.
+
+Another flaw of our present-day capitalist economy is the exclusion of external
+costs. Many economists argue that this leads to a distortion of the free market.
+In Smith's ideal free market, all prices reflect the actual cost that a
+product's production imposes on society. For example, if a worker needs to spend
+more time on one product than on another, then it must cost more to reflect this.
+If the production leads to external costs that society (ultimately everyone,
+including the buyer and the seller) must pay for, then the product should also
+cost more, to pay for these costs and also to regulate the demand for the product.
+
+Again, the Viridian project might help to remove this flaw from the economy.
+
+What do you think about it? If you have any opposing views or ideas how the
+Viridian project can improve our market economy even more, feel free to contact
+us at
+```{r, echo=FALSE}
+htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+```
+
+### What are the likely conerns and needs of businesses?
+
+The Viridian project would necessarily interfere with the way people are doing
+business. For example, color must be considered when determining retail prices.
+
+From the business perspective, what would the main concerns and objections be
+that might disturb the adoption of Viridian? How could these concerns be addressed?
+What are the possibilities to make a transition easier for businesses? Can we
+provide services that would simplify a business's life?
+
+### How to attract businesses?
+
+How can we create business models that would make the adoption of Viridian
+lucrative for businesses, e.g. through improved image or intensified customer
+relations?
+
+### How to attract consumers?
+
+There should be benefits for consumers as well. If the system's cumbersome to
+use and most products cost more, no-one will use it except some idealists.
+
+### Contact us
+
+If you think you can help, contact us at
+```{r, echo=FALSE}
+htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+```
+
 </div>
 </div>
 </div>
@@ -283,8 +389,8 @@ Panel content
 
 ### What are the legal implications of creating an alternative currency?
 
-What are the legal risks? Are there any subtle differences that would make it
-legal or illegal?
+What are the legal risks? Are there any subtle differences in the handling of
+the alternative currency that would influence if it's deemed legal or illegal?
 
 ### Transparency vs. secrecy
 
@@ -300,7 +406,15 @@ But still, are there any legal obstacles to the whole process?
 
 ### Any other law problems we didn't think about?
 
-If you think you can help, contact us at XXX
+Law can be very unintuitive and incomprehensible for laymen. Maybe there is an
+obvious legal obstacle that did not occur to us yet?
+
+### Contact us
+
+If you think you can help, contact us at
+```{r, echo=FALSE}
+htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+```
 
 </div>
 </div>
@@ -309,10 +423,52 @@ If you think you can help, contact us at XXX
 <div id="lca" class="anchor">
 <div class="panel panel-default">
 <div class="panel-heading">
-<h3 class="panel-title">Life cycle analysis, external costs, sustainability</h3>
+<h3 class="panel-title">Life-cycle analysis, external costs, sustainability</h3>
 </div>
 <div class="panel-body">
-Panel content
+
+### How can the Viridian project benefit from existing LCA work?
+
+Life-cycle analysis (LCA) is the assessment of environmental impacts associated
+with the entire lifetime of a product, from the extraction of raw materials, via
+production and use, to its disposal and recycling.
+
+Databases and dedicated software products for LCA already exist and are
+regularly updated by researchers. These would provide a solid base for the
+determination of many products' colors.
+
+A problem is that existing LCA products like [ecoinvent](http://www.ecoinvent.org/)
+are usually not freely available and open sourced. Unless there are APIs allowing
+to interact with them, it will be rather complicated to use those third party
+software products. A very welcome open source software project is [openLCA](http://www.openlca.org/),
+which solves some of these problems.
+However, another problem is licensation, which might even prohibit the use of
+the data for such purposes as the Viridian project.
+
+The problem of course is that LCA is a very labor-intensive task and the
+researchers doing it must use licensation to ensure that they earn a living.
+In the Viridian economy, LCA researchers would turn into color miners that are
+paid fair rewards for their services, but only if they open up all their data.
+Therefore, they would be in a much different (and much more important and powerful)
+position than they are now. The question is: how to organize the transition from
+here to there?
+
+### Are there better ways to assess external costs?
+
+Apart from LCA, can you think of alternative ways to determine external costs
+that are easier to use?
+
+Are there any other tools in the sustainability and external costs scene that
+would be really useful for the Viridian project?
+
+### Contact us
+
+If you are an LCA/external costs/sustainability expert and think you can help,
+contact us at
+```{r, echo=FALSE}
+htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+```
+
 </div>
 </div>
 </div>
@@ -323,7 +479,28 @@ Panel content
 <h3 class="panel-title">Auditing, e.g. organic or fair trade</h3>
 </div>
 <div class="panel-body">
-Panel content
+
+### Any learned lessons from auditing practice?
+
+Already existing sustainability certifications of products (fair trade, organic
+standards, etc.) usually involve audits, i.e. systematic and unscheduled visits to
+producers to check if the required standards are met and that there is no abuse
+of the certificate label.
+
+Do these kind of audits need to be a part of the color determination? How can
+they be organized as efficient and corruption-safe as possible? Are there any
+mistakes that can be avoided? Any thoughts on how to scale audits up in a good
+way? Or do you think audits are actually a bad thing and there are better
+alternatives, e.g. using social networks and personal contacts to people?
+
+### Contact us
+
+If you have experience from the auditing business and think you can help,
+please contact us at
+```{r, echo=FALSE}
+htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+```
+
 </div>
 </div>
 </div>
@@ -331,10 +508,65 @@ Panel content
 <div id="sociology" class="anchor">
 <div class="panel panel-default">
 <div class="panel-heading">
-<h3 class="panel-title">Sociology and socio-psychology</h3>
+<h3 class="panel-title">Psychology and Sociology</h3>
 </div>
 <div class="panel-body">
-Panel content
+
+### The rational brain and the emotional brain?
+
+Economic decisions seem to be driven mostly by rational thinking and self-interest
+in the lines of "cheaper is better" and "more is better". Negative
+effects on others or the environment are usually not considered when people buy
+things, or (to a lesser degree) even when they look for an employer.
+
+But people are not just rational, but also social and emotional beings. The
+hypothesis is that while conventional money stimulates mainly the rational part
+of the brain, there could also be a component of money that stimulates the
+emotional part. With the emotional component putting an emphasis on empathy and
+ethics, the perception and use of money could become much more balanced and
+less one-dimensional and mechanistic than it is now. The color dimension of the
+Viridian money could provide this extra mechanism.
+
+Does this hypothesis have a sound foundation in psychology or is there a stark
+contradiction with psychological research?
+
+### How to use psychology to make Viridian attractive?
+
+Capitalist advertising makes use of all kind of psychological tricks to entice
+people and encourage them to change their behavior (mostly to buy stuff they
+don't really need).
+
+What kind of psychological tricks could be used to convince people to use the
+ethical Vidirian money? Could peer-pressure be used in a positive way to attract
+new users? Maybe in the lines of "Three of your friends already use Viridian,
+when do you come and join us?"
+
+### What about socio-economic aspects?
+
+The socio-economic situation of the people is important because it ultimately
+decides about what people perceive as "good and fair" and what they accept and
+support. If there is a perceived thread to peoples' lifestyle, there will be
+opposition.
+
+Environmental action and climate action is often put on the shoulders of the
+weakest. For example, when stricter regulations lead to higher prices, it is
+the poor that suffer most from it, while the rich might not even feel a difference.
+Therefore, it is very important to implement sustainable development in a way
+that improves the socio-economic status of the vast majority of people and
+especially the poorest. The rich are the biggest polluters, so they are also
+the ones that should pay for the transition towards a safe world.
+
+How can we design Viridian so that the improvement of the socio-economic status
+of most people is guaranteed, while the economy gets more sustainable at the
+same time?
+
+### Contact us
+
+Do you have any thoughts, ideas, comments, suggestions, improvements? Contact us at
+```{r, echo=FALSE}
+htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+```
+
 </div>
 </div>
 </div>
@@ -342,10 +574,44 @@ Panel content
 <div id="politics" class="anchor">
 <div class="panel panel-default">
 <div class="panel-heading">
-<h3 class="panel-title">Politics: Democracy and voting</h3>
+<h3 class="panel-title">Politics: Democracy and Voting</h3>
 </div>
 <div class="panel-body">
-Panel content
+
+### How to organize ourselves?
+
+Politics is all about power and who gets to decide what. Conventional political
+systems use centralized structures for political decision making. Computer
+technology may allow better alternatives to this paradigm.
+
+In the Viridian project, we want more decentralized and bottom-up decision
+making to minimize corruption and increase societal acceptance. But because
+direct democracy can be very inefficient or prone to demagogical manipulation,
+a middle way between direct and representative democracy might prove very useful.
+Delegative democracy, also called liquid democracy, is a process, in
+which political decisions are not delegated completely to just one representative,
+but each voter can decide by topic whom to delegate questions to. Or, if the voter
+feels competent in the subject matter, she can choose to answer the question herself.
+
+Direct democracy has the general problem that it does not scale well. It works
+well in small groups, so that cooperatives, for instance, can be operated very
+efficiently. But a whole society, operated like a cooperative, is difficult to
+achieve. Liquid democracy might combine the best of both worlds: The direct
+involvement of direct democracy and the stability and efficiency of representative
+democracy. Liquid democracy involves a lot of communication between people,
+making use of social networks. That means, it can profit heavily from the use of
+information technology, without which it might be too cumbersome and slow and
+therefore inefficient.
+
+### Contact us
+
+If you have any other ideas on how decisions in the Viridian project might become
+more democratic and legitimate, or if you have experience with liquid democracy
+or similar tools, contact us at
+```{r, echo=FALSE}
+htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+```
+
 </div>
 </div>
 </div>
@@ -353,19 +619,19 @@ Panel content
 
 ## How is this any different from what already exists?
 
-There already are many concepts of sustainable economy, e.g.:
+There are already many good concepts of sustainable economy, e.g.:
 
-* Transition Towns and Permaculture
-* *Gemeinwohlökonomie* (German)
-* Cradle to cradle
-* *Öko-Bilanzierung* (German) ("Richtig rechnen - Externe Kosten internalisieren")
-* True cost
-* [Bioökonomie](https://de.wikipedia.org/wiki/Bio%C3%B6konomie)
-* [Nachhaltige Ökonomie](http://www.nachhaltige-oekonomie.de/nachhaltige-oekonomie)
-* Ecological economy
-* ...
+* [Transition Towns](https://transitionnetwork.org/) and [Permaculture](https://en.wikipedia.org/wiki/Permaculture) (see also: [here](https://permacultureprinciples.com/))
+* [Degrowth](https://www.degrowth.info)
+* [Cradle to cradle](https://en.wikipedia.org/wiki/Cradle_to_Cradle:_Remaking_the_Way_We_Make_Things) (see also: [here](http://c2c-ev.de/))
+* [Ecological economics](https://en.wikipedia.org/wiki/Ecological_economics) (see also: [here](https://www.journals.elsevier.com/ecological-economics/))
+* [Sustainable Economics](https://www.nachhaltige-oekonomie.de/englisch)
+* [*Gemeinwohlökonomie*](https://www.ecogood.org) (German)
+* *Öko-Bilanzierung* (German) (["Richtig rechnen!"](https://www.oekom.de/nc/buecher/gesamtprogramm/buch/richtig-rechnen.html))
+* [*Bioökonomie*](https://de.wikipedia.org/wiki/Bio%C3%B6konomie) (German)
+<!-- * True cost -->
 
-While these are very good approaches, already existing concepts of sustainable
+While these are very good approaches, existing concepts for a more sustainable
 economy typically lack some or all of the following elements:
 
 * **Tech:** While technology alone cannot solve our problems and social
@@ -392,54 +658,6 @@ economy typically lack some or all of the following elements:
   a critical mass will be reached and there will be a tipping point with a full
   transition to the new economy.
 
-<!-- ## New Styles -->
-
-<!-- `html_pretty` currently supports three page themes (`cayman`, `tactile` and -->
-<!-- `architect`), and two syntax highlight styles (`github` and `vignette`). -->
-<!-- The theme and highlight styles can be specified in the document metadata, -->
-<!-- for example: -->
-
-<!-- ```yaml -->
-<!-- output: -->
-<!--   prettydoc::html_pretty: -->
-<!--     theme: architect -->
-<!--     highlight: github -->
-<!-- ``` -->
-
-<!-- ## Your Familiar Tools -->
-
-<!-- Feel free to use the `knitr` infrastructure with dozens of tunable options in -->
-<!-- your document. -->
-
-<!-- ```{r fig.width=6, fig.height=6, fig.align='center'} -->
-<!-- set.seed(123) -->
-<!-- n <- 1000 -->
-<!-- x1  <- matrix(rnorm(n), ncol = 2) -->
-<!-- x2  <- matrix(rnorm(n, mean = 3, sd = 1.5), ncol = 2) -->
-<!-- x   <- rbind(x1, x2) -->
-<!-- head(x) -->
-<!-- smoothScatter(x, xlab = "x1", ylab = "x2") -->
-<!-- ``` -->
-
-<!-- You can include code snippets of languages other than R, but note that -->
-<!-- the block header has no curly brackets around the language name. -->
-
-<!-- ```cpp -->
-<!-- // [[Rcpp::export]] -->
-<!-- NumericVector timesTwo(NumericVector x) { -->
-<!--     return x * 2; -->
-<!-- } -->
-<!-- ``` -->
-
-<!-- You can also write math expressions, e.g. $Y = X\beta + \epsilon$, -->
-<!-- footnotes^[A footnote here.], and tables, e.g. using `knitr::kable()`. -->
-
-<!-- ```{r, echo=FALSE, results='asis'} -->
-<!-- knitr::kable(head(iris, 10)) -->
-<!-- ``` -->
-
-<!-- ## Stay Tuned -->
-
-<!-- Please visit the [development page](http://github.com/yixuan/prettydoc/) of the  -->
-<!-- `prettydoc` package for latest updates and news. Comments, bug reports and -->
-<!-- pull requests are always welcome. -->
+The Viridian project does not have complete solutions on these three points
+either, yet. But we have a vision. And you can help us turn that vision into a
+reality! See [Get involved](#get-involved).
