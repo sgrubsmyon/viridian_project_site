@@ -9,4 +9,4 @@ You can get in touch with the project using this email address:
 htmltools::includeHTML("email.html")
 ```
 
-<div style="height: 700px;">
+<div style="height: 700px;"></div>
