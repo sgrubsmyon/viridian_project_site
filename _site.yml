@@ -25,6 +25,6 @@ output:
     # highlight: textmate
     css: style.css
     include:
-      in_header: javascript.html
+      in_header: [javascript.html, favicon.html]
       after_body: footer.html
     self_contained: no
