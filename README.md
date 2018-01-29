@@ -1,6 +1,7 @@
 ## Deploy
 
 ```
+$ rm _site/README.html _site/ideas.html
 $ rsync -rtlPvi --delete _site/ guavapi:www.viridian-project.org/
 $ ssh -t guavapi sudo rsync -rtlPvi --delete www.viridian-project.org/ /var/www/html/www.viridian-project.org/
 ```
