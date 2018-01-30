@@ -39,8 +39,7 @@ Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Date
 
 Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
 
-<!--
-siehe fleg.de, wielebenwir.de
+<!-- siehe fleg.de, wielebenwir.de -->
 ### Datenschutzerklärung für die Nutzung von Piwik
 
 Diese Website benutzt den Open Source Webanalysedienst Piwik. Piwik verwendet sog. “Cookies”. Das sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Dazu werden die durch den Cookie erzeugten Informationen über die Benutzung dieser Website auf unserem Server gespeichert. Die IP-Adresse wird vor der Speicherung anonymisiert.
@@ -57,6 +56,7 @@ Die meisten der von uns verwendeten Cookies sind so genannte „Session-Cookies�
 
 Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browser aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein.
 
+<!--
 ### Kontaktformular
 
 Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
