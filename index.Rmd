@@ -209,7 +209,8 @@ decentralized and trustless as possible to keep it secure and scalable.
 
 If you think you can help, contact us at
 ```{r, echo=FALSE}
-htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+htmltools::includeHTML("email.html")
+htmltools::includeHTML("alternative_contact.html")
 ```
 
 </div>
@@ -249,7 +250,8 @@ A slick UI/UX will also be a crucial part of attracting users.
 
 If you think you can help, contact us at
 ```{r, echo=FALSE}
-htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+htmltools::includeHTML("email.html")
+htmltools::includeHTML("alternative_contact.html")
 ```
 
 </div>
@@ -298,7 +300,8 @@ growth in a world with limited resources?
 
 If you think you can help, contact us at
 ```{r, echo=FALSE}
-htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+htmltools::includeHTML("email.html")
+htmltools::includeHTML("alternative_contact.html")
 ```
 
 </div>
@@ -349,7 +352,8 @@ What do you think about it? If you have any opposing views or ideas how the
 Viridian project can improve our market economy even more, feel free to contact
 us at
 ```{r, echo=FALSE}
-htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+htmltools::includeHTML("email.html")
+htmltools::includeHTML("alternative_contact.html")
 ```
 
 ### What are the likely conerns and needs of businesses?
@@ -377,7 +381,8 @@ use and most products cost more, no-one will use it except some idealists.
 
 If you think you can help, contact us at
 ```{r, echo=FALSE}
-htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+htmltools::includeHTML("email.html")
+htmltools::includeHTML("alternative_contact.html")
 ```
 
 </div>
@@ -417,7 +422,8 @@ obvious legal obstacle that did not occur to us yet?
 
 If you think you can help, contact us at
 ```{r, echo=FALSE}
-htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+htmltools::includeHTML("email.html")
+htmltools::includeHTML("alternative_contact.html")
 ```
 
 </div>
@@ -470,7 +476,8 @@ would be really useful for the Viridian project?
 If you are an LCA/external costs/sustainability expert and think you can help,
 contact us at
 ```{r, echo=FALSE}
-htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+htmltools::includeHTML("email.html")
+htmltools::includeHTML("alternative_contact.html")
 ```
 
 </div>
@@ -502,7 +509,8 @@ alternatives, e.g. using social networks and personal contacts to people?
 If you have experience from the auditing business and think you can help,
 please contact us at
 ```{r, echo=FALSE}
-htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+htmltools::includeHTML("email.html")
+htmltools::includeHTML("alternative_contact.html")
 ```
 
 </div>
@@ -568,7 +576,8 @@ same time?
 
 Do you have any thoughts, ideas, comments, suggestions, improvements? Contact us at
 ```{r, echo=FALSE}
-htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+htmltools::includeHTML("email.html")
+htmltools::includeHTML("alternative_contact.html")
 ```
 
 </div>
@@ -613,7 +622,8 @@ If you have any other ideas on how decisions in the Viridian project might becom
 more democratic and legitimate, or if you have experience with liquid democracy
 or similar tools, contact us at
 ```{r, echo=FALSE}
-htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
+htmltools::includeHTML("email.html")
+htmltools::includeHTML("alternative_contact.html")
 ```
 
 </div>

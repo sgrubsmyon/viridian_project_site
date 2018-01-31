@@ -10,7 +10,7 @@ local, post-fossil, fair economy. The Transition Towns concept stems from
 an agricultural background and is basically the application of the
 [principles of permaculture](https://permacultureprinciples.com/) to the entire economy.
 
-The best about the Transition Town movement is its completely hands-on,
+The best thing about the Transition Town movement is its completely hands-on,
 "just do it" attitude. Instead of waiting for a top-down system change to be
 implemented by politics or big corporations or "someone else", it calls on
 people to come together and start building things. It is this decentralized,
@@ -45,7 +45,7 @@ of many small communities (called hubs) that resiliently and sustainably produce
 much of their demand for goods themselves, trading with other hubs for things
 they cannot make themselves. There is an alternative currency ("credits", like
 in a computer game) inside the Daemon network and sustainable solutions (e.g.
-use of renewable energies) is rewarded with more credits by the Daemon network.
+use of renewable energies) are rewarded with more credits by the Daemon network.
 
 I was fascinated by the books, because what was described there was in essence
 a kind of digitally-driven Transition Towns movement. A transition towards a
@@ -86,6 +86,9 @@ are listed here:
   a community on the open platform and every community can create its own
   social currency and finance projects with it. CoinSence wants to strengthen
   the civil society, empower social and ecological volunteer work, and support
-  the development of a collaborative, fair, sustainable economy.
+  the development of a collaborative, fair, sustainable economy. Join the
+  [Viridian Project community space](https://community.coinsence.org/s/viridian-project)
+  on the CoinSence community platform!
 
-There could be opportunities to cooperate and benefit from synergies.
+There could be opportunities to cooperate with these projects and benefit from
+synergies.

@@ -6,7 +6,15 @@ title: "Contact Us"
 
 You can get in touch with the project using this email address:
 ```{r, echo=FALSE}
-htmltools::includeHTML("email.html")
+htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
 ```
 
-<div style="height: 700px;"></div>
+Alternatively, you can reach us at the
+[Viridian Project community space](https://community.coinsence.org/s/viridian-project)
+on the [CoinSence community platform](https://community.coinsence.org).
+The CoinSence community platform is an open collaborative platform, based on
+[HumHub](https://www.humhub.org), hosted by the [CoinSence](http://coinsence.org/)
+project. [HumHub](https://www.humhub.org) is a free and open source social network
+software.
+
+<div style="height: 500px;"></div>
