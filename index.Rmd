@@ -18,18 +18,18 @@ file.copy(c("paper/index.html", "paper/index.pdf"),
 The *Viridian Project* is an attempt to implement an alternative way of economic
 activity. Imagine an economy that takes into account not only economical, but also
 environmental and social concerns. An economy, where people are worth more than
-profits. An economy, in which **sustainable** and **fair** are the default, not the
+profits. An economy, in which **sustainable and fair are the default**, not the
 exception.
 
 The inspiration for the Viridian Project comes from two communities having little
 contact with each other so far: The vision of the *Transition Town* movement of
-a sustainable, post-fossil, resilient economy on one side. The vision of the
-*cryptocurrency community* of a decentralized peer-to-peer economy on the other
+a **sustainable, post-fossil, resilient economy** on one side. The vision of the
+*cryptocurrency community* of a **decentralized peer-to-peer economy** on the other
 side.
 
-The main goal of the Viridian Project is to *internalize external costs* using a
+The main goal of the Viridian Project is to **internalize external costs** using a
 new digital currency, making social and environmental concerns a normal part of
-every business model. This incentivizes business that is not harmful for
+every business model. This incentivizes businesses that are not harmful for
 society. When social peer pressure is included into economic activity (via the
 alternative digital currency), people will act more responsibly automatically.
 This is similar to the way that *commons* work, where a group of people
@@ -60,10 +60,10 @@ the following:
 
 #### Decentralization
 
-The network shall be decentralized for increased resilience.
-There should not be any single points of failure. It must also be spread to prevent
-too much concentration of power. The network shall be operated by and in the
-hands of all people, not of few (or single) corporations or governments.
+The network shall be decentralized for increased **resilience**.
+There should not be any single points of failure. It must also be spread to
+**prevent too much concentration of power**. The network shall be operated by
+and in the hands of all people, not of few (or single) corporations or governments.
 
 <!-- <div>Icon made by me!</div> -->
 
@@ -77,11 +77,11 @@ hands of all people, not of few (or single) corporations or governments.
 
 Running on decentralized nodes, economy and society become more democratic and
 more equal, because concentration of resources and power can be prevented.
-Cryptocurrencies enable to move power away from centralized banks and towards
-the people using the currency. In addition, the rules of the network shall be
-set by the people using it: in an open, collaborative process, similar to the
-development of open source software. The use of computer networks allows the
-usage of innovative democratic consensus tools like liquid democracy.
+Cryptocurrencies enable to **move power** away from centralized banks and towards
+the people using the currency. In addition, the **rules of the network shall be set by the people**
+using it: in an open, collaborative process, similar to the development of open
+source software. The use of computer networks allows the usage of innovative
+democratic consensus tools like liquid democracy.
 
 
 <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
@@ -98,8 +98,8 @@ usage of innovative democratic consensus tools like liquid democracy.
 
 #### Sustainability
 
-Sustainable and socially responsible business and commerce
-shall be incentivized by including external costs of economic activity
+**Sustainable and socially responsible business and commerce shall be incentivized**
+by including external costs of economic activity
 in the prices. In addition, the cryptocurrency transactions shall not be
 verified in a resource-intensive proof-of-work process, but in an alternative
 way with an ecological footprint as small as possible.
@@ -114,11 +114,11 @@ way with an ecological footprint as small as possible.
 #### Fairness
 
 When external costs are included in the price calculation,
-the market is fairer and closer to an idealized free market. Also, because the
+the **market is fairer and closer to an idealized free market**. Also, because the
 supply chain can be revealed in the process, inferior quality can be revealed as
 well. Customers do not have to trust the reputation of a producer, but can
 choose the best option available. This makes it easier for newcomers and
-accelerates the introduction of alternative technologies, thereby increasing
+**accelerates the introduction of alternative technologies**, thereby increasing
 innovation and reducing market monopolies.
 
 <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
@@ -135,10 +135,10 @@ innovation and reducing market monopolies.
 
 #### Transparency
 
-It shall be visible at all times how the rules of the network
-are and *why* they are like that, including the internalization of external
+It shall be **visible at all times how the rules of the network are**
+and *why* they are like that, including the internalization of external
 costs. Changes to the algorithms must be accompanied by legitimizing information.
-Public data shall be made open to everyone. Because of its importance for
+**Public data shall be made open to everyone.** Because of its importance for
 society, information on the external costs of any economic activity must be
 public and cannot be kept a company secret. Because people are
 more important than profits, there cannot be such "investor protection".
@@ -154,7 +154,7 @@ more important than profits, there cannot be such "investor protection".
 
 The network shall be end-to-end encrypted to provide security
 and privacy. People should have full control over their data.
-Private data shall be kept private, instead of being a commodity,
+**Private data shall be kept private**, instead of being a commodity,
 which is harvested for profit.
 
 <!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
@@ -172,9 +172,8 @@ which is harvested for profit.
 
 ## Get involved
 
-There are many open questions and unsolved problems. Are you inspired by the
-idea of the project? You can help! Just pick your area of interest and start
-getting involved.
+There are many open questions and unsolved problems. **Are you inspired by the idea of the project? You can help!**
+Just pick your area of interest and start getting involved.
 
 ```{r, echo=FALSE}
 htmltools::includeHTML("tiles.html")
@@ -196,8 +195,7 @@ proof-of-work, proof-of-stake, proof-of-cooperation, proof-of-interest, ... ---
 the world of cryptocurrencies is full of innovative ideas, with new ones
 springing up monthly.
 
-If you are enthusiastic about all things crypto, then you might be able to help
-us decide which solution is best suitable for the Viridian project.
+**If you are enthusiastic about all things crypto, then you might be able to help us decide which solution is best suitable for the Viridian project.**
 
 We want transaction validation to have an as small resource footprint as
 possible. The incentive system must be designed such that there is no motivation
@@ -230,8 +228,7 @@ The Viridian project's concept relies heavily on the use of computer technology
 and software. All this software still has to be built, both on the backend side
 and on the frontend/UI/UX side.
 
-A clear vision and good design choices are crucial for an infrastructure that
-is secure and maintainable and that scales well.
+**A clear vision and good design choices are crucial for an infrastructure that is secure and maintainable and that scales well.**
 
 One should build upon existing work wherever possible. Especially when it comes
 to cryptography, there is a good rule of thumb that one should not "come up
@@ -275,8 +272,8 @@ In a decentralized cryptocurrency, there is no central bank, which is a good thi
 because it prevents corruption and dependency on centralized entities.
 Instead, the network's mathematical algorithms take over the role of a central bank.
 
-An important question is: How to design these algorithmic rules? For instance,
-what is the optimal supply of fresh money? Shall there be a fixed amount of money?
+An important question is: **How to design these algorithmic rules?** For instance,
+what is the **optimal supply of fresh money**? Shall there be a fixed amount of money?
 Or shall the amount of money increase (causing inflation) or decrease? Shall
 there be a demurrage imposed on the currency, constantly devaluating it over
 time?
@@ -288,11 +285,11 @@ currently create almost all the money that enters the economy. With a decentrali
 cryptocurrency as dominant payment medium, this would not be the case anymore.
 
 So, how shall banks be treated in the Viridian economy? Will banks' services also
-have associated colors? Will banks be superseded by innovative new concepts, e.g.
+have associated colors? **Will banks be superseded** by innovative new concepts, e.g.
 peer-to-peer credit systems with risk scattering by spreading investment money
-on many actors?
+on many agents?
 
-What to do with interest rates on investments? Shall there still be interest rates?
+What to do with interest rates on investments? **Shall there still be interest rates?**
 Or are interest rates not acceptable anymore since they are drivers of limitless
 growth in a world with limited resources?
 
@@ -334,17 +331,16 @@ small competitors (like most of economy still was at Smith's time, which changed
 over the course of the 19th century).
 
 The Viridian economy, with its decentralized power and easily adjustable rules,
-might help to prevent such situations and create a market that is closer to
-Smith's ideal.
+**might help to prevent such situations and create a market that is closer to Smith's ideal**.
 
 Another flaw of our present-day capitalist economy is the exclusion of external
 costs. Many economists argue that this leads to a distortion of the free market.
-In Smith's ideal free market, all prices reflect the actual cost that a
-product's production imposes on society. For example, if a worker needs to spend
-more time on one product than on another, then it must cost more to reflect this.
-If the production leads to external costs that society (ultimately everyone,
-including the buyer and the seller) must pay for, then the product should also
-cost more, to pay for these costs and also to regulate the demand for the product.
+**In Smith's ideal free market, all prices reflect the actual cost that a product's production imposes on society.**
+For example, if a worker needs to spend more time on one product than on another,
+then it must cost more to reflect this. If the production leads to external costs
+that society (ultimately everyone, including the buyer and the seller) must pay for,
+then the product should also cost more, to pay for these costs and also to regulate
+the demand for the product.
 
 Again, the Viridian project might help to remove this flaw from the economy.
 
@@ -361,20 +357,20 @@ htmltools::includeHTML("alternative_contact.html")
 The Viridian project would necessarily interfere with the way people are doing
 business. For example, color must be considered when determining retail prices.
 
-From the business perspective, what would the main concerns and objections be
+From the business perspective, what would the main **concerns and objections** be
 that might disturb the adoption of Viridian? How could these concerns be addressed?
-What are the possibilities to make a transition easier for businesses? Can we
+What are the **possibilities to make a transition easier for businesses**? Can we
 provide services that would simplify a business's life?
 
 ### How to attract businesses?
 
-How can we create business models that would make the adoption of Viridian
-lucrative for businesses, e.g. through improved image or intensified customer
-relations?
+How can we create business models that would
+**make the adoption of Viridian lucrative for businesses**,
+e.g. through improved image or intensified customer relations?
 
 ### How to attract consumers?
 
-There should be benefits for consumers as well. If the system's cumbersome to
+There should be **benefits for consumers** as well. If the system's cumbersome to
 use and most products cost more, no-one will use it except some idealists.
 
 ### Contact us
@@ -403,7 +399,7 @@ the alternative currency that would influence if it's deemed legal or illegal?
 
 ### Transparency vs. secrecy
 
-Are there any laws protecting company secrets that would conflict with an open
+Are there any **laws protecting company secrets** that would conflict with an open
 and transparent economy like in the Viridian project?
 
 Of course, one cannot force companies to reveal information unless one changes
@@ -415,8 +411,8 @@ But still, are there any legal obstacles to the whole process?
 
 ### Any other law problems we didn't think about?
 
-Law can be very unintuitive and incomprehensible for laymen. Maybe there is an
-obvious legal obstacle that did not occur to us yet?
+Law can be very unintuitive and incomprehensible for laymen. Maybe there is
+**an obvious legal obstacle** that did not occur to us yet?
 
 ### Contact us
 
@@ -439,20 +435,20 @@ htmltools::includeHTML("alternative_contact.html")
 
 ### How can the Viridian project benefit from existing LCA work?
 
-Life-cycle analysis (LCA) is the assessment of environmental impacts associated
+Life-cycle analysis (LCA) is the **assessment of environmental impacts** associated
 with the entire lifetime of a product, from the extraction of raw materials, via
 production and use, to its disposal and recycling.
 
-Databases and dedicated software products for LCA already exist and are
+**Databases and dedicated software products** for LCA already exist and are
 regularly updated by researchers. These would provide a solid base for the
 determination of many products' colors.
 
 A problem is that existing LCA products like [ecoinvent](http://www.ecoinvent.org/)
-are usually not freely available and open sourced. Unless there are APIs allowing
+are usually **not freely available and open sourced**. Unless there are APIs allowing
 to interact with them, it will be rather complicated to use those third party
 software products. A very welcome open source software project is [openLCA](http://www.openlca.org/),
 which solves some of these problems.
-However, another problem is licensation, which might even prohibit the use of
+However, another problem is **licensation**, which might even prohibit the use of
 the data for such purposes as the Viridian project.
 
 The problem of course is that LCA is a very labor-intensive task and the
@@ -460,7 +456,7 @@ researchers doing it must use licensation to ensure that they earn a living.
 In the Viridian economy, LCA researchers would turn into color miners that are
 paid fair rewards for their services, but only if they open up all their data.
 Therefore, they would be in a much different (and much more important and powerful)
-position than they are now. The question is: how to organize the transition from
+position than they are now. The question is: **how to organize the transition** from
 here to there?
 
 ### Are there better ways to assess external costs?
@@ -494,15 +490,15 @@ htmltools::includeHTML("alternative_contact.html")
 ### Any learned lessons from auditing practice?
 
 Already existing sustainability certifications of products (fair trade, organic
-standards, etc.) usually involve audits, i.e. systematic and unscheduled visits to
+standards, etc.) usually involve audits, i.e. **systematic and unscheduled visits** to
 producers to check if the required standards are met and that there is no abuse
 of the certificate label.
 
 Do these kind of audits need to be a part of the color determination? How can
-they be organized as efficient and corruption-safe as possible? Are there any
-mistakes that can be avoided? Any thoughts on how to scale audits up in a good
-way? Or do you think audits are actually a bad thing and there are better
-alternatives, e.g. using social networks and personal contacts to people?
+they be organized as **efficient and corruption-safe** as possible? Are there any
+**mistakes** that can be avoided? Any thoughts on how to **scale audits up** in a good
+way? Or do you think audits are actually a bad thing and there are
+**better alternatives**, e.g. using social networks and personal contacts to people?
 
 ### Contact us
 
@@ -527,31 +523,30 @@ htmltools::includeHTML("alternative_contact.html")
 ### The rational brain and the emotional brain?
 
 Economic decisions seem to be driven mostly by rational thinking and self-interest
-in the lines of "cheaper is better" and "more is better". Negative
+in the lines of **"cheaper is better" and "more is better"**. Negative
 effects on others or the environment are usually not considered when people buy
 things, or (to a lesser degree) even when they look for an employer.
 
 But people are not just rational, but also social and emotional beings. The
-hypothesis is that while conventional money stimulates mainly the rational part
-of the brain, there could also be a component of money that stimulates the
-emotional part. With the emotional component putting an emphasis on empathy and
+hypothesis is that while **conventional money stimulates mainly the rational part of the brain**,
+there could also be **a component of money that stimulates the emotional part**.
+With the emotional component putting an emphasis on empathy and
 ethics, the perception and use of money could become much more balanced and
 less one-dimensional and mechanistic than it is now. The color dimension of the
 Viridian money could provide this extra mechanism.
 
 Does this hypothesis have a sound foundation in psychology or is there a stark
-contradiction with psychological research?
+**contradiction with psychological research?**
 
 ### How to use psychology to make Viridian attractive?
 
-Capitalist advertising makes use of all kind of psychological tricks to entice
+Capitalist advertising makes use of all kinds of psychological tricks to entice
 people and encourage them to change their behavior (mostly to buy stuff they
 don't really need).
 
-What kind of psychological tricks could be used to convince people to use the
-ethical Vidirian money? Could peer-pressure be used in a positive way to attract
-new users? Maybe in the lines of "Three of your friends already use Viridian,
-when do you come and join us?"
+What kind of **psychological tricks** could be used **to convince people to use the ethical Vidirian money?**
+Could peer-pressure be used in a positive way to attract new users? Maybe in the
+lines of "Three of your friends already use Viridian, when do you come and join us?"
 
 ### What about socio-economic aspects?
 
@@ -563,10 +558,10 @@ opposition.
 Environmental action and climate action is often put on the shoulders of the
 weakest. For example, when stricter regulations lead to higher prices, it is
 the poor that suffer most from it, while the rich might not even feel a difference.
-Therefore, it is very important to implement sustainable development in a way
-that improves the socio-economic status of the vast majority of people and
-especially the poorest. The rich are the biggest polluters, so they are also
-the ones that should pay for the transition towards a safe world.
+Therefore, it is **very important to implement sustainable development in a way that improves the socio-economic status**
+of the vast majority of people and **especially the poorest**. The rich are the
+biggest polluters, so they are also the ones that should pay for the transition
+towards a safe world.
 
 How can we design Viridian so that the improvement of the socio-economic status
 of most people is guaranteed, while the economy gets more sustainable at the
@@ -594,14 +589,14 @@ htmltools::includeHTML("alternative_contact.html")
 ### How to organize ourselves?
 
 Politics is all about power and who gets to decide what. Conventional political
-systems use centralized structures for political decision making. Computer
-technology may allow better alternatives to this paradigm.
+systems use **centralized structures for political decision making**. Computer
+technology may enable us to use better alternatives.
 
-In the Viridian project, we want more decentralized and bottom-up decision
+In the Viridian project, we want **more decentralized and bottom-up** decision
 making to minimize corruption and increase societal acceptance. But because
 direct democracy can be very inefficient or prone to demagogical manipulation,
-a middle way between direct and representative democracy might prove very useful.
-Delegative democracy, also called liquid democracy, is a process, in
+a **middle way between direct and representative democracy** might prove very useful.
+*Delegative democracy*, also called *liquid democracy*, is a process, in
 which political decisions are not delegated completely to just one representative,
 but each voter can decide by topic whom to delegate questions to. Or, if the voter
 feels competent in the subject matter, she can choose to answer the question herself.
@@ -650,14 +645,14 @@ economy typically lack some or all of the following elements:
 
 * **Tech:** While technology alone cannot solve our problems and social
   innovation is needed, computer network technology (web, digitization,
-  cryptocurrencies, IoT, etc.) has a vast potential to support or even enable
-  societal transformation. For example, technology can be critical for allowing
+  cryptocurrencies, IoT, etc.) has a **vast potential to support or even enable societal transformation**.
+  For example, technology can be critical for allowing
   humans to efficiently collaborate and exchange information. It might
   also be used to algorithmically enforce sustainability (whether this is feasible
   or not remains to be seen).
 * **Coolness:** For the alternative technology to be successful, it must be "cool"
   enough to be adopted by a large (but minority) group of "early adopters".
-  If the new technology "goes viral", it will spread very fast and be talked
+  If the new technology **"goes viral"**, it will spread very fast and be talked
   about a lot. This would be the first stage towards mass adoption.
   <!-- In the Daemon novels, this was achieved by addressing the gamer community and -->
   <!-- transferring concepts of comupter games to the real world. -->
@@ -665,11 +660,11 @@ economy typically lack some or all of the following elements:
   real benefit for the individual. Mere moral superiority is probably not enough.
   One example might be farmers: Many farmers need to pay large amounts to corporations
   to buy seeds, fertilizers, and pesiticides, while not earning much with their
-  crops on the market. If they discover that they can earn a much better living
+  crops on the market. If they discover that they can **earn a much better living**
   by using the alternative economy, both for buying goods and selling their
   produce, they will start using it. This would be the second stage towards mass
   adoption. When more and more groups of people join the new economy, eventually
-  a critical mass will be reached and there will be a tipping point with a full
+  a **critical mass** will be reached and there will be a tipping point with a full
   transition to the new economy.
 
 The Viridian project does not have complete solutions on these three points
