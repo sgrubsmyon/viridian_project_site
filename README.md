@@ -1,7 +1,9 @@
 ## Deploy
 
 ```
-$ rm _site/README.html _site/ideas.html
+> rmarkdown::clean_site()
+> rmarkdown::render_site()
+# Execute first code block in index.Rmd, alternatively run its code at R console
 $ rsync -rtlPvi --delete _site/ guavapi:www.viridian-project.org/
 $ ssh -t guavapi sudo rsync -rtlPvi --delete --exclude=.well-known --exclude=piwik www.viridian-project.org/ /var/www/html/www.viridian-project.org/
 ```
