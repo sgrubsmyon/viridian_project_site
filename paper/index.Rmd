@@ -1,7 +1,8 @@
 ---
 title: "The Viridian Project: A digital currency to internalize external costs for a more sustainable economy"
 author: "Markus Voge"
-date: "`r Sys.Date()` --- v0"
+#date: "`r Sys.Date()` --- v0"
+date: "2018-01-28 --- v0"
 bibliography: references.bib
 csl: elsevier-with-titles.csl
 # http://editor.citationstyles.org/searchByName/
@@ -9,9 +10,9 @@ csl: elsevier-with-titles.csl
 link-citations: yes # see https://github.com/jgm/pandoc-citeproc/issues/141 and https://github.com/jgm/pandoc/issues/1117
 output: 
   # Add for PDF creation, remove for HTML creation (font problem):
-  #pdf_document: 
+  # pdf_document:
   #  number_sections: yes
-  html_document: 
+  html_document:
     fig_caption: yes
     number_sections: yes
     self_contained: yes
@@ -46,7 +47,7 @@ tbls <- captioner(prefix="Table")
 
 # Introduction
 
-Among the biggest problems of humanity in the 21st century areenvironmental crises
+Among the biggest problems of humanity in the 21st century are environmental crises
 such as global warming, but also social crises such as inequal distribution of wealth,
 with some still suffering from hunger. These problems in turn are catalysts for conflicts
 and migration, putting entire societies under stress. Many experts say that we are
