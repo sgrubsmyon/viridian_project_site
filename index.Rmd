@@ -11,13 +11,20 @@ if (!dir.exists("_site/paper")) {
 file.copy(c("paper/index.html", "paper/index.pdf"),
           c("_site/paper/index.html", "_site/paper/viridian.pdf"),
           overwrite = TRUE)
+unlink(c("_site/README.html", "_site/ideas.html"))
 ```
 
 ## A New World Economy {#first-section-front}
 
-The *Viridian Project* is an attempt to implement an alternative way of economic
-activity. Imagine an economy that takes into account not only economical, but also
-environmental and social concerns. An economy, where people are worth more than
+We live in a world where many things just seem to be **going wrong**. Growing
+social inequality, climate change, loss of biodiversity... just to name a few.
+**Are you one of those people thinking that change is needed, however nothing ever happens?**
+Then you are like me and maybe you should join this project.
+
+Most of the problems of human society have to do with economics.
+Thus, the *Viridian Project* aims for an alternative way of **economic activity**.
+Imagine an economy that takes into account not only economical, but also
+environmental and social concerns. An economy where people are worth more than
 profits. An economy, in which **sustainable and fair are the default**, not the
 exception.
 
@@ -29,11 +36,14 @@ side.
 
 The main goal of the Viridian Project is to **internalize external costs** using a
 new digital currency, making social and environmental concerns a normal part of
-every business model. This incentivizes businesses that are not harmful for
+every business model.
+<!--
+This incentivizes businesses that are not harmful for
 society. When social peer pressure is included into economic activity (via the
 alternative digital currency), people will act more responsibly automatically.
 This is similar to the way that *commons* work, where a group of people
 collectively cares for a common resource, making every individual act responsibly.
+-->
 
 <!--
 To achieve this, a computer network shall be implemented, in which the desired
@@ -43,7 +53,7 @@ agreed upon by everyone. They must also be continually debated and adjusted
 as soon as needed.
 -->
 
-<a href="paper" class="btn btn-info" role="button">Read the white paper</a>
+<a href="paper" class="btn btn-info" role="button">Read the whitepaper</a>
 
 
 ## Goals
