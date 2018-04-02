@@ -32,5 +32,22 @@ $(document).ready(function(){
       }
     }
   });
+
+  // Color change of tiles on click:
+  var tiles = ['.btn-gradient-ll', '.btn-gradient-lc', '.btn-gradient-lr',
+               '.btn-gradient-ml', '.btn-gradient-mc', '.btn-gradient-mr', 
+               '.btn-gradient-ul', '.btn-gradient-uc', '.btn-gradient-ur'];
+  $.each(tiles, function(index, tile) {
+    $(tile).click(function() {
+      $('.btn-tile').css('background-color', '#999999');
+      $('.btn-tile').css('background-image', 'none');
+      $(this).css('background-color', '');
+      $(this).css('background-image', '');
+    });
+  });
+  $('body').click(function() {
+    $('.btn-tile').css('background-color', '');
+    $('.btn-tile').css('background-image', '');
+  });
 });
 </script>

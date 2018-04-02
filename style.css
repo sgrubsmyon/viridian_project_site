@@ -331,7 +331,7 @@ a:hover {
 }
 
 .btn-gradient-ll {
-  background-image: linear-gradient(15deg, #37EB2A, #28c868);
+  background-image: linear-gradient(15deg, #37eb2a, #28c868);
 }
 .btn-gradient-lc {
   background-image: linear-gradient(15deg, #2fd94a, #26c273);
@@ -356,6 +356,18 @@ a:hover {
 }
 .btn-gradient-ur {
   background-image: linear-gradient(15deg, #159bb7, #0b84e1);
+}
+
+.tile-panel-heading {
+  background-image: linear-gradient(15deg, #2acc61, #0b84e1);
+}
+
+.tile-panel-body {
+  background-color: #0e8ad61a;
+}
+
+.section .tile-panel-heading h3 {
+  color: #ffffff;  
 }
 
 /* http://nicolasgallagher.com/jump-links-and-viewport-positioning/ */
