@@ -4,12 +4,15 @@ title: "Contact Us"
 
 ## {#first-section}
 
+So far, the Viridian Project consists of a single person: Markus Voge,
+living in Bonn, Germany.
+
 You can get in touch with the project using this email address:
 ```{r, echo=FALSE}
 htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
 ```
 
-Alternatively, you can reach us at the
+Alternatively, you can use the
 [Viridian Project community space](https://community.coinsence.org/s/viridian-project)
 on the [CoinSence community platform](https://community.coinsence.org).
 The CoinSence community platform is an open collaborative platform, based on

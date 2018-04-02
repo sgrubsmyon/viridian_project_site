@@ -62,8 +62,6 @@ as soon as needed.
 The objective is to create a computer network for economic transactions providing
 the following:
 
-####
-
 <div class="row">
 <div class="col-md-6">
 
@@ -117,8 +115,6 @@ tools like liquid democracy.
 </div>
 </div>
 
-####
-
 <div class="row">
 <div class="col-md-6">
 
@@ -169,8 +165,6 @@ innovation and reducing market monopolies.
 
 </div>
 </div>
-
-####
 
 <div class="row">
 <div class="col-md-6">
@@ -229,7 +223,16 @@ which is harvested for profit.
 
 ## Get involved
 
-There are many open questions and unsolved problems. **Are you inspired by the idea of the project? You can help!**
+There are many open questions and unsolved problems. At the moment, the project
+is just an idea by a single person (see <a href="about.html">about</a> and
+<a href="contact.html">contact</a>).
+**I am looking for like-minded people to discuss and exchange ideas.**
+Once the vision is shaped into a concrete network architecture and
+algorithms/rules, one can start to work on implementations. But for the moment,
+I would like to get feedback from as many people as possible, especially on the
+subjects listed in the tiles below. 
+
+**Are you inspired by the idea of the project? You can help!**
 Just pick your area of interest and start getting involved.
 
 ```{r, echo=FALSE}
