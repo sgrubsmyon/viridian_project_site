@@ -22,21 +22,22 @@ social inequality, climate change, loss of biodiversity... just to name a few.
 Then you are like me and maybe you should join this project.
 
 Most of the problems of human society have to do with economics.
-Thus, the *Viridian Project* aims for an alternative way of **economic activity**.
+This is why the *Viridian Project* aims for an alternative way of **economic activity**.
 Imagine an economy that takes into account not only economical, but also
 environmental and social concerns. An economy where people are worth more than
 profits. An economy, in which **sustainable and fair are the default**, not the
 exception.
 
+<!--
 The inspiration for the Viridian Project comes from two communities having little
 contact with each other so far: The vision of the *Transition Town* movement of
 a **sustainable, post-fossil, resilient economy** on one side. The vision of the
 *cryptocurrency community* of a **decentralized peer-to-peer economy** on the other
 side.
+-->
 
-The main goal of the Viridian Project is to **internalize external costs** using a
-new digital currency, making social and environmental concerns a normal part of
-every business model.
+The main goal of the Viridian Project is to **internalize external costs using a new digital currency**,
+making social and environmental concerns a normal part of every business model.
 <!--
 This incentivizes businesses that are not harmful for
 society. When social peer pressure is included into economic activity (via the
@@ -71,9 +72,18 @@ the following:
 #### Decentralization
 
 The network shall be decentralized for increased **resilience**.
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-dec" aria-expanded="false" aria-controls="showmore-dec"><i class="glyphicon glyphicon-triangle-bottom"></i> Show more</button>
+
+<!-- &#x25bc; UTF-8 alternative to glyphicon-triangle-bottom -->
+
+<p></p>
+
+<p class="collapse" id="showmore-dec">
 There should not be any single points of failure. It must also be spread to
 **prevent too much concentration of power**. The network shall be operated by
 and in the hands of all people, not of few (or single) corporations or governments.
+</p>
 
 <!-- <div>Icon made by me!</div> -->
 
@@ -85,14 +95,22 @@ and in the hands of all people, not of few (or single) corporations or governmen
 
 #### Democratization
 
-Running on decentralized nodes, economy and society become more democratic and
-more equal, because concentration of resources and power can be prevented.
-Cryptocurrencies enable to **move power** away from centralized banks and towards
-the people using the currency. In addition, the **rules of the network shall be set by the people**
-using it: in an open, collaborative process, similar to the development of open
-source software. The use of computer networks allows the usage of innovative
-democratic consensus tools like liquid democracy.
+Thanks to decentralization economy and society become
+**more democratic and more equal**.
 
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-dem" aria-expanded="false" aria-controls="showmore-dem"><i class="glyphicon glyphicon-triangle-bottom"></i> Show more</button>
+
+<p></p>
+
+<p class="collapse" id="showmore-dem">
+Running the network on many decentralized nodes, the concentration of resources
+and power can be prevented. Cryptocurrencies enable to **move power** away from
+centralized banks and towards the people using the currency. In addition, the
+**rules of the network shall be set by the people** using it: in an open,
+collaborative process, similar to the development of open source software.
+The use of computer networks allows the usage of innovative democratic consensus
+tools like liquid democracy.
+</p>
 
 <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 
@@ -108,11 +126,19 @@ democratic consensus tools like liquid democracy.
 
 #### Sustainability
 
-**Sustainable and socially responsible business and commerce shall be incentivized**
-by including external costs of economic activity
+Transparent pricing mechanisms **incentivize** sustainable and socially responsible business.
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-sust" aria-expanded="false" aria-controls="showmore-sust"><i class="glyphicon glyphicon-triangle-bottom"></i> Show more</button>
+
+<p></p>
+
+<p class="collapse" id="showmore-sust">
+Sustainable and socially responsible business and commerce are incentivized
+**by including external costs** of economic activity
 in the prices. In addition, the cryptocurrency transactions shall not be
 verified in a resource-intensive proof-of-work process, but in an alternative
 way with an ecological footprint as small as possible.
+</p>
 
 <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/retinaicons" title="Retinaicons">Retinaicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 
@@ -123,6 +149,13 @@ way with an ecological footprint as small as possible.
 
 #### Fairness
 
+The Viridian market will be fairer and **closer to an idealized free market**.
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-fair" aria-expanded="false" aria-controls="showmore-fair"><i class="glyphicon glyphicon-triangle-bottom"></i> Show more</button>
+
+<p></p>
+
+<p class="collapse" id="showmore-fair">
 When external costs are included in the price calculation,
 the **market is fairer and closer to an idealized free market**. Also, because the
 supply chain can be revealed in the process, inferior quality can be revealed as
@@ -130,6 +163,7 @@ well. Customers do not have to trust the reputation of a producer, but can
 choose the best option available. This makes it easier for newcomers and
 **accelerates the introduction of alternative technologies**, thereby increasing
 innovation and reducing market monopolies.
+</p>
 
 <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 
@@ -146,12 +180,21 @@ innovation and reducing market monopolies.
 #### Transparency
 
 It shall be **visible at all times how the rules of the network are**
-and *why* they are like that, including the internalization of external
-costs. Changes to the algorithms must be accompanied by legitimizing information.
+and *why* they are like that.
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-trans" aria-expanded="false" aria-controls="showmore-trans"><i class="glyphicon glyphicon-triangle-bottom"></i> Show more</button>
+
+<p></p>
+
+<p class="collapse" id="showmore-trans">
+The machanics of the network must be transparent at all times, including the
+internalization of external costs. Changes to the algorithms must be
+accompanied by legitimizing information.
 **Public data shall be made open to everyone.** Because of its importance for
 society, information on the external costs of any economic activity must be
 public and cannot be kept a company secret. Because people are
 more important than profits, there cannot be such "investor protection".
+</p>
 
 <!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 
@@ -162,10 +205,18 @@ more important than profits, there cannot be such "investor protection".
 
 #### Privacy
 
-The network shall be end-to-end encrypted to provide security
-and privacy. People should have full control over their data.
+The network shall be **end-to-end encrypted** to provide security
+and privacy.
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-priv" aria-expanded="false" aria-controls="showmore-priv"><i class="glyphicon glyphicon-triangle-bottom"></i> Show more</button>
+
+<p></p>
+
+<p class="collapse" id="showmore-priv">
+People should have full control over their data.
 **Private data shall be kept private**, instead of being a commodity,
 which is harvested for profit.
+</p>
 
 <!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 
@@ -174,10 +225,6 @@ which is harvested for profit.
 
 <!-- * **Transactions:** Economic transactions shall be performed via the network, -->
 <!--   i.e. tokens of value (a currency) shall be exchanged via the network. -->
-
-####
-
-<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/retinaicons" title="Retinaicons">Retinaicons</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>.</div>
 
 
 ## Get involved
@@ -638,7 +685,16 @@ htmltools::includeHTML("alternative_contact.html")
 
 ## How is this any different from what already exists?
 
-There are already many good concepts of sustainable economy, e.g.:
+There are already many good concepts for a sustainable economy. See how they
+compare to the Viridian project.
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-comp" aria-expanded="false" aria-controls="showmore-comp"><i class="glyphicon glyphicon-triangle-bottom"></i> Read more</button>
+
+<p></p>
+
+<div class="collapse" id="showmore-comp">
+
+Existing ideas for a more sustainable economy include:
 
 * [Transition Towns](https://transitionnetwork.org/) and [Permaculture](https://en.wikipedia.org/wiki/Permaculture) (see also: [here](https://permacultureprinciples.com/))
 * [Degrowth](https://www.degrowth.info)
@@ -677,6 +733,12 @@ economy typically lack some or all of the following elements:
   a **critical mass** will be reached and there will be a tipping point with a full
   transition to the new economy.
 
-The Viridian project does not have complete solutions on these three points
-either, yet. But we have a vision. And you can help us turn that vision into a
+The Viridian project does not yet have complete solutions on these three points
+either. But we have a vision. And you can help us turn that vision into a
 reality! See [Get involved](#get-involved).
+
+</div>
+
+####
+
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/retinaicons" title="Retinaicons">Retinaicons</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>.</div>
