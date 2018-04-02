@@ -65,7 +65,7 @@ the following:
 <div class="row">
 <div class="col-md-6">
 
-<img src="images/network.svg" style="height: 100px;">
+<img src="images/network.svg" style="height: 75px;">
 
 #### Decentralization
 
@@ -88,8 +88,8 @@ and in the hands of all people, not of few (or single) corporations or governmen
 </div>
 <div class="col-md-6">
 
-<img src="images/like.svg" style="height: 100px;">
-<img src="images/dislike.svg" style="height: 100px;">
+<img src="images/like.svg" style="height: 75px;">
+<img src="images/dislike.svg" style="height: 75px;">
 
 #### Democratization
 
@@ -118,7 +118,7 @@ tools like liquid democracy.
 <div class="row">
 <div class="col-md-6">
 
-<img src="images/sprout.svg" style="height: 100px;">
+<img src="images/sprout.svg" style="height: 75px;">
 
 #### Sustainability
 
@@ -141,7 +141,7 @@ way with an ecological footprint as small as possible.
 </div>
 <div class="col-md-6">
 
-<img src="images/handshake.svg" style="height: 100px;">
+<img src="images/handshake.svg" style="height: 75px;">
 
 #### Fairness
 
@@ -169,7 +169,7 @@ innovation and reducing market monopolies.
 <div class="row">
 <div class="col-md-6">
 
-<img src="images/search.svg" style="height: 100px;">
+<img src="images/search.svg" style="height: 75px;">
 
 #### Transparency
 
@@ -195,7 +195,7 @@ more important than profits, there cannot be such "investor protection".
 </div>
 <div class="col-md-6">
 
-<img src="images/lock.svg" style="height: 100px;">
+<img src="images/lock.svg" style="height: 75px;">
 
 #### Privacy
 
@@ -230,10 +230,10 @@ is just an idea by a single person (see <a href="about.html">about</a> and
 Once the vision is shaped into a concrete network architecture and
 algorithms/rules, one can start to work on implementations. But for the moment,
 I would like to get feedback from as many people as possible, especially on the
-subjects listed in the tiles below. 
+subjects listed under the tiles below. 
 
 **Are you inspired by the idea of the project? You can help!**
-Just pick your area of interest and start getting involved.
+Just click on your area of interest and start getting involved.
 
 ```{r, echo=FALSE}
 htmltools::includeHTML("tiles.html")
@@ -243,10 +243,10 @@ htmltools::includeHTML("tiles.html")
 
 <div id="cryptocurrencies" class="anchor">
 <div class="panel panel-default">
-<div class="panel-heading">
+<div class="panel-heading tile-panel-heading">
 <h3 class="panel-title">Cryptocurrencies</h3>
 </div>
-<div class="panel-body">
+<div class="panel-body tile-panel-body">
 
 ### Which solution to choose?
 
@@ -255,7 +255,7 @@ proof-of-work, proof-of-stake, proof-of-cooperation, proof-of-interest, ... ---
 the world of cryptocurrencies is full of innovative ideas, with new ones
 springing up monthly.
 
-**If you are enthusiastic about all things crypto, then you might be able to help us decide which solution is best suitable for the Viridian project.**
+**If you are enthusiastic about all things crypto, then you might be able to help us decide, which solution is best suitable for the Viridian project.**
 
 We want transaction validation to have an as small resource footprint as
 possible. The incentive system must be designed such that there is no motivation
@@ -277,10 +277,10 @@ htmltools::includeHTML("alternative_contact.html")
 
 <div id="software-development" class="anchor">
 <div class="panel panel-default">
-<div class="panel-heading">
+<div class="panel-heading tile-panel-heading">
 <h3 class="panel-title">Software development</h3>
 </div>
-<div class="panel-body">
+<div class="panel-body tile-panel-body">
 
 ### Good design is the key
 
@@ -317,10 +317,10 @@ htmltools::includeHTML("alternative_contact.html")
 
 <div id="monetary" class="anchor">
 <div class="panel panel-default">
-<div class="panel-heading">
+<div class="panel-heading tile-panel-heading">
 <h3 class="panel-title">Currencies and monetary policy</h3>
 </div>
-<div class="panel-body">
+<div class="panel-body tile-panel-body">
 
 ### What are the rules of a good currency?
 
@@ -367,10 +367,10 @@ htmltools::includeHTML("alternative_contact.html")
 
 <div id="economics" class="anchor">
 <div class="panel panel-default">
-<div class="panel-heading">
+<div class="panel-heading tile-panel-heading">
 <h3 class="panel-title">Economics</h3>
 </div>
-<div class="panel-body">
+<div class="panel-body tile-panel-body">
 
 ### Would the Viridian economy be closer to an "ideal" free market?
 
@@ -447,10 +447,10 @@ htmltools::includeHTML("alternative_contact.html")
 
 <div id="law" class="anchor">
 <div class="panel panel-default">
-<div class="panel-heading">
+<div class="panel-heading tile-panel-heading">
 <h3 class="panel-title">Law</h3>
 </div>
-<div class="panel-body">
+<div class="panel-body tile-panel-body">
 
 ### What are the legal implications of creating an alternative currency?
 
@@ -488,10 +488,10 @@ htmltools::includeHTML("alternative_contact.html")
 
 <div id="lca" class="anchor">
 <div class="panel panel-default">
-<div class="panel-heading">
+<div class="panel-heading tile-panel-heading">
 <h3 class="panel-title">Life-cycle analysis, external costs, sustainability</h3>
 </div>
-<div class="panel-body">
+<div class="panel-body tile-panel-body">
 
 ### How can the Viridian project benefit from existing LCA work?
 
@@ -542,10 +542,10 @@ htmltools::includeHTML("alternative_contact.html")
 
 <div id="auditing" class="anchor">
 <div class="panel panel-default">
-<div class="panel-heading">
+<div class="panel-heading tile-panel-heading">
 <h3 class="panel-title">Auditing, e.g. organic or fair trade</h3>
 </div>
-<div class="panel-body">
+<div class="panel-body tile-panel-body">
 
 ### Any learned lessons from auditing practice?
 
@@ -575,10 +575,10 @@ htmltools::includeHTML("alternative_contact.html")
 
 <div id="sociology" class="anchor">
 <div class="panel panel-default">
-<div class="panel-heading">
+<div class="panel-heading tile-panel-heading">
 <h3 class="panel-title">Psychology and Sociology</h3>
 </div>
-<div class="panel-body">
+<div class="panel-body tile-panel-body">
 
 ### The rational brain and the emotional brain?
 
@@ -641,10 +641,10 @@ htmltools::includeHTML("alternative_contact.html")
 
 <div id="politics" class="anchor">
 <div class="panel panel-default">
-<div class="panel-heading">
+<div class="panel-heading tile-panel-heading">
 <h3 class="panel-title">Politics: Democracy and Voting</h3>
 </div>
-<div class="panel-body">
+<div class="panel-body tile-panel-body">
 
 ### How to organize ourselves?
 
@@ -712,29 +712,62 @@ Existing ideas for a more sustainable economy include:
 While these are very good approaches, existing concepts for a more sustainable
 economy typically lack some or all of the following elements:
 
-* **Tech:** While technology alone cannot solve our problems and social
-  innovation is needed, computer network technology (web, digitization,
-  cryptocurrencies, IoT, etc.) has a **vast potential to support or even enable societal transformation**.
-  For example, technology can be critical for allowing
-  humans to efficiently collaborate and exchange information. It might
-  also be used to algorithmically enforce sustainability (whether this is feasible
-  or not remains to be seen).
-* **Coolness:** For the alternative technology to be successful, it must be "cool"
-  enough to be adopted by a large (but minority) group of "early adopters".
-  If the new technology **"goes viral"**, it will spread very fast and be talked
-  about a lot. This would be the first stage towards mass adoption.
-  <!-- In the Daemon novels, this was achieved by addressing the gamer community and -->
-  <!-- transferring concepts of comupter games to the real world. -->
-* **Benefit:** The alternative economy will only be widely adopted if it provides
-  real benefit for the individual. Mere moral superiority is probably not enough.
-  One example might be farmers: Many farmers need to pay large amounts to corporations
-  to buy seeds, fertilizers, and pesiticides, while not earning much with their
-  crops on the market. If they discover that they can **earn a much better living**
-  by using the alternative economy, both for buying goods and selling their
-  produce, they will start using it. This would be the second stage towards mass
-  adoption. When more and more groups of people join the new economy, eventually
-  a **critical mass** will be reached and there will be a tipping point with a full
-  transition to the new economy.
+<img src="images/coding.svg" style="height: 75px;">
+
+<!--
+<div>Icons made by <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+-->
+
+#### Tech
+
+While technology alone cannot solve our problems and social
+innovation is needed, computer network technology (web, digitization,
+cryptocurrencies, IoT, etc.) has a **vast potential to support or even enable societal transformation**.
+For example, technology can be critical for allowing
+humans to efficiently collaborate and exchange information. It might
+also be used to algorithmically enforce sustainability (whether this is feasible
+or not remains to be seen).
+
+<img src="images/sunglasses.svg" style="height: 75px; margin-bottom: -25px;">
+
+<!--
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+-->
+
+#### Coolness
+
+
+For the alternative technology to be successful, it must be "cool"
+enough to be adopted by a large (but minority) group of "early adopters".
+If the new technology **"goes viral"**, it will spread very fast and be talked
+about a lot. This would be the first stage towards mass adoption.
+<!-- In the Daemon novels, this was achieved by addressing the gamer community and -->
+<!-- transferring concepts of comupter games to the real world. -->
+
+<!-- <img src="images/stats.svg" style="height: 75px;"> -->
+
+<!--
+<div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+-->
+
+<img src="images/coins.svg" style="height: 75px;">
+
+<!--
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+-->
+
+#### Benefit
+
+The alternative economy will only be widely adopted if it provides
+real benefit for the individual. Mere moral superiority is probably not enough.
+One example might be farmers: Many farmers need to pay large amounts to corporations
+to buy seeds, fertilizers, and pesiticides, while not earning much with their
+crops on the market. If they discover that they can **earn a much better living**
+by using the alternative economy, both for buying goods and selling their
+produce, they will start using it. This would be the second stage towards mass
+adoption. When more and more groups of people join the new economy, eventually
+a **critical mass** will be reached and there will be a tipping point with a full
+transition to the new economy.
 
 The Viridian project does not yet have complete solutions on these three points
 either. But we have a vision. And you can help us turn that vision into a
@@ -744,4 +777,4 @@ reality! See [Get involved](#get-involved).
 
 ####
 
-<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/retinaicons" title="Retinaicons">Retinaicons</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>.</div>
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/retinaicons" title="Retinaicons">Retinaicons</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a>, <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>.</div>
