@@ -5,9 +5,12 @@ title: "Contact Us"
 ## {#first-section}
 
 So far, the Viridian Project consists of a single person: Markus Voge,
-living in Bonn, Germany.
+living in Bonn, Germany. I am looking for like-minded people to discuss and
+exchange ideas. **I would like to get feedback from as many people as possible**,
+especially on the topics listed under the tiles on the
+[start page](index.html#get-involved).
 
-You can get in touch with the project using this email address:
+You can reach the project at this email address:
 ```{r, echo=FALSE}
 htmltools::HTML(paste0(htmltools::includeHTML("email.html"), "."))
 ```
