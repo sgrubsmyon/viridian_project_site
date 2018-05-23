@@ -25,6 +25,6 @@ output:
     # highlight: textmate
     css: style.css
     include:
-      in_header: [javascript.html, favicon.html, matomo.html]
+      in_header: [javascript.html, favicon.html] # Disable Matomo for privacy reasons (GDPR): , matomo.html
       after_body: footer.html
     self_contained: no
