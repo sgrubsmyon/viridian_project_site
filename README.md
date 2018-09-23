@@ -1,5 +1,7 @@
 ## Deploy
 
+### Complete re-build:
+
 ```
 > rmarkdown::clean_site()
 > rmarkdown::render_site()
@@ -7,6 +9,17 @@
 $ rsync -rtlPvi --delete _site/ guavapi:www.viridian-project.org/
 $ ssh -t guavapi sudo rsync -rtlPvi --delete --exclude=.well-known --exclude=piwik www.viridian-project.org/ /var/www/html/www.viridian-project.org/
 ```
+
+Takes quite some time, especially with `mathjax: local`, which means mathjax
+must be downloaded.
+
+For small changes, try to simply:
+
+```
+> rmarkdown::render_site()
+```
+
+### 
 
 ## Email obfuscation:
 
