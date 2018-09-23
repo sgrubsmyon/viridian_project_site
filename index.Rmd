@@ -14,9 +14,9 @@ file.copy(c("paper/index.html", "paper/index.pdf"),
 unlink(c("_site/README.html", "_site/ideas.html"))
 ```
 
-## A New World Economy {#first-section-front}
+## A Sustainable and Fair Economy {#first-section-front}
 
-We live in a world where many things just seem to be **going wrong**. Growing
+We live in a world where many things seem to be **going wrong**. Growing
 social inequality, climate change, loss of biodiversity... just to name a few.
 **Are you one of those people thinking that change is needed, however nothing ever happens?**
 Then you are like me and maybe you should join this project.
@@ -181,7 +181,7 @@ and *why* they are like that.
 <p></p>
 
 <p class="collapse" id="showmore-trans">
-The machanics of the network must be transparent at all times, including the
+The mechanics of the network must be transparent at all times, including the
 internalization of external costs. Changes to the algorithms must be
 accompanied by legitimizing information.
 **Public data shall be made open to everyone.** Because of its importance for
