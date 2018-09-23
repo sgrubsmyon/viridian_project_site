@@ -27,4 +27,5 @@ output:
     include:
       in_header: [javascript.html, favicon.html] # Disable Matomo for privacy reasons (GDPR): , matomo.html
       after_body: footer.html
-    self_contained: no
+    self_contained: false
+    mathjax: local
