@@ -1,0 +1,41 @@
+baseurl = "http://your-site.com"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = "true"
+
+#theme = "hamburg"
+theme = "hugo-theme-hamburg"
+
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+[params]
+    # Short subtitle/tagline. This is displayed in the header.
+    themecolor = "#hexcolor" # Defines the tab color in Chrome for Android.
+    # To load additional CSS styles
+    customCSS = ['hamburg.css']
+    # Show this very user-friendly and absolutely not annoying GDPR notice at the bottom of the page
+    #ShowGDPRNotice = true
+
+[languages]
+    [languages.en]
+        languageCode = "en"
+        languageName = "English"
+        title = "The Viridian Project"
+        #subtitle = "A simple subtitle"
+        # Copyright notice. This is displayer in the footer.
+        copyright = "&copy; some license"
+        [languages.en.menu]
+            [[languages.en.menu.main]]
+                name = "About"
+                identifier = "about"
+                url = "pages/about"
+    [languages.de]
+        languageCode = "de"
+        languageName = "Deutsch"
+        title = "Das Viridian-Projekt"
+        #subtitle = "Ein einfacher Untertitel"
+        copyright = "&copy; eine Lizenz"
+        [languages.de.menu]
+            [[languages.de.menu.main]]
+                name = "Über"
+                identifier = "about"
+                url = "pages/about"

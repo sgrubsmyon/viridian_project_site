@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on The Viridian Project</title>
+    <link>/en/posts/</link>
+    <description>Recent content in Posts on The Viridian Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; some license</copyright>
+    <lastBuildDate>Mon, 10 Sep 2018 18:58:26 +0200</lastBuildDate>
+    
+	<atom:link href="/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Actual post</title>
+      <link>/en/posts/actual/</link>
+      <pubDate>Mon, 10 Sep 2018 18:58:26 +0200</pubDate>
+      
+      <guid>/en/posts/actual/</guid>
+      <description>Just a minimal example This site is just a minimal working example of the hamburg-theme. To see something real, visit the-green-spot.de or the corresponding GitHub repo.</description>
+    </item>
+    
+    <item>
+      <title>Some example Post</title>
+      <link>/en/posts/some-post/</link>
+      <pubDate>Mon, 10 Sep 2018 18:36:26 +0200</pubDate>
+      
+      <guid>/en/posts/some-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
+    </item>
+    
+  </channel>
+</rss>

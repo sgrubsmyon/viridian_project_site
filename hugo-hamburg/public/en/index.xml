@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Viridian Project</title>
+    <link>/en/</link>
+    <description>Recent content on The Viridian Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; some license</copyright>
+    <lastBuildDate>Mon, 10 Sep 2018 19:04:46 +0200</lastBuildDate>
+    
+	<atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>/en/pages/about/</link>
+      <pubDate>Mon, 10 Sep 2018 19:04:46 +0200</pubDate>
+      
+      <guid>/en/pages/about/</guid>
+      <description>This theme can do pages as well. WOW.</description>
+    </item>
+    
+    <item>
+      <title>Actual post</title>
+      <link>/en/posts/actual/</link>
+      <pubDate>Mon, 10 Sep 2018 18:58:26 +0200</pubDate>
+      
+      <guid>/en/posts/actual/</guid>
+      <description>Just a minimal example This site is just a minimal working example of the hamburg-theme. To see something real, visit the-green-spot.de or the corresponding GitHub repo.</description>
+    </item>
+    
+    <item>
+      <title>Some example Post</title>
+      <link>/en/posts/some-post/</link>
+      <pubDate>Mon, 10 Sep 2018 18:36:26 +0200</pubDate>
+      
+      <guid>/en/posts/some-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/en/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/en/post/2015-07-23-r-rmarkdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+    </item>
+    
+  </channel>
+</rss>
