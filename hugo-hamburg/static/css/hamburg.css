@@ -18,6 +18,80 @@
   max-width: none;
 }
 
+/* navbar smaller on scrolling */
+/* https://stackoverflow.com/questions/16442016/jquery-sticky-header-that-shrinks-when-scrolling-down */
+.navbar {
+  /*width: 100%;*/
+  height: 100px;
+  /*background: #26b;
+  color: #fff;*/
+  /*position: fixed;
+  top: 0;
+  left: 0;*/
+  border-bottom-width: 0;
+  transition: height 500ms, background 500ms;
+}
+.navbar img {
+  height: 90px;
+  transition: height 500ms;
+}
+.navbar-header {
+  height: 100px;
+  transition: height 500ms;
+}
+.navbar-nav > li > a {
+  /* padding: 39px 15px 39px 15px; */
+  font-size: 22px;
+  transition: padding 500ms, font-size 500ms;
+  top: 20px;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 12px;
+}
+.navbar-brand {
+  padding: 4.5px 35px; /*30px*/
+  transition: padding 500ms;
+}
+
+.navbar-tiny {
+  height: 40px;
+  /*background: #aaa;*/
+}
+.navbar-tiny img {
+  height: 40px;
+}
+.navbar-header-tiny {
+  height: 40px;
+}
+.navbar-nav-tiny > li > a {
+  padding: 14.5px 15px 14.5px 15px;
+  margin-top: 0;
+  font-size: 16px;
+}
+.navbar-brand-tiny {
+  padding: 4.5px 35px;
+}
+
+.navbar-default {
+  background-color: #222222;
+  border-color: #121212;
+}
+
+.btn-nav {
+  margin-right: 12px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: #bdbdbd4d;
+  border-color: #fff;
+}
+
+/*
 .navbar {
   background-color: #222222;
   position: fixed;
@@ -27,18 +101,17 @@
   height: 100px;
   z-index: 1030;
 }
+*/
 
+/*
 .navbar-container {
   top: 20px;
-  /* bottom: 20px; */ /* redundant */
 }
+*/
 
+/*
 .navbar-logo > img {
   max-height: 100%;
+  max-width: 30%;
 }
-
-.navbar-container > .btn {
-  height: 60px;
-  line-height: 60px;
-  padding: 0 12px;
-}
+*/
