@@ -30,11 +30,11 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
             [[languages.en.menu.main]]
                 name = "Technical"
                 identifier = "02-technical"
-                url = "pages/technical"
+                url = "technical"
             [[languages.en.menu.main]]
                 name = "About"
                 identifier = "03-about"
-                url = "pages/about"
+                url = "about"
     [languages.de]
         languageCode = "de"
         languageName = "Deutsch"
@@ -45,8 +45,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
             [[languages.de.menu.main]]
                 name = "Technisches"
                 identifier = "02-technical"
-                url = "pages/technical"
+                url = "technical"
             [[languages.de.menu.main]]
                 name = "Über"
                 identifier = "03-about"
-                url = "pages/about"
+                url = "about"
