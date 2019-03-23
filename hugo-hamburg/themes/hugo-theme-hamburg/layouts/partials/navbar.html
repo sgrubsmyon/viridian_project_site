@@ -20,11 +20,12 @@
             <li>
               <a class="btn btn-default btn-nav" href="{{ "paper" | absURL }}">{{ i18n "whitepaper" }}</a>
             </li>
-            {{ range sort .Site.Menus.main "Identifier" }}
-              <li>
+            {{- $currentPage := . -}}
+            {{ range sort .Site.Menus.main "Identifier" -}}
+              <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
                 <a class="btn btn-default btn-nav" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
               </li>
-            {{ end }}
+            {{- end }}
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <!-- Languages -->
