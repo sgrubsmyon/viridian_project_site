@@ -1,8 +1,8 @@
 # Commands to exeucte:
 # cp ../paper/index.html static/paper/; cp ../paper/index.pdf static/paper/viridian.pdf
 
-baseurl = "http://your-site.com"
-defaultContentLanguage = "en"
+baseurl = "https://www.viridian-project.org/"
+defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = "true"
 
 #theme = "hamburg"
