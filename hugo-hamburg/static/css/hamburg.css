@@ -128,3 +128,36 @@
   max-width: 30%;
 }
 */
+
+.site-footer {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: solid 1px #eff0f1;
+  
+  position: absolute;
+  right: 0;
+  left: 0;
+  color: #333;
+  text-align: center;
+  background-color: #40826d;
+  background-image: linear-gradient(15deg, #e95cba, #1eb4e6);
+  padding: 1.5rem 2rem;
+}
+a {
+  color: #1e6bb8;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #165ba8;
+  text-decoration: underline;
+}
+.copyright-note {
+  text-align: left;
+}
+.site-footer-owner {
+  display: block;
+  font-weight: bold;
+}
+.site-footer-credits {
+  color: #819198;
+}

@@ -1,3 +1,6 @@
+# Commands to exeucte:
+# cp ../paper/index.html static/paper/; cp ../paper/index.pdf static/paper/viridian.pdf
+
 baseurl = "http://your-site.com"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = "true"
@@ -22,20 +25,28 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
         title = "The Viridian Project"
         #subtitle = "A simple subtitle"
         # Copyright notice. This is displayer in the footer.
-        copyright = "&copy; some license"
+        copyright = "Copyright &copy; 2018-2019 Viridian Project"
         [languages.en.menu]
             [[languages.en.menu.main]]
+                name = "Technical"
+                identifier = "02-technical"
+                url = "pages/technical"
+            [[languages.en.menu.main]]
                 name = "About"
-                identifier = "about"
+                identifier = "03-about"
                 url = "pages/about"
     [languages.de]
         languageCode = "de"
         languageName = "Deutsch"
         title = "Das Viridian-Projekt"
         #subtitle = "Ein einfacher Untertitel"
-        copyright = "&copy; eine Lizenz"
+        copyright = "Copyright &copy; 2018-2019 Viridian Project"
         [languages.de.menu]
             [[languages.de.menu.main]]
+                name = "Technisches"
+                identifier = "02-technical"
+                url = "pages/technical"
+            [[languages.de.menu.main]]
                 name = "Über"
-                identifier = "about"
+                identifier = "03-about"
                 url = "pages/about"
