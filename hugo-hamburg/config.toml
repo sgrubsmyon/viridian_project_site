@@ -11,12 +11,13 @@ theme = "hugo-theme-hamburg"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
-    # Short subtitle/tagline. This is displayed in the header.
-    themecolor = "#hexcolor" # Defines the tab color in Chrome for Android.
+    siteLogo = "images/viridian_logo_with_text.png"
+    themecolor = "#40826d" # Defines the tab color in Chrome for Android.
     # To load additional CSS styles
     customCSS = ['hamburg.css']
     # Show this very user-friendly and absolutely not annoying GDPR notice at the bottom of the page
     #ShowGDPRNotice = true
+    #EnableHighlighting = true
 
 [languages]
     [languages.en]
@@ -35,6 +36,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
                 name = "About"
                 identifier = "03-about"
                 url = "about"
+        #[languages.en.params]
+        #    siteLogo = "images/viridian_logo_with_text.png"
     [languages.de]
         languageCode = "de"
         languageName = "Deutsch"
@@ -50,3 +53,5 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
                 name = "Über"
                 identifier = "03-about"
                 url = "about"
+        #[languages.de.params]
+        #    siteLogo = "images/viridian_logo_with_text.png"

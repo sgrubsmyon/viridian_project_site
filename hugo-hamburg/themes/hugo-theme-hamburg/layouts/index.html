@@ -1,15 +1,19 @@
 {{ partial "head.html" . }}
 {{ partial "navbar.html" . }}
 {{ partial "header.html" . }}
-  <div class="article-list">
-    {{ range $index, $page := where .Data.Pages "Type" "posts" }}
-      {{ if ne $index 0 }}
-        <div class="delimiter"></div>
+<article>
+  {{ if isset .Params "title" }}
+    <header class="article-title">
+      <h1 class="text-primary">{{ .Params.title }}</h1>
+      {{ if isset .Params "subtitle" }}
+        <h2>{{ .Params.subtitle }}</h2>
       {{ end }}
-      {{ .Render "li" }}
-    {{ end }}
-  </div>
-  {{ if (not (eq nil .Paginator)) }}
-    {{ partial "pagination.html" .Paginator }}
+    </header>
+    <div class="delimiter"></div>
   {{ end }}
+  <section>
+    <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
+    {{.Content}}
+  </section>
+</article>
 {{ partial "footer.html" . }}

@@ -6,7 +6,7 @@
       <section class="header-text">
         <h1>
           <a href="{{ "" | absLangURL }}">
-            <img src="{{ "images/viridian_logo_with_text.png" | absURL }}"><br>{{ .Site.Title }}
+            <img src="{{ .Site.Params.siteLogo | absURL }}"><br>{{ .Site.Title }}
           </a>
         </h1>
         {{ with .Site.Params.subtitle }}
@@ -15,11 +15,11 @@
           </h3>
         {{ end }}
         {{ if ( not .IsHome ) }}
-          <a class="btn btn-default btn-home" href="{{ "" | absLangURL }}">
+          <a class="btn btn-default-hamburg btn-home" href="{{ "" | absLangURL }}">
             <i class="fa fa-angle-left" aria-hidden="true"></i>
             &nbsp;{{ i18n "home" }}
           </a>
         {{ end }}
       </section>
     </header>
-    <main class="container">
+    <main class="container" aria-role="main">

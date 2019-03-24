@@ -1,22 +1,54 @@
-.global-header {
-  /* position: absolute; */
-  right: 0;
-  left: 0;
-  color: #fff;
-  text-align: center;
-  background-color: #40826d;
-  background-image: linear-gradient(15deg, #e95cba, #1eb4e6);
-  padding: 11.5rem 2rem 1.5rem 2rem;
+/* CSS fetched from the old site (partly bootstrap, partly Jekyll theme cosmo.css) */
+@import url("buttons.css");
+
+/* adopted from the cayman.css theme of prettydoc */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local(OpenSans), url(../fonts/open-sans-400.woff) format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local(OpenSans-Bold), url(../fonts/open-sans-700.woff) format("woff");
+}
+/*
+* {
+  box-sizing: border-box
+}
+*/
+
+/* *************************
+   * Main style: font etc. *
+   ************************* */
+html {
+  font-size: 16px;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #606c71;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+a {
+  color: #1e6bb8;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #165ba8;
 }
 
-.header-text {
-  background-color: transparent;
-}
-
-.header-text > h1 {
-  border-bottom: none;
-  max-width: none;
-}
+/* **********
+   * Navbar *
+   ********** */
 
 /* navbar smaller on scrolling */
 /* https://stackoverflow.com/questions/16442016/jquery-sticky-header-that-shrinks-when-scrolling-down */
@@ -44,9 +76,10 @@
   font-size: 22px;
   top: 20px;
   height: 60px;
-  line-height: 60px;
+  line-height: 55px;
   padding: 0 12px;
   transition: font-size 500ms, top 500ms, height 500ms, line-height 500ms, margin-top 500ms, padding 500ms;
+  margin-right: 12px;
 }
 .navbar-brand {
   padding: 4.5px 35px; /*30px*/
@@ -89,11 +122,6 @@
   background-color: #222222;
   border-color: #121212;
 }
-
-.btn-nav {
-  margin-right: 12px;
-}
-
 .navbar-default .navbar-nav > li > a {
   color: #fff;
 }
@@ -104,35 +132,86 @@
   border-color: #fff;
 }
 
-/*
-.navbar {
-  background-color: #222222;
-  position: fixed;
-  top: 0;
+/* Buttons in navbar shall be like default buttons in Hamburg theme */
+.btn-default-hamburg {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  font-size: 13px;
+  padding: 6px 12px;
+}
+
+.btn-default-hamburg:focus,
+.btn-default-hamburg:hover {
+    color: #fff;
+    background-color: #bdbdbd4d;
+    border-color: #fff;
+}
+
+
+/* ***************
+   * Page header *
+   *************** */
+
+.global-header {
+  /* position: absolute; */
   right: 0;
   left: 0;
-  height: 100px;
-  z-index: 1030;
+  color: #fff;
+  text-align: center;
+  background-color: #40826d;
+  background-image: linear-gradient(15deg, #e95cba, #1eb4e6);
+  padding-top: 100px;
 }
-*/
 
-/*
-.navbar-container {
-  top: 20px;
+.header-text {
+  background-color: transparent;
 }
-*/
 
-/*
-.navbar-logo > img {
-  max-height: 100%;
-  max-width: 30%;
+.header-text h1 {
+  border-bottom: none;
+  max-width: none;
+  padding-top: 85px;
+  padding-bottom: 75px;
+  font-size: 38px;
+  font-weight: bold;
 }
-*/
+
+
+/* *************
+   * Main page *
+   ************* */
+   
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  color: #40826d;
+}
+main p {
+  margin-bottom: 1em;
+}
+main {
+  max-width: 64rem;
+  padding: 2rem 0;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.caption {
+  color: #40826d;
+}
+
+
+
+/* ***************
+   * Page footer *
+   *************** */
 
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px #eff0f1;
+  /*border-top: solid 1px #eff0f1;*/
   
   position: absolute;
   right: 0;
@@ -142,14 +221,6 @@
   background-color: #40826d;
   background-image: linear-gradient(15deg, #e95cba, #1eb4e6);
   padding: 1.5rem 2rem;
-}
-a {
-  color: #1e6bb8;
-  text-decoration: none;
-}
-a:hover, a:focus {
-  color: #165ba8;
-  text-decoration: underline;
 }
 .copyright-note {
   text-align: left;
@@ -161,3 +232,93 @@ a:hover, a:focus {
 .site-footer-credits {
   color: #819198;
 }
+
+
+
+/* *************************************************************
+   * The tiles and panels with themed topics on the front page *
+   ************************************************************* */
+
+.panel-title {
+  margin-bottom: auto !important;
+}
+
+/* vertical centering with the help of CSS tables: https://css-tricks.com/vertically-center-multi-lined-text/ */
+.btn-tile {
+  width: 100%;
+  height: 200px;
+  font-size: 20px;
+  display: table;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #40826d;
+}
+.btn-tile p {
+  display: table-cell; 
+  vertical-align: middle; 
+  
+  word-wrap: break-word;      /* IE 5.5-7 */
+  white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+  white-space: pre-wrap;      /* current browsers */
+}
+
+.btn-gradient-ll {
+  background-image: linear-gradient(15deg, #37eb2a, #28c868);
+}
+.btn-gradient-lc {
+  background-image: linear-gradient(15deg, #2fd94a, #26c273);
+}
+.btn-gradient-lr {
+  background-image: linear-gradient(15deg, #2acd5e, #23bb80);
+}
+.btn-gradient-ml {
+  background-image: linear-gradient(15deg, #28c868, #21b687);
+}
+.btn-gradient-mc {
+  background-image: linear-gradient(15deg, #22ba81, #1cab9b);
+}
+.btn-gradient-mr {
+  background-image: linear-gradient(15deg, #1dae95, #169db4);
+}
+.btn-gradient-ul {
+  background-image: linear-gradient(15deg, #1eb093, #1499bb);
+}
+.btn-gradient-uc {
+  background-image: linear-gradient(15deg, #1aa7a3, #108ece);
+}
+.btn-gradient-ur {
+  background-image: linear-gradient(15deg, #159bb7, #0b84e1);
+}
+
+.tile-panel-heading {
+  background-image: linear-gradient(15deg, #2acc61, #0b84e1);
+}
+
+.tile-panel-body {
+  background-color: #0e8ad61a;
+}
+.tile-panel-body h3 {
+  margin-top: 0;
+}
+
+.section .tile-panel-heading h3 {
+  color: #ffffff;
+}
+
+/* http://nicolasgallagher.com/jump-links-and-viewport-positioning/ */
+.anchor {
+   /*position: relative;*/
+   border-top: 70px solid transparent;
+   margin: -70px 0 0;
+   /*-webkit-background-clip: padding-box;
+   -moz-background-clip: padding;
+   background-clip: padding-box;*/
+}
+/*.anchor:before {
+   content: "";
+   position: absolute;
+   top: -2px;
+   left: 0;
+   right: 0;
+}*/

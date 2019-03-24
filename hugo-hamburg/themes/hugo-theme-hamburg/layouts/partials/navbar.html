@@ -1,6 +1,6 @@
     <!-- sites -->
     
-    <div id="navbar-outer" class="navbar navbar-default  navbar-fixed-top" role="navigation">
+    <div id="navbar-outer" class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div id="navbar-header" class="navbar-header active">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -15,15 +15,15 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li>
-              <a class="btn btn-default btn-nav" href="{{ "" | absLangURL }}">{{ i18n "home" }}</a>
+              <a class="btn btn-default-hamburg" href="{{ "" | absLangURL }}">{{ i18n "home" }}</a>
             </li>
             <li>
-              <a class="btn btn-default btn-nav" href="{{ "paper" | absURL }}">{{ i18n "whitepaper" }}</a>
+              <a class="btn btn-default-hamburg" href="{{ "paper" | absURL }}">{{ i18n "whitepaper" }}</a>
             </li>
             {{- $currentPage := . -}}
             {{ range sort .Site.Menus.main "Identifier" -}}
               <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-                <a class="btn btn-default btn-nav" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
+                <a class="btn btn-default-hamburg" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
               </li>
             {{- end }}
           </ul>
@@ -41,7 +41,7 @@
             {{ if .IsTranslated }}
               <div class="language-container">
                 {{ range .Site.Home.AllTranslations }}
-                  <a class="btn btn-default language-button" href="{{ .URL }}{{ strings.TrimPrefix "/" $path }}">{{ .Language.LanguageName }}</a>
+                  <a class="btn btn-default-hamburg language-button" href="{{ .URL }}{{ strings.TrimPrefix "/" $path }}">{{ .Language.LanguageName }}</a>
                 {{ end }}
               </div>
             {{ end }}
@@ -49,35 +49,3 @@
         </div><!--/.nav-collapse -->
       </div><!--/.container -->
     </div>
-    
-    <!--
-    <div class="navbar">
-      <div class="navbar-container">
-        <a class="navbar-logo navbar-item" href="{{ "" | absLangURL }}">
-          <img src="{{ "images/viridian_logo_gray_with_text.png" | absURL }}">
-        </a>
-        {{ range .Site.Menus.main }}
-          <a class="btn btn-default navbar-item" href="{{ .URL | absLangURL | safeURL }}">
-            {{ .Name }}
-          </a>
-        {{ end }}
-      </div>
-      <!-- Languages -- >
-      {{ $url := urls.Parse .Permalink }}
-      <!-- The url.Host has only the domain in it -- >
-      {{ $address := print $url.Scheme "://" $url.Host }}
-      <!-- Dirrerence between address and base URL. This could result in "" or "/beta/" or similar. -- >
-      {{ $i18nBasePath := strings.TrimPrefix $address .Site.BaseURL }}
-      <!-- Path like "/beta/" attached with the language code. E.g. "/beta/de" -- >
-      {{ $pathPrefix := print $i18nBasePath .Language }}
-      <!-- This will get the path to the resource from the language code and beyond -- >
-      {{ $path := strings.TrimPrefix $pathPrefix $url.Path }}
-      {{ if .IsTranslated }}
-        <div class="language-container">
-          {{ range .Site.Home.AllTranslations }}
-            <a class="btn btn-default language-button" href="{{ .URL }}{{ strings.TrimPrefix "/" $path }}">{{ .Language.LanguageName }}</a>
-          {{ end }}
-        </div>
-      {{ end }}
-    </div>
-    -->
