@@ -1,5 +1,5 @@
 main {
-    max-width: 750px;
+    /*max-width: 750px;*/
     word-wrap: break-word;
 }
 
@@ -247,9 +247,11 @@ blockquote {
      font-style:italic;
 }
 
+/*
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: "Source Sans Pro", "Kozuka Gothic Pr6N", Meiryo, sans-serif !important;
 }
+*/
 
 small, .small {
   font-size: 80%;
