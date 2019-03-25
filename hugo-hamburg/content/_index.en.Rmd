@@ -59,7 +59,7 @@ the following:
 
 The network shall be decentralized for increased **resilience**.
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-dec" aria-expanded="false" aria-controls="showmore-dec">&#x25bc; Show more</button>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-dec" aria-expanded="false" aria-controls="showmore-dec"><i class="fa fa-caret-down" aria-hidden="true"></i> Show more</button>
 
 <!-- <i class="glyphicon glyphicon-triangle-bottom"></i> -->
 <!-- &#x25bc; UTF-8 alternative to glyphicon-triangle-bottom -->
@@ -86,7 +86,7 @@ and in the hands of all people, not of few (or single) corporations or governmen
 Thanks to decentralization economy and society become
 **more democratic and more equal**.
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-dem" aria-expanded="false" aria-controls="showmore-dem">&#x25bc; Show more</button>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-dem" aria-expanded="false" aria-controls="showmore-dem"><i class="fa fa-caret-down" aria-hidden="true"></i> Show more</button>
 
 <p></p>
 
@@ -114,7 +114,7 @@ tools like liquid democracy.
 
 Transparent pricing mechanisms **incentivize** sustainable and socially responsible business.
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-sust" aria-expanded="false" aria-controls="showmore-sust">&#x25bc; Show more</button>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-sust" aria-expanded="false" aria-controls="showmore-sust"><i class="fa fa-caret-down" aria-hidden="true"></i> Show more</button>
 
 <p></p>
 
@@ -135,7 +135,7 @@ way with an ecological footprint as small as possible.
 
 The Viridian market will be fairer and **closer to an idealized free market**.
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-fair" aria-expanded="false" aria-controls="showmore-fair">&#x25bc; Show more</button>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-fair" aria-expanded="false" aria-controls="showmore-fair"><i class="fa fa-caret-down" aria-hidden="true"></i> Show more</button>
 
 <p></p>
 
@@ -164,7 +164,7 @@ innovation and reducing market monopolies.
 It shall be **visible at all times how the rules of the network are**
 and *why* they are like that.
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-trans" aria-expanded="false" aria-controls="showmore-trans">&#x25bc; Show more</button>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-trans" aria-expanded="false" aria-controls="showmore-trans"><i class="fa fa-caret-down" aria-hidden="true"></i> Show more</button>
 
 <p></p>
 
@@ -188,7 +188,7 @@ more important than profits, there cannot be such "investor protection".
 The network shall be **end-to-end encrypted** to provide security
 and privacy.
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-priv" aria-expanded="false" aria-controls="showmore-priv">&#x25bc; Show more</button>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-priv" aria-expanded="false" aria-controls="showmore-priv"><i class="fa fa-caret-down" aria-hidden="true"></i> Show more</button>
 
 <p></p>
 
@@ -677,7 +677,7 @@ htmltools::includeHTML("snippets/alternative_contact.html")
 There are already many good concepts for a sustainable economy. See how they
 compare to the Viridian project.
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-comp" aria-expanded="false" aria-controls="showmore-comp">&#x25bc; Read more</button>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-comp" aria-expanded="false" aria-controls="showmore-comp"><i class="fa fa-caret-down" aria-hidden="true"></i> Read more</button>
 
 <p></p>
 
