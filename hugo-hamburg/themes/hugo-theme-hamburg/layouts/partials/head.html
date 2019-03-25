@@ -39,8 +39,6 @@
     <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico" />
     <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}images/apple-touch-icon.png" />
     
-    <script src="{{ .Site.BaseURL }}js/script.js"></script>
-  
     {{ range .Site.Params.customCSS }}
       <link rel="stylesheet" href="{{ (print "css/" . ) | absURL }}">
     {{ end }}
@@ -48,6 +46,9 @@
     {{ if eq .URL "/" }}
       <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ end }}
+    
+    <script src="{{ .Site.BaseURL }}js/jquery-3.3.1.min.js"></script>
+    <script src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script>
   
     {{ if (fileExists "layouts/partials/tracking.html") }}
       {{ partial "tracking.html" . }}
