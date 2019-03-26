@@ -240,8 +240,15 @@ main {
    * The tiles and panels with themed topics on the front page *
    ************************************************************* */
 
+/*
 .panel-title {
   margin-bottom: auto !important;
+}
+*/
+
+/* For perfect anchor jump visibility, apply same margin as for headers: */
+.panel {
+  margin-top: 2rem;
 }
 
 /* vertical centering with the help of CSS tables: https://css-tricks.com/vertically-center-multi-lined-text/ */
@@ -307,14 +314,25 @@ main {
   color: #ffffff;
 }
 
-/* http://nicolasgallagher.com/jump-links-and-viewport-positioning/ */
+/*
+/* http://nicolasgallagher.com/jump-links-and-viewport-positioning/ * /
 .anchor {
-   /*position: relative;*/
+   /*position: relative;* /
    border-top: 70px solid transparent;
    margin: -70px 0 0;
    /*-webkit-background-clip: padding-box;
    -moz-background-clip: padding;
-   background-clip: padding-box;*/
+   background-clip: padding-box;* /
+}
+*/
+/* Fix problem of anchors hidden by fixed navbar
+/* From: https://github.com/twbs/bootstrap/issues/1768#issuecomment-46519033 */
+*[id]:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -40px; 
+  height: 40px; 
+  visibility: hidden; 
 }
 /*.anchor:before {
    content: "";
