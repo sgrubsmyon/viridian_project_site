@@ -49,8 +49,9 @@ as soon as needed.
 
 ## Goals
 
-The objective is to create a computer network for economic transactions providing
-the following:
+The objective is to create a computer network for the collaborative sustainability
+assessment of products and brands. This will enable to include external costs
+in prices. The network shall provide the following benefits:
 
 <div markdown class="row">
 <div markdown class="col-md-6">
@@ -85,7 +86,7 @@ and in the hands of all people, not of few (or single) corporations or governmen
 <p class="caption">Democratization</p>
 </div>
 
-Thanks to decentralization economy and society become
+Thanks to decentralization and transparency, economy and society become
 **more democratic and more equal**.
 
 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-dem" aria-expanded="false" aria-controls="showmore-dem"><i class="fa fa-caret-down" aria-hidden="true"></i> Show more</button>
@@ -117,7 +118,8 @@ of innovative democratic consensus tools like liquid democracy.
 
 ![Sustainability](/images/home/sprout.svg){style="height: 75px;"}
 
-Transparent pricing mechanisms **incentivize** sustainable and socially responsible business.
+Transparent prices, including external costs, **incentivize** sustainable and
+socially responsible business.
 
 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-sust" aria-expanded="false" aria-controls="showmore-sust"><i class="fa fa-caret-down" aria-hidden="true"></i> Show more</button>
 
@@ -185,8 +187,9 @@ innovation and reducing market monopolies.
 
 ![Transparency](/images/home/search.svg){style="height: 75px;"}
 
-It shall be **visible at all times how the rules of the network are**
-and *why* they are like that.
+**Problems in the supply chain shall be revealed.** In addition to the
+assessment of a product or company, it shall be visible *why* this assessment
+is this way.
 
 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-trans" aria-expanded="false" aria-controls="showmore-trans"><i class="fa fa-caret-down" aria-hidden="true"></i> Show more</button>
 
@@ -194,12 +197,11 @@ and *why* they are like that.
 
 <div class="collapse" id="showmore-trans">
 
-The mechanics of the network must be transparent at all times, including the
-internalization of external costs. Changes to the algorithms must be
-accompanied by legitimizing information.
-**Public data shall be made open to everyone.** Because of its importance for
-society, information on the external costs of any economic activity must be
-public and cannot be kept a company secret. Because people are
+The assessment process and algorithm must be as transparent as possible. Changes
+to an assessment or the algorithm must be accompanied by legitimizing information
+or verifiable sources. **Public data shall be made open to everyone.** Because of
+its importance for society, information on the external costs of any economic
+activity must be public and cannot be kept a company secret. Because people are
 more important than profits, there cannot be such "investor protection".
 
 </div>
@@ -237,20 +239,27 @@ which is harvested for profit.
 
 ## Get involved
 
-There are many open questions and unsolved problems. At the moment, the project
-is just an idea by a single person (see <a href="about.html">about</a> and
-<a href="contact.html">contact</a>).
-**I am looking for like-minded people to discuss and exchange ideas.**
-Once the vision is shaped into a concrete network architecture and
-algorithms/rules, one can start to work on implementations. But for the moment,
-I would like to get feedback from as many people as possible, especially on the
-subjects listed under the tiles below. 
+At the moment we are just a small team (see [About the Project](about) and [Contact](contact)).
+We would be glad about more support.
 
-**Are you inspired by the idea of the project? You can help!**
-Just click on your area of interest and start getting involved.
+The initial conception phase is slowly coming to an end, the vision becomes more
+and more concrete and we start with the implementation (see [Timeline](technical/#timeline)).
+Nevertheless, there are still many open questions and unsolved problems. That's
+why we **are always looking for like-minded people to discuss and exchange ideas.**
+Especially the topics from the tiles under [Open questions](#open-questions)
+still need discussion.
+
+Our technical considerations concerning the implementation can be found in the article
+[Technical](technical). We are happy to receive any ideas or suggestions (see [Contact](contact)).
+
+
+## Open questions
+
+Here is the list of the various topics and their open questions.
+If you can help us with something, please [contact us](contact).
 
 ```{r, echo=FALSE}
-htmltools::includeHTML("snippets/tiles.html")
+htmltools::includeHTML("snippets/tiles_en.html")
 ```
 
 <div style="margin-bottom: 30px;"></div>
