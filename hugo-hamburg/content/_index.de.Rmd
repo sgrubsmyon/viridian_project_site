@@ -56,8 +56,9 @@ so bald wie nötig.
 
 ## Ziele
 
-Ziel ist es, ein Computernetz für Wirtschaftstransaktionen zu schaffen, das die
-folgenden Vorteile mit sich bringt:
+Ziel ist es, ein Computernetz für die gemeinschaftliche Nachhaltigkeitsbewertung
+von Produkten und Unternehmen zu schaffen. Dadurch soll es möglich werden, externe
+Kosten in die Preise einzubeziehen. Das Netzwerk soll die folgenden Vorzüge aufweisen:
 
 <div markdown class="row">
 <div markdown class="col-md-6">
@@ -94,7 +95,7 @@ aller Menschen sein und auch von ihnen betrieben werden, nicht von wenigen
 <p class="caption">Demokratisierung</p>
 </div>
 
-Dank Dezentralisierung werden Wirtschaft und Gesellschaft
+Dank Dezentralisierung und Transparenz werden Wirtschaft und Gesellschaft
 **demokratischer und gleichberechtigter**.
 
 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-dem" aria-expanded="false" aria-controls="showmore-dem"><i class="fa fa-caret-down" aria-hidden="true"></i> Mehr anzeigen</button>
@@ -127,8 +128,8 @@ Konsenswerkzeugen wie "Liquid Democracy".
 
 ![Nachhaltigkeit](/images/home/sprout.svg){style="height: 75px;"}
 
-Transparente Preismechanismen **setzen Anreize** für ein nachhaltiges und sozial
-verantwortliches Wirtschaften.
+Transparente Preise, inklusive externer Kosten, **setzen Anreize** für ein
+nachhaltiges und sozial verantwortliches Wirtschaften.
 
 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-sust" aria-expanded="false" aria-controls="showmore-sust"><i class="fa fa-caret-down" aria-hidden="true"></i> Mehr anzeigen</button>
 
@@ -200,8 +201,9 @@ gefördert und Marktmonopole werden verringert.
 
 ![Transparenz](/images/home/search.svg){style="height: 75px;"}
 
-Es muss **jederzeit sichtbar sein, wie die Regeln des Netzwerks sind**
-und *warum* sie so sind.
+**Probleme in der Lieferkette sollen aufgedeckt werden.** Neben der Bewertung
+eines Produktes oder Unternehmens soll auch sichtbar sein, *warum* es diese
+Bewertung erhält.
 
 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-trans" aria-expanded="false" aria-controls="showmore-trans"><i class="fa fa-caret-down" aria-hidden="true"></i> Mehr anzeigen</button>
 
@@ -209,9 +211,9 @@ und *warum* sie so sind.
 
 <div class="collapse" id="showmore-trans">
 
-Die Mechanik des Netzwerks muss jederzeit transparent sein, einschließlich der
-Internalisierung externer Kosten. Änderungen an den Algorithmen oder einer Bewertung
-müssen von legitimierenden Informationen begleitet werden.
+Der Bewertungvorgang und -algorithmus sollen möglichst transparent sein. Änderungen
+an einer Bewertung oder am Algorithmus müssen von legitimierenden Informationen
+bzw. belegbaren Quellen begleitet werden.
 **Öffentlichkeitsrelevante Daten müssen für alle zugänglich sein.**
 Aufgrund ihrer Bedeutung für die Gesellschaft müssen Informationen über die
 externen Kosten einer wirtschaftlichen Tätigkeit öffentlich vorliegen
@@ -247,26 +249,33 @@ mit der Gewinne erzielt werden.
 </div>
 </div>
 
-<!-- * **Transactions:** Economic transactions shall be performed via the network, -->
-<!--   i.e. tokens of value (a currency) shall be exchanged via the network. -->
+<!-- * **Transaktionen:** Über das Netzwerk sollen Finanztransaktionen möglich sein, -->
+<!--   d,h. Wertmarken (eine Währung) sollen über das Netzwerk ausgetauscht werden. -->
 
 
-## Get involved
+## Mach mit
 
-There are many open questions and unsolved problems. At the moment, the project
-is just an idea by a single person (see <a href="about.html">about</a> and
-<a href="contact.html">contact</a>).
-**I am looking for like-minded people to discuss and exchange ideas.**
-Once the vision is shaped into a concrete network architecture and
-algorithms/rules, one can start to work on implementations. But for the moment,
-I would like to get feedback from as many people as possible, especially on the
-subjects listed under the tiles below. 
+Im Moment sind wir nur ein kleines Team (siehe [Über das Projekt](about) und [Kontakt](contact)).
+Über mehr Unterstützung würden wir uns freuen.
 
-**Are you inspired by the idea of the project? You can help!**
-Just click on your area of interest and start getting involved.
+Die anfängliche Konzeptionsphase ist langsam zu Ende, die Vision wird immer konkreter
+und wir beginnen mit der Implementierung (siehe [Timeline](technical/#timeline)).
+Trotzdem gibt es immer noch viele offene Fragen und ungelöste Probleme.
+Deshalb sind wir **immer auf der Suche nach Gleichgesinnten, um zu diskutieren und Ideen auszutauschen.**
+Besonders zu den Themen auf den Kacheln unter [Offene Fragen](#offene-fragen)
+gibt es noch Gesprächsbedarf.
+
+Konkretere Überlegungen zur Implementierung gibt es im Artikel
+[Technisches](technical). Ideen oder Anregungen dazu [nehmen wir besonders gerne entgegen](contact).
+
+
+## Offene Fragen
+
+Hier sind die verschiedenen Themengebiete und ihre offenen Fragen gelistet.
+Wenn du uns bei etwas weiterhelfen kannst, dann melde dich bitte: [Kontakt](contact).
 
 ```{r, echo=FALSE}
-htmltools::includeHTML("snippets/tiles.html")
+htmltools::includeHTML("snippets/tiles_de.html")
 ```
 
 <div style="margin-bottom: 30px;"></div>
