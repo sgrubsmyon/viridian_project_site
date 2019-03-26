@@ -10,7 +10,7 @@ date: '2019-03-24'
 We live in a world where many things seem to be **going wrong**. Growing
 social inequality, climate change, loss of biodiversity... just to name a few.
 **Are you one of those people thinking that change is needed, however nothing ever happens?**
-Then you are like me and maybe you should join this project.
+Then maybe this project is for you.
 
 Most of the problems of human society have to do with economics.
 This is why the *Viridian Project* aims for an alternative way of **economic activity**.
@@ -66,11 +66,13 @@ The network shall be decentralized for increased **resilience**.
 
 <p></p>
 
-<p class="collapse" id="showmore-dec">
+<div class="collapse" id="showmore-dec">
+
 There should not be any single points of failure. It must also be spread to
 **prevent too much concentration of power**. The network shall be operated by
 and in the hands of all people, not of few (or single) corporations or governments.
-</p>
+
+</div>
 
 <!-- <div>Icon made by me!</div> -->
 
@@ -90,15 +92,18 @@ Thanks to decentralization economy and society become
 
 <p></p>
 
-<p class="collapse" id="showmore-dem">
+<div class="collapse" id="showmore-dem">
+
 Running the network on many decentralized nodes, the concentration of resources
-and power can be prevented. Cryptocurrencies enable to **move power** away from
-centralized banks and towards the people using the currency. In addition, the
-**rules of the network shall be set by the people** using it: in an open,
-collaborative process, similar to the development of open source software.
-The use of computer networks allows the usage of innovative democratic consensus
-tools like liquid democracy.
-</p>
+and power can be prevented. Decentralized systems like e.g. blockchains
+enable to **move power** away from centralized systems (like banks and corporations)
+and towards the people using the infrastructure. In addition, the
+rules of the network, more specifically the assessment of products and companies,
+shall be **set by the users**: in an open, collaborative process, similar to the
+development of open source software. The use of computer networks allows the usage
+of innovative democratic consensus tools like liquid democracy.
+
+</div>
 
 <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 
@@ -118,13 +123,22 @@ Transparent pricing mechanisms **incentivize** sustainable and socially responsi
 
 <p></p>
 
-<p class="collapse" id="showmore-sust">
+<div class="collapse" id="showmore-sust">
+
 Sustainable and socially responsible business and commerce are incentivized
-**by including external costs** of economic activity
-in the prices. In addition, the cryptocurrency transactions shall not be
-verified in a resource-intensive proof-of-work process, but in an alternative
-way with an ecological footprint as small as possible.
-</p>
+**by including external costs** of economic activity in the prices. If a
+company generates high external costs that is does not take care to prevent or
+mitigate, it often receives an **unfair competitive advantage**. But the costs still
+arise, for us all (often the taxpayer). They are socialized. If prices include
+external costs from the outset, companies gain a competitive advantage if they
+reduce them instead of socializing costs more and more.
+Socially meaningful solutions are automatically preferred.
+
+In addition, for sustainability reasons, it is important that the blockchain
+transactions are not verified in a resource-intensive proof-of-work process,
+but in an alternative way with an ecological footprint as small as possible.
+
+</div>
 
 <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/retinaicons" title="Retinaicons">Retinaicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 
@@ -139,15 +153,25 @@ The Viridian market will be fairer and **closer to an idealized free market**.
 
 <p></p>
 
-<p class="collapse" id="showmore-fair">
-When external costs are included in the price calculation,
-the **market is fairer and closer to an idealized free market**. Also, because the
-supply chain can be revealed in the process, inferior quality can be revealed as
-well. Customers do not have to trust the reputation of a producer, but can
-choose the best option available. This makes it easier for newcomers and
-**accelerates the introduction of alternative technologies**, thereby increasing
+<div class="collapse" id="showmore-fair">
+
+If external costs are included in the price calculation,
+the market is fairer and is approaching an idealized free market.
+On such a market, **all market participants are perfectly informed**.
+The resulting prices reflect the **costs incurred to society** through production.
+In other words, everyone affected by the production will receive adequate
+compensation. Because if someone is not compensated appropriately, they can simply
+go elsewhere on a free market. In case of external costs that does not work.
+The market is imperfect and Viridian closes this gap a bit.
+
+Also, because the supply chain can be revealed in the process, inferior quality
+can be revealed as well. Customers do not have to trust the reputation of a
+producer, but can choose the best option available. This makes it easier for
+newcomers to sell their better products. Especially if external costs are reduced.
+This **accelerates the introduction of alternative technologies**, thereby increasing
 innovation and reducing market monopolies.
-</p>
+
+</div>
 
 <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 
@@ -168,7 +192,8 @@ and *why* they are like that.
 
 <p></p>
 
-<p class="collapse" id="showmore-trans">
+<div class="collapse" id="showmore-trans">
+
 The mechanics of the network must be transparent at all times, including the
 internalization of external costs. Changes to the algorithms must be
 accompanied by legitimizing information.
@@ -176,7 +201,8 @@ accompanied by legitimizing information.
 society, information on the external costs of any economic activity must be
 public and cannot be kept a company secret. Because people are
 more important than profits, there cannot be such "investor protection".
-</p>
+
+</div>
 
 <!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 
@@ -192,11 +218,13 @@ and privacy.
 
 <p></p>
 
-<p class="collapse" id="showmore-priv">
+<div class="collapse" id="showmore-priv">
+
 People should have full control over their data.
 **Private data shall be kept private**, instead of being a commodity,
 which is harvested for profit.
-</p>
+
+</div>
 
 <!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 
