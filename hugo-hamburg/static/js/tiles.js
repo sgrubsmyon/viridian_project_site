@@ -17,16 +17,21 @@ $(document).ready(function(){
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
         || location.hostname == this.hostname) {
       var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      target = target.length ? target : $('[name="' + this.hash.slice(1) +'"]');
       if (target.length) {
-        //
-        $('.anchor').fadeOut(1000); // hide all (other) anchor targets
-        $('.anchor').hide(); // hide all (other) anchor targets
-        target.fadeIn(1000); // show this particular target
-        //
-          $('html,body').animate({
+        var prevTarget = $('.anchor[style=""]');
+        if (prevTarget.length) {
+          $('html, body').animate({
+            scrollTop: prevTarget.offset().top
+          }, 1000);
+          prevTarget.hide(); // hide previously shown anchor target
+          target.fadeIn(1000); // show this particular target
+        } else {
+          target.fadeIn(1000); // show this particular target
+          $('html, body').animate({
             scrollTop: target.offset().top
           }, 1000);
+        }
         return false;
       }
     }
