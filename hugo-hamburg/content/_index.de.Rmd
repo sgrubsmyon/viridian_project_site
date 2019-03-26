@@ -52,7 +52,7 @@ von allen vereinbart. Sie müssen auch ständig debattiert und angepasst werden
 so bald wie nötig.
 -->
 
-<a href="../paper" class="btn btn-info" role="button">Lesen Sie das Whitepaper</a>
+<a href="/paper" class="btn btn-info" role="button">Lies das Whitepaper</a>
 
 ## Ziele
 
@@ -280,10 +280,10 @@ htmltools::includeHTML("snippets/tiles_de.html")
 
 <div style="margin-bottom: 30px;"></div>
 
-<div id="cryptocurrencies" class="anchor">
+<div id="dlt" class="anchor">
 <div class="panel panel-default">
 <div class="panel-heading tile-panel-heading">
-<h3 class="panel-title">Cryptocurrencies</h3>
+<h3 class="panel-title">Distributed-Ledger-Technologie</h3>
 </div>
 <div class="panel-body tile-panel-body">
 
@@ -291,8 +291,8 @@ htmltools::includeHTML("snippets/tiles_de.html")
 
 Bitcoin, Litecoin, Ethereum, IOTA, blockchain, DAG, smart contracts, DAOs,
 proof-of-work, proof-of-stake, proof-of-cooperation, proof-of-interest, ... ---
-the world of cryptocurrencies is full of innovative ideas, with new ones
-springing up monthly.
+the world of distributed ledgers and cryptocurrencies is full of innovative ideas,
+with new ones springing up monthly.
 
 **If you are enthusiastic about all things crypto, then you might be able to help us decide, which solution is best suitable for the Viridian project.**
 
@@ -301,6 +301,13 @@ possible. The incentive system must be designed such that there is no motivation
 for running a lot of computing power, however there must be motivation to
 contribute to the network in the long term. Of course, the system shall be as
 decentralized and trustless as possible to keep it secure and scalable.
+
+**Please note:** In the meantime we settled to use Hyperledger Fabric, a
+permissioned blockchain, as a manipulation-resistant decentralized database
+backend. It does not provide as much decentralization and trustlessness as
+proof-of-work blockchains like Ethereum, but we believe it to be a good compromise
+between resilience and efficiency. See [the technical paper](technical) for more
+details.
 
 ### Contact us
 
@@ -341,6 +348,14 @@ up the requirements for the various components and can start implementing them
 (perhaps just making adjustments or additions to already existing code).
 
 A slick UI/UX will also be a crucial part of attracting users.
+
+**Please note:** In the meantime we settled to use Hyperledger Fabric, an
+open source blockchain framework maintained by the Linux Foundation. The JSON-based
+distibuted database CouchDB will be used as the backend of Fabric to store the data.
+Therefore, on the backend and API side, we are mostly set and will use the infrastructure
+and crpytography provided by Hyperledger Fabric. On the frontend side, we currently
+plan to develop a Progressive Web App (PWA), but might also look into Flutter or Cordova.
+See [the technical paper](technical) for more details.
 
 ### Contact us
 
