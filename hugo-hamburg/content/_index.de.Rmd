@@ -1,0 +1,814 @@
+---
+#title: Das Viridian-Projekt
+#subtitle: Für eine nachhaltige und gerechte Wirtschaft
+author: mvoge
+date: '2019-03-24'
+---
+
+## Für eine nachhaltige und gerechte Wirtschaft
+
+Vieles scheint **falsch zu laufen** in unserer Welt: wachsende soziale Ungleichheit,
+ungebremster Klimawandel, Rückgang der Artenvielfalt... um nur einige Probleme zu nennen.
+**Bist du auch der Meinung, dass Änderungen notwendig sind, aber nie etwas passiert?**
+Dann könnte dieses Projekt für dich interessant sein.
+
+<!--
+**Gehörst du auch zu denen, die glauben, dass wir dringend umdenken müssen, aber vergeblich darauf warten, dass sich etwas ändert?**
+-->
+
+Die meisten Probleme der Menschheit haben mit Wirtschaft zu tun. Deshalb möchte
+das *Viridan-Projekt* die **Art des Wirtschaftens** verändern. Stelle dir eine
+Wirtschaft vor, die nicht nur finanzökonomische, sondern auch ökologische und
+soziale Belange berücksichtigt. Eine Wirtschaft, in der Menschen mehr Wert sind
+als Profite. Eine Wirtschaft, in der **nachhaltig und fair die Regel sind** und
+nicht die Ausnahme.
+
+<!--
+Die Inspiration für das Viridian-Projekt stammt von zwei Gemeinden, die wenig haben
+Kontakt miteinander bisher: Die Vision der * Transition Town * Bewegung von
+eine ** nachhaltige, postfossile, belastbare Wirtschaft ** auf einer Seite. Die Vision der
+* Kryptowährungsgemeinschaft * einer ** dezentralisierten Peer-to-Peer-Wirtschaft ** auf der anderen Seite
+Seite.
+-->
+
+Das Hauptziel des Viridian-Projekts besteht darin,
+**externe Kosten unter Verwendung einer neuen digitalen Währung zu internalisieren**.
+Dadurch werden soziale und ökologische Belange zu einem normalen Bestandteil
+jedes Geschäftsmodells.
+
+<!--
+Dies schafft Anreize für Unternehmen, die nicht schädlich sind
+Gesellschaft. Wenn sozialer Gruppenzwang in die Wirtschaftstätigkeit einbezogen wird (über die
+alternativer digitaler Währung) werden die Menschen automatisch verantwortungsbewusster.
+Dies ähnelt der Art und Weise, wie * Commons * funktioniert, bei denen eine Gruppe von Personen arbeitet
+Kollektiv kümmert sich um eine gemeinsame Ressource, die jeden Einzelnen verantwortlich macht.
+-->
+
+<!--
+Um dies zu erreichen, soll ein Computernetzwerk implementiert werden, in dem die gewünschten
+Anreize sind algorithmisch inhärent und werden kollektiv von der Menge bestimmt.
+Diese Algorithmen müssen sehr sorgfältig entworfen, transparent und sein
+von allen vereinbart. Sie müssen auch ständig debattiert und angepasst werden
+so bald wie nötig.
+-->
+
+<a href="../paper" class="btn btn-info" role="button">Lesen Sie das Whitepaper</a>
+
+## Ziele
+
+Ziel ist es, ein Computernetz für Wirtschaftstransaktionen zu schaffen, das die
+folgenden Vorteile mit sich bringt:
+
+<div markdown class="row">
+<div markdown class="col-md-6">
+
+![Dezentralisierung](/images/home/network.svg){style="height: 75px;"}
+
+Das Netzwerk soll dezentralisiert sein für erhöhte **Resilienz**.
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-dec" aria-expanded="false" aria-controls="showmore-dec"><i class="fa fa-caret-down" aria-hidden="true"></i> Mehr anzeigen</button>
+
+<!-- <i class="glyphicon glyphicon-triangle-bottom"></i> -->
+<!-- &#x25bc; UTF-8 alternative to glyphicon-triangle-bottom -->
+
+<p></p>
+
+<div class="collapse" id="showmore-dec">
+
+Es sollte keine singulären Schwachstellen (engl. "Single Point of Failure") geben,
+deren Ausfall schwerwiegende Auswirkungen hätte. Es muss auch verteilt sein, um
+**zu starke Machtkonzentration zu vermeiden**. Das Netzwerk soll in den Händen
+aller Menschen sein und auch von ihnen betrieben werden, nicht von wenigen
+(oder einzelnen) Unternehmen oder Regierungen.
+
+</div>
+
+<!-- <div>Von mir erstelltes Symbol!</div> -->
+
+</div>
+<div class="col-md-6">
+
+<div class="figure">
+![Demokratisierung](/images/home/like.svg){style="height: 75px;"}
+![Demokratisierung](/images/home/dislike.svg){style="height: 75px;"}
+<p class="caption">Demokratisierung</p>
+</div>
+
+Dank Dezentralisierung werden Wirtschaft und Gesellschaft
+**demokratischer und gleichberechtigter**.
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-dem" aria-expanded="false" aria-controls="showmore-dem"><i class="fa fa-caret-down" aria-hidden="true"></i> Mehr anzeigen</button>
+
+<p></p>
+
+<div class="collapse" id="showmore-dem">
+
+Wenn das Netzwerk auf vielen dezentralen Knoten ausgeführt wird, kann die Konzentration
+von Ressourcen und Macht verhindert werden. Dezentralisierte Systeme wie z.B.
+Blockchains ermöglichen eine **Machtverschiebung** weg von zentralisierten Systemen
+(z.B. Banken, Konzernen) hin zu den Menschen, die diese Infrastruktur verwenden.
+Außderdem sollen die Regeln des Netzwerks, insbesondere die Bewertung von Produkten und
+Unternehmen, **von den Nutzern festgelegt werden**: in einem offenen, kollaborativen
+Prozess, ähnlich der Entwicklung von Open-Source-Software. Die Verwendung von
+Computernetzwerken ermöglicht die Verwendung von innovativen demokratischen
+Konsenswerkzeugen wie "Liquid Democracy".
+
+</div>
+
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+
+</div>
+</div>
+
+####
+
+<div class="row">
+<div class="col-md-6">
+
+![Nachhaltigkeit](/images/home/sprout.svg){style="height: 75px;"}
+
+Transparente Preismechanismen **setzen Anreize** für ein nachhaltiges und sozial
+verantwortliches Wirtschaften.
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-sust" aria-expanded="false" aria-controls="showmore-sust"><i class="fa fa-caret-down" aria-hidden="true"></i> Mehr anzeigen</button>
+
+<p></p>
+
+<div class="collapse" id="showmore-sust">
+
+Nachhaltige und sozial verantwortliche Wirtschaft und Handel werden angeregt
+**durch die Internalisierung der externen Kosten** wirtschaftlicher Tätigkeit
+in den Preisen. Verursacht ein Unternehmen hohe externe Kosten, um dessen
+Vermeidung oder Beseitigung es sich nicht kümmert, so bekommt es dadurch oft einen
+**unfairen Wettbewerbsvorteil**. Die Kosten fallen aber trotzdem an, für uns alle
+(oft den Steuerzahler). Sie werden sozialisiert. Wenn die Preise von vornherein
+externe Kosten beinhalten, bekommen Unternehmen einen Wettbewerbsvorteil, wenn sie
+sie reduzieren, anstatt Kosten immer weiter zu sozialisieren.
+Gesellschaftlich sinnvolle Lösungen werden automatisch bevorzugt.
+
+Darüber hinaus ist es für die Nachhaltigkeit wichtig, dass die Transaktionen der
+Blockchain nicht in einem ressourcenintensiven Proof-of-Work-Prozess verifiziert
+werden, sondern dass eine Alternative mit einem möglichst kleinen ökologischen
+Fußabdruck verwendet wird.
+
+</div>
+
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/retinaicons" title="Retinaicons">Retinaicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+
+</div>
+<div class="col-md-6">
+
+![Fairness](/images/home/handshake.svg){style="height: 75px;"}
+
+Der Viridian-Markt wird fairer sein und **einem idealisierten freien Markt näherkommen**.
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-fair" aria-expanded="false" aria-controls="showmore-fair"><i class="fa fa-caret-down" aria-hidden="true"></i> Mehr anzeigen</button>
+
+<p></p>
+
+<div class="collapse" id="showmore-fair">
+
+Wenn externe Kosten in die Preisberechnung einbezogen werden,
+ist der Markt fairer und nähert sich einem idealisierten freien Markt an.
+Auf einem solchen Markt sind **alle Marktteilnehmer perfekt informiert**. Die Preise,
+die sich ergeben, spiegeln die **Kosten** wider, die
+**der Gesellschaft durch die Produktion entstanden sind**. Anders gesagt: Jede(r)
+von der Produktion Beeinträchtigte wird angemessen entschädigt. Denn wird jemand
+nicht angemessen entschädigt, kann er/sie auf einem freien Markt einfach woanders
+hingehen. Im Falle von externen Kosten funktioniert das so nicht. Der Markt ist
+imperfekt und Viridian schließt diese Lücke ein Stück weit.
+
+Weil unter Umständen die Lieferkette bekannt wird, kann dadurch auch minderwertige
+Qualität aufgedeckt werden. Kunden müssen nicht auf den Ruf eines Herstellers vertrauen,
+sondern können sich für das beste Angebot entscheiden. Dies erhöht die Chancen
+von neuen Konkurrenten, sich mit ihren besseren Produkten durchzusetzen. Insbesondere
+wenn dadurch externe Kosten eingespart werden.
+Das **beschleunigt die Einführung alternativer Technologien**. Innovation wird
+gefördert und Marktmonopole werden verringert.
+
+</div>
+
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+
+</div>
+</div>
+
+####
+
+<div class="row">
+<div class="col-md-6">
+
+![Transparenz](/images/home/search.svg){style="height: 75px;"}
+
+Es muss **jederzeit sichtbar sein, wie die Regeln des Netzwerks sind**
+und *warum* sie so sind.
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-trans" aria-expanded="false" aria-controls="showmore-trans"><i class="fa fa-caret-down" aria-hidden="true"></i> Mehr anzeigen</button>
+
+<p></p>
+
+<div class="collapse" id="showmore-trans">
+
+Die Mechanik des Netzwerks muss jederzeit transparent sein, einschließlich der
+Internalisierung externer Kosten. Änderungen an den Algorithmen oder einer Bewertung
+müssen von legitimierenden Informationen begleitet werden.
+**Öffentlichkeitsrelevante Daten müssen für alle zugänglich sein.**
+Aufgrund ihrer Bedeutung für die Gesellschaft müssen Informationen über die
+externen Kosten einer wirtschaftlichen Tätigkeit öffentlich vorliegen
+und können kein Betriebsgeheimnis sein. Weil Menschen wichtiger sind als Profite,
+kann es keinen solchen "Anlegerschutz" geben.
+
+</div>
+
+<!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+
+</div>
+<div class="col-md-6">
+
+![Datenschutz](/images/home/lock.svg){style="height: 75px;"}
+
+Das Netzwerk muss **Ende-zu-Ende-verschlüsselt** sein, um Sicherheit und
+Privatsphäre zu gewährleisten.
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-priv" aria-expanded="false" aria-controls="showmore-priv"><i class="fa fa-caret-down" aria-hidden="true"></i> Mehr anzeigen</button>
+
+<p></p>
+
+<div class="collapse" id="showmore-priv">
+
+Die Menschen sollten die volle Kontrolle über ihre Daten haben.
+**Private Daten sollten geheim gehalten werden**, anstatt eine Ware zu sein,
+mit der Gewinne erzielt werden.
+
+</div>
+
+<!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+
+</div>
+</div>
+
+<!-- * **Transactions:** Economic transactions shall be performed via the network, -->
+<!--   i.e. tokens of value (a currency) shall be exchanged via the network. -->
+
+
+## Get involved
+
+There are many open questions and unsolved problems. At the moment, the project
+is just an idea by a single person (see <a href="about.html">about</a> and
+<a href="contact.html">contact</a>).
+**I am looking for like-minded people to discuss and exchange ideas.**
+Once the vision is shaped into a concrete network architecture and
+algorithms/rules, one can start to work on implementations. But for the moment,
+I would like to get feedback from as many people as possible, especially on the
+subjects listed under the tiles below. 
+
+**Are you inspired by the idea of the project? You can help!**
+Just click on your area of interest and start getting involved.
+
+```{r, echo=FALSE}
+htmltools::includeHTML("snippets/tiles.html")
+```
+
+<div style="margin-bottom: 30px;"></div>
+
+<div id="cryptocurrencies" class="anchor">
+<div class="panel panel-default">
+<div class="panel-heading tile-panel-heading">
+<h3 class="panel-title">Cryptocurrencies</h3>
+</div>
+<div class="panel-body tile-panel-body">
+
+### Which solution to choose?
+
+Bitcoin, Litecoin, Ethereum, IOTA, blockchain, DAG, smart contracts, DAOs,
+proof-of-work, proof-of-stake, proof-of-cooperation, proof-of-interest, ... ---
+the world of cryptocurrencies is full of innovative ideas, with new ones
+springing up monthly.
+
+**If you are enthusiastic about all things crypto, then you might be able to help us decide, which solution is best suitable for the Viridian project.**
+
+We want transaction validation to have an as small resource footprint as
+possible. The incentive system must be designed such that there is no motivation
+for running a lot of computing power, however there must be motivation to
+contribute to the network in the long term. Of course, the system shall be as
+decentralized and trustless as possible to keep it secure and scalable.
+
+### Contact us
+
+If you think you can help, contact us at
+```{r, echo=FALSE}
+htmltools::includeHTML("snippets/email.html")
+htmltools::includeHTML("snippets/alternative_contact.html")
+```
+
+</div>
+</div>
+</div>
+
+<div id="software-development" class="anchor">
+<div class="panel panel-default">
+<div class="panel-heading tile-panel-heading">
+<h3 class="panel-title">Software development</h3>
+</div>
+<div class="panel-body tile-panel-body">
+
+### Good design is the key
+
+The Viridian project's concept relies heavily on the use of computer technology
+and software. All this software still has to be built, both on the backend side
+and on the frontend/UI/UX side.
+
+**A clear vision and good design choices are crucial for an infrastructure that is secure and maintainable and that scales well.**
+
+One should build upon existing work wherever possible. Especially when it comes
+to cryptography, there is a good rule of thumb that one should not "come up
+with a home-brew solution". Therefore, a first step would be, together with
+creating the vision, to carefully evaluate which components could be based on
+what, and how these components must be able to interact with each other, keeping
+in mind maintainability, security and scalability.
+
+Once these general points are sorted out and the roadmap is clear, one can set
+up the requirements for the various components and can start implementing them
+(perhaps just making adjustments or additions to already existing code).
+
+A slick UI/UX will also be a crucial part of attracting users.
+
+### Contact us
+
+If you think you can help, contact us at
+```{r, echo=FALSE}
+htmltools::includeHTML("snippets/email.html")
+htmltools::includeHTML("snippets/alternative_contact.html")
+```
+
+</div>
+</div>
+</div>
+
+<div id="monetary" class="anchor">
+<div class="panel panel-default">
+<div class="panel-heading tile-panel-heading">
+<h3 class="panel-title">Currencies and monetary policy</h3>
+</div>
+<div class="panel-body tile-panel-body">
+
+### What are the rules of a good currency?
+
+In traditional fiat currencies, a central bank is in charge of controlling the
+currency, e.g. by regulating the amount of money in circulation, or in fact by
+setting the key interest rate.
+
+In a decentralized cryptocurrency, there is no central bank, which is a good thing
+because it prevents corruption and dependency on centralized entities.
+Instead, the network's mathematical algorithms take over the role of a central bank.
+
+An important question is: **How to design these algorithmic rules?** For instance,
+what is the **optimal supply of fresh money**? Shall there be a fixed amount of money?
+Or shall the amount of money increase (causing inflation) or decrease? Shall
+there be a demurrage imposed on the currency, constantly devaluating it over
+time?
+
+### What role will the financial system play?
+
+In the Viridian economy, will banks still be important players? Private banks
+currently create almost all the money that enters the economy. With a decentralized
+cryptocurrency as dominant payment medium, this would not be the case anymore.
+
+So, how shall banks be treated in the Viridian economy? Will banks' services also
+have associated colors? **Will banks be superseded** by innovative new concepts, e.g.
+peer-to-peer credit systems with risk scattering by spreading investment money
+on many agents?
+
+What to do with interest rates on investments? **Shall there still be interest rates?**
+Or are interest rates not acceptable anymore since they are drivers of limitless
+growth in a world with limited resources?
+
+### Contact us
+
+If you think you can help, contact us at
+```{r, echo=FALSE}
+htmltools::includeHTML("snippets/email.html")
+htmltools::includeHTML("snippets/alternative_contact.html")
+```
+
+</div>
+</div>
+</div>
+
+<div id="economics" class="anchor">
+<div class="panel panel-default">
+<div class="panel-heading tile-panel-heading">
+<h3 class="panel-title">Economics</h3>
+</div>
+<div class="panel-body tile-panel-body">
+
+### Would the Viridian economy be closer to an "ideal" free market?
+
+The concept of *free market economy* goes back to the influential economists
+Adam Smith and David Ricardo. Smith introduced the idea that a free market
+results in fair conditions for all participants. Ricardo formalized and abstracted
+Smith's ideas and had to simplify it a lot. This resulted in a well working
+theory, but many people also started to neglect the limitations of the model
+and the fact that it does not necessarily represent reality.
+
+Adam Smith was very aware of the limitations of his concept and warned about them.
+For instance, a market with few corporations is a bad idea because the corporations
+can choose to require higher prices than they need to. It becomes even worse when
+big business and government make each other gifts, abusing their power, leading
+to high profits for few capitalist leaders and corrupt politics. This is why
+Smith was a fierce opponent of corporations and preferred an economy with many
+small competitors (like most of economy still was at Smith's time, which changed
+over the course of the 19th century).
+
+The Viridian economy, with its decentralized power and easily adjustable rules,
+**might help to prevent such situations and create a market that is closer to Smith's ideal**.
+
+Another flaw of our present-day capitalist economy is the exclusion of external
+costs. Many economists argue that this leads to a distortion of the free market.
+**In Smith's ideal free market, all prices reflect the actual cost that a product's production imposes on society.**
+For example, if a worker needs to spend more time on one product than on another,
+then it must cost more to reflect this. If the production leads to external costs
+that society (ultimately everyone, including the buyer and the seller) must pay for,
+then the product should also cost more, to pay for these costs and also to regulate
+the demand for the product.
+
+Again, the Viridian project might help to remove this flaw from the economy.
+
+What do you think about it? If you have any opposing views or ideas how the
+Viridian project can improve our market economy even more, feel free to contact
+us at
+```{r, echo=FALSE}
+htmltools::includeHTML("snippets/email.html")
+htmltools::includeHTML("snippets/alternative_contact.html")
+```
+
+### What are the likely conerns and needs of businesses?
+
+The Viridian project would necessarily interfere with the way people are doing
+business. For example, color must be considered when determining retail prices.
+
+From the business perspective, what would the main **concerns and objections** be
+that might disturb the adoption of Viridian? How could these concerns be addressed?
+What are the **possibilities to make a transition easier for businesses**? Can we
+provide services that would simplify a business's life?
+
+### How to attract businesses?
+
+How can we create business models that would
+**make the adoption of Viridian lucrative for businesses**,
+e.g. through improved image or intensified customer relations?
+
+### How to attract consumers?
+
+There should be **benefits for consumers** as well. If the system's cumbersome to
+use and most products cost more, no-one will use it except some idealists.
+
+### Contact us
+
+If you think you can help, contact us at
+```{r, echo=FALSE}
+htmltools::includeHTML("snippets/email.html")
+htmltools::includeHTML("snippets/alternative_contact.html")
+```
+
+</div>
+</div>
+</div>
+
+<div id="law" class="anchor">
+<div class="panel panel-default">
+<div class="panel-heading tile-panel-heading">
+<h3 class="panel-title">Law</h3>
+</div>
+<div class="panel-body tile-panel-body">
+
+### What are the legal implications of creating an alternative currency?
+
+What are the legal risks? Are there any subtle differences in the handling of
+the alternative currency that would influence if it's deemed legal or illegal?
+
+### Transparency vs. secrecy
+
+Are there any **laws protecting company secrets** that would conflict with an open
+and transparent economy like in the Viridian project?
+
+Of course, one cannot force companies to reveal information unless one changes
+the law, in which case the conflict would be removed. But in an ideal world,
+one would manage to encourage companies to reveal information voluntarily until
+everyone is doing it and it becomes normal practice.
+
+But still, are there any legal obstacles to the whole process?
+
+### Any other law problems we didn't think about?
+
+Law can be very unintuitive and incomprehensible for laymen. Maybe there is
+**an obvious legal obstacle** that did not occur to us yet?
+
+### Contact us
+
+If you think you can help, contact us at
+```{r, echo=FALSE}
+htmltools::includeHTML("snippets/email.html")
+htmltools::includeHTML("snippets/alternative_contact.html")
+```
+
+</div>
+</div>
+</div>
+
+<div id="lca" class="anchor">
+<div class="panel panel-default">
+<div class="panel-heading tile-panel-heading">
+<h3 class="panel-title">Life-cycle analysis, external costs, sustainability</h3>
+</div>
+<div class="panel-body tile-panel-body">
+
+### How can the Viridian project benefit from existing LCA work?
+
+Life-cycle analysis (LCA) is the **assessment of environmental impacts** associated
+with the entire lifetime of a product, from the extraction of raw materials, via
+production and use, to its disposal and recycling.
+
+**Databases and dedicated software products** for LCA already exist and are
+regularly updated by researchers. These would provide a solid base for the
+determination of many products' colors.
+
+A problem is that existing LCA products like [ecoinvent](http://www.ecoinvent.org/)
+are usually **not freely available and open sourced**. Unless there are APIs allowing
+to interact with them, it will be rather complicated to use those third party
+software products. A very welcome open source software project is [openLCA](http://www.openlca.org/),
+which solves some of these problems.
+However, another problem is **licensation**, which might even prohibit the use of
+the data for such purposes as the Viridian project.
+
+The problem of course is that LCA is a very labor-intensive task and the
+researchers doing it must use licensation to ensure that they earn a living.
+In the Viridian economy, LCA researchers would turn into color miners that are
+paid fair rewards for their services, but only if they open up all their data.
+Therefore, they would be in a much different (and much more important and powerful)
+position than they are now. The question is: **how to organize the transition** from
+here to there?
+
+### Are there better ways to assess external costs?
+
+Apart from LCA, can you think of alternative ways to determine external costs
+that are easier to use?
+
+Are there any other tools in the sustainability and external costs scene that
+would be really useful for the Viridian project?
+
+### Contact us
+
+If you are an LCA/external costs/sustainability expert and think you can help,
+contact us at
+```{r, echo=FALSE}
+htmltools::includeHTML("snippets/email.html")
+htmltools::includeHTML("snippets/alternative_contact.html")
+```
+
+</div>
+</div>
+</div>
+
+<div id="auditing" class="anchor">
+<div class="panel panel-default">
+<div class="panel-heading tile-panel-heading">
+<h3 class="panel-title">Auditing, e.g. organic or fair trade</h3>
+</div>
+<div class="panel-body tile-panel-body">
+
+### Any learned lessons from auditing practice?
+
+Already existing sustainability certifications of products (fair trade, organic
+standards, etc.) usually involve audits, i.e. **systematic and unscheduled visits** to
+producers to check if the required standards are met and that there is no abuse
+of the certificate label.
+
+Do these kind of audits need to be a part of the color determination? How can
+they be organized as **efficient and corruption-safe** as possible? Are there any
+**mistakes** that can be avoided? Any thoughts on how to **scale audits up** in a good
+way? Or do you think audits are actually a bad thing and there are
+**better alternatives**, e.g. using social networks and personal contacts to people?
+
+### Contact us
+
+If you have experience from the auditing business and think you can help,
+please contact us at
+```{r, echo=FALSE}
+htmltools::includeHTML("snippets/email.html")
+htmltools::includeHTML("snippets/alternative_contact.html")
+```
+
+</div>
+</div>
+</div>
+
+<div id="sociology" class="anchor">
+<div class="panel panel-default">
+<div class="panel-heading tile-panel-heading">
+<h3 class="panel-title">Psychology and Sociology</h3>
+</div>
+<div class="panel-body tile-panel-body">
+
+### The rational brain and the emotional brain?
+
+Economic decisions seem to be driven mostly by rational thinking and self-interest
+in the lines of **"cheaper is better" and "more is better"**. Negative
+effects on others or the environment are usually not considered when people buy
+things, or (to a lesser degree) even when they look for an employer.
+
+But people are not just rational, but also social and emotional beings. The
+hypothesis is that while **conventional money stimulates mainly the rational part of the brain**,
+there could also be **a component of money that stimulates the emotional part**.
+With the emotional component putting an emphasis on empathy and
+ethics, the perception and use of money could become much more balanced and
+less one-dimensional and mechanistic than it is now. The color dimension of the
+Viridian money could provide this extra mechanism.
+
+Does this hypothesis have a sound foundation in psychology or is there a stark
+**contradiction with psychological research?**
+
+### How to use psychology to make Viridian attractive?
+
+Capitalist advertising makes use of all kinds of psychological tricks to entice
+people and encourage them to change their behavior (mostly to buy stuff they
+don't really need).
+
+What kind of **psychological tricks** could be used **to convince people to use the ethical Vidirian money?**
+Could peer-pressure be used in a positive way to attract new users? Maybe in the
+lines of "Three of your friends already use Viridian, when do you come and join us?"
+
+### What about socio-economic aspects?
+
+The socio-economic situation of the people is important because it ultimately
+decides about what people perceive as "good and fair" and what they accept and
+support. If there is a perceived thread to peoples' lifestyle, there will be
+opposition.
+
+Environmental action and climate action is often put on the shoulders of the
+weakest. For example, when stricter regulations lead to higher prices, it is
+the poor that suffer most from it, while the rich might not even feel a difference.
+Therefore, it is **very important to implement sustainable development in a way that improves the socio-economic status**
+of the vast majority of people and **especially the poorest**. The rich are the
+biggest polluters, so they are also the ones that should pay for the transition
+towards a safe world.
+
+How can we design Viridian so that the improvement of the socio-economic status
+of most people is guaranteed, while the economy gets more sustainable at the
+same time?
+
+### Contact us
+
+Do you have any thoughts, ideas, comments, suggestions, improvements? Contact us at
+```{r, echo=FALSE}
+htmltools::includeHTML("snippets/email.html")
+htmltools::includeHTML("snippets/alternative_contact.html")
+```
+
+</div>
+</div>
+</div>
+
+<div id="politics" class="anchor">
+<div class="panel panel-default">
+<div class="panel-heading tile-panel-heading">
+<h3 class="panel-title">Politics: Democracy and Voting</h3>
+</div>
+<div class="panel-body tile-panel-body">
+
+### How to organize ourselves?
+
+Politics is all about power and who gets to decide what. Conventional political
+systems use **centralized structures for political decision making**. Computer
+technology may enable us to use better alternatives.
+
+In the Viridian project, we want **more decentralized and bottom-up** decision
+making to minimize corruption and increase societal acceptance. But because
+direct democracy can be very inefficient or prone to demagogical manipulation,
+a **middle way between direct and representative democracy** might prove very useful.
+*Delegative democracy*, also called *liquid democracy*, is a process, in
+which political decisions are not delegated completely to just one representative,
+but each voter can decide by topic whom to delegate questions to. Or, if the voter
+feels competent in the subject matter, she can choose to answer the question herself.
+
+Direct democracy has the general problem that it does not scale well. It works
+well in small groups, so that cooperatives, for instance, can be operated very
+efficiently. But a whole society, operated like a cooperative, is difficult to
+achieve. Liquid democracy might combine the best of both worlds: The direct
+involvement of direct democracy and the stability and efficiency of representative
+democracy. Liquid democracy involves a lot of communication between people,
+making use of social networks. That means, it can profit heavily from the use of
+information technology, without which it might be too cumbersome and slow and
+therefore inefficient.
+
+### Contact us
+
+If you have any other ideas on how decisions in the Viridian project might become
+more democratic and legitimate, or if you have experience with liquid democracy
+or similar tools, contact us at
+```{r, echo=FALSE}
+htmltools::includeHTML("snippets/email.html")
+htmltools::includeHTML("snippets/alternative_contact.html")
+```
+
+</div>
+</div>
+</div>
+
+
+## How is this any different from what already exists?
+
+There are already many good concepts for a sustainable economy. See how they
+compare to the Viridian project.
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-comp" aria-expanded="false" aria-controls="showmore-comp"><i class="fa fa-caret-down" aria-hidden="true"></i> Read more</button>
+
+<p></p>
+
+<div class="collapse" id="showmore-comp">
+
+Existing ideas for a more sustainable economy include:
+
+* [Transition Towns](https://transitionnetwork.org/) and [Permaculture](https://en.wikipedia.org/wiki/Permaculture) (see also: [here](https://permacultureprinciples.com/))
+* [Degrowth](https://www.degrowth.info)
+* [Cradle to cradle](https://en.wikipedia.org/wiki/Cradle_to_Cradle:_Remaking_the_Way_We_Make_Things) (see also: [here](http://c2c-ev.de/))
+* [Ecological economics](https://en.wikipedia.org/wiki/Ecological_economics) (see also: [here](https://www.journals.elsevier.com/ecological-economics/))
+* [Sustainable Economics](https://www.nachhaltige-oekonomie.de/englisch)
+* [*Gemeinwohlökonomie*](https://www.ecogood.org) (German)
+* *Öko-Bilanzierung* (German) (["Richtig rechnen!"](https://www.oekom.de/nc/buecher/gesamtprogramm/buch/richtig-rechnen.html))
+* [*Bioökonomie*](https://de.wikipedia.org/wiki/Bio%C3%B6konomie) (German)
+<!-- * True cost -->
+
+While these are very good approaches, existing concepts for a more sustainable
+economy typically lack some or all of the following elements:
+
+<img src="/images/home/coding.svg" style="height: 75px;">
+
+<!--
+<div>Icons made by <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+-->
+
+#### Tech
+
+While technology alone cannot solve our problems and social
+innovation is needed, computer network technology (web, digitization,
+cryptocurrencies, IoT, etc.) has a **vast potential to support or even enable societal transformation**.
+For example, technology can be critical for allowing
+humans to efficiently collaborate and exchange information. It might
+also be used to algorithmically enforce sustainability (whether this is feasible
+or not remains to be seen).
+
+<img src="/images/home/sunglasses.svg" style="height: 75px; margin-bottom: -25px;">
+
+<!--
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+-->
+
+#### Coolness
+
+
+For the alternative technology to be successful, it must be "cool"
+enough to be adopted by a large (but minority) group of "early adopters".
+If the new technology **"goes viral"**, it will spread very fast and be talked
+about a lot. This would be the first stage towards mass adoption.
+<!-- In the Daemon novels, this was achieved by addressing the gamer community and -->
+<!-- transferring concepts of comupter games to the real world. -->
+
+<!-- <img src="/images/home/stats.svg" style="height: 75px;"> -->
+
+<!--
+<div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+-->
+
+<img src="/images/home/coins.svg" style="height: 75px;">
+
+<!--
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+-->
+
+#### Benefit
+
+The alternative economy will only be widely adopted if it provides
+real benefit for the individual. Mere moral superiority is probably not enough.
+One example might be farmers: Many farmers need to pay large amounts to corporations
+to buy seeds, fertilizers, and pesiticides, while not earning much with their
+crops on the market. If they discover that they can **earn a much better living**
+by using the alternative economy, both for buying goods and selling their
+produce, they will start using it. This would be the second stage towards mass
+adoption. When more and more groups of people join the new economy, eventually
+a **critical mass** will be reached and there will be a tipping point with a full
+transition to the new economy.
+
+The Viridian project does not yet have complete solutions on these three points
+either. But we have a vision. And you can help us turn that vision into a
+reality! See [Get involved](#get-involved).
+
+</div>
+
+####
+
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/retinaicons" title="Retinaicons">Retinaicons</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a>, <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>.</div>
+ 
+```{r load-javascript, echo=FALSE}
+htmltools::includeScript("../static/js/tiles.js")
+```
