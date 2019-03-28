@@ -172,20 +172,147 @@ Individuum und keine Clique so viel Rechenleistung bezahlen kann, wie alle ander
 
 ## Warum Blockchain?
 
+### Einfach nur eine verteilte Datenbank?
+
 Wir sind primär an einem dezentralen System interessiert, eine Blockchain muss
 es da nicht unbedingt sein. Wir haben uns daher verschiedene verteilte Datenbanken
 angesehen wie Apache Cassandra oder Elasticsearch. Am besten gefallen hat uns
-CouchDB, weil sie einerseits gut dokumentiert ist und andererseits sehr skalierbar,
+CouchDB, weil sie einerseits gut dokumentiert und andererseits sehr skalierbar ist,
 vom mobilen Endgerät bis hin zum Rechenzentrum. Außerdem kann CouchDB sogar mit
 temprären Offline-Zeiten umgehen und synchronisiert Änderungen einfach, sobald
 der Knoten wieder online ist. Das hat uns gefallen, denn die anderen Lösungen
 scheinen primär auf High-End-Rechner in Rechenzentren ausgelegt zu sein, die
 immer online sind.
 
+### Konsens und Fehlertoleranz
+
 Trotzdem stellt sich auch bei CouchDB die Frage: Wie genau synchronisiert man
 die Knoten und stellt sicher, dass nicht ein bösartiger Teilnehmer einfach
-Daten ohne Erlaubnis verändert und diese Änderung ins Netz einspeist?
- 
+Daten ohne Erlaubnis verändert und diese Änderung ins Netz einspeist? Wenn man
+etwas recherchiert, landet man ziemlich schnell bei
+[Konsens-Algorithmen](https://en.wikipedia.org/wiki/Consensus_(computer_science)), die
+sicherstellen, dass die verschiedenen Versionen der Datenbank konsistent sind
+und sich die (hoffentlich ehrliche) Mehrheit durchsetzt. Ein sicherer Konsens-
+Algorithmus sollte eine sogenannte "byzantinische Fehlertoleranz"
+(BFT, engl. [Byzantine Fault Tolerance](https://en.wikipedia.org/wiki/Byzantine_fault))
+aufweisen. Bei dieser Art von Fehlertoleranz können manche Knoten (bis zu 1/3)
+unzuverlässig bzw. unehrlich sein (sowohl ungewollt durch technische Fehler
+als auch gewollt), ohne dass dies Auswirkungen für das gesamte Netz hat.
+
+BFT ist [eine Kernkompetenz](https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419)
+[von Blockchain-Netzwerken](https://medium.com/loom-network/understanding-blockchain-fundamentals-part-2-proof-of-work-proof-of-stake-b6ae907c7edb),
+die darauf ausgelegt sind, in einem fehlerbehafteten Umfeld ausgeführt zu werden.
+Wenn man also eine verteilte Datenbank mit BFT-Replikation sucht, landet man
+fast unweigerlich bei Blockchains.
+
+<!--
+### Decentralized applications
+
+Im Zusammenhang mit Blockchains spricht man auch häufig von "Decentralized
+Applications" (Dapps), welche auf Blockchains aufbauen und manipulationssichere
+IT-Dienstleistungen anbieten, z.B. ein Computerspiel oder ein soziales Netzwerk.
+Das ist genau, was das Viridian-Projekt tun will: eine Dapp anbieten!
+
+Für Dapps gibt es bereits mehrere Blockchain-Frameworks, so dass man nicht bei Null
+anfangen und seine eigene Blockchain programmieren muss. Allen voran gibt es das
+berühmte Ethereum-Netzwerk (mit der Kryptowährung Ether) mit seinem großen Ökosystem,
+in dem sich auch Tools finden, um Dapps zu entwickeln. Ein Problem daran ist, dass
+man das Ethereum-Netzwerk mit seinem Beschränkungen nutzen muss. Da es sich bei
+Ethereum um eine Proof-of-Work-Blockchain handelt (siehe [hier](#blockchain-energie)),
+sind Transaktionen mit hohem Energieaufwand und daher hohen Kosten verbunden. Damit
+ein Vorgang in einer Dapp ausgeführt wird, muss man erst mal Rechenzeit auf der
+Blockchain (genannt "Gas") kaufen. Die Miner, die die Transaktion validieren und
+in die Blockchain aufnehmen, brauchen einen finanziellen Anreiz, ihre Rechenleistung
+dafür aufzuwenden. Da eine Proof-of-Work-Blockchain extrem ineffizient ist und die
+meiste Rechenzeit keinen praktischen Nutzen hat, ist auch die Transaktionsrate, die
+verarbeitet werden kann, sehr niedrig. Sie liegt bei Netzwerken wie Bitcoin oder
+Ethereum bei unter 100 Transaktionen pro Sekunde. Wenn viele Spiele oder soziale
+Netzwerke gleichzeitig ausgeführt werden sollen, wird das also schnell zu einem
+Flaschenhals.
+
+Um dieses Problem zu umgehen, wurden neue Frameworks entwickelt, z.B. EOS, die nicht
+mit Proof-of-Work arbeiten, sondern mit Delegated-Proof-of-Stake (DPoS). Dabei wird die
+"Arbeit" des Proof-of-Work, wo der Knoten einen Block abschließen darf, der als erster
+ein schwieriges Rätsel löst, ersetzt durch eine zufällige Auswahl des nächsten Knotens,
+die jedoch davon abhängt, wie viele Tokens der Kryptowährung ein Knoten hält. Als
+Alternative zu EOS gibt es u.a. Loom, das DPoS-Blockchains aufbauend auf dem
+Ethereum-Netzwerk anbietet. Kritische Transaktionen können dann auf das sicherere
+Proof-of-Work von Ethereum zurückgreifen, während die Mehrheit der Transaktionen das
+viel performantere DPoS verwenden kann.
+-->
+
+### Blockchain-Frameworks
+
+Wir haben uns verschiedene Optionen von Blockchain-Frameworks angesehen. Was wir auf
+keinen Fall wollten, ist die Nutzung einer Proof-of-Work-Blockchain wie Bitcoin oder
+Ethereum, da diese enorm viel Energie verbrauchen (siehe [hier](#blockchain-energie)).
+Eine Option sind Delegated-Proof-of-Stake-Blockchains wie EOS oder Loom, die uns
+aber recht kompliziert erschienen und außerdem (wie Proof-of-Work auch)
+undemokratische Tendenzen haben, weil Knoten, die mehr besitzen (höherer Stake),
+mehr Macht bekommen.
+
+### Exkurs: IOTA und der Tangle
+
+Eine Interessante Alternative zu Blockchains ist IOTA, das statt mit einer Blockchain
+mit einem gerichteten azyklischen Graphen (engl. "Directed Acyclic Graph", DAG), auch
+genannt "Tangle", arbeitet. In gewisser Hinsicht handelt es sich um eine
+Verallgemeinerung der Blockchain, weil jede Transaktion einzeln validiert und mit
+anderen Transaktionen verkettet wird, anstatt viele Transaktionen zusammen blockweise.
+In einer Blockchain gibt es nur einen gültigen Strang von Blöcken mit Transaktionen,
+im Tangle dagegen gibt es viele parallel verlaufende Stränge, die ineinander
+verschlungen ("entangled") sein können. Das interessante am Tangle ist die Philosophie
+dahinter: Während bei einer Blockchain die Knotenbetreiber, also die Miner, quasi
+eine kleine Elite sind und die Validierung von Transaktionen einer größeren Gruppe
+von Usern als (fast schon zentralisierte!) Dienstleistung anbietet, gilt beim Tangle
+das Do-it-yourself-Prinzip: Jeder User, der/die eine Transaktion abschickt, muss
+selbst zwei andere Transaktionen validieren. Das Mining wird sozusagen sozialisiert
+und es herrscht eine Art Reziprozität: wenn du eine Leistung willst, musst du erst mal
+selbst etwas leisten (anstatt wie beim Mining nur eine Gebühr zu bezahlen).
+
+Wir haben uns letztlich doch gegen IOTA entschieden, v.a. weil der Tangle nicht
+darauf ausgelegt ist, große Datenmengen zu speichern und schnell abzurufen. Man müsste
+u.U. schauen, ob man den Tangle nur als Kommunikationsmedium benutzen kann, um eine
+Zustandsdatenbank, etwa eine CouchDB, fehlertolerant zu synchronisieren. Das wäre
+aber vermutlich mit großem Aufwand verbunden.
+
+### Hyperledger Fabric
+
+Wofür wir uns letztlich entschieden haben, ist das Blockchain-Framework
+"Hyperledger Fabric" (HLF), das durch die Linux Foundation betreut wird.
+Es ist ein sehr modulares und anpassbares Framework für sogenannte
+"Permissioned Blockchains" oder "Consortium Blockchains", im Gegensatz
+zu "Permissionless Blockchains" wie Bitcoin oder Ethereum. Das bedeutet, dass
+nicht jeder an dem Netzwerk als Knoten teilnhemen kann, sondern erst eine
+Erlaubnis braucht, die in der Regel mit einer Prüfung der Identität verbunden
+ist.
+
+Dadurch kann ganz auf Proof-of-Work und Proof-of-Stake verzichtet werden, es
+gibt aber trotzem Konsens-Algorithmen für die Fehlertoleranz. Aktuell unterstützt
+HLF leider noch keine BFT von Haus aus, sondern nur CFT ("Crash Fault Tolerance").
+Das heißt, das Netzwerk ist vor dem Ausfall von Knoten geschützt, nicht aber vor
+der bewussten bösartigen Manipulation durch einzelne Knoten.
+
+Implementierungen von BFT in HLF sind derzeit in Arbeit (siehe [hier](https://jira.hyperledger.org/browse/FAB-6135)
+und [hier](https://jira.hyperledger.org/browse/FAB-378)). Es gibt
+bereits ein von Dritten erstelltes [BFT-Plugin](https://github.com/bft-smart/fabric-orderingservice)
+(von der Universität von Lissabon), das man bei Bedarf nutzen könnte. Die Dokumentation
+von HLF [sagt zu dem Thema](https://hyperledger-fabric.readthedocs.io/en/release-1.4/whatis.html?highlight=byzantine#permissioned-vs-permissionless-blockchains),
+dass BFT ja in einem System, das zugangsbeschränkt ("permissioned") ist und in
+dem ein gewisses Vertrauen vorhanden ist, prinzipiell ein geringeres Problem als
+in einem komplett offenen. Sollte Fehlverhalten auftreten, so ist auf der Blockchain
+genau dokumentiert, wer dafür verantwortlich war und kann vom Netzwerk ausgeschlossen
+werden. Der angerichtete Schaden könnte im Nachhinein behoben werden. Bei einem
+wachsenden Netzwerk, in dem sich die Knotenbetreiber immer weniger untereinander
+kennen, könnte das aber schnell lästig und gefährlich werden, falls Manipulationen
+lange unentdeckt bleiben.
+
+Es bleibt zu prüfen, mit welcher Konfiguration HLF in Viridan optimal eingesetzt
+werden kann. Dies betrifft nicht nur die Konfiguration des Konsens-Algorithmus,
+also des sog. Ordering Service, sondern auch der anderen Komponenten von HLF,
+insebsondere die Peers, der Membership Service Provider und der Certificate
+Authority. Da HLF so modular und generisch ist, gibt es viele Stellschrauben
+und Entscheidungen, die getroffen werden müssen.
+
  
 ### Verbraucht die Blockchain nicht unglaublich viel Energie? {#blockchain-energie}
 
