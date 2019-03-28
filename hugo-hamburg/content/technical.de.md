@@ -202,8 +202,23 @@ als auch gewollt), ohne dass dies Auswirkungen für das gesamte Netz hat.
 BFT ist [eine Kernkompetenz](https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419)
 [von Blockchain-Netzwerken](https://medium.com/loom-network/understanding-blockchain-fundamentals-part-2-proof-of-work-proof-of-stake-b6ae907c7edb),
 die darauf ausgelegt sind, in einem fehlerbehafteten Umfeld ausgeführt zu werden.
+BFT wird in einer Blockchain durch Proof-of-Work o.ä. Prinzipien hergestellt.
 Wenn man also eine verteilte Datenbank mit BFT-Replikation sucht, landet man
 fast unweigerlich bei Blockchains.
+
+Außerdem hat eine Blockchain den zusätzlichen Vorteil gegenüber gewöhnlichen
+Datenbanktransaktionen, dass die Transaktionen ja in Blöcken zusammengefasst
+aneinander gekettet werden (über den Hash-Wert des Vorgängerblocks miteinander
+verknüpft). Die Verkettung führt dazu, dass Modifikationen in der Blockchain
+automatisch Modifikationen in allen späteren Blöcken notwendig machen. Es ist
+also aufwendig, die Chronik der Transaktionen im Nachhinein zu verändern.
+Bei Bitcoin wäre die Modifikation der Chronik durch den hohen Rechenaufwand
+von Proof-of-Work quasi unmöglich: Schon einen einzelnen modifizierten Block
+schneller abzuschließen als die Konkurrenz im Netzwerk ist extrem schwierig,
+geschweige denn auch noch in derselben Zeit alle nachfolgenden Blöcke.
+Ohne rechenintensives Proof-of-Work wäre es zwar nicht sehr aufwendig für einen
+Angreifer, trotzdem würde jede Modifikation sich bis zum aktuellesten Block
+auswirken und wäre sichtbarer als ohne Blockchain.
 
 <!--
 ### Decentralized applications
@@ -287,10 +302,10 @@ Erlaubnis braucht, die in der Regel mit einer Prüfung der Identität verbunden
 ist.
 
 Dadurch kann ganz auf Proof-of-Work und Proof-of-Stake verzichtet werden, es
-gibt aber trotzem Konsens-Algorithmen für die Fehlertoleranz. Aktuell unterstützt
+gibt aber trotzdem Konsens-Algorithmen für die Fehlertoleranz. Aktuell unterstützt
 HLF leider noch keine BFT von Haus aus, sondern nur CFT ("Crash Fault Tolerance").
 Das heißt, das Netzwerk ist vor dem Ausfall von Knoten geschützt, nicht aber vor
-der bewussten bösartigen Manipulation durch einzelne Knoten.
+der bewussten bösartigen Manipulation.
 
 Implementierungen von BFT in HLF sind derzeit in Arbeit (siehe [hier](https://jira.hyperledger.org/browse/FAB-6135)
 und [hier](https://jira.hyperledger.org/browse/FAB-378)). Es gibt
@@ -309,12 +324,56 @@ lange unentdeckt bleiben.
 Es bleibt zu prüfen, mit welcher Konfiguration HLF in Viridan optimal eingesetzt
 werden kann. Dies betrifft nicht nur die Konfiguration des Konsens-Algorithmus,
 also des sog. Ordering Service, sondern auch der anderen Komponenten von HLF,
-insebsondere die Peers, der Membership Service Provider und der Certificate
+insebsondere die Peers, der Membership Service Provider und die Certificate
 Authority. Da HLF so modular und generisch ist, gibt es viele Stellschrauben
-und Entscheidungen, die getroffen werden müssen.
+und Entscheidungen, die getroffen werden müssen. Dies ist Teil von Phase 3 des
+Viridian-Projekts (siehe [Timeline](#timeline)).
 
  
 ### Verbraucht die Blockchain nicht unglaublich viel Energie? {#blockchain-energie}
+
+Es stimmt, dass die Netzwerke von Permissionless Proof-of-Work-Blockchains enorme
+Energiemengen verschlingen. Dies wird für Bitcoin und Ethereum sehr anschaulich
+dargestellt auf https://digiconomist.net/bitcoin-energy-consumption: Bsp. ca.
+50 - 70 TWh/a, das ist etwa so viel wie der Stromverbrauch mancher europäischer
+Länder.
+
+Allerdings ist die Blockchain selbst nicht für den hohen Energieverbrauch verantwortlich.
+Die Blockchain ist nur eine Aneinanderreihung von Blöcken, die jeweils Daten
+enthalten (meist Transaktionen, bei Bitcoin etwa Überweisungen von Bitcoins).
+Jeder Block besteht aus den Daten und einem [Hashwert](https://en.wikipedia.org/wiki/Hash_function)
+der Daten. Der Hashwert ist im Grunde einfach eine große Zahl, die immer gleich
+groß ist, egal wie groß die Datenmenge ist. Sie ist wie eine Art Fingerabdruck.
+Ändert sich auch nur eine Kleinigkeit in den Daten, ergibt sich ein vollkommen
+anderer Hashwert. Die Blockchain wird dadurch zur "Kette", dass jeweils der
+Hashwert des vorherigen Blocks zu den Daten des neuen Blocks hinzugefügt wird.
+Dadurch hat auch dieser Hashwert Einfluss auf den neuen Hashwert. Ändert man die
+Daten in einem Block, verändert das ja seinen Hashwert. Weil der Hashwert auch
+Teil des nächsten Blocks ist, wird auch sein Hashwert verändert und so weiter.
+Dadurch wird die Blockchain relativ stabil: Daten lassen sich nachträglich nicht
+ändern, ohne alle nachfolgenden Blöcke mit zu ändern.
+
+Woher kommt jetzt der hohe Stromverbrauch? Von der Erstellung der Blockchain
+selbst eigentlich nicht: Um neue Blöcke zu erstellen, muss man einen neuen
+Hashwert berechnen. Das geht sehr schnell und verbraucht so gut wie keinen Strom.
+Schon als Bitcoin im Jahr 2009 geschaffen wurde, konnten mit Standard-CPUs
+[1 bis 25 Millionen Hashwerte pro Sekunde](https://www.heise.de/select/ct/2019/02/1546924642860309)
+berechnet werden. Das bedeutet aber auch, dass es ziemlich leicht ist, selbst
+eine Blockchain mit Millionen von Blöcken nach Belieben zu modifizieren und alle
+Hashes neu zu berechnen.
+
+Daher wird bei Bitcoin eine zusätzliche Hürde eingebaut: Es werden nur Blöcke
+akzeptiert, deren Daten eine zusätzliche Zufallszahl enthalten (die sog. Nonce),
+sodass der Hashwert kleiner als ein bestimmter Schwellwert wird. Was die
+Bitcoin-Miner tun, ist permanent Zufallszahlen zu erstellen und den Hashwert zu
+berechnen. So lange, bis der Hash durch Zufall unter der Schwelle liegt. Wer es
+als erstes schafft, hat Glück gehabt und erhält als Belohnung eine kleine
+Gebühr in Form von Bitcoin.
+
+
+
+Um das Bitcoin-Netzwerk abzusichern, 
+
 
 
 ## Warum gemeinschaftlich?
