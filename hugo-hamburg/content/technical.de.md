@@ -1,7 +1,7 @@
 ---
 date: "2019-03-26T23:17:04+01:00"
 noshowdate: yes
-author: mvoge
+author: ["mvoge", "dvandoren"]
 #tags:
 #- technical
 title: Technisches
