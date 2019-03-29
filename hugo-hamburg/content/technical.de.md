@@ -353,6 +353,8 @@ Teil des nächsten Blocks ist, wird auch sein Hashwert verändert und so weiter.
 Dadurch wird die Blockchain relativ stabil: Daten lassen sich nachträglich nicht
 ändern, ohne alle nachfolgenden Blöcke mit zu ändern.
 
+#### Wettrüsten der Rechenpower: Proof-of-Work
+
 Woher kommt jetzt der hohe Stromverbrauch? Von der Erstellung der Blockchain
 selbst eigentlich nicht: Um neue Blöcke zu erstellen, muss man einen neuen
 Hashwert berechnen. Das geht sehr schnell und verbraucht so gut wie keinen Strom.
@@ -363,17 +365,80 @@ eine Blockchain mit Millionen von Blöcken nach Belieben zu modifizieren und all
 Hashes neu zu berechnen.
 
 Daher wird bei Bitcoin eine zusätzliche Hürde eingebaut: Es werden nur Blöcke
-akzeptiert, deren Daten eine zusätzliche Zufallszahl enthalten (die sog. Nonce),
-sodass der Hashwert kleiner als ein bestimmter Schwellwert wird. Was die
-Bitcoin-Miner tun, ist permanent Zufallszahlen zu erstellen und den Hashwert zu
-berechnen. So lange, bis der Hash durch Zufall unter der Schwelle liegt. Wer es
-als erstes schafft, hat Glück gehabt und erhält als Belohnung eine kleine
-Gebühr in Form von Bitcoin.
+akzeptiert, deren Daten eine Zufallszahl enthalten (die sog. Nonce), durch die der
+Hashwert kleiner als ein bestimmter Schwellwert wird. Was die Bitcoin-Miner tun,
+ist permanent Nonces zu erzeugen und den Hashwert zu berechnen. So lange, bis der
+Hash durch Zufall unter der Schwelle liegt. Wer es als erstes schafft, hat Glück
+gehabt und darf den Block abschließen. Als Belohnung erhält der Miner eine kleine
+Gebühr. Das Verfahren nennt sich Proof-of-Work, weil man für das Privileg des
+Block-Abschlusses beweisen muss, dass man Arbeit geleistet hat.
 
+Das Blockchain-Netzwerk kontrolliert, wer das Recht hat, Blöcke abzuschließen.
+Denn dazu gehört zum einen die Prüfung, ob Transaktionen valide sind, ob z.B.
+kein Geld überwiesen wird, das bereits ausgegeben wurde (sog. "Double Spend").
+Zum anderen die Entscheidung darüber, welche Transaktionen auf der Blockchain
+landen, und damit gültig werden, und welche nicht.
 
+Bitcoin wird also dadurch abgesichert, dass man, um das Netzwerk zu kontrollieren,
+mehr Rechenleistung aufbringen müsste als alle anderen Netzwerkteilnehmer zusammen.
+Denn je mehr Rechenleistung, umso öfter darf man einen Block abschließen. Das Problem
+an der Sache ist, dass man auch öfter belohnt wird, wenn man mehr Rechenleistung
+besitzt. Das führt zu einem Wettrüsten der Rechenleistung und treibt den
+Stromverbrauch extrem in die Höhe. Man könnte denken, je höher die Rechenleistung
+ist, umso effizienter arbeitet das Netzwerk, weil Blöcke nun schneller abgeschlossen
+werden können. Das ist aber nicht der Fall. Der Schwellwert, unter dem der Hashwert
+liegen muss (die sog. "Difficulty") wird regelmäßig der aktuellen Rechenleistung
+des Netzwerks angepasst. Je mehr Rechenpower vorhanden ist, umso schwerer wird
+das Rätsel, so dass es immer etwa gleich lang dauert (ca. 10 Minuten), bis ein
+Block abgeschlossen ist.
 
-Um das Bitcoin-Netzwerk abzusichern, 
+Bitcoin ist also extrem ineffizient. Millionen Chips berechnen parallel unnützes
+Zeug, nur damit am Ende einer von ihnen den Block validieren und abschließen
+darf. Eine Möglichkeit der Effizienzerhöhung wäre, dass sich die Knoten die Arbeit
+aufteilen und mehrere Blöcke parallel bearbeitet werden. Das ist aber mit der
+Struktur der Blockchain schwer zu vereinbaren. Eine andere Möglichkeit besteht
+darin, das rechenintensive Auswahlverfahren des blockabschließenden Knotens durch
+etwas anderes zu ersetzen.
 
+#### Eine mögliche Lösung
+
+Die naheliegendste Alternative zu Proof-of-Work ist ein einfaches Round-Robin-Verfahren
+des Block-Abschlusses: Alle Knoten des dezentralen Netzwerks sind nacheinander
+an der Reihe. Das Privileg des Block-Abschlusses wird einfach gleichmäßig auf
+alle verteilt. Bei Permissionless Blockchains wir Bitcoin ist das keine gute
+Option: anstelle von hoher Rechenpower wäre nun die Maxime eine hohe Anzahl
+teilnehmender Knoten. Wer die meisten Knoten kontrolliert, kontrolliert das Netz.
+Das würde den lediglich dazu führen, dass anstatt viel Strom viel Elektronik
+benötigt wird (jedoch würde es den Ressourcenverbrauch vermutlich schon senken,
+weil man existierende Elektronik verwenden könnte, die nebenbei weiterhin
+andere Tätigkeiten ausführen kann). Ein Problem, das auch schon bei Proof-of-Work
+vorhanden ist, bleibt bestehen: Wer viel besitzt, bekommt viel Macht (und Belohnung).
+Genauso ist es auch bei der von Ethereum und anderen Kryptowährung bevorzugten
+Lösung Proof-of-Stake: wer viel (Kryptowährung) besitzt, bekommt viel Macht über
+das Netzwerk. Das soll die Hürde für Missbrauch hochsetzen, hat aber nach wie vor
+Tendenzen zu einer Oligarchie.
+
+Ein sinnvoller und einfacher demokratischer Ansatz wäre: Ein Mensch, ein Stimmrecht.
+Man könnte das Round-Robin-Verfahren einsetzen, zusammen mit der Beschränkung,
+dass jeder real existierende Mensch nur genau einen Knoten betreiben darf. Das
+entspräche in etwa dem Unterschied zwischen Aktiengesellschaften und Genossenschaften:
+in einer Genossenschaft hat jeder Anteilseigner genau eine Stimme, egal wie viel
+er/sie besitzt. In einer Aktiengesellschaft dagegen wächst das Stimmrecht mit den
+Anteilen (entspricht etwa Proof-of-Stake).
+
+Der einzige Nachteil wäre die Aufgabe der Anonymität der Knotenbetreiber. Und das
+ist auch der Grund, warum die Anhänger von Bitcoin oder Ethereum diesen Ansatz
+niemals verfolgen werden. Es gibt jedoch die Kryptowährung [FairCoin](https://fair-coin.org),
+die genau diesem Ansatz folgt.
+
+Auch eine Permissioned Blockchain wie Hyperledger Fabric (siehe [hier](#warum-blockchain)),
+die wir im Viridian-Projekt verwenden wollen, geht diesen sinnvollen Kompromiss ein.
+Der Verlust an Anonmyität, der nicht unbedingt mit der Aufdeckung der kompletten
+Identität verbunden sein muss (siehe [hier](#identitaet)), ist ein kleiner Preis
+gegenüber der enormen Einsparung von Ressourcen.
+
+Dass Hyperledger Fabric viel effizienter arbeitet als Bitcoin und einen viel
+geringeren Ressourcenbedarf hat, zeigt das Paper "".
 
 
 ## Warum gemeinschaftlich?
