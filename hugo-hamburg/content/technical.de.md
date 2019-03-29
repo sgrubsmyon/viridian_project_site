@@ -259,12 +259,20 @@ viel performantere DPoS verwenden kann.
 ### Blockchain-Frameworks
 
 Wir haben uns verschiedene Optionen von Blockchain-Frameworks angesehen. Was wir auf
-keinen Fall wollten, ist die Nutzung einer Proof-of-Work-Blockchain wie Bitcoin oder
+keinen Fall wollen, ist die Nutzung einer Proof-of-Work-Blockchain wie Bitcoin oder
 Ethereum, da diese enorm viel Energie verbrauchen (siehe [hier](#blockchain-energie)).
 Eine Option sind Delegated-Proof-of-Stake-Blockchains wie EOS oder Loom, die uns
 aber recht kompliziert erschienen und außerdem (wie Proof-of-Work auch)
 undemokratische Tendenzen haben, weil Knoten, die mehr besitzen (höherer Stake),
 mehr Macht bekommen.
+
+Einen sehr guten Ansatz verfolgt [FairCoin](https://fair-coin.org), wo Proof-of-Work
+durch Proof-of-Cooperation ersetzt wird. Alle Knoten sind gleichberechtigt und
+sichern gemeinsam demokratisch die Blockchain. Es handelt sich bei FairCoin aber
+nicht um ein beliebig erweiterbares Framework für Anwendungen auf der Blockchain,
+sondern nur um einen Fork von Bitcoin. FairCoin ist daher eher auf Finanztransaktionen
+ausgelegt und es würde sehr viel Aufwand bedeuten, damit ein soziales Netzwerk
+wie Viridian zu betreiben.
 
 ### Exkurs: IOTA und der Tangle
 
@@ -292,7 +300,7 @@ aber vermutlich mit großem Aufwand verbunden.
 
 ### Hyperledger Fabric
 
-Wofür wir uns letztlich entschieden haben, ist das Blockchain-Framework
+Wofür wir uns aktuell entschieden haben, ist das Blockchain-Framework
 "Hyperledger Fabric" (HLF), das durch die Linux Foundation betreut wird.
 Es ist ein sehr modulares und anpassbares Framework für sogenannte
 "Permissioned Blockchains" oder "Consortium Blockchains", im Gegensatz
@@ -305,7 +313,16 @@ Dadurch kann ganz auf Proof-of-Work und Proof-of-Stake verzichtet werden, es
 gibt aber trotzdem Konsens-Algorithmen für die Fehlertoleranz. Aktuell unterstützt
 HLF leider noch keine BFT von Haus aus, sondern nur CFT ("Crash Fault Tolerance").
 Das heißt, das Netzwerk ist vor dem Ausfall von Knoten geschützt, nicht aber vor
-der bewussten bösartigen Manipulation.
+der bewussten bösartigen Manipulation. Allerdings ist das auf Grund der Architektur
+von Hyperledger Fabric ein geringeres Problem als bei anderen Blockchains, da
+nicht ein Knoten alle Aufgaben übernimmt, sondern
+die Prozesse der Prüfung ("Endorsement"), des Sortierens ("Ordering") und der
+nachträglichen Validierung ("Validation") von Transaktionen auf verschiedene Knoten verteilt sind
+(siehe dazu auch das [Fabric-Paper](https://arxiv.org/pdf/1801.10228.pdf)). Der
+Ordering-Service, der die Transaktionen nur in die Blockchain einfügt, unterstützt
+kein BFT, allerdings nimmt er die Prüfung von Transaktionen auch gar nicht vor.
+Ein Angreifer müsste also gleich mehrere Knoten kontrollieren, um sowohl die Prüfung,
+also auch die Sortierung und Validierung zu manipulieren.
 
 Implementierungen von BFT in HLF sind derzeit in Arbeit (siehe [hier](https://jira.hyperledger.org/browse/FAB-6135)
 und [hier](https://jira.hyperledger.org/browse/FAB-378)). Es gibt
@@ -328,6 +345,16 @@ insebsondere die Peers, der Membership Service Provider und die Certificate
 Authority. Da HLF so modular und generisch ist, gibt es viele Stellschrauben
 und Entscheidungen, die getroffen werden müssen. Dies ist Teil von Phase 3 des
 Viridian-Projekts (siehe [Timeline](#timeline)).
+
+Eine Alternativen zu Hyperledger Fabric, auf die man eventuell wechseln könnte, ist
+[BigchainDB](https://www.bigchaindb.com/), die auf [Tendermint](https://tendermint.com)
+aufbaut und MongoDB (anstatt CouchDB) verwendet. BigchainDB bzw. Tendermint
+unterstützt BFT. Wenn es zudem einfacher zu konfigurieren und warten ist als
+Hyperledger Fabric, könnte es eine gute Alternative sein.
+
+<!-- http://vukolic.com/iNetSec_2015.pdf -->
+<!-- https://www.usenix.org/legacy/events/hotdep08/tech/full_papers/preguica/preguica.pdf -->
+<!-- https://github.com/davebryson/bftdb -->
 
  
 ### Verbraucht die Blockchain nicht unglaublich viel Energie? {#blockchain-energie}
@@ -398,7 +425,7 @@ darf. Eine Möglichkeit der Effizienzerhöhung wäre, dass sich die Knoten die A
 aufteilen und mehrere Blöcke parallel bearbeitet werden. Das ist aber mit der
 Struktur der Blockchain schwer zu vereinbaren. Eine andere Möglichkeit besteht
 darin, das rechenintensive Auswahlverfahren des blockabschließenden Knotens durch
-etwas anderes zu ersetzen.
+etwas anderes zu ersetzen. Beide Ansätze werden in Hyperledger Fabric umgesetzt.
 
 #### Eine mögliche Lösung
 
@@ -438,10 +465,35 @@ Identität verbunden sein muss (siehe [hier](#identitaet)), ist ein kleiner Prei
 gegenüber der enormen Einsparung von Ressourcen.
 
 Dass Hyperledger Fabric viel effizienter arbeitet als Bitcoin und einen viel
-geringeren Ressourcenbedarf hat, zeigt das Paper "".
+geringeren Ressourcenbedarf hat, zeigt das Paper
+["Hyperledger Fabric: A Distributed Operating System for Permissioned Blockchains"](https://arxiv.org/abs/1801.10228):
+Auf Seite 12 (Figure 7) sieht man die Transaktionsrate pro Sekunde als Funktion
+der CPU-Anzahl. Mit 4 CPUs werden ca. 1300 - 1500 Transaktionen pro Sekunde (tps) erreicht.
+Angenommen jede CPU hat bei Maximalauslastung einen (großzügig geschätzten) Vebrauch von
+[einigen 100 W](https://www.intel.com/content/www/us/en/products/processors/xeon/e7-processors/e7-8855-v4.html),
+ergibt das einen Vebrauch von rund 1000 W für 1000 tps, bzw. 1 W/tps (oder 1 J/Transaktion).
+Dies steht einer Bitcoin-Transaktionsrate von
+[bis zu ca. 10 tps](https://en.bitcoin.it/wiki/Maximum_transaction_rate)
+(siehe auch [hier](https://www.blockchain.com/charts/transactions-per-second))
+bei einem Stromverbrauch von [50 - 70 TWh/a](https://digiconomist.net/bitcoin-energy-consumption),
+also ca. 6 - 8 GW, gegenüber. Bitcoin hat also einen Energiebedarf von etwa 600 - 800 MW/tps
+oder 600 - 800 MJ/Transaktion. Das entspricht also dem 600 bis 800 Millionenfachen
+Verbrauch des Hyperledger-Benchmarks.
+
+Auch wenn man aus Resilienzgründen vermutlich mehr als 4 Knoten im Netzwerk haben
+möchte, was den Verbrauch leicht erhöht, zeigen diese Daten, dass die Knoten erst
+bei deutlich mehr als 100 Transaktionen pro Sekunde ausgelastet wären und bei
+kleineren Raten wohl die meiste Zeit nur Ruhelast hätten. Wenn also die Zahl der Knoten
+und damit die Ruhelast nicht ins Unermessliche steigt, sollte der Energiebedarf
+in sehr vernünfitgem Rahmen bleiben und sich durch die Verwendung einer Blockchain
+nicht wesentlich erhöhen. Allerdings soll hier nicht unerwähnt bleiben, dass
+Hyperledger Fabric standardmäßig kein BFT verwendet und durch die Verwendung von
+BFT die Transaktionsrate etwas sinken und der Ressourcenbedarf etwas steigen könnte.
 
 
 ## Warum gemeinschaftlich?
+
+
 
 
 ## Wie soll das Netzwerk funktionieren? {#netzwerk-funktion}
