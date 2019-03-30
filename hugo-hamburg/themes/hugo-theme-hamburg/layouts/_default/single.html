@@ -4,6 +4,7 @@
     {{ $baseurl := .Site.BaseURL }}
     {{ $data := index .Site.Data .Site.Language.Lang }}
     <article>
+      <!-- {{ partial "toc.html" }} -->
       <header class="article-title">
         <h1 class="text-primary">{{ .Title }}</h1>
       </header>
