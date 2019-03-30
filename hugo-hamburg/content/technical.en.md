@@ -10,7 +10,7 @@ title: Technical
 
 Coming soon. No kidding. For now only:
 
-## Comparison of alternative platforms
+## Comparison of alternative platforms {#comparison}
 
 ### Introduction
 
