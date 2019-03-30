@@ -1,0 +1,16 @@
+---
+title: "Imprint"
+---
+  
+## Daclaration following § 5 TMG:
+
+<img src="/images/caddr.png"><br>Deutschland
+
+## Contact:
+
+E-Mail:
+```{r, echo=FALSE}
+htmltools::includeHTML("snippets/email.html")
+```
+
+Responsible for the content following § 55 Abs. 2 RStV: Markus Voge
