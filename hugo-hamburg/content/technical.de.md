@@ -8,6 +8,19 @@ title: Technisches
 toc: true
 ---
 
+## Inhalt
+
+- [Timeline](#timeline)
+- [Vergleich mit alternativen Plattformen](#vergleich)
+- [Wie soll das Netzwerk funktionieren?](#netzwerk-funktion)
+- [Warum gemeinschaftlich?](#warum-gemeinschaftlich)
+- [Warum dezentral?](#warum-dezentral)
+- [Warum Blockchain?](#warum-blockchain)
+  - [Verbraucht die Blockchain nicht unglaublich viel Energie?](#blockchain-energie)
+- [Warum müsst ihr die Identität der Netzwerkteilnehmer kennen?](#identitaet)
+
+<div class="delimiter"></div>
+
 In diesem Artikel wird erläutert,
 **für welche technischen Lösungen bzw. technische Architektur sich das Projekt entschieden hat und warum**.
 
@@ -18,17 +31,17 @@ Die Bewertungen können zunächst die Transparenz für bewussten nachhaltigen
 Konsum erhöhen. Später könnten dann die wahren Preise der Produkte abgebildet
 werden (siehe **[Timeline](#timeline)**).
 
-Das Netzwerk soll [**dezentral**](#warum-dezentral) organisiert sein.
+Es wird erklärt, [**wie das Netzwerk konkret funktionieren soll**](#netzwerk-funktion)
+und wie die Datenstruktur aussehen muss.
+Die Bewertung soll nicht von einer geschlossenen Gruppe, sondern
+[**gemeinschaftlich**](#warum-gemeinschaftlich) von allen Usern vorgenommen werden.
+Außerdem soll das Netzwerk [**dezentral**](#warum-dezentral) organisiert sein.
 Um das Netzwerk vor Manipulation zu schützen soll ein "Distributed Ledger", also
 [**eine Blockchain**](#warum-blockchain) zum Einsatz kommen.
-Außerdem soll die Bewertung nicht von einer geschlossenen Gruppe, sondern
-[**gemeinschaftlich**](#warum-gemeinschaftlich) von allen Usern vorgenommen werden.
-Wie das konkret funktionieren soll und wie die Datenstruktur aussehen muss, erklärt
-[**ein weiterer Abschnitt**](#netzwerk-funktion). Zum Abschluss gibt es einen
+
+Zunächst folgt ein Überblick über den [zeitlichen Ablauf](#timeline) des Viridian-Projekts und ein
 [**Vergleich von Viridian mit bestehenden anderen Projekten**](#vergleich), was
 diesen Plattformen fehlt, bzw. wie Viridian diese ergänzt.
-
-Zunächst folgt ein Überblick über den zeitlichen Ablauf des Viridian-Projekts.
 
 
 ## Timeline
@@ -321,7 +334,7 @@ https://github.com/viridian-project/database-schema/tree/master/asJSON angesehen
 
 Hier als Beispiel ein JSON-Dokument für ein Produkt:
 
-```js
+```javascript
 {
   "data": {
     "id": "61b744a3-7f5d-4500-8c59-959913762ecd",
