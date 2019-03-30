@@ -742,7 +742,7 @@ htmltools::includeHTML("snippets/alternative_contact.html")
 </div>
 
 
-## How is this any different from what already exists?
+## Gibt es das nicht alles schon?
 
 There are already many good concepts for a sustainable economy. See how they
 compare to the Viridian project.
@@ -765,69 +765,8 @@ Existing ideas for a more sustainable economy include:
 * [*Bioökonomie*](https://de.wikipedia.org/wiki/Bio%C3%B6konomie) (German)
 <!-- * True cost -->
 
-While these are very good approaches, existing concepts for a more sustainable
-economy typically lack some or all of the following elements:
-
-<img src="/images/home/coding.svg" style="height: 75px;">
-
-<!--
-<div>Icons made by <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
--->
-
-#### Tech
-
-While technology alone cannot solve our problems and social
-innovation is needed, computer network technology (web, digitization,
-cryptocurrencies, IoT, etc.) has a **vast potential to support or even enable societal transformation**.
-For example, technology can be critical for allowing
-humans to efficiently collaborate and exchange information. It might
-also be used to algorithmically enforce sustainability (whether this is feasible
-or not remains to be seen).
-
-<img src="/images/home/sunglasses.svg" style="height: 75px; margin-bottom: -25px;">
-
-<!--
-<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
--->
-
-#### Coolness
-
-
-For the alternative technology to be successful, it must be "cool"
-enough to be adopted by a large (but minority) group of "early adopters".
-If the new technology **"goes viral"**, it will spread very fast and be talked
-about a lot. This would be the first stage towards mass adoption.
-<!-- In the Daemon novels, this was achieved by addressing the gamer community and -->
-<!-- transferring concepts of comupter games to the real world. -->
-
-<!-- <img src="/images/home/stats.svg" style="height: 75px;"> -->
-
-<!--
-<div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
--->
-
-<img src="/images/home/coins.svg" style="height: 75px;">
-
-<!--
-<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
--->
-
-#### Benefit
-
-The alternative economy will only be widely adopted if it provides
-real benefit for the individual. Mere moral superiority is probably not enough.
-One example might be farmers: Many farmers need to pay large amounts to corporations
-to buy seeds, fertilizers, and pesiticides, while not earning much with their
-crops on the market. If they discover that they can **earn a much better living**
-by using the alternative economy, both for buying goods and selling their
-produce, they will start using it. This would be the second stage towards mass
-adoption. When more and more groups of people join the new economy, eventually
-a **critical mass** will be reached and there will be a tipping point with a full
-transition to the new economy.
-
-The Viridian project does not yet have complete solutions on these three points
-either. But we have a vision. And you can help us turn that vision into a
-reality! See [Get involved](#get-involved).
+In [einem Vergleich](technical/#vergleich) haben wir die Vor- und Nachteile einiger
+existierender Intiativen aufgeschrieben und erläutern, was ihnen im Vergleich zu Viridian fehlt.
 
 </div>
 
