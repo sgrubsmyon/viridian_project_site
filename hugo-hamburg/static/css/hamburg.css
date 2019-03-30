@@ -64,6 +64,9 @@ a:hover, a:focus {
   border-bottom-width: 0;
   transition: height 500ms, background 500ms;
 }
+#navbar {
+  background-color: #222222;
+}
 .navbar-brand img {
   height: 90px;
   transition: height 500ms;

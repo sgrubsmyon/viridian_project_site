@@ -3,7 +3,7 @@ date: "2018-09-10T19:04:46+02:00"
 tags:
 - page
 - about
-title: Über
+title: Über das Projekt
 ---
 
-Dieses Theme kann auch Seiten. WOW.
+Kommt später.
