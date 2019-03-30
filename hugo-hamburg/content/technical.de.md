@@ -5,6 +5,7 @@ author: ["mvoge", "dvandoren"]
 #tags:
 #- technical
 title: Technisches
+toc: true
 ---
 
 In diesem Artikel wird erläutert,
@@ -75,6 +76,327 @@ die Überlegungen in die Implementierung eines ersten Prototyps einfließen.
   Eine Alternative wäre ein Bezahlsystem, das die konventionelle Währung
   verwendet, aber entsprechend der berechneten externen Kosten einen Teil des
   Kaufpreises abführt und in einen Fonds einzahlt bzw. ggf. aus diesem auszahlt.
+
+
+
+
+
+## Vergleich mit alternativen Plattformen {#vergleich}
+
+Ziel von Viridian ist es, eine Plattform zu entwickeln, mit der Informationen dezentral erfasst werden können, um die Nachhaltigkeitsleistung von Produkten zu bewerten und zu vergleichen. Dies kann die Grundlage für eine nachhaltige Wirtschaft bilden.
+
+Es gibt andere Initiativen, die verschiedene Konzepte oder Prinzipien von Viridian teilen. Im Folgenden werden drei Beispiele für solche Initiativen gegeben, einschließlich einer kurzen Beschreibung, wie diese Initiativen aussehen oder von Viridian abweichen.
+
+### Questionmark
+
+[Questionmark] (https://www.thequestionmark.org/) zielt darauf ab, eine unabhängige Plattform zu entwickeln, die die Verbraucher*innen über die Ernährungs- und Nachhaltigkeitsaspekte von Lebensmittelprodukten informiert. Es enthält eine große Datenbank mit über 50.000 Produktgütezeichen. Questionmark arbeitet mit verschiedenen Partnern zusammen, um wissenschaftliche Unterstützung, Zuverlässigkeit der Daten, Richtlinien für gesunde Ernährung, Messung der Nachhaltigkeit von Verbraucherprodukten und Dialog mit Stakeholdern zu gewährleisten.
+
+#### Vorteile:
+
+- Große Produktdatenbank
+- Entwickelte App zum Scannen von Barcodes
+- Bietet Bewertungen zu Produkten und zeigt Alternativen auf, einschließlich derer, wo diese erworben werden können
+
+#### Nachteile:
+
+- Zentrale Plattform
+- Begrenzte interaktive Community-basierte Beteiligung
+- Eingeschränkte Bewertung der Nachhaltigkeit (der bestehende vereinfachte Ansatz zur Bewertung der Nachhaltigkeit von Produkten wird derzeit weiterentwickelt, um eine bessere wissenschaftliche Grundlage zu schaffen)
+- Nur Lebensmittelprodukte abgedeckt
+
+### WikiRate
+
+[WikiRate](https://wikirate.org/) ist ein offenes und kollaboratives Tool, mit dem Auswirkungen von Unternehmen auf Umwelt und Gesellschaft ("Corporate Social Responsibility", CSR) sichtbar gemacht werden sollen. Das Ziel von WikiRate ist es, Unternehmen dabei zu unterstützen, sich mit Umwelt-, Sozial- und Governance-Anliegen zu befassen, durch Crowd-basiertes Sammeln von Informationen, umfassende Datenstrukturierung sowie durch die Entwicklung standardisierter Metriken, mit denen die Leistung von Unternehmen bewertet werden kann. Die Entwicklung von WikiRate wird von der Europäischen Kommission unterstützt.
+
+#### Vorteile:
+
+- Größte öffentlich zugängliche und editierbare Datenbank für Unternehmensinformationen in Bezug auf die Ziele der Nachhaltigkeitsentwicklung, Lieferketten und bestehende gesetzliche Rahmenbedingungen
+- Daten zu >30.000 Unternehmen. Hat viele Umwelt- und Sozialkennzahlen, die von Usern beigetragen wurden.
+
+#### Nachteile:
+
+- Keine Produktdaten
+- Daten werden nicht in Unternehmensleistungswerten zusammengefasst
+
+### Kompass Nachhaltigkeit
+
+Die Plattform ["Kompass Nachhaltigkeit"](https://www.kompass-nachhaltigkeit.de) bietet vielfältige Informationen zur nachhaltigen öffentlichen Beschaffung. Zu den auf der Plattform enthaltenen Informationen gehören Nachhaltigkeitsstandards und -zertifizierungssysteme, gekennzeichnete Produkte, Gesetze und gesetzliche Rahmenbedingungen auf Bundes- und Länderebene sowie Informationen zu bewährten Verfahren, Richtlinien und Verordnungen. Der Kompass Nachhaltigkeit ist ein Kooperationsprojekt von GIZ (Deutsche Gesellschaft für internationale Zusammenarbeit) und Engagement Global. Seine Entwicklung wird vom Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung unterstützt.
+
+#### Vorteile:
+
+- Detaillierte Informationen zu Gütezeichen, einschließlich einer Vielzahl von Nachhaltigkeitskriterien
+- Viele Produktgruppen werden abgedeckt
+- Interaktive Karte mit regionalen und lokalen Initiativen
+- Umfassende Datensammlung zur Förderung nachhaltiger Beschaffungsprozesse
+
+#### Nachteile:
+
+- Gütezeichen auf der Plattform decken nicht das gesamte Spektrum nachhaltiger Produktion ab (z. B. keine Lebensmittelgütezeichen, keine Klimakriterien)
+- Hauptsächlich informativ mit eingeschränkter Benutzerinteraktivität
+- Plattform noch in der Entwicklung
+
+### Fazit
+
+Obwohl viele der identifizierten Initiativen einige der Hauptmerkmale von Viridian aufweisen – wie kollektive Intelligenz und Bewertung der Nachhaltigkeit von Produkten und dezentrales Datenbankmanagement – war keine dieser Initiativen bisher in der Lage, diese Merkmale in einem einzigen Produkt zu kombinieren. Viridian kann so eine wichtige Lücke in der Landschaft einer nachhaltigen Wirtschaft schließen, indem es eine unabhängige, interaktive und zuverlässige Plattform für alle bietet, die fundierte Verbraucherentscheidungen basierend auf der Nachhaltigkeitsleistung von Produkten treffen möchten. Viele Daten existierender Plattformen können dabei integriert werden und Viridian ergänzen.
+
+
+
+
+## Wie soll das Netzwerk funktionieren? {#netzwerk-funktion}
+
+Anhand der geplanten Struktur der Datenbank soll hier die technische Funktionalität
+des Viridian-Netzwerks erklärt werden. Im Zentrum stehen die **Produkte**, um deren
+Bewertungen es geht. Weitere wichtige Elemente sind die **Unternehmen**, von denen
+die Produkte hergestellt bzw. angeboten werden. Als dritte Ebene gibt es **Gütezeichen**
+oder Siegel, die meist Produkte, seltener auch Unternehmen, zertifizieren. Um diese
+drei Elemente sind alle **Informationen** angeordnet, die durch **Bewertungen**
+mit dem Produkt/Unternehmen/Gütezeichen verknüpft werden. Die User können alle
+diese Elemente selbst erstellen und bearbeiten und können sich entweder vorhandenen
+Bewertungen anschließen oder eigene erstellen. Über einen Peer-Review-Prozess
+werden ein gewisser Schutz vor Vandalismus (Stichwort Internet-Trolle) und
+Qualitätsmanagement gewährleistet.
+
+Der folgende Abschnitt erklärt die Prinzipien im Detail mit Hilfe eines Graphen.
+
+### Datenbankschema als Graph {#graph}
+
+Eine hilfreiche Darstellung des Datenbankschemas ist die in Form eines Graphen:
+
+<a href="/images/technical/database_schema_graph.svg">
+  <img src="/images/technical/database_schema_graph.svg" alt="Datenbankschema als Graph", style="height:600px;">
+</a>
+
+**Legende:**
+
+- Rote dicke Linie = Erstellung eines Elements
+- Blaue dicke Linie = Up-/Downvote auf Bewertung
+- Schwarze dicke Linie = sonstiges Up-/Downvote bzw. Entscheidung im Peer-Review
+
+#### Elemente
+
+Die Dreiteilung in **Produkte** (rosa), **Unternehmen** (orange) und **Gütezeichen/Siegel/Labels** (türkis)
+spiegelt sich auch in den Daten zur Nachhaltigkeit. Üblicherweise bezieht sich
+jede Datenquelle entweder auf Produkte (bspw. Lebenszyklusanalysen (LCA) oder
+Informationen zu den Inhaltsstoffen eines Produkts) oder auf Unternehmen (bspw.
+Berichte zur Corporate Social Responsibility (CSR) oder Studien von Dritten)
+oder auf Gütezeichen. Auch vorhandene Plattformen mit Nachhaltigkeitsdaten (siehe
+[Vergleich](#vergleich)) lassen sich meist in eine der drei Kategorien einteilen:
+es gibt Produktdatenbanken wie [Questionmark](https://www.thequestionmark.org/) oder
+[OpenFoodFacts](https://world.openfoodfacts.org/),
+Unternehmensdatenbanken wie [WikiRate](https://wikirate.org) oder
+[Rank-a-brand]() und Siegeldatenbanken wie
+[Kompass Nachhaltigkeit](https://www.kompass-nachhaltigkeit.de) und
+[Label online](https://label-online.de/). Deren Daten könnten später
+evtl. eingebunden werden (siehe [Timeline](#timeline)).
+
+Um die Produkte, Unternehmen und Gütezeichen herum gruppieren sich **Informationen**
+(im Graph verschiedene Farben: gelb, grün, petrol, ocker, ...).
+Außerdem gibt es Verbindungen zwischen Unternehmen (die Produkte herstellen) und
+ihren Produkten sowie zwischen Gütezeichen und Produkten. Die Bewertung von
+Unternehmen und Gütezeichen fließt also in die Bewertung eines Produkts mit ein.
+
+Informationen sind zunächst einmal nur wertfreie Fakten über ein Produkt/Unternehmen/Gütezeichen
+und sollten mit einer oder mehreren verifizierbaren **Quellen** versehen sein.
+Jede Informationen kann und sollte aber zu einer Bewertung führen. Die **Bewertung**
+(im Graphen rot) ist quasi die Einordnung der Information auf einer ethischen Werteskala.
+Dafür erstellt ein User (im Graphen blau) eine neue Bewertung und ordnet die
+Information nach eigenem Ermessen auf einer Skala ein. Andere User können sich
+dieser Bewertung anschließen, indem sie sie positiv markieren (+1, "upvote"). Wenn sie
+anderer Meinung sind, können sie sie negativ markieren (-1, "downvote") und eine
+alternative eigene Bewertung erstellen.
+
+Außerdem können User **Kommentare** (im Graphen grau) zu Informationen anlegen, in denen sie
+z.B. erläutern, warum sie diese Information besonders wichtig oder gar nicht
+wichtig finden. Im Kommentar kann auch eine bestimmte Bewertung begründet werden.
+
+#### User bestimmen die Relevanz durch Upvotes und Downvotes
+
+User können nicht nur Bewertungen mit +1/-1 markieren (Upvote und Downvote), sondern auch Informationen.
+Die Summe dieser Markierungen ergibt einen **Gradmesser der Relevanz** für die
+Gesamtheit der User. Entsprechend dieser Relevanz werden die Informationen
+auf der Produktprofilseite standardmäßig sortiert, sodass die für die meisten
+User relevanten Informationen ganz oben erscheinen. Bei den Bewertungen hat die
+Relevanz eine besondere Bedeutung: Sie entspricht dem **Gewicht**, mit dem diese
+Bewertung in die Gesamtbewertung eingeht. Das arithmetische Mittel aller
+Bewertungen von alles Usern, jeweils gewichtet mit der Bilanz der +1/-1-Markierungen,
+ergibt die Gesamtbewertung des Produkts/Unternehmens/Gütezeichens.
+
+Die Möglichkeit, sich existierenden Bewertungen anschließen zu können, könnte als
+eine gewisse Form von **Liquid Democracy** im Sinne eines Antwort-Empfehlungs-Systems
+("answer recommendation", siehe [hier](https://uniteddiversity.coop/2013/07/19/liquid-democracy-is-not-delegative-democracy/)
+und [hier](http://web.archive.org/web/20160403043216/https://seed.sourceforge.net/ld_k5_article_004.html))
+angesehen werden. Jedoch würde eine wirkliche Liquid Democracy bedeuten, dass
+man die Antwortempfehlungen (also hier Bewertungen) zu einem bestimmten Thema
+(Produktkategorie?) einer bestimmten Person abonniert, was hier nicht vorgesehen ist.
+
+#### Peer-Review
+
+Eine weitere wichtige Komponente des Viridian-Netzwerks ist der **Peer-Review-Prozess (PR)**.
+Um Missbrauch und Vandalismus (z.B. durch "Trolle") vorzubeugen, sollen die User
+neue Inhalte gegenprüfen. Zum Beispiel könnte gefordert werden, dass neu eingestellte
+Produkte/Unternehmen/Gütezeichen oder Informationen zunächst von einer bestimmten
+Anzahl User bestätigt werden müssen, um sichtbar zu werden. Im PR sollen die User
+prüfen, ob bestimmte Regeln eingehalten wurden. Informationen sollten etwa immer
+verifizierbare Quellen aufweisen und ohne nicht veröffentlich werden.
+Je nach Anzahl und Aktivität der User könnte man die Anfrage zum PR z.B. fünf zufällig
+ausgewählten Usern (zufällig ist wichtig, um Absprachen zu vermeiden) zuschicken,
+von denen mindestens drei bestätigen müssen, bis der Inhalt freigeschaltet wird.
+
+Den PR-Prozess bei allen Inhalten zu fordern, etwa auch bei Kommentaren
+und Bewertungen, könnte die Plattform zu träge machen und die User mit
+PR-Anfragen überlasten. Es könnte aber z.B. bei Kommentaren die
+Möglichkeit geben, sie nach der Veröffentlichung **als ungeeignet zu markieren**.
+Erst dann wird ein PR angestoßen und der Kommentar wird entfernt, wenn genug
+User zustimmen.
+
+Auch mit PR können Inhalte natürlich fehlerhaft sein oder schlichtweg veraltet.
+Deshalb sollte es für User die Möglichkeit geben, die **Bearbeitung** oder
+**Löschung** von Inhalten beantragen. In einem weiteren PR-Prozess wird dann
+darüber entschieden.
+
+Es bleibt abzuwarten, wie reibungslos die Plattform mit den PR-Mechanismen funktoniert.
+Bei zu wenig Beteiligung der User oder zu viel Missbrauch müssen die Regeln
+angepasst oder verändert werden. Es sollte auch Mechanismen geben, die bei
+ausbleibender Antwort eines Users die PR-Anfrage an einen anderen zufällig
+ausgewählten User weitergibt. Reagiert ein User mehrfach nicht auf PR-Anfragen,
+sollte die Wahrscheinlichkeit, dass er/sie für ein PR ausgewählt wird, sinken.
+Auch hier muss ein guter Kompromiss und eine Balance zwischen Resilienz und
+Effizienz gefunden werden.
+
+#### Gamification
+
+Jede Aktivität eines Users könnte seine **Reputation** im Netzwerks beeinflussen.
+Dadurch könnten User, die eine Information beisteuern oder an einem Peer-Review
+teilnehmen, durch Reputationspunkte belohnt werden. Auf der Reputation aufbauend
+könnten Gamification-Elemente die User anspornen. Zum Beispiel könnten bei einem
+bestimmten Punktestand Medaillen verliehen werden oder Auszeichnungen
+für bestimmte Tätigkeiten, z.B. für die erste beigetragene Information oder das
+erste Peer-Review.
+
+
+
+### Die Bewertungsskala
+
+Für die Nachhaltigkeitsbewertung ist es sinnvoll, verschiedene Dimensionen der
+Nachhaltigkeit zu unterscheiden. Eine mögliche Einteilung ist:
+
+- **Umwelt:** beinhaltet Luftverschmutzung, Wasserverschmutzung, Bodenverschmutzung, Abfall, in die Umwelt entlassene schädliche Substanzen (ohne Treibhaushase), ...
+- **Klima:** Treibhausgase und andere klimarelevante Handlungen wie veränderte Landnutzung, ...
+- **Gesellschaft:** Arbeitsbedingungen, fairer Lohn, Kinderarbeit, Gleichstellung, Umgang mit den Lieferanten, Einfluss auf Gesellschaft z.B. über gemeinnützige Projekte, ...
+- **Gesundheit:** gemeint ist Einfluss auf die Gesundheit der Verbraucher*innen, z.B. Gehalt von Zucker und Fett in Lebensmitteln oder toxische Substanzen in Textilien und Spielzeug
+- **Tierwohl:** wenn Tiere an der Produktion beteiligt waren, wurden sie mit angemessenem Respekt behandelt? Können sie ein angenehmes, gesundes Leben führen?
+- **Ökonomie:** aus Verbraucherperspektive, im Sinne von 'Preis-/Leistungsverhältnis', z.B.: Wie langlebig ist das Produkt? Ist der Preis zu hoch auf Grund des Markenimage?
+
+Eine Nachhaltigkeitsbewertung kann in jeder dieser Dimensionen mit einer
+**Zahl auf einer Skala von -100 (besonders schlecht) über 0 (durchschnittlich) bis +100 (besonders gut)**
+bewertet werden. Falls gewünscht, können diese Zahlen sehr einfach in Schulnoten
+nach dem deutschen System (1 bis 6) oder dem amerikanischen System (A bis F) umgerechnet werden.
+
+Eine Information wird üblicherweise nur einen Teil der Dimensionen betreffen. Die übrigen
+Dimensionen werden dann auf NULL gesetzt (oder im JSON-Dokument einfach weggelassen) werden, sodass
+sie nicht in die Gesamtbewertung, also das gewichtete arithmetische Mittel aller Bewertungen,
+eingehen.
+
+Zwar kann man leicht eine Gesamtbewertung erstellen, die noch alle Dimensionen enthält, indem man
+für jede Dimension einzeln über alle Bewertungen mittelt. Eine viel schwierigere und kritischere
+Aufgabe ist es, die einzelnen Dimensionen auf eine einzelne Skala zu projizieren, also zu einer
+einzigen Zahl zusammenzufassen (Stichwort ["multikriterielle Analyse"](https://de.wikipedia.org/wiki/Multi_Criteria_Analysis)). Hierfür gibt es eigentlich
+keine sinnvolle objektive Lösung, bzw. ist diese nur unter extremem Aufwand zu finden.
+Jede(r) Einzelne wird andere Präferenzen setzen. Daher ist es denkbar, dass
+jeder User ihre/seine Präferenzen selbst festlegt, nach denen dann die verschiedenen
+Dimensionen zu einer Zahl zusammengefasst werden. Die Zusammenfassung in einer
+einzigen Skala macht die Vergleichbarkeit von Produkten sehr viel leichter und
+ist daher wichtig. Jeder User wird dann also auf Basis ihrer/seiner Präferenzen
+eine andere zusammengefasste Bewertung angezeigt bekommen und auch andere Vorschläge
+für Produkte mit besseren Bewertungen erhalten.
+
+
+
+
+### Datenbankschema in JSON {#json}
+
+Da eine dokumentbasierte Datenbank mit JSON verwendet werden soll, muss das Datenbankschema
+in JSON forumliert werden. Der aktuelle Stand (im Moment noch unvollständig) kann unter
+https://github.com/viridian-project/database-schema/tree/master/asJSON angesehen werden.
+
+Hier als Beispiel ein JSON-Dokument für ein Produkt:
+
+```js
+{
+  "data": {
+    "id": "61b744a3-7f5d-4500-8c59-959913762ecd",
+    "gtin": "7612100055557",
+    "createdBy": "user123",
+    "createdAt": "2018-12-24 12:11:54 UTC",
+    "updatedBy": "user123",
+    "updatedAt": "2018-02-10 18:33:39 UTC",
+    "producer": "Wander AG",
+    "containedProducts": [],
+    "labels": [
+      {"id": "H2892sKSksksdkwops9", "name": {"de": "UTZ zertifiziert", "en": "UTZ certified"}}
+    ],
+    "locale": [
+      {
+        "lang": "de",
+        "name": "Ovomaltine crunchy cream — 400 g",
+        "price": "4.99",
+        "currency": "€",
+        "description": "Brotaufstrich mit malzhaltigem Getränkepulver Ovomaltine",
+        "quantity": "400 g",
+        "ingredients": "33% malzhaltiges Getränkepulver: Ovomaltine (Gerstenmalzextrakt, kondensierte Magermilch, kondensiertes Milchserum, fettarmer Kakao, Zucker, Fruktose, Magnesiumcarbonat, Calciumphosphat, Rapsöl, Vitamine [A, E, B1, B2, Pantothensäure, B6, Folsäure, B12, C, Biotin, Niacin], Kochsalz, Aroma Vanillin), Zucker, Pflanzenöle (Raps- und Palmöl), 2.6% Haselnüsse, Calciumphosphat, fettarmer Kakao, Emulgator Sonnenblumenlecithin, Aroma Vanillin.",
+        "packaging": ["Glas", "Plastik"],
+        "categories": ["Brotaufstriche", "Frühstück", "Nougatcremes"],
+        "image": "products/1/de_1.png",
+        "productUrl": "http://www.ovomaltine.de/produkte/ovomaltine-crunchy-cream-1/"
+      }
+    ]
+  },
+  "signature": "0x1f62a52c86fe9021b2834cd838392ed0192991a3",
+  "score": {"environment": -34,
+            "climate": -46,
+            "society": -7,
+            "health": -78,
+            "economy": 21},
+  "status": "active"
+}
+```
+
+
+
+
+
+## Warum gemeinschaftlich?
+
+Das Viridian-Projekt glaubt an das "Wikipedia-Prinzip", dass Resultate durch
+Beteiligung vieler besser und nicht schlechter werden. Es geht also um die
+Nutzung [kollektiver Intelligenz](https://de.wikipedia.org/wiki/Kollektive_Intelligenz)
+oder eine Demokratisierung von Information.
+
+Natürlich ist der kollaborative Ansatz nicht perfekt und hat mit einigen Problemen
+zu kämpfen, z.B. Versuche der Einflussnahme oder mangelnde Qualität. Der Erfolg des
+Projekts Wikipedia zeigt aber, dass das Prinzip letztlich funktioniert und sich gute
+Qualität am Ende auch bei vollkommen offener gemeinschaftlicher Redaktion durchsetzt.
+Auf lange Sicht können Projekte wie Wikipedia sogar kommerzielle, proprietäre Lösungen
+übertreffen, weil sie meist agiler sind und mit der Unterstützung der Crowd auf
+größere Ressourcen zurückgreifen können. So entsteht ein "Commons", also ein Gemeingut
+oder eine Allmende, das alle gemeinsam pflegen und von dem alle profitieren. Ein
+ähnlicher Ansatz, in Bezug auf Software statt Information, wird von Open-Source-Communities
+verfolgt. Wir unterstützen und glauben an diese Philiosophie.
+
+Daher glauben wir, dass bisherige Nachhaltigkeitsbewertungslösungen (siehe [Vergleich](#vergleich))
+nicht ausreichen, weil ihnen dieses wichtige Prinzip fehlt. Entweder werden Informationen
+und Bewertungen nur von einer kleinen Gruppe Experten zusammengetragen wie bei Questionmark
+oder WeGreen (bereits offline). Andere Plattformen wie WikiRate können zwar gemeinschaftlich
+bearbeitet werden, sind aber auf Grund der Komplexität eher nur für Experten zugänglich.
+
+Das Viridian-Projekt verfolgt einen Ansatz, der neben Wikipedia stark von StackOverflow
+beeinflusst ist. Je nach Interesse und Wissen können die User entweder sehr tief einsteigen
+und detaillierte Informationen eingeben oder sich nur die relevantesten Informationen
+ansehen und sie mit Upvotes/Downvotes annehmen oder ablehnen. So kann man auch dann noch
+mit der Plattform interagieren, wenn man nur wenig Zeit oder Wissen hat. Dadurch wird
+die Plattform für eine breite Zielgruppe zugänglich und erhält eine demokratische
+Legitimierung gegenüber einer rein expertenbasierten Plattform.
+
 
 
 
@@ -346,12 +668,14 @@ Authority. Da HLF so modular und generisch ist, gibt es viele Stellschrauben
 und Entscheidungen, die getroffen werden müssen. Dies ist Teil von Phase 3 des
 Viridian-Projekts (siehe [Timeline](#timeline)).
 
-Eine Alternativen zu Hyperledger Fabric, auf die man eventuell wechseln könnte, ist
+Eine Alternative zu Hyperledger Fabric, auf die man eventuell wechseln könnte, ist
 [BigchainDB](https://www.bigchaindb.com/), die auf [Tendermint](https://tendermint.com)
 aufbaut und MongoDB (anstatt CouchDB) verwendet. BigchainDB bzw. Tendermint
 unterstützt BFT. Wenn es zudem einfacher zu konfigurieren und warten ist als
 Hyperledger Fabric, könnte es eine gute Alternative sein.
 
+<!-- Siehe auch: -->
+<!-- https://www.skcript.com/svr/consensus-hyperledger-fabric/ -->
 <!-- http://vukolic.com/iNetSec_2015.pdf -->
 <!-- https://www.usenix.org/legacy/events/hotdep08/tech/full_papers/preguica/preguica.pdf -->
 <!-- https://github.com/davebryson/bftdb -->
@@ -491,18 +815,10 @@ Hyperledger Fabric standardmäßig kein BFT verwendet und durch die Verwendung v
 BFT die Transaktionsrate etwas sinken und der Ressourcenbedarf etwas steigen könnte.
 
 
-## Warum gemeinschaftlich?
 
 
 
-
-## Wie soll das Netzwerk funktionieren? {#netzwerk-funktion}
-
-### Datenbankschema als Graph {#graph}
-
-### Datenbankschema in JSON {#json}
-
-### Warum müsst ihr die Identität der Netzwerkteilnehmer kennen? {#identitaet}
+## Warum müsst ihr die Identität der Netzwerkteilnehmer kennen? {#identitaet}
 
 Im Grunde brauchen wir die Identität unserer User und sogar Knotenbetreiber*innen nicht
 zu kennen. Es muss aber sichergestellt sein, dass sich eine real existierende Person
@@ -558,63 +874,3 @@ sodass E-Mail keine Option ist.
 Es muss aber ein ausgewogenes Maß an Sicherheit geben, sodass Missbrauch zwar nicht
 unmöglich ist (denn das kann kein System garantieren), aber aufwendig genug, so
 dass er nur selten stattfindet.
-
-
-
-## Vergleich mit alternativen Plattformen {#vergleich}
-
-Ziel von Viridian ist es, eine Plattform zu entwickeln, mit der Informationen dezentral erfasst werden können, um die Nachhaltigkeitsleistung von Produkten zu bewerten und zu vergleichen, die als Grundlage für eine nachhaltige Wirtschaft dienen kann.
-
-Es gibt andere Initiativen, die verschiedene Konzepte oder Prinzipien von Viridian teilen. Im Folgenden werden drei Beispiele für solche Initiativen gegeben, einschließlich einer kurzen Beschreibung, wie diese Initiativen aussehen oder von Viridian abweichen.
-
-### Questionmark
-
-[Questionmark] (https://www.thequestionmark.org/) zielt darauf ab, eine unabhängige Plattform zu entwickeln, die die Verbraucher über die Ernährungs- und Nachhaltigkeitsaspekte von Lebensmittelprodukten informiert. Es enthält eine große Datenbank mit über 50.000 Produktetiketten. Questionmark arbeitet mit verschiedenen Partnern zusammen, um wissenschaftliche Unterstützung, Zuverlässigkeit der Daten, Richtlinien für gesunde Ernährung, Messung der Nachhaltigkeit von Verbraucherprodukten und Dialog mit Stakeholdern zu gewährleisten.
-
-#### Vorteile:
-
-- Große Produktdatenbank
-- Entwickelte App zum Scannen von Barcodes
-- Bietet Bewertungen zu Produkten und zeigt Alternativen auf, einschließlich derer, wo diese erworben werden können
-
-#### Nachteile:
-
-- Zentrale Plattform
-- Begrenzte interaktive Community-basierte Beteiligung
-- Eingeschränkte Bewertung der Nachhaltigkeit (der bestehende vereinfachte Ansatz zur Bewertung der Nachhaltigkeit von Produkten wird derzeit entwickelt, um eine bessere wissenschaftliche Grundlage zu schaffen)
-- Nur Lebensmittelprodukte abgedeckt
-
-### WikiRate
-
-[WikiRate] (https://wikirate.org/) ist ein offenes und kollaboratives Tool, um Bedenken hinsichtlich der Auswirkungen auf Unternehmen auszuräumen. Das Ziel von WikiRate ist es, Unternehmen dabei zu unterstützen, sich mit Umwelt-, Sozial- und Governance-Anliegen zu befassen, durch Crowd-basiertes Sammeln von Informationen, umfassende Datenstrukturierung sowie durch die Entwicklung standardisierter Metriken, mit denen die Leistung von Unternehmen bewertet werden kann. Die Entwicklung von WikiRate wird von der Europäischen Kommission unterstützt.
-
-#### Vorteile:
-
-- Größte öffentlich zugängliche und editierbare Datenbank für Unternehmensinformationen in Bezug auf die Ziele der Nachhaltigkeitsentwicklung, Lieferketten und bestehende gesetzliche Rahmenbedingungen
-- Daten zu> 30.000 Unternehmen. Hat viele Umwelt- und Sozialkennzahlen, die vom Benutzer beigetragen wurden.
-
-#### Nachteile:
-
-- Keine Produktdaten
-- Daten werden nicht in Unternehmensleistungswerten zusammengefasst
-
-### Kompass Nachhaltigkeit
-
-Die Plattform ["Kompass Nachhaltigkeit"] (https://www.kompass-nachhaltigkeit.de) bietet vielfältige Informationen zur nachhaltigen öffentlichen Beschaffung. Zu den auf der Plattform enthaltenen Informationen gehören Nachhaltigkeitsstandards und -zertifizierungssysteme, gekennzeichnete Produkte, Gesetze und gesetzliche Rahmenbedingungen auf Bundes- und Länderebene sowie Informationen zu bewährten Verfahren, Richtlinien und Richtlinien. Kompass-nachhaltigkeit ist ein Kooperationsprojekt von GIZ (Deutsche Gesellschaft für internationale Zusammenarbeit) und Engagement Global; Seine Entwicklung wird vom Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung unterstützt.
-
-#### Vorteile:
-
-- Detaillierte Informationen zu den Etiketten, einschließlich einer Vielzahl von Nachhaltigkeitskriterien
-- Viele Produktgruppen werden abgedeckt
-- Interaktive Karte mit regionalen und lokalen Initiativen
-- Umfassende umfassende Datensammlung zur Förderung nachhaltiger Beschaffungsprozesse
-
-#### Nachteile:
-
-- Etiketten auf der Plattform decken nicht das gesamte Spektrum nachhaltiger Produktion ab (z. B. keine Lebensmitteletiketten, keine Klimakriterien)
-- Hauptsächlich informativ mit eingeschränkter Benutzerinteraktivität
-- Plattform noch in der Entwicklung
-
-### Fazit
-
-Obwohl viele der identifizierten Initiativen einige der Hauptmerkmale von Viridian aufweisen - wie Crowd-based Intelligence, Bewertung der Nachhaltigkeit von Produkten und dezentrales Datenbankmanagement -, war keine dieser Initiativen bisher in der Lage, diese Merkmale in einem einzigen Produkt zu kombinieren. Viridian kann so eine wichtige Lücke in der Landschaft einer nachhaltigen Wirtschaft schließen, indem es eine unabhängige, interaktive und zuverlässige Plattform für alle bietet, die fundierte Verbraucherentscheidungen basierend auf der Nachhaltigkeitsleistung von Produkten treffen möchten.

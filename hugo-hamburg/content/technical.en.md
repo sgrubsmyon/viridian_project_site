@@ -22,7 +22,7 @@ There are other initiatives that share various of Viridian's concepts or princip
 
 #### Questionmark
 
-[Questionmark](https://www.thequestionmark.org/) aims to develop an independent platform that informs consumers regarding the nutritional and sustainability dimensions of food products. It contains a large database of over 50.000 product labels. Questionmark works together with various partners to secure scientific support, reliability of data, healthy diet guidelines, measuring the sustainability of consumer products, and accommodate stakeholder dialogues.
+[Questionmark](https://www.thequestionmark.org/) aims to develop an independent platform that informs consumers regarding the nutritional and sustainability dimensions of food products. It contains a large database of over 50,000 product labels. Questionmark works together with various partners to secure scientific support, reliability of data, healthy diet guidelines, measuring the sustainability of consumer products, and accommodate stakeholder dialogues.
 
 ##### Pros:
 
@@ -39,7 +39,7 @@ There are other initiatives that share various of Viridian's concepts or princip
 
 #### WikiRate
 
-[WikiRate](https://wikirate.org/) is an open and collaborative tool for addressing concerns about corporate impacts. The aim of WikiRate is to guide companies to address environmental, social and governance concerns, by means of crowd-based collection of information, comprehensive structuring of data, as well as through developing standardized metrics that can be used to assess the performance of companies. The development of WikiRate is supported by the European Commission.
+[WikiRate](https://wikirate.org/) is an open and collaborative tool for addressing concerns about corporate impacts (Corporate Social Responsibility, CSR). The aim of WikiRate is to guide companies to address environmental, social and governance concerns, by means of crowd-based collection of information, comprehensive structuring of data, as well as through developing standardized metrics that can be used to assess the performance of companies. The development of WikiRate is supported by the European Commission.
 
 ##### Pros:
 
@@ -60,7 +60,7 @@ The platform ["Kompass Nachhaltigkeit"](https://www.kompass-nachhaltigkeit.de) (
 - Detailed information on labels, including a large amount of sustainability criteria
 - Many product groups covered
 - Interactive map that displays regional and local initiatives
-- Overall comprehensive collection of data for driving sustainable procurement processes
+- Comprehensive collection of data for driving sustainable procurement processes
 
 ##### Cons:
 
@@ -70,4 +70,4 @@ The platform ["Kompass Nachhaltigkeit"](https://www.kompass-nachhaltigkeit.de) (
 
 ### Conclusion
 
-Although many of the identified initiatives share some of the key characteristics of Viridian – like crowd-based intelligence, product sustainability assessment and decentralized database management – none of these initiatives have so far been able to combine such features into a single product. As such, Viridian can address an important gap in the landscape of a sustainable economy, through providing an independent, interactive and reliable platform for all that wants to make well-informed consumer decisions based on the sustainability performance of products.
+Although many of the identified initiatives share some of the key characteristics of Viridian – like crowd-based intelligence, product sustainability assessment and decentralized database management – none of these initiatives have so far been able to combine such features into a single product. As such, Viridian can address an important gap in the landscape of a sustainable economy, through providing an independent, interactive and reliable platform for all who want to make well-informed consumer decisions based on the sustainability performance of products. Many data from existing platforms can be integrated and complement Viridian.
