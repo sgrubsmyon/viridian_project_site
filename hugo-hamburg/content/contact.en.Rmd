@@ -1,0 +1,18 @@
+---
+title: "Contact Us"
+---
+
+The Viridian Project consists of a small team living in Bonn, Germany.
+
+You can reach the project at this email address:
+```{r, echo=FALSE}
+htmltools::HTML(paste0(htmltools::includeHTML("snippets/email.html"), "."))
+```
+
+Alternatively, you can use the
+[Viridian Project community space](https://community.coinsence.org/s/viridian-project)
+on the [CoinSence community platform](https://community.coinsence.org).
+The CoinSence community platform is an open collaborative platform, based on
+[HumHub](https://www.humhub.org), hosted by the [CoinSence](http://coinsence.org/)
+project. [HumHub](https://www.humhub.org) is a free and open source social network
+software.

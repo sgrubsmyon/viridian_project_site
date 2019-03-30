@@ -1,0 +1,18 @@
+---
+title: "Kontakt"
+---
+
+Das Viridian-Projekt besteht aus einem kleinen Team in Bonn.
+
+Das Projekt kann unter dieser E-Mail-Adresse erreicht werden:
+```{r, echo=FALSE}
+htmltools::HTML(paste0(htmltools::includeHTML("snippets/email.html"), "."))
+```
+
+Alternativ kann man den
+[Viridian-Projekt Community-Space](https://community.coinsence.org/s/viridian-project)
+auf der [CoinSence Community-Plattform](https://community.coinsence.org) benutzen.
+Die CoinSence Community-Plattform ist eine offene Kollaborationsplattform basierend
+auf [HumHub](https://www.humhub.org) und wird vom [CoinSence-Projekt](http://coinsence.org/)
+gehostet. [HumHub](https://www.humhub.org) ist eine freie und quelloffene Software
+für soziale Netzwerke.
