@@ -31,16 +31,28 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
         copyright = "Copyright &copy; 2018-2019 Viridian Project"
         [languages.en.menu]
             [[languages.en.menu.main]]
+                name = "Home"
+                identifier = "01-home"
+                url = ""
+            [[languages.en.menu.main]]
+                name = "Whitepaper"
+                identifier = "02-whitepaper"
+                url = "../paper"
+            [[languages.en.menu.main]]
+                name = "Flyer"
+                identifier = "03-flyer"
+                url = "flyer.pdf"
+            [[languages.en.menu.main]]
                 name = "Technical"
-                identifier = "02-technical"
+                identifier = "04-technical"
                 url = "technical"
             [[languages.en.menu.main]]
                 name = "About"
-                identifier = "03-about"
+                identifier = "05-about"
                 url = "about"
             [[languages.en.menu.main]]
                 name = "Contact"
-                identifier = "04-contact"
+                identifier = "06-contact"
                 url = "contact"
         #[languages.en.params]
         #    siteLogo = "images/viridian_logo_with_text.png"
@@ -52,16 +64,28 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
         copyright = "Copyright &copy; 2018-2019 Viridian Project"
         [languages.de.menu]
             [[languages.de.menu.main]]
+                name = "Start"
+                identifier = "01-home"
+                url = ""
+            [[languages.de.menu.main]]
+                name = "Whitepaper (en)"
+                identifier = "02-whitepaper"
+                url = "..//paper"
+            [[languages.de.menu.main]]
+                name = "Flyer"
+                identifier = "03-flyer"
+                url = "flyer.pdf"
+            [[languages.de.menu.main]]
                 name = "Technisches"
-                identifier = "02-technical"
+                identifier = "04-technical"
                 url = "technical"
             [[languages.de.menu.main]]
                 name = "Über"
-                identifier = "03-about"
+                identifier = "05-about"
                 url = "about"
             [[languages.de.menu.main]]
                 name = "Kontakt"
-                identifier = "04-contact"
+                identifier = "06-contact"
                 url = "contact"
         #[languages.de.params]
         #    siteLogo = "images/viridian_logo_with_text.png"

@@ -14,12 +14,6 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li>
-              <a class="btn btn-default-hamburg" href="{{ "" | absLangURL }}">{{ i18n "home" }}</a>
-            </li>
-            <li>
-              <a class="btn btn-default-hamburg" href="{{ "paper" | absURL }}">{{ i18n "whitepaper" }}</a>
-            </li>
             {{- $currentPage := . -}}
             {{ range sort .Site.Menus.main "Identifier" -}}
               <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
