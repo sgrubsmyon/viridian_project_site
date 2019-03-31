@@ -1,7 +1,34 @@
-This is a minimal example of the hugo theme `hamburg`. Have a look at the GitHub repo of [hauke96/the-green-spot](https://github.com/hauke96/the-green-spot) (or the website [the-green-spot.de](https://the-green-spot.de) to see what's possible with this theme.
+## Preview locally during development:
 
-# Try this example
-1. `git clone https://github.com/hauke96/hugo-theme-hamburg.git`
-2. `cd ./hugo-theme-hamburg/exampleSite`
-3. `git clone https://github.com/hauke96/hugo-theme-hamburg.git themes/hamburg`
-4. `hugo server`
+```
+$ rstudio
+> blogdown::serve_site()
+```
+
+Will auto-recompile on every change.
+
+## Deploy
+
+### Complete re-build:
+
+```
+$ rstudio
+# Remove build directory (e.g. in RStudio -> Files)
+> blogdown::build_site()
+$ rsync -rtlPvi --delete public/ guavapi:www.viridian-project.org/
+$ ssh -t guavapi sudo rsync -rtlPvi --delete --exclude=.well-known --exclude=piwik www.viridian-project.org/ /var/www/html/www.viridian-project.org/
+```
+
+### 
+
+## Email obfuscation:
+
+Email obfuscator script 2.1 by Tim Williams, University of Arizona
+Random encryption key feature coded by Andrew Moulden
+This code is freeware provided these four comment lines remain intact
+A wizard to generate this code is at http://www.jottings.com/obfuscator/
+
+Use https://stackoverflow.com/questions/748780/best-way-to-obfuscate-an-e-mail-address-on-a-website
+to improve it.
+
+Also: http://www.wmtips.com/tools/html-obfuscator/
