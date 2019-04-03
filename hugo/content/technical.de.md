@@ -50,6 +50,8 @@ Das Projekt besteht aus mehreren Phasen, von denen die erste abgeschlossen und
 die zweite weitgehend abgeschlossen ist. **Aktuell beginnt Phase 3**, in der
 die Überlegungen in die Implementierung eines ersten Prototyps einfließen.
 
+![](/images/technical/timeline.de.svg)
+
 - In **Phase 1** wurden konzeptionelle Ideen gesammelt. Vor allem wurde die Idee von
   der Transition zu einer nachhaltigen postfossilen Wirtschaft mit dem Konzept von
   alternativen Währungen und Kryptowährungen verknüpft. Zusammen mit dem Konzept
@@ -64,7 +66,13 @@ die Überlegungen in die Implementierung eines ersten Prototyps einfließen.
 - In **Phase 3** soll nach Festlegung der Design-Entscheidungen ein erster Prototyp
   implementiert werden, der die wesentlichen Funktionen enthalten soll: das
   kollaborative Bearbeiten von Nachhaltigkeitsbewertungen durch User auf einem
-  dezentral organisierten Blockchain-Netzwerk.
+  dezentral organisierten Blockchain-Netzwerk. Phase 3 besteht aus den folgenden
+  Meilensteinen:
+  
+    1. Programmierung des Backends (u.a. Lesen/Schreiben von Daten, Validierungsregeln)
+    2. Entwicklung einer geeigneten Netzwerkkonfiguration mit mehreren Knoten
+    3. Durchführung eines User-Workshops für Feedback zum Frontend-Konzept
+    4. Entwicklung eines ersten Prototypen des Frontends zur Darstellung und Bearbeitung der Inhalte
 
 - In **Phase 4** kann an der automatisierten Integration von Daten aus anderen
   Plattformen und Datenbanken gearbeitet werden (u.a. die im [Vergleich](#vergleich)
@@ -240,7 +248,7 @@ eine gewisse Form von **Liquid Democracy** im Sinne eines Antwort-Empfehlungs-Sy
 und [hier](http://web.archive.org/web/20160403043216/https://seed.sourceforge.net/ld_k5_article_004.html))
 angesehen werden. Jedoch würde eine wirkliche Liquid Democracy bedeuten, dass
 man die Antwortempfehlungen (also hier Bewertungen) zu einem bestimmten Thema
-(Produktkategorie?) einer bestimmten Person abonniert, was hier nicht vorgesehen ist.
+(Produktkategorie?) von einer bestimmten Person abonniert, was hier nicht vorgesehen ist.
 
 #### Peer-Review
 
@@ -315,7 +323,7 @@ für jede Dimension einzeln über alle Bewertungen mittelt. Eine viel schwierige
 Aufgabe ist es, die einzelnen Dimensionen auf eine einzelne Skala zu projizieren, also zu einer
 einzigen Zahl zusammenzufassen (Stichwort ["multikriterielle Analyse"](https://de.wikipedia.org/wiki/Multi_Criteria_Analysis)). Hierfür gibt es eigentlich
 keine sinnvolle objektive Lösung, bzw. ist diese nur unter extremem Aufwand zu finden.
-Jede(r) Einzelne wird andere Präferenzen setzen. Daher ist es denkbar, dass
+Jede\(r\) Einzelne wird andere Präferenzen setzen. Daher ist es denkbar, dass
 jeder User ihre/seine Präferenzen selbst festlegt, nach denen dann die verschiedenen
 Dimensionen zu einer Zahl zusammengefasst werden. Die Zusammenfassung in einer
 einzigen Skala macht die Vergleichbarkeit von Produkten sehr viel leichter und
@@ -380,7 +388,7 @@ Hier als Beispiel ein JSON-Dokument für ein Produkt:
 
 ## Warum gemeinschaftlich?
 
-Das Viridian-Projekt glaubt an das "Wikipedia-Prinzip", dass Resultate durch
+Das Viridian-Projekt glaubt an das **"Wikipedia-Prinzip"**, dass Resultate durch
 Beteiligung vieler besser und nicht schlechter werden. Es geht also um die
 Nutzung [kollektiver Intelligenz](https://de.wikipedia.org/wiki/Kollektive_Intelligenz)
 oder eine Demokratisierung von Information.
@@ -391,8 +399,8 @@ Projekts Wikipedia zeigt aber, dass das Prinzip letztlich funktioniert und sich 
 Qualität am Ende auch bei vollkommen offener gemeinschaftlicher Redaktion durchsetzt.
 Auf lange Sicht können Projekte wie Wikipedia sogar kommerzielle, proprietäre Lösungen
 übertreffen, weil sie meist agiler sind und mit der Unterstützung der Crowd auf
-größere Ressourcen zurückgreifen können. So entsteht ein "Commons", also ein Gemeingut
-oder eine Allmende, das alle gemeinsam pflegen und von dem alle profitieren. Ein
+größere Ressourcen zurückgreifen können. So entsteht ein **"Commons"**, also ein
+**Gemeingut**/**Allmende**, das alle gemeinsam pflegen und von dem alle profitieren. Ein
 ähnlicher Ansatz, in Bezug auf Software statt Information, wird von Open-Source-Communities
 verfolgt. Wir unterstützen und glauben an diese Philiosophie.
 
