@@ -206,7 +206,7 @@ oder auf Gütezeichen. Auch vorhandene Plattformen mit Nachhaltigkeitsdaten (sie
 es gibt Produktdatenbanken wie [Questionmark](https://www.thequestionmark.org/) oder
 [OpenFoodFacts](https://world.openfoodfacts.org/),
 Unternehmensdatenbanken wie [WikiRate](https://wikirate.org) oder
-[Rank-a-brand]() und Siegeldatenbanken wie
+[Rank a Brand](https://www.rankabrand.org/) und Siegeldatenbanken wie
 [Kompass Nachhaltigkeit](https://www.kompass-nachhaltigkeit.de) und
 [Label online](https://label-online.de/). Deren Daten könnten später
 evtl. eingebunden werden (siehe [Timeline](#timeline)).
