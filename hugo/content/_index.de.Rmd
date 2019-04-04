@@ -268,7 +268,7 @@ Besonders zu den Themen auf den Kacheln unter [Offene Fragen](#offene-fragen)
 gibt es noch Gesprächsbedarf.
 
 Konkretere Überlegungen zur Implementierung gibt es im Artikel
-[Technisches](technical). Ideen oder Anregungen dazu [nehmen wir besonders gerne entgegen](contact).
+[Technisches](technical). Ideen oder Anregungen dazu [nehmen wir gerne entgegen](contact).
 
 
 ## Offene Fragen
@@ -744,29 +744,85 @@ htmltools::includeHTML("snippets/alternative_contact.html")
 
 ## Gibt es das nicht alles schon?
 
-There are already many good concepts for a sustainable economy. See how they
-compare to the Viridian project.
+Es gibt bereits viele gute Ideen und Konzepte für ein nachhaltige Wirtschaft.
+Trotzdem glauben wir, dass Viridian gebraucht wird und eine Lücke schließt.
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-comp" aria-expanded="false" aria-controls="showmore-comp"><i class="fa fa-caret-down" aria-hidden="true"></i> Read more</button>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#showmore-comp" aria-expanded="false" aria-controls="showmore-comp"><i class="fa fa-caret-down" aria-hidden="true"></i> Weiterlesen</button>
 
 <p></p>
 
 <div class="collapse" id="showmore-comp">
 
-Existing ideas for a more sustainable economy include:
+Es gibt schon so viele Initiativen zur Nachhaltigkeit und obwohl uns viele bekannt
+sind, ist das wahrscheinlich nur ein kleiner Teil. Viele dieser Initiativen
+haben uns mehr oder weniger stark beeinflusst.
 
-* [Transition Towns](https://transitionnetwork.org/) and [Permaculture](https://en.wikipedia.org/wiki/Permaculture) (see also: [here](https://permacultureprinciples.com/))
-* [Degrowth](https://www.degrowth.info)
-* [Cradle to cradle](https://en.wikipedia.org/wiki/Cradle_to_Cradle:_Remaking_the_Way_We_Make_Things) (see also: [here](http://c2c-ev.de/))
-* [Ecological economics](https://en.wikipedia.org/wiki/Ecological_economics) (see also: [here](https://www.journals.elsevier.com/ecological-economics/))
-* [Sustainable Economics](https://www.nachhaltige-oekonomie.de/englisch)
-* [*Gemeinwohlökonomie*](https://www.ecogood.org) (German)
-* *Öko-Bilanzierung* (German) (["Richtig rechnen!"](https://www.oekom.de/nc/buecher/gesamtprogramm/buch/richtig-rechnen.html))
-* [*Bioökonomie*](https://de.wikipedia.org/wiki/Bio%C3%B6konomie) (German)
-<!-- * True cost -->
+Zum einen gibt es allgemeine Konzepte zu einer Wirtschaftsweise, die langfristig
+sinnvoll ist und mehr in Kreisläufen als linearem quantitativen Wachstum denkt:
+
+- Postwachstum oder englisch [Degrowth](https://www.degrowth.info)
+- [Die Ideen von Bernard Lietaer](http://www.lietaer.com/2012/05/money-and-sustainability/) zur Reform des
+  Finanzsystems
+- [Ökologische Ökonomie](https://en.wikipedia.org/wiki/Ecological_economics) (siehe auch: [hier](https://www.journals.elsevier.com/ecological-economics/))
+- [Nachhaltige Ökonomie](https://www.nachhaltige-oekonomie.de) und [Große Transformation](https://www.wbgu.de/hauptgutachten/hg-2011-transformation/)
+- [Cradle to cradle](https://en.wikipedia.org/wiki/Cradle_to_Cradle:_Remaking_the_Way_We_Make_Things) (siehe auch: [hier](http://c2c-ev.de/))
+- [Transition Towns](https://transitionnetwork.org/) und [Permakultur](https://en.wikipedia.org/wiki/Permaculture) (siehe auch: [hier](https://permacultureprinciples.com/))
+
+Diese Ideen sind aber meist eher philosophischer Natur und geben wenig
+konkrete Handlungsvorschläge (wie bei Postwachstum oder Ökologischer Ökonomie)
+oder sie sind sehr begrenzt auf bestimmte Sektoren (hauptsächlich Landwirtschaft)
+und kleinräumige Gebiete (wie bei Permakultur und Transition Towns).
+
+Konkreter und allgemeiner sind folgende Ansätze, mit denen Nachhaltigkeit fest
+in der Unternehmenskultur verankert werden soll, z.B.:
+
+- Die [**Gemeinwohlökonomie**](https://www.ecogood.org) möchte, dass Unternehmen neben
+  der herkömmlichen (finanziellen) Bilanz eine "Gemeinwohl-Bilanz"
+  erstellen, in die ethische, soziale und ökologische Kriterien eingehen.
+- Einen Schritt weiter geht die vorgeschlagene **Reform der Finanzbuchhaltung**
+  (["Richtig rechnen!"](https://www.oekom.de/nc/buecher/gesamtprogramm/buch/richtig-rechnen.html))
+  von Christian Hiß: Anstatt öko-soziale Belange nur separat von den Finanzen zu
+  betrachten, soll beides in einer einzigen Bilanz zusammengeführt werden. Denn
+  auf lange Sicht schlagen sich auch ökologisch-soziale Gewinne und Verluste
+  finanziell nieder, bzw. sind mit erhöhten oder verminderten unternehmerischen
+  Risiken verbunden und müssen daher vom Unternehmer mit berücksichtigt werden.
+
+Diese Ansätze sind sehr zu begrüßen, haben jedoch den Nachteil, dass sie auf
+freiwillige Teilnahme der Unternehmen angewiesen sind, solange es keine Verpflichtung
+von staatlicher Seite gibt. Da eine politische Mehrheit für eine Verpflichtung
+auf Grund der Machtverhältnisse im Status Quo auf absehbare Zeit unwahrscheinlich
+ist, geht Viridian einen anderen Weg und setzt auf die Macht der Konsument*innen,
+um die Macht der Mächtigen zu brechen.
+
+Zuguterletzt gibt es bereits Initiativen, die ähnlich wie Viridian auf die
+Information der Vebraucher*innen zielen und ebenfalls digitale Techniken wie
+Datenbanken und Web-Plattformen nutzen:
+
+- Unternehmens- und CSR-Datenbanken:
+    - [WikiRate](https://wikirate.org)
+    - [CSRHub](https://www.csrhub.com/)
+    - [Rank a Brand](https://www.rankabrand.org/)
+    - [Corporate Human Rights Benchmark](https://www.corporatebenchmark.org/)
+- Siegeldatenbanken:
+    - [Siegelklarheit](https://www.siegelklarheit.de/home)
+    - [Kompass Nachhaltigkeit](https://www.kompass-nachhaltigkeit.de)
+    - [NABU Siegel-Check](https://www.nabu.de/umwelt-und-ressourcen/oekologisch-leben/essen-und-trinken/bio-fair-regional/labels/16627.html)
+    - [CIR Siegel von A-Z/Wegweiser durch das Label-Labyrinth](https://www.ci-romero.de/kritischer-konsum/siegel-von-a-z/)
+    - [Label-online](https://label-online.de/)
+- Produktdatenbanken:
+    - [Questionmark](https://www.thequestionmark.org/)
+    - [WeGreen](https://web.archive.org/web/20181213124710/http://wegreen.de/) (offline)
+    - [Buycott](https://www.buycott.com/)
+    - [OpenFoodFacts](https://world.openfoodfacts.org/)
+    - [Codecheck](https://www.codecheck.info/)
+    - [ToxFox](www.bund.net/toxfox)
 
 In [einem Vergleich](technical/#vergleich) haben wir die Vor- und Nachteile einiger
-existierender Intiativen aufgeschrieben und erläutern, was ihnen im Vergleich zu Viridian fehlt.
+dieser Initiativen aufgeschrieben und erläutern, was ihnen im Vergleich zu Viridian
+fehlt. Außerdem führen wir in unserem technischen Artikel aus, warum das
+Viridian-Netzwerk im Gegensatz zu den bestehenden Initiativen sowohl
+[gemeinschaftlich bearbeitet](technical/#warum-gemeinschaftlich) als auch
+[dezentral organisiert](technical/#warum-dezentral) sein soll.
 
 </div>
 
