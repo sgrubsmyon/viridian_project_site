@@ -61,7 +61,7 @@ die Überlegungen in die Implementierung eines ersten Prototyps einfließen.
 - In **Phase 2** wurden die eher abstrakten Ideen in möglichst konkrete Überlegungen
   zur technischen Architektur des Systems übersetzt. Es wurde klar, dass der erste
   Schritt die Entwicklung einer Plattform, bzw. eines sozialen Netzwerks sein muss.
-  Das Ergebnis von Phase 2 war dieser Artikel.
+  Das Ergebnis von Phase 2 ist dieser Artikel.
 
 - In **Phase 3** soll nach Festlegung der Design-Entscheidungen ein erster Prototyp
   implementiert werden, der die wesentlichen Funktionen enthalten soll: das
@@ -73,6 +73,7 @@ die Überlegungen in die Implementierung eines ersten Prototyps einfließen.
     2. Entwicklung einer geeigneten Netzwerkkonfiguration mit mehreren Knoten
     3. Durchführung eines User-Workshops für Feedback zum Frontend-Konzept
     4. Entwicklung eines ersten Prototypen des Frontends zur Darstellung und Bearbeitung der Inhalte
+  <p></p>
 
 - In **Phase 4** kann an der automatisierten Integration von Daten aus anderen
   Plattformen und Datenbanken gearbeitet werden (u.a. die im [Vergleich](#vergleich)
@@ -306,10 +307,12 @@ Nachhaltigkeit zu unterscheiden. Eine mögliche Einteilung ist:
 - **Gesellschaft:** Arbeitsbedingungen, fairer Lohn, Kinderarbeit, Gleichstellung, Umgang mit den Lieferanten, Einfluss auf Gesellschaft z.B. über gemeinnützige Projekte, ...
 - **Gesundheit:** gemeint ist Einfluss auf die Gesundheit der Verbraucher*innen, z.B. Gehalt von Zucker und Fett in Lebensmitteln oder toxische Substanzen in Textilien und Spielzeug
 - **Tierwohl:** wenn Tiere an der Produktion beteiligt waren, wurden sie mit angemessenem Respekt behandelt? Können sie ein angenehmes, gesundes Leben führen?
-- **Ökonomie:** aus Verbraucherperspektive, im Sinne von 'Preis-/Leistungsverhältnis', z.B.: Wie langlebig ist das Produkt? Ist der Preis zu hoch auf Grund des Markenimage?
+- **Ökonomie:** aus Verbraucherperspektive, im Sinne von 'Preis-/Leistungsverhältnis', z.B.: Wie langlebig ist das Produkt?
+
+<!-- Ist der Preis zu hoch auf Grund des Markenimage? -->
 
 Eine Nachhaltigkeitsbewertung kann in jeder dieser Dimensionen mit einer
-**Zahl auf einer Skala von -100 (besonders schlecht) über 0 (durchschnittlich) bis +100 (besonders gut)**
+**Zahl auf einer Skala von -100 (besonders schlecht, Farbe rot) über 0 (durchschnittlich, Farbe gelb) bis +100 (besonders gut, Farbe grün)**
 bewertet werden. Falls gewünscht, können diese Zahlen sehr einfach in Schulnoten
 nach dem deutschen System (1 bis 6) oder dem amerikanischen System (A bis F) umgerechnet werden.
 
@@ -415,9 +418,16 @@ beeinflusst ist. Je nach Interesse und Wissen können die User entweder sehr tie
 und detaillierte Informationen eingeben oder sich nur die relevantesten Informationen
 ansehen und sie mit Upvotes/Downvotes annehmen oder ablehnen. So kann man auch dann noch
 mit der Plattform interagieren, wenn man nur wenig Zeit oder Wissen hat. Dadurch wird
-die Plattform für eine breite Zielgruppe zugänglich und erhält eine demokratische
+die Plattform für **eine breite Zielgruppe** zugänglich und erhält eine demokratische
 Legitimierung gegenüber einer rein expertenbasierten Plattform.
 
+Ein gesellschaftlich so wichtiges Thema wie die Nachhaltigkeitsbewertung und
+Inkludierung externer Kosten sollte nicht von Einzelinteressen gelenkt sein und
+daher bietet sich das Crowd-basierte Wikipedia-Prinzip an. Mit dem Viridian-Projekt
+wollen wir **die Zivilgesellschaft ermächtigen**, die Datenhoheit über die
+Nachhaltigkeit der Wirtschaft selbst in die Hand zu nehmen. Dadurch würde sich
+das Machtgefälle zwischen Unternehmen und Konsument*innen etwas zugunsten der
+Konsument*innen verschieben.
 
 
 
