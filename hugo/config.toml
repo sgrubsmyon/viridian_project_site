@@ -18,7 +18,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     # Show this very user-friendly and absolutely not annoying GDPR notice at the bottom of the page
     #ShowGDPRNotice = true
     #EnableHighlighting = true
-    contact = "info@viridian-project.org"
+    contact = true
     github = "viridian-project"
 
 [languages]
