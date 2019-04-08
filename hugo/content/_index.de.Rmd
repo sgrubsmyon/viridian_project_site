@@ -753,9 +753,9 @@ Trotzdem glauben wir, dass Viridian gebraucht wird und eine Lücke schließt.
 
 <div class="collapse" id="showmore-comp">
 
-Es gibt schon so viele Initiativen zur Nachhaltigkeit und obwohl uns viele bekannt
-sind, ist das wahrscheinlich nur ein kleiner Teil. Viele dieser Initiativen
-haben uns mehr oder weniger stark beeinflusst.
+Es gibt schon so viele Initiativen zur Nachhaltigkeit und obwohl uns einige bekannt
+sind, ist das wahrscheinlich nur ein kleiner Teil von dem, was es bereits gibt.
+Viele dieser Initiativen haben uns mehr oder weniger stark beeinflusst.
 
 Zum einen gibt es allgemeine Konzepte zu einer Wirtschaftsweise, die langfristig
 sinnvoll ist und mehr in Kreisläufen als linearem quantitativen Wachstum denkt:
@@ -807,21 +807,21 @@ Datenbanken und Web-Plattformen nutzen:
     - [Siegelklarheit](https://www.siegelklarheit.de/home)
     - [Kompass Nachhaltigkeit](https://www.kompass-nachhaltigkeit.de)
     - [NABU Siegel-Check](https://www.nabu.de/umwelt-und-ressourcen/oekologisch-leben/essen-und-trinken/bio-fair-regional/labels/16627.html)
-    - [CIR Siegel von A-Z/Wegweiser durch das Label-Labyrinth](https://www.ci-romero.de/kritischer-konsum/siegel-von-a-z/)
-    - [Label-online](https://label-online.de/)
+    - [Christliche Initiative Romero e.V. (CIR): "Siegel von A-Z" und Publikation "Wegweiser durch das Label-Labyrinth"](https://www.ci-romero.de/kritischer-konsum/siegel-von-a-z/)
+    - [Label-online von der Verbraucher Initiative e.V.](https://label-online.de/)
 - Produktdatenbanken:
     - [Questionmark](https://www.thequestionmark.org/)
-    - [WeGreen](https://web.archive.org/web/20181213124710/http://wegreen.de/) (offline)
+    - [WeGreen](https://web.archive.org/web/20181213124710/http://wegreen.de/) (mittlerweile offline)
     - [Buycott](https://www.buycott.com/)
     - [OpenFoodFacts](https://world.openfoodfacts.org/)
     - [Codecheck](https://www.codecheck.info/)
     - [ToxFox](www.bund.net/toxfox)
 
 In [einem Vergleich](technical/#vergleich) haben wir die Vor- und Nachteile einiger
-dieser Initiativen aufgeschrieben und erläutern, was ihnen im Vergleich zu Viridian
-fehlt. Außerdem führen wir in unserem technischen Artikel aus, warum das
+dieser Initiativen dargestellt und erläutern, wo und wie Viridian darüber hinaus
+gehen will. Außerdem führen wir in unserem technischen Artikel aus, warum das
 Viridian-Netzwerk im Gegensatz zu den bestehenden Initiativen sowohl
-[gemeinschaftlich bearbeitet](technical/#warum-gemeinschaftlich) als auch
+[gemeinschaftlich bearbeitet](technical/#warum-gemeinschaftlich) werden als auch
 [dezentral organisiert](technical/#warum-dezentral) sein soll.
 
 </div>
