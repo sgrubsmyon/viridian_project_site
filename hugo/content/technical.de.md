@@ -13,6 +13,9 @@ toc: true
 - [Timeline](#timeline)
 - [Vergleich mit alternativen Plattformen](#vergleich)
 - [Wie soll das Netzwerk funktionieren?](#netzwerk-funktion)
+  - [Datenbankschema als Graph](#graph)
+  - [Die Bewertungsskala](#skala)
+  - [Datenbankschema in JSON](#json)
 - [Warum gemeinschaftlich?](#warum-gemeinschaftlich)
 - [Warum dezentral?](#warum-dezentral)
 - [Warum Blockchain?](#warum-blockchain)
@@ -297,7 +300,7 @@ erste Peer-Review.
 
 
 
-### Die Bewertungsskala
+### Die Bewertungsskala {#skala}
 
 Für die Nachhaltigkeitsbewertung ist es sinnvoll, verschiedene Dimensionen der
 Nachhaltigkeit zu unterscheiden. Eine mögliche Einteilung ist:

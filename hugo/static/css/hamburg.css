@@ -317,6 +317,11 @@ main {
   color: #ffffff;
 }
 
+/* override hamburg theme color with Viridian color */
+.text-primary, a {
+  color: #40826d;
+}
+
 /*
 /* http://nicolasgallagher.com/jump-links-and-viewport-positioning/ * /
 .anchor {
