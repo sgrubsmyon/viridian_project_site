@@ -8,71 +8,74 @@ author: mvoge
 title: Über das Projekt
 ---
 
-## Where did the idea for the Viridian project come from?
+## Woher kam die Idee für das Viridian-Projekt?
 
-In November 2015, I was listening to a talk about [Transition Towns](https://transitionnetwork.org/),
-which is a very cool idea to turn our economy into a sustainable, resilient,
-local, post-fossil, fair economy. The Transition Towns concept stems from
-an agricultural background and is basically the
-**application of the [principles of permaculture](https://permacultureprinciples.com/) to the entire economy**.
+Im November 2015 hörte ich einen Vortrag über [Transition Towns](https://transitionnetwork.org/),
+eine charmante Idee, um unsere Wirtschaft in eine nachhaltige, resiliente, lokale,
+postfossile, gerechte Wirtschaft zu verwandeln.
+Das Konzept der Transition Towns kommt vom landwirtschaftlichen Prinzip der Permakultur und ist im Grunde eine
+**Anwendung der [Prinzipien der Permakultur](https://permacultureprinciples.com/) auf die gesamte Wirtschaft**.
 
-The best thing about the Transition Town movement is its completely hands-on,
-**"just do it" attitude**. Instead of waiting for a top-down system change to be
-implemented by politics or big corporations or "someone else", it calls on
-people to come together and start building things. It is this decentralized,
-grass-roots nature of the movement that I like a lot.
+Das Beste an der Transition Town-Bewegung ist ihre ganz praktisch orientierte
+**"Mach es einfach"-Haltung**. Anstatt darauf zu warten, dass ein Top-Down-Systemwechsel stattfindet,
+von der Politik oder großen Konzernen oder "jemand anderem" umgesetzt, fordert sie
+die Menschen auf, sich zusammenzutun und anzufangen, Dinge aufzubauen. 
+Es ist diese dezentrale Graswurzel-Natur der Bewegung, die ich sehr mag.
 
-Around the same time I was also reading a lot about bitcoin and **cryptocurrencies**
-in general and started to grasp its vast potential for **democratizing our economy**
-and financial system. After listening to the talk on Transition Towns, I was so
-engaged by this encouraging just-do-it spirit that I was starting to think about
-what I can do to contribute to this change. Because what I like most is IT and
-computer programming, I was looking for something I could contribute from this
-direction.
+Etwa zur gleichen Zeit las ich auch viel über Bitcoin und andere **Kryptowährungen**
+und fing an, ihr enormes Potenzial für die **Demokratisierung unserer Wirtschaft**
+und unseres Finanzsystems zu erkennen. 
+Nachdem ich den Vortrag über Transition Towns gehört hatte, war ich so
+motiviert durch diesen ermutigenden Einfach-jetzt-machen-Geist, dass ich
+überlegte, was ich tun könnte, um selbst zu dieser Veränderung beizutragen.
+Da ich besonders an IT und Programmieren interessiert bin, 
+suchte ich nach etwas, das ich aus dieser Richtung dazu beitragen konnte.
 
-The Transition Town folks are mostly very low-tech gardening-savvy agricultural
-people that like to get their hands dirty. But they also create new complementary
-currencies that can even be paid digitially with a mobile phone. Yet, they did
-not seem to have taken notice of cryptocurrencies, unaware of the
-**decentralized and democratic aspects of cryptocurrencies that actually align quite well with the idea of a decentralized, resilient, grass-roots-based economy**.
-I couldn't stop thinking that something great could be born if these two
-communities, unaware of each other, would be brought together.
+Die Engagierten in der Transition Town-Bewegung sind häufig Leute, die gerne
+gärtnern und sich die Hände schmutzig machen. Sie haben aber auch neue
+Komplementärwährungen geschaffen, mit denen sogar per Mobiltelefon digital bezahlt
+werden kann. Sie scheinen jedoch bisher keine Kenntnis von Kryptowährungen und den
+**dezentralen und demokratischen Aspekten von Kryptowährungen, die eigentlich gut zur Idee einer dezentralisierten, resilienten Wirtschaft passen**, zu haben.
+Ich dachte, dass etwas Großes entstehen könnte, wenn diese beiden
+Gemeinschaften zusammengebracht würden, die sich bisher gegenseitig kaum kennen.
 
-Then I was by chance reading a novel that someone gave to me: [*Daemon*](https://en.wikipedia.org/wiki/Daemon_(novel_series)) and, much
-more important, its sequel [*Freedom™*](https://en.wikipedia.org/wiki/Freedom%E2%84%A2)
-by Daniel Suarez. While the first book describes how a decentralized computer
-virus (the "Daemon") starts to take over the world, creating a dystopy full
-of violence, in which skillful hackers turn into powerful tech-wizards ruling
-the clueless crowd, the second book tells quite a different story. In Freedom™,
-the reader learns that the violence of the Daemon has the purpose of breaking
-the power of global corporations and elites, creating a new economy that consists
-of many small communities (called hubs) that resiliently and sustainably produce
-much of their demand for goods themselves, trading with other hubs for things
-they cannot make themselves. There is an alternative currency ("credits"
-like rewards earned in a computer game) inside the Daemon network and sustainable
-solutions (e.g. use of renewable energies) are rewarded with more credits by the
-Daemon network.
+Dann las ich zufällig einen Roman, den jemand mir gegeben hatte:
+[*Daemon*](https://en.wikipedia.org/wiki/Daemon_ (novel_series)) und, 
+noch viel wichtiger, die Fortsetzung [*Freedom™*](https://en.wikipedia.org/wiki/Freedom%E2%84%A2)
+von Daniel Suarez. Während das erste Buch beschreibt, wie ein dezentraler Computervirus
+(der "Daemon") beginnt, die Welt zu erobern, wodurch eine Dystopie voller Gewalt
+entsteht, in der sich geschickte Hacker in mächtige Tech-Zauberer verwandeln, die
+die ahnungslosen Massen beherrschen, erzählt das zweite Buch eine ganz andere
+Geschichte. In "Freedom™" erfährt der Leser, dass die Gewalt des Daemons den
+Zweck hat, die Macht globaler Unternehmen und Eliten zu brechen und eine neue
+Wirtschaft zu erschaffen, die aus vielen kleinen Gemeinden (genannt Hubs) besteht, 
+die resilient und nachhaltig einen Großteil ihres Bedarfs an Gütern selbst produzieren
+und den Rest durch den Handel mit anderen Hubs erwerben. Es gibt eine alternative Währung
+("Credits", wie die Belohnungen, die man sich in einem Computerspiel verdienen kann)
+innerhalb des Daemon-Netzwerks und nachhaltige Lösungen (z.B. die Nutzung erneuerbarer
+Energien) werden vom Daemon-Netzwerk mit mehr Credits belohnt.
 
-I was fascinated by the books, because what was described there was in essence
-**a kind of digitally-driven Transition Towns movement**. A transition towards a
-decentralized, resilient, sustainable, more equitable economy. This was exactly
-what I was hoping to contribute to the Transition Towns movement!
+Ich war fasziniert von den Büchern, denn das, was dort beschrieben wurde, war im
+Wesentlichen **eine Art digitale Transition-Bewegung**. Ein Übergang in Richtung
+einer dezentralisierten, resilienten, nachhaltigen und gerechteren Wirtschaft.
+Das war genau das, was ich gehofft hatte, zur Transition Towns-Bewegung beitragen
+zu können!
 
-I was a little surprised that in the Daemon novels, which mention many existing
-innovative technologies, there was not a single mention of cryptocurrencies
-(although the Daemon network is end-to-end encrypted, at least). But this is
-simply owed to the Daemon novels being so "old" already. The first book was
-released in 2006, the second book in January 2010. Satoshi Nakamoto,
-the mysterious creator of bitcoin, released the first version of his
-revolutionary cryptocurrency software in January 2009, and back in 2009, almost
-no-one had ever heard of cryptocurrencies yet.
+Ich war ein wenig überrascht, dass in den Daemon-Romanen, in denen viele innovative
+Technologien erwähnt werden, nie die Rede von Kryptowährungen ist (obwohl das
+Daemon-Netzwerk zumindest Ende-zu-Ende-verschlüsselt ist). Aber das ist wohl
+einfach der Tatsache geschuldet, dass die Daemon-Romane schon so "alt" sind.
+Das erste Buch ist 2006 erschienen, das zweite Buch im Januar 2010.
+Satoshi Nakamoto, der geheimnisvolle Schöpfer von Bitcoin, veröffentlichte die
+erste Version seiner revolutionären Kryptowährungssoftware im Januar 2009 und
+damals hatte fast noch niemand von Kryptowährungen gehört.
 
-*Markus Voge*, founder of the Viridian project.
+*Markus Voge*, Gründer des Viridian-Projekts.
 
-## Why is it called "Viridian"?
+## Warum heißt es "Viridian"?
 
-[Viridian](https://en.wikipedia.org/wiki/Viridian) is the name of a certain
-greenish color, a dark shade of "spring green". It is derived from the
-**Latin word for green**, *viridis*. Because the Viridian project is all about
-colors, and one hopes for them to be rather green than anything else, I figured
-the name of a green color would be appropriate. Besides, it also sounds pretty cool.
+[Viridian](https://en.wikipedia.org/wiki/Viridian) ist der Name einer grünlichen
+Farbe, ein dunkles "Frühlingsgrün". Er wird abgeleitet vom **lateinischen Wort für Grün**,
+*viridis*. Weil sich im Viridian-Projekt alles um Farben dreht, und diese
+im Idealfall eher grün sind als irgendeine andere Farbe, dachte ich, der Name
+einer grünen Farbe wäre angemessen. Außerdem klingt es auch ziemlich cool.

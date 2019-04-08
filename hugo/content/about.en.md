@@ -43,7 +43,7 @@ more important, its sequel [*Freedom™*](https://en.wikipedia.org/wiki/Freedom%
 by Daniel Suarez. While the first book describes how a decentralized computer
 virus (the "Daemon") starts to take over the world, creating a dystopy full
 of violence, in which skillful hackers turn into powerful tech-wizards ruling
-the clueless crowd, the second book tells quite a different story. In Freedom™,
+the clueless crowd, the second book tells quite a different story. In "Freedom™",
 the reader learns that the violence of the Daemon has the purpose of breaking
 the power of global corporations and elites, creating a new economy that consists
 of many small communities (called hubs) that resiliently and sustainably produce
