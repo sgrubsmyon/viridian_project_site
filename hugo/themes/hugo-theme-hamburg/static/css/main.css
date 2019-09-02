@@ -45,14 +45,8 @@ main {
 
 /* Navbar */
 
-.navbar-container {
-    display: flex;
-    flex-direction: row-reverse;
-    position: absolute;
-    /* right: 20px; */
-    bottom: 20px;
-    width: 100%;
-    justify-content: center;
+#navbar-outer:before { 
+  content: none;
 }
 
 .navbar-item {
@@ -61,26 +55,42 @@ main {
 }
 
 .navbar-item:last-child {
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 /* Language list */
 
 .language-container {
     display: flex;
+    flex-direction: column;
+    margin-top: -5px;
+}
+.navbar-tiny .language-container {
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 2px;
+}
+/* On small screen always tiny navbar: */
+@media (max-width: 1230px) {
+  .navbar-default .language-container {
     flex-direction: row;
     justify-content: flex-end;
-    position: absolute;
-    right: 20px;
+    margin-top: 2px;
+  }
 }
 
 .language-button {
+    margin-bottom: 5px;
     margin-left: 5px;
-    position: initial !important;
+    /* position: initial !important; */
+    height: 32px;
 }
 
-@media (min-width: 900px) {
-  .language-container, .btn-home {
+.btn-home {
+  top: -30px;
+}
+@media (min-width: 1230px) {
+  .btn-home {
     top: 20px;
   }
 }

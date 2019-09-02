@@ -51,39 +51,17 @@ a:hover, a:focus {
    * Navbar *
    ********** */
 
+/* So good: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
 /* navbar smaller on scrolling */
 /* https://stackoverflow.com/questions/16442016/jquery-sticky-header-that-shrinks-when-scrolling-down */
-.navbar {
-  /*width: 100%;*/
+.navbar-default {
+  display: flex;
+  justify-content: space-between;
   height: 100px;
-  /*background: #26b;
-  color: #fff;*/
-  /*position: fixed;
-  top: 0;
-  left: 0;*/
-  border-bottom-width: 0;
-  transition: height 500ms, background 500ms;
-}
-#navbar {
   background-color: #222222;
-}
-.navbar-brand img {
-  height: 90px;
-  transition: height 500ms;
-}
-.navbar-header {
-  height: 100px;
-  transition: height 500ms;
-}
-.navbar-nav > li > a {
-  /* padding: 39px 15px 39px 15px; */
-  font-size: 22px;
-  top: 20px;
-  height: 60px;
-  line-height: 55px;
-  padding: 0 12px;
-  transition: font-size 500ms, top 500ms, height 500ms, line-height 500ms, margin-top 500ms, padding 500ms;
-  margin-right: 12px;
+  border-color: #121212;
+  transition: height 500ms, background 500ms;
 }
 .navbar-brand {
   padding: 4.5px 35px; /*30px*/
@@ -91,46 +69,107 @@ a:hover, a:focus {
 }
 .navbar-brand, .navbar-brand img {
   height: 90px;
+  transition: height 500ms;
 }
-.navbar .language-container {
-  transition: top 500ms;
+#navbar {
+  width: 100%;
+}
+/* Collapsed navbar shown on small screens: */
+#navbar.collapsing,
+#navbar.in {
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-height: none;
+}
+.navbar-navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background: #222222;
+}
+#navbar.collapsing > .navbar-navbar,
+#navbar.in > .navbar-navbar {
+  flex-direction: column;
+}
+.navbar-navbar > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#navbar.collapsing > .navbar-navbar > ul,
+#navbar.in > .navbar-navbar > ul {
+  flex-direction: column;
+  /* padding: 20px; *.
+  /* better: (takes as much space as needed) */
+  padding: 0;
+  margin: 50px auto 10px auto;
+}
+.navbar-navbar > ul > li > a {
+  /* padding: 39px 15px 39px 15px; */
+  font-size: 22px;
+  height: 60px;
+  line-height: 55px;
+  padding: 0 12px;
+  transition: height 500ms, line-height 500ms, padding 500ms; /* font-size 500ms causes jitter */
+  margin-right: 12px;
+}
+#navbar.collapsing > .navbar-navbar > ul > li,
+#navbar.in > .navbar-navbar > ul > li,
+#navbar.collapsing > .navbar-navbar > ul > li > a,
+#navbar.in > .navbar-navbar > ul > li > a {
+  width: 100%;
 }
 
+.navbar-default .language-container {
+  padding-right: 20px; padding-top: 20px;
+  transition: padding 500ms;
+}
+
+/* When scrolled down: */
 .navbar-tiny {
-  height: 40px;
+  height: 50px;
 }
-/*
-.navbar-tiny .navbar-brand {
-  padding: 4.5px 35px;
-}
-*/
 .navbar-tiny .navbar-brand img {
   height: 40px;
 }
-.navbar-tiny .navbar-header {
-  height: 40px;
-}
-.navbar-tiny .navbar-nav > li > a {
+.navbar-tiny .navbar-navbar > ul > li > a {
   font-size: 16px;
-  top: 4px;
   height: 42px;
   line-height: 10px;
-  margin-top: 0;
   padding: 14.5px 15px 14.5px 15px;
 }
 .navbar-tiny .language-container {
-  top: 7px;
+  padding-top: 7px;
 }
 
-.navbar-default {
-  background-color: #222222;
-  border-color: #121212;
+/* Same as scrolled down when on small screen: (on small screen always tiny navbar) */
+@media (max-width: 1230px) {
+  .navbar-default {
+    height: 50px;
+  }
+  .navbar-default .navbar-brand img {
+    height: 40px;
+  }
+  .navbar-default .navbar-navbar > ul > li > a {
+    font-size: 16px;
+    height: 42px;
+    line-height: 10px;
+    padding: 14.5px 15px 14.5px 15px;
+  }
+  .navbar-default .language-container {
+    padding-top: 7px;
+  }
 }
-.navbar-default .navbar-nav > li > a {
+
+.navbar-default .navbar-navbar > ul > li > a {
   color: #fff;
 }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-navbar > ul > li > a:hover, .navbar-default .navbar-navbar > ul > li > a:focus {
   color: #fff;
   background-color: #bdbdbd4d;
   border-color: #fff;
@@ -338,8 +377,8 @@ main {
 *[id]:before { 
   display: block; 
   content: " "; 
-  margin-top: -40px; 
-  height: 40px; 
+  margin-top: -50px; 
+  height: 50px; 
   visibility: hidden; 
 }
 /*.anchor:before {
