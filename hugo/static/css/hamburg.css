@@ -216,8 +216,16 @@ a:hover, a:focus {
   max-width: none;
   padding-top: 85px;
   padding-bottom: 75px;
-  font-size: 38px;
+  font-size: 2.5em; /* 38px */
   font-weight: bold;
+}
+@media (max-width: 768px) {
+  .header-text h1 {
+    font-size: 1.8em;
+  }
+}
+.header-text h1 img {
+  max-width: 90%;
 }
 
 
