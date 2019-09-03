@@ -3,8 +3,7 @@ date: "2019-03-28T00:19:25+01:00"
 noshowdate: yes
 author: dvandoren
 #tags:
-#- page
-#- about
+#- technical
 title: Technical Paper
 ---
 
@@ -91,4 +90,4 @@ The platform ["Kompass Nachhaltigkeit"](https://www.kompass-nachhaltigkeit.de) (
 
 ### Conclusion
 
-Although many of the identified initiatives share some of the key characteristics of Viridian – like crowd-based intelligence, product sustainability assessment and decentralized database management – none of these initiatives have so far been able to combine such features into a single product. As such, Viridian can address an important gap in the landscape of a sustainable economy. Viridian provides an independent, interactive and reliable platform that can be used both for contributing and obtaining information. This can allow consumers to make well-informed decisions based on the sustainability performance of products. Many data from existing platforms can be integrated and complement Viridian.
+Although many of the identified initiatives share some of the key characteristics of Viridian – like crowd-based intelligence, provision of detailed and multi-dimensional product information, integration of sustainability assessments and decentralized database management – none of these initiatives have so far been able to combine such features into a single product. In doing so, Viridian aims to tackle disadvantages associated to services that are characterized by undetailed and biased display of products or product characteristics, intransparent assessments of sustainability performance, limited embedment of active consumer participation, or financial barriers to use offered services. As such, Viridian can address an important gap in the landscape of a sustainable economy, through providing an independent, interactive and reliable platform for all that want to realise and enable well-informed consumer decisions based on objective and comprehensive product information.
