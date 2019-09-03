@@ -1,3 +1,6 @@
+/* CSS fetched from the old site (partly bootstrap, partly Jekyll theme cosmo.css) */
+@import url("buttons.css");
+
 /* adopted from the cayman.css theme of prettydoc */
 @font-face {
   font-family: 'Open Sans';
