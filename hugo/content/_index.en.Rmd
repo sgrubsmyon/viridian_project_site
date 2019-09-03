@@ -45,9 +45,11 @@ agreed upon by everyone. They must also be continually debated and adjusted
 as soon as needed.
 -->
 
-<a href="/paper" class="btn btn-info" role="button">Read the whitepaper (concepts)</a>
-<a href="flyer.pdf" class="btn btn-info" role="button">Look at our flyer</a>
-<a href="technical" class="btn btn-info" role="button">Read the technical article</a>
+<p class="flex-grid">
+  <a href="/paper" class="btn btn-info flex-grid-item" role="button">Read the whitepaper (concepts)</a>
+  <a href="flyer.pdf" class="btn btn-info flex-grid-item" role="button">Look at our flyer</a>
+  <a href="technical" class="btn btn-info flex-grid-item" role="button">Read the technical article</a>
+</p>
 
 ## Goals
 

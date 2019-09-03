@@ -52,9 +52,11 @@ von allen vereinbart. Sie müssen auch ständig debattiert und angepasst werden
 so bald wie nötig.
 -->
 
-<a href="/paper" class="btn btn-info" role="button">Lies das Whitepaper (konzeptionell)</a>
-<a href="flyer.pdf" class="btn btn-info" role="button">Sieh dir den Flyer an</a>
-<a href="technical" class="btn btn-info" role="button">Lies den technischen Artikel</a>
+<p class="flex-grid">
+  <a href="/paper" class="btn btn-info flex-grid-item" role="button">Lies das Whitepaper (konzeptionell)</a>
+  <a href="flyer.pdf" class="btn btn-info flex-grid-item" role="button">Sieh dir den Flyer an</a>
+  <a href="technical" class="btn btn-info flex-grid-item" role="button">Lies den technischen Artikel</a>
+</p>
 
 ## Ziele
 
