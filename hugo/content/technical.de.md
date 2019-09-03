@@ -4,7 +4,7 @@ noshowdate: yes
 author: ["mvoge", "dvandoren"]
 #tags:
 #- technical
-title: Technisches
+title: Technischer Artikel
 toc: true
 ---
 

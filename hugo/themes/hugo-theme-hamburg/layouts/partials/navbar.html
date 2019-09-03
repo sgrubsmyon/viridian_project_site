@@ -9,9 +9,22 @@
           <ul>
             {{- $currentPage := . -}}
             {{ range sort .Site.Menus.main "Identifier" -}}
-              <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-                <a class="btn btn-default-hamburg" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
-              </li>
+              {{ if .HasChildren }}
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle btn btn-default-hamburg" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                  {{ range sort .Children "Identifier" }}
+                    <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                      <a href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
+                    </li>
+                  {{ end }}
+                  </ul>
+                </li>
+              {{ else }}
+                <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                  <a class="btn btn-default-hamburg" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
+                </li>
+              {{ end }}
             {{- end }}
           </ul>
           <!-- Languages -->

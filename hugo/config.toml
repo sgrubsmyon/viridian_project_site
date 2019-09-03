@@ -31,23 +31,25 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
         copyright = "Copyright &copy; 2018-2019 Viridian Project"
         [languages.en.menu]
             [[languages.en.menu.main]]
-                name = "Home"
-                identifier = "01-home"
-                url = ""
+                name = "Documents"
+                identifier = "01-documents"
             [[languages.en.menu.main]]
                 name = "Whitepaper"
                 identifier = "02-whitepaper"
+                parent = "01-documents"
                 url = "../paper"
             [[languages.en.menu.main]]
                 name = "Flyer"
                 identifier = "03-flyer"
+                parent = "01-documents"
                 url = "flyer.pdf"
             [[languages.en.menu.main]]
-                name = "Technical"
+                name = "Technical Paper"
                 identifier = "04-technical"
+                parent = "01-documents"
                 url = "technical"
             [[languages.en.menu.main]]
-                name = "About"
+                name = "About us"
                 identifier = "05-about"
                 url = "about"
             [[languages.en.menu.main]]
@@ -64,23 +66,25 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
         copyright = "Copyright &copy; 2018-2019 Viridian Project"
         [languages.de.menu]
             [[languages.de.menu.main]]
-                name = "Start"
-                identifier = "01-home"
-                url = ""
+                name = "Dokumente"
+                identifier = "01-documents"
             [[languages.de.menu.main]]
-                name = "Whitepaper (en)"
+                name = "Whitepaper (englisch)"
                 identifier = "02-whitepaper"
-                url = "..//paper"
+                parent = "01-documents"
+                url = "../paper"
             [[languages.de.menu.main]]
                 name = "Flyer"
                 identifier = "03-flyer"
+                parent = "01-documents"
                 url = "flyer.pdf"
             [[languages.de.menu.main]]
-                name = "Technisches"
+                name = "Technischer Artikel"
                 identifier = "04-technical"
+                parent = "01-documents"
                 url = "technical"
             [[languages.de.menu.main]]
-                name = "Über"
+                name = "Über uns"
                 identifier = "05-about"
                 url = "about"
             [[languages.de.menu.main]]

@@ -5,7 +5,7 @@ author: dvandoren
 #tags:
 #- page
 #- about
-title: Technical
+title: Technical Paper
 ---
 
 Coming soon. No kidding. For now only:

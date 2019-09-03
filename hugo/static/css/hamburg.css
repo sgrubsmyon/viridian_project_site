@@ -1,6 +1,3 @@
-/* CSS fetched from the old site (partly bootstrap, partly Jekyll theme cosmo.css) */
-@import url("buttons.css");
-
 /* adopted from the cayman.css theme of prettydoc */
 @font-face {
   font-family: 'Open Sans';
@@ -95,6 +92,7 @@ a:hover, a:focus {
 }
 .navbar-navbar > ul {
   list-style: none;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,6 +187,28 @@ a:hover, a:focus {
     color: #fff;
     background-color: #bdbdbd4d;
     border-color: #fff;
+}
+
+/************************
+ * Navbar dropdown menu *
+ ************************/
+
+.dropdown-menu {
+  font-size: 22px;
+}
+.navbar-tiny .dropdown-menu {
+  font-size: 16px;
+}
+/* On small screen always tiny navbar: */
+@media (max-width: 1230px) {
+  .dropdown-menu {
+    font-size: 16px;
+  }
+}
+.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus{
+     text-decoration:none;
+     color:#ffffff;
+     background-color:#2780e3 
 }
 
 
