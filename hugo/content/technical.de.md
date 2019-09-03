@@ -112,6 +112,30 @@ Ziel von Viridian ist es, eine Plattform zu entwickeln, mit der Informationen de
 
 Es gibt andere Initiativen, die verschiedene Konzepte oder Prinzipien von Viridian teilen. Im Folgenden werden drei Beispiele für solche Initiativen gegeben, einschließlich einer kurzen Beschreibung, wie diese Initiativen aussehen oder von Viridian abweichen.
 
+### Provenance
+
+[Provenance](https://www.provenance.org/) ist ein Londoner Sozialunternehmen, das mit Hilfe von Blockchain-Technologie Daten über Lieferketten sammeln möchte. Es entsteht eine sichere, zugleich offene Datenbank, mit der Identitäten, Behauptungen und Beweise, welche die Produktzertifizierung betreffen, verifiziert werden können. Nachhaltigkeitszertifizierung wird so in den digitalen Raum erweitert und jedes Produkt erhält einen Eintrag auf der Blockchain, der dem physischen Produkt entspricht. Provenance kooperiert mit den Firmen der Lieferkette und mit NGOs and Organisationen, die die Firmen untersuchen und Audits durchführen, wodurch Daten aus erster Hand verfügbar werden.
+
+#### Vorteile:
+
+- Verbesserte Sichtbarkeit der Produzenten bezüglich der Lieferkette der Produkte
+- Ansprechendes User-Interface
+- Die Partnerschaft mit den Unternehmen/NGOs/Auditoren kann Insider-Informationen aus der Lieferkette liefern
+- Es ist möglich, die gesamte Lieferkette durch authentifizierte digitale Eigentumswechsel des Produkts und der Produktionsmaterialien zu überwachen
+- Produktinformationen können auf Chargen-Ebene zur Verfügung gestellt werden
+- Die beteiligten Unternehmen zahlen für die Teilnahme, dadurch bekommt der Dienst eine Einnahmequelle
+
+<!-- (in fact, also on Viridian, some important information will have to come from the most involved stakeholders) -->
+
+#### Nachteile:
+
+- Daten können wenn überhaupt nur sehr eingeschränkt von der Community bearbeitet werden
+- Daten, die direkt und ausschließlich von den Unternehmen kommen, könnten verzerrt sein und es gibt eine finanzielle Abhängigkeit von den Firmen
+- Nur zahlende Produzenten sind auf der Plattform sichtbar
+- Produkte können nur hinzugefügt werden, wenn der Produzent es wünscht
+- Die obigen beiden Punkte können zu einer Verzerrung führen: nur die nachhaltigsten Produkte könnten auf der Plattform sichtbar sein
+- Es gibt keine Produktbewertung und keine Rankings und daher keine Möglichkeit, Produkte zu vergleichen
+
 ### Questionmark
 
 [Questionmark] (https://www.thequestionmark.org/) zielt darauf ab, eine unabhängige Plattform zu entwickeln, die die Verbraucher*innen über die Ernährungs- und Nachhaltigkeitsaspekte von Lebensmittelprodukten informiert. Es enthält eine große Datenbank mit über 50.000 Produktgütezeichen. Questionmark arbeitet mit verschiedenen Partnern zusammen, um wissenschaftliche Unterstützung, Zuverlässigkeit der Daten, Richtlinien für gesunde Ernährung, Messung der Nachhaltigkeit von Verbraucherprodukten und Dialog mit Stakeholdern zu gewährleisten.
