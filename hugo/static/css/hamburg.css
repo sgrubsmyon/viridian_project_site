@@ -225,9 +225,16 @@ a:hover, a:focus {
   left: 0;
   color: #fff;
   text-align: center;
-  background-color: #40826d;
-  background-image: linear-gradient(15deg, #e95cba, #1eb4e6);
   padding-top: 100px;
+  background-color: #40826d;
+  /* Webkit shows strange too strong colors, needs other color definition: */
+  background-image: linear-gradient(15deg, #33d0ff, #fd8cd7);
+}
+/* These are the real colors (for Firefox) */
+@-moz-document url-prefix() {
+  .global-header {
+    background-image: linear-gradient(15deg, #41c4ff, #ff61e7);
+  }
 }
 
 .header-text {
@@ -419,3 +426,12 @@ main {
    left: 0;
    right: 0;
 }*/
+
+.flex-grid {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.flex-grid-item {
+  margin: 5px;
+}
