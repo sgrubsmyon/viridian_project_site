@@ -186,7 +186,8 @@ Die Plattform ["Kompass Nachhaltigkeit"](https://www.kompass-nachhaltigkeit.de) 
 
 ### Fazit
 
-Obwohl viele der identifizierten Initiativen einige der Hauptmerkmale von Viridian aufweisen – wie kollektive Intelligenz und Bewertung der Nachhaltigkeit von Produkten und dezentrales Datenbankmanagement – war keine dieser Initiativen bisher in der Lage, diese Merkmale in einem einzigen Produkt zu kombinieren. Viridian kann so eine wichtige Lücke in der Landschaft einer nachhaltigen Wirtschaft schließen, indem es eine unabhängige, interaktive und zuverlässige Plattform für alle bietet, die fundierte Verbraucherentscheidungen basierend auf der Nachhaltigkeitsleistung von Produkten treffen möchten. Viele Daten existierender Plattformen können dabei integriert werden und Viridian ergänzen.
+Obwohl viele der identifizierten Initiativen einige der Hauptmerkmale von Viridian aufweisen – wie kollektive Intelligenz, Bereitstellung detaillierter Produktinformationen, Integration von Nachhaltigkeitsbewertungen und dezentrales Datenbankmanagement – war keine dieser Initiativen bisher in der Lage, diese Merkmale in einem einzigen Produkt zu kombinieren. Viridian möchte die Nachteile anderer Dienste beheben, die sich durch undetaillierte oder unausgewogene Produktinformationen, intransparente Bewertung der Nachhaltigkeit, beschränkte Beteiligung der Verbraucher oder finanzielle Hürden zu den angebotenen Dienstleistungen auszeichnen. Viridian kann so eine wichtige Lücke in der Landschaft einer nachhaltigen Wirtschaft schließen, indem es eine unabhängige, interaktive und zuverlässige Plattform bietet, die sowohl für den Abruf als auch den Beitrag von Informationen genutzt werden kann. Konsumenten können dadurch fundierte Kaufentscheidungen basierend auf objektiven und umfassenden Produktinformationen treffen.
+
 
 
 
@@ -762,7 +763,7 @@ Teil des nächsten Blocks ist, wird auch sein Hashwert verändert und so weiter.
 Dadurch wird die Blockchain relativ stabil: Daten lassen sich nachträglich nicht
 ändern, ohne alle nachfolgenden Blöcke mit zu ändern.
 
-#### Wettrüsten der Rechenpower: Proof-of-Work
+#### Wettrüsten der Rechenleistung: Proof-of-Work
 
 Woher kommt jetzt der hohe Stromverbrauch? Von der Erstellung der Blockchain
 selbst eigentlich nicht: Um neue Blöcke zu erstellen, muss man einen neuen
@@ -797,7 +798,7 @@ Stromverbrauch extrem in die Höhe. Man könnte denken, je höher die Rechenleis
 ist, umso effizienter arbeitet das Netzwerk, weil Blöcke nun schneller abgeschlossen
 werden können. Das ist aber nicht der Fall. Der Schwellwert, unter dem der Hashwert
 liegen muss (die sog. "Difficulty") wird regelmäßig der aktuellen Rechenleistung
-des Netzwerks angepasst. Je mehr Rechenpower vorhanden ist, umso schwerer wird
+des Netzwerks angepasst. Je mehr Rechenleistung vorhanden ist, umso schwerer wird
 das Rätsel, so dass es immer etwa gleich lang dauert (ca. 10 Minuten), bis ein
 Block abgeschlossen ist.
 
@@ -815,7 +816,7 @@ Die naheliegendste Alternative zu Proof-of-Work ist ein einfaches Round-Robin-Ve
 des Block-Abschlusses: Alle Knoten des dezentralen Netzwerks sind nacheinander
 an der Reihe. Das Privileg des Block-Abschlusses wird einfach gleichmäßig auf
 alle verteilt. Bei Permissionless Blockchains wir Bitcoin ist das keine gute
-Option: anstelle von hoher Rechenpower wäre nun die Maxime eine hohe Anzahl
+Option: anstelle von hoher Rechenleistung wäre nun die Maxime eine hohe Anzahl
 teilnehmender Knoten. Wer die meisten Knoten kontrolliert, kontrolliert das Netz.
 Das würde den lediglich dazu führen, dass anstatt viel Strom viel Elektronik
 benötigt wird (jedoch würde es den Ressourcenverbrauch vermutlich schon senken,
