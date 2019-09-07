@@ -13,7 +13,7 @@ Will auto-recompile on every change.
 
 ```
 $ rstudio
-# Remove build directory (e.g. in RStudio -> Files)
+# Remove build directory `public` (e.g. in RStudio -> Files)
 > blogdown::build_site()
 $ rsync -rtlPvi --delete public/ guavapi:www.viridian-project.org/
 $ ssh -t guavapi sudo rsync -rtlPvi --delete --exclude=.well-known --exclude=piwik www.viridian-project.org/ /var/www/html/www.viridian-project.org/
