@@ -318,7 +318,7 @@ herstellt. Lies [den technischen Artikel](technical) für weitere Details.
 Falls du glaubst, dass du helfen kannst, kontaktiere uns über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.de.html")
 ```
 
 </div>
@@ -369,7 +369,7 @@ für weitere Details.
 Falls du glaubst, dass du helfen kannst, kontaktiere uns über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.de.html")
 ```
 
 </div>
@@ -421,7 +421,7 @@ da sie grenzenloses Wachstum anregen in einer Welt mit begrenzten Ressourcen?
 Falls du glaubst, dass du helfen kannst, kontaktiere uns über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.de.html")
 ```
 
 </div>
@@ -476,7 +476,7 @@ das Viridian-Projekt unsere Marktwirtschaft verbessern kann, dann kontaktiere un
 über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.de.html")
 ```
 
 ### Was sind die wahrscheinlichen Sorgen und Bedürfnisse von Unternehmen?
@@ -507,7 +507,7 @@ Idealisten verwenden.
 Falls du glaubst, dass du helfen kannst, kontaktiere uns über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.de.html")
 ```
 
 </div>
@@ -549,7 +549,7 @@ nicht aufgefallen ist?
 Falls du glaubst, dass du helfen kannst, kontaktiere uns über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.de.html")
 ```
 
 </div>
@@ -605,7 +605,7 @@ Falls du ein\*e Expert\*in für LCA/externe Kosten/Nachhaltigkeit bist und glaub
 dass du helfen kannst, kontaktiere uns über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.de.html")
 ```
 
 </div>
@@ -639,7 +639,7 @@ Falls du Erfahrung aus der Auditing-Branche mitbringst und glaubst, dass du
 helfen kannst, kontaktiere uns über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.de.html")
 ```
 
 </div>
@@ -710,7 +710,7 @@ Hast du irgendwelche Gedankengänge, Ideen, Kommentare, Vorschläge, Verbesserun
 Kontaktiere uns über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.de.html")
 ```
 
 </div>
@@ -759,7 +759,7 @@ demokratischer und legitimer werden könnten, oder wenn du Erfahrung mit
 Liquid Democracy oder ähnlichen Tools hast, kontaktiere uns über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.de.html")
 ```
 
 </div>

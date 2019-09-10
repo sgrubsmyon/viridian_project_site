@@ -303,7 +303,7 @@ details.
 If you think you can help, contact us at
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.en.html")
 ```
 
 </div>
@@ -350,7 +350,7 @@ See [the technical paper](technical) for more details.
 If you think you can help, contact us at
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.en.html")
 ```
 
 </div>
@@ -401,7 +401,7 @@ growth in a world with limited resources?
 If you think you can help, contact us at
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.en.html")
 ```
 
 </div>
@@ -452,7 +452,7 @@ Viridian project can improve our market economy even more, feel free to contact
 us at
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.en.html")
 ```
 
 ### What are the likely concerns and needs of businesses?
@@ -481,7 +481,7 @@ use and most products cost more, no-one will use it except some idealists.
 If you think you can help, contact us at
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.en.html")
 ```
 
 </div>
@@ -522,7 +522,7 @@ Law can be very unintuitive and incomprehensible for laymen. Maybe there is
 If you think you can help, contact us at
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.en.html")
 ```
 
 </div>
@@ -577,7 +577,7 @@ If you are an LCA/external costs/sustainability expert and think you can help,
 contact us at
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.en.html")
 ```
 
 </div>
@@ -610,7 +610,7 @@ If you have experience from the auditing business and think you can help,
 please contact us at
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.en.html")
 ```
 
 </div>
@@ -677,7 +677,7 @@ same time?
 Do you have any thoughts, ideas, comments, suggestions, improvements? Contact us at
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.en.html")
 ```
 
 </div>
@@ -723,7 +723,7 @@ more democratic and legitimate, or if you have experience with liquid democracy
 or similar tools, contact us at
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
-htmltools::includeHTML("snippets/alternative_contact.html")
+htmltools::includeHTML("snippets/alternative_contact.en.html")
 ```
 
 </div>
