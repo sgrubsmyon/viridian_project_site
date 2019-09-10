@@ -387,7 +387,8 @@ currently create almost all the money that enters the economy. With a decentrali
 cryptocurrency as dominant payment medium, this would not be the case anymore.
 
 So, how shall banks be treated in the Viridian economy? Will banks' services also
-have associated "colors"? **Will banks be superseded** by innovative new concepts, e.g.
+have associated ["colors"](../paper#two-dimensional-money)?
+**Will banks be superseded** by innovative new concepts, e.g.
 peer-to-peer credit systems with risk scattering by spreading investment money
 on many agents?
 
@@ -457,7 +458,7 @@ htmltools::includeHTML("snippets/alternative_contact.html")
 ### What are the likely concerns and needs of businesses?
 
 The Viridian project would necessarily interfere with the way people are doing
-business. For example, "color" must be considered when determining retail prices.
+business. For example, ["color"](../paper#two-dimensional-money) must be considered when determining retail prices.
 
 From the business perspective, what would the main **concerns and objections** be
 that might disturb the adoption of Viridian? How could these concerns be addressed?
@@ -543,7 +544,7 @@ production and use, to its disposal and recycling.
 
 **Databases and dedicated software products** for LCA already exist and are
 regularly updated by researchers. These would provide a solid base for the
-determination of many products' "colors".
+determination of many products' ["colors"](../paper#two-dimensional-money).
 
 A problem is that existing LCA products like [ecoinvent](http://www.ecoinvent.org/)
 are usually **not freely available and open sourced**. Unless there are APIs allowing
@@ -555,7 +556,8 @@ the data for such purposes as the Viridian project.
 
 The problem of course is that LCA is a very labor-intensive task and the
 researchers doing it must use licensation to ensure that they earn a living.
-In the Viridian economy, LCA researchers would turn into "color" miners that are
+In the Viridian economy, LCA researchers would turn into
+["color miners"](../paper#the-color-database-or-color-blockchain) that are
 paid fair rewards for their services, but only if they open up all their data.
 Therefore, they would be in a much different (and much more important and powerful)
 position than they are now. The question is: **how to organize the transition** from
@@ -596,7 +598,7 @@ standards, etc.) usually involve audits, i.e. **systematic and unscheduled visit
 producers to check if the required standards are met and that there is no abuse
 of the certificate label.
 
-Do these kind of audits need to be a part of the "color" determination? How can
+Do these kind of audits need to be a part of the ["color"](../paper#two-dimensional-money) determination? How can
 they be organized as **efficient and corruption-safe** as possible? Are there any
 **mistakes** that can be avoided? Any thoughts on how to **scale audits up** in a good
 way? Or do you think audits are actually a bad thing and there are
@@ -634,8 +636,9 @@ hypothesis is that while **conventional money stimulates mainly the rational par
 there could also be **a component of money that stimulates the emotional part**.
 With the emotional component putting an emphasis on empathy and
 ethics, the perception and use of money could become much more balanced and
-less one-dimensional and mechanistic than it is now. The "color" dimension of the
-Viridian money could provide this extra mechanism.
+less one-dimensional and mechanistic than it is now. The
+["color"](../paper#two-dimensional-money) dimension of the Viridian money could
+provide this extra mechanism.
 
 Does this hypothesis have a sound foundation in psychology or is there a
 **contradiction with psychological research?**
