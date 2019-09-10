@@ -222,7 +222,7 @@ bzw. belegbaren Quellen begleitet werden.
 Aufgrund ihrer Bedeutung für die Gesellschaft müssen Informationen über die
 externen Kosten einer wirtschaftlichen Tätigkeit öffentlich vorliegen
 und können kein Betriebsgeheimnis sein. Weil Menschen wichtiger sind als Profite,
-kann es keinen solchen "Anlegerschutz" geben.
+kann es keinen solchen "Investorenschutz" geben.
 
 </div>
 
@@ -291,31 +291,31 @@ htmltools::includeHTML("snippets/tiles_de.html")
 </div>
 <div class="panel-body tile-panel-body">
 
-### Which solution to choose?
+### Welche Lösung soll man wählen?
 
-Bitcoin, Litecoin, Ethereum, IOTA, blockchain, DAG, smart contracts, DAOs,
-proof-of-work, proof-of-stake, proof-of-cooperation, proof-of-interest, ... ---
-the world of distributed ledgers and cryptocurrencies is full of innovative ideas,
-with new ones springing up monthly.
+Bitcoin, Litecoin, Ethereum, IOTA, Blockchain, DAG, Smart Contracts, DAOs,
+Proof-of-Work, Proof-of-Stake, ... ---
+Die Welt der Kryptowährungen steckt voller innovativer Ideen und monatlich kommen
+neue hinzu.
 
-**If you are enthusiastic about all things crypto, then you might be able to help us decide, which solution is best suitable for the Viridian project.**
+**Wenn du dich für Krypto begeisterst, kannst du uns vielleicht bei der Entscheidung helfen, welche Lösung für das Viridian-Projekt am besten geeignet ist.**
 
-We want transaction validation to have an as small resource footprint as
-possible. The incentive system must be designed such that there is no motivation
-for running a lot of computing power, however there must be motivation to
-contribute to the network in the long term. Of course, the system shall be as
-decentralized and trustless as possible to keep it secure and scalable.
+Wir möchten, dass die Transaktionsvalidierung so wenig Ressourcen verbraucht wie
+möglich. Das Anreizsystem muss so gestaltet sein, dass es keine Motivation gibt,
+viel Rechenleistung zu betreiben, jedoch muss es eine Motivation geben,
+langfristig zum Netzwerk beizutragen. Natürlich soll das System so
+dezentral und vertrauenslos wie möglich sein, um es sicher und skalierbar zu halten.
 
-**Please note:** In the meantime we settled to use Hyperledger Fabric, a
-permissioned blockchain, as a manipulation-resistant decentralized database
-backend. It does not provide as much decentralization and trustlessness as
-proof-of-work blockchains like Ethereum, but we believe it to be a good compromise
-between resilience and efficiency. See [the technical paper](technical) for more
-details.
+**Hinweis:** In der Zwischenzeit haben wir uns entschieden, Hyperledger Fabric,
+eine zungangsbeschränkte ("permissioned") Blockchain, als manipulationsresistente
+dezentrale Datenbank zu verwenden. Die Dezentralisierung und Vertrauenslosigkeit
+sind weniger stark ausgeprägt als bei Proof-of-Work-Blockchains wie Ethereum.
+Wir glauben jedoch, dass es einen guten Kompromiss zwischen Resilienz und Effizienz
+herstellt. Lies [den technischen Artikel](technical) für weitere Details.
 
-### Contact us
+### Kontaktiere uns
 
-If you think you can help, contact us at
+Falls du glaubst, dass du helfen kannst, kontaktiere uns über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
 htmltools::includeHTML("snippets/alternative_contact.html")
@@ -328,42 +328,45 @@ htmltools::includeHTML("snippets/alternative_contact.html")
 <div id="software-development" class="anchor">
 <div class="panel panel-default">
 <div class="panel-heading tile-panel-heading">
-<h3 class="panel-title">Software development</h3>
+<h3 class="panel-title">Software-Entwicklung</h3>
 </div>
 <div class="panel-body tile-panel-body">
 
-### Good design is the key
+### Gutes Design ist der Schlüssel
 
-The Viridian project's concept relies heavily on the use of computer technology
-and software. All this software still has to be built, both on the backend side
-and on the frontend/UI/UX side.
+Das Konzept des Viridian-Projekts ist stark vom Einsatz von Computertechnologie
+und Software abhängig. All diese Software muss noch erstellt werden, sowohl auf
+der Backend-Seite als auch auf der Frontend/UI/UX-Seite.
 
-**A clear vision and good design choices are crucial for an infrastructure that is secure and maintainable and that scales well.**
+**Eine klare Vision und gute Designentscheidungen sind entscheidend für eine Infrastruktur, die sicher, wartbar und gut skalierbar ist.**
 
-One should build upon existing work wherever possible. Especially when it comes
-to cryptography, there is a good rule of thumb that one should not "come up
-with a home-brew solution". Therefore, a first step would be, together with
-creating the vision, to carefully evaluate which components could be based on
-what, and how these components must be able to interact with each other, keeping
-in mind maintainability, security and scalability.
+Man sollte, wo immer möglich, auf vorhandene Arbeit aufbauen. Besonders wenn es um
+Kryptographie geht, gilt die Faustregel, dass man nicht "sein eigenes Süppchen
+kochen sollte". Ein erster Schritt wäre daher, neben der Erstellung der Vision,
+sorgfältig zu untersuchen, welche Komponenten auf was aufbauen können und wie
+diese Komponenten miteinander interagieren müssen, unter Berücksichtigung von
+Wartbarkeit, Sicherheit und Skalierbarkeit.
 
-Once these general points are sorted out and the roadmap is clear, one can set
-up the requirements for the various components and can start implementing them
-(perhaps just making adjustments or additions to already existing code).
+Sobald diese allgemeinen Dinge geregelt sind und klar ist, wo es hingeht, kann man
+die Anforderungen für die verschiedenen Komponenten festlegen und kann mit deren
+Umsetzung beginnen.
 
-A slick UI/UX will also be a crucial part of attracting users.
+Eine ansprechende und intuitive Benutzeroberfläche wird auch ein entscheidender
+Faktor bei der Gewinnung von Nutzern sein.
 
-**Please note:** In the meantime we settled to use Hyperledger Fabric, an
-open source blockchain framework maintained by the Linux Foundation. The JSON-based
-distibuted database CouchDB will be used as the backend of Fabric to store the data.
-Therefore, on the backend and API side, we are mostly set and will use the infrastructure
-and crpytography provided by Hyperledger Fabric. On the frontend side, we currently
-plan to develop a Progressive Web App (PWA), but might also look into Flutter or Cordova.
-See [the technical paper](technical) for more details.
+**Hinweis:** In der Zwischenzeit haben wir uns entschieden, Hyperledger Fabric,
+ein von der Linux Foundation verwaltetes Open-Source-Blockchain-Framework, zu verwenden.
+Die JSON-basierte verteilte Datenbank CouchDB wird als Backend von Fabric benutzt
+werden, um die Daten zu speichern. Backend-seitig haben wir uns also
+weitgehend festgelegt und werden die von Hyperledger Fabric bereitgestellte
+Infrastruktur und Kryptographie verwenden. Für das Frontend rechnen wir im Moment
+damit, eine "Progressive Web App (PWA)" zu entwickeln, aber werden uns evtl. auch
+Flutter oder Cordova genauer ansehen. Lies [den technischen Artikel](technical)
+für weitere Details.
 
-### Contact us
+### Kontaktiere uns
 
-If you think you can help, contact us at
+Falls du glaubst, dass du helfen kannst, kontaktiere uns über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
 htmltools::includeHTML("snippets/alternative_contact.html")
@@ -376,44 +379,46 @@ htmltools::includeHTML("snippets/alternative_contact.html")
 <div id="monetary" class="anchor">
 <div class="panel panel-default">
 <div class="panel-heading tile-panel-heading">
-<h3 class="panel-title">Currencies and monetary policy</h3>
+<h3 class="panel-title">Geld und Geldpolitik</h3>
 </div>
 <div class="panel-body tile-panel-body">
 
-### What are the rules of a good currency?
+### Was sind die Regeln einer guten Währung?
 
-In traditional fiat currencies, a central bank is in charge of controlling the
-currency, e.g. by regulating the amount of money in circulation, or in fact by
-setting the key interest rate.
+In traditionellen (Fiat-)Währungen ist eine Zentralbank für die Kontrolle der
+Währung zuständig, z. B. durch die Regulierung des Geldumlaufs oder tatsächlich
+durch die Festsetzung des Leitzinses.
 
-In a decentralized cryptocurrency, there is no central bank, which is a good thing
-because it prevents corruption and dependency on centralized entities.
-Instead, the network's mathematical algorithms take over the role of a central bank.
+In einer dezentralisierten Kryptowährung gibt es keine Zentralbank, was gut ist,
+weil es Korruption und Abhängigkeit von zentralisierten Systemen verhindert.
+Stattdessen übernehmen die mathematischen Algorithmen des Netzwerks die Rolle
+einer Zentralbank.
 
-An important question is: **How to design these algorithmic rules?** For instance,
-what is the **optimal supply of fresh money**? Shall there be a fixed amount of money?
-Or shall the amount of money increase (causing inflation) or decrease? Shall
-there be a demurrage imposed on the currency, constantly devaluating it over
-time?
+Eine wichtige Frage ist: **Wie sollten diese algorithmischen Regeln beschaffen sein?**
+Zum Beispiel: Was ist die **optimale Versorgung mit frischem Geld**? Soll es einen
+festen Geldbetrag geben? Oder soll die Geldmenge steigen (was eine Inflation verursacht)
+oder sinken? Soll der Währung eine Entwertung (ebgl. "Demurrage") auferlegt werden,
+wodurch sie bei Nichtverwendung im Laufe der Zeit immer weniger Wert ist?
 
-### What role will the financial system play?
+### Welche Rolle wird das Finanzsystem spielen?
 
-In the Viridian economy, will banks still be important players? Private banks
-currently create almost all the money that enters the economy. With a decentralized
-cryptocurrency as dominant payment medium, this would not be the case anymore.
+Werden Banken in der Viridian-Wirtschaft weiterhin wichtige Akteure sein?
+Private Banken erzeugen derzeit die Mehrheit des Geldes, das in die Wirtschaft gelangt.
+Mit einer dezentralen Kryptowährung als dominierendes Zahlungsmittel wäre dies
+nicht mehr der Fall.
 
-So, how shall banks be treated in the Viridian economy? Will banks' services also
-have associated colors? **Will banks be superseded** by innovative new concepts, e.g.
-peer-to-peer credit systems with risk scattering by spreading investment money
-on many agents?
+Wie sollen Banken also in der Viridian-Wirtschaft behandelt werden? Werden auch
+den Dienstleistungen der Banken "Farben" zugeordnet werden?
+**Werden Banken durch neue innovative Konzepte ersetzt**, z. B. Peer-to-Peer-Kredit-Systeme
+mit Risikostreuung durch die Verteilung von Investitionsgeldern auf viele Teilnehmer?
 
-What to do with interest rates on investments? **Shall there still be interest rates?**
-Or are interest rates not acceptable anymore since they are drivers of limitless
-growth in a world with limited resources?
+Was sollte mit den Zinserträgen auf Investitionen geschehen?
+**Soll es noch Zinserträge geben?** Oder sind Zinsen nicht mehr akzeptabel,
+da sie grenzenloses Wachstum anregen in einer Welt mit begrenzten Ressourcen?
 
-### Contact us
+### Kontaktiere uns
 
-If you think you can help, contact us at
+Falls du glaubst, dass du helfen kannst, kontaktiere uns über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
 htmltools::includeHTML("snippets/alternative_contact.html")
@@ -426,74 +431,80 @@ htmltools::includeHTML("snippets/alternative_contact.html")
 <div id="economics" class="anchor">
 <div class="panel panel-default">
 <div class="panel-heading tile-panel-heading">
-<h3 class="panel-title">Economics</h3>
+<h3 class="panel-title">Wirtschaft</h3>
 </div>
 <div class="panel-body tile-panel-body">
 
-### Would the Viridian economy be closer to an "ideal" free market?
+### Käme die Viridian-Wirtschaft einem "idealen" freien Markt näher?
 
-The concept of *free market economy* goes back to the influential economists
-Adam Smith and David Ricardo. Smith introduced the idea that a free market
-results in fair conditions for all participants. Ricardo formalized and abstracted
-Smith's ideas and had to simplify it a lot. This resulted in a well working
-theory, but many people also started to neglect the limitations of the model
-and the fact that it does not necessarily represent reality.
+Das Konzept der "freien Marktwirtschaft" geht auf die einflussreichen Ökonomen
+Adam Smith und David Ricardo zurück. Smith führte die Idee eines freien Marktes ein,
+der zu fairen Bedingungen für alle Teilnehmer führt. Ricardo formalisierte und abstrahierte
+Smiths Ideen und musste sie stark vereinfachen. Dies führte zu einer gut funktionierenden
+Theorie, aber viele Leute begannen auch, die Einschränkungen des Modells zu vernachlässigen
+und die Tatsache, dass es nicht unbedingt die Realität darstellt.
 
-Adam Smith was very aware of the limitations of his concept and warned about them.
-For instance, a market with few corporations is a bad idea because the corporations
-can choose to require higher prices than they need to. It becomes even worse when
-big business and government make each other gifts, abusing their power, leading
-to high profits for few capitalist leaders and corrupt politics. This is why
-Smith was a fierce opponent of corporations and preferred an economy with many
-small competitors (like most of economy still was at Smith's time, which changed
-over the course of the 19th century).
+Adam Smith war sich der Grenzen seines Konzepts sehr bewusst und warnte davor.
+Zum Beispiel ist ein Markt mit wenigen Unternehmen eine schlechte Idee, da die
+Unternehmen dann höhere Preise als nötig verlangen können. Es wird noch schlimmer, wenn
+Großkonzerne und Regierungen sich gegenseitig Geschenke machen und ihre Macht
+missbrauchen und führen, was zu hohen Profiten für eine kleine kapitalistische Elite
+und die korrupte Politik führt. Deshalb war Smith ein erbitterter Gegner von Konzernen
+und zog eine Wirtschaft mit vielen kleinen Konkurrenten vor (wie der größte Teil
+der Wirtschaft noch zu Smiths Zeit war, was sich aber im Laufe des 19. Jahrhunderts
+änderte).
 
-The Viridian economy, with its decentralized power and easily adjustable rules,
-**might help to prevent such situations and create a market that is closer to Smith's ideal**.
+Die Viridian-Wirtschaft mit ihrer dezentralisierten Macht und ihren leicht
+einstellbaren Regeln
+**könnte dazu beitragen, solche Situationen zu vermeiden und einen Markt zu schaffen, der dem Ideal von Smith näher kommt**.
 
-Another flaw of our present-day capitalist economy is the exclusion of external
-costs. Many economists argue that this leads to a distortion of the free market.
-**In Smith's ideal free market, all prices reflect the actual cost that a product's production imposes on society.**
-For example, if a worker needs to spend more time on one product than on another,
-then it must cost more to reflect this. If the production leads to external costs
-that society (ultimately everyone, including the buyer and the seller) must pay for,
-then the product should also cost more, to pay for these costs and also to regulate
-the demand for the product.
+Ein weiterer Fehler unserer heutigen kapitalistischen Wirtschaft ist der Ausschluss
+von externen Kosten. Viele Ökonomen argumentieren, dass dies zu einer Verzerrung
+des freien Marktes führt.
+**Im idealen freien Markt von Smith spiegeln alle Preise die tatsächlichen Kosten wider, die die Herstellung eines Produkts für die Gesellschaft verursacht.**
+Wenn zum Beispiel ein Arbeiter mehr Zeit für ein Produkt aufwenden muss als für ein anderes,
+dann muss es mehr kosten, um dies zu reflektieren. Wenn die Produktion externe Kosten verursacht,
+die die Gesellschaft (also letztlich jeder, einschließlich Käufer und Verkäufer) bezahlen muss,
+dann sollte das Produkt auch mehr kosten, um diese Kosten zu begleichen und
+die Nachfrage nach dem Produkt zu regulieren.
 
-Again, the Viridian project might help to remove this flaw from the economy.
+Das Viridian-Projekt könnte wiederum dazu beitragen, diesen Mangel aus der
+Wirtschaft zu beseitigen.
 
-What do you think about it? If you have any opposing views or ideas how the
-Viridian project can improve our market economy even more, feel free to contact
-us at
+Was denkst du darüber? Wenn du entgegengesetzte Ansichten oder Ideen hast, wie
+das Viridian-Projekt unsere Marktwirtschaft verbessern kann, dann kontaktiere uns
+über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
 htmltools::includeHTML("snippets/alternative_contact.html")
 ```
 
-### What are the likely conerns and needs of businesses?
+### Was sind die wahrscheinlichen Sorgen und Bedürfnisse von Unternehmen?
 
-The Viridian project would necessarily interfere with the way people are doing
-business. For example, color must be considered when determining retail prices.
+Das Viridian-Projekt würde notwendigerweise die Art und Weise beeinträchtigen,
+in der Menschen wirtschaften und handeln. Bei der Bestimmung der Einzelhandelspreise
+muss beispielsweise die "Farbe" des Produkts berücksichtigt werden.
 
-From the business perspective, what would the main **concerns and objections** be
-that might disturb the adoption of Viridian? How could these concerns be addressed?
-What are the **possibilities to make a transition easier for businesses**? Can we
-provide services that would simplify a business's life?
+Was wären aus betriebswirtschaftlicher Sicht die wichtigsten **Bedenken und Einwände**,
+welche die Akzeptanz von Viridian stören könnten? Wie kann diesen Bedenken begegnet werden?
+Was sind die **Möglichkeiten, um den Übergang für Unternehmen zu erleichtern**?
+Können wir Dienstleistungen anbieten, die es Unternehmen einfacher machen würden?
 
-### How to attract businesses?
+### Wie kann man Unternehmen gewinnen?
 
-How can we create business models that would
-**make the adoption of Viridian lucrative for businesses**,
-e.g. through improved image or intensified customer relations?
+Wie können wir Geschäftsmodelle entwickeln, durch die
+**die Akzeptanz von Viridian für Unternehmen lukrativ wird**,
+z.B. durch verbessertes Image oder intensivierte Kundenbeziehungen?
 
-### How to attract consumers?
+### Wie kann man Verbraucher ansprechen?
 
-There should be **benefits for consumers** as well. If the system's cumbersome to
-use and most products cost more, no-one will use it except some idealists.
+Es sollte auch **Vorteile für die Verbraucher** geben. Wenn das System umständlich
+im Gebrauch ist und die meisten Produkte mehr kosten, wird es niemand außer ein paar
+Idealisten verwenden.
 
-### Contact us
+### Kontaktiere uns
 
-If you think you can help, contact us at
+Falls du glaubst, dass du helfen kannst, kontaktiere uns über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
 htmltools::includeHTML("snippets/alternative_contact.html")
@@ -506,35 +517,36 @@ htmltools::includeHTML("snippets/alternative_contact.html")
 <div id="law" class="anchor">
 <div class="panel panel-default">
 <div class="panel-heading tile-panel-heading">
-<h3 class="panel-title">Law</h3>
+<h3 class="panel-title">Recht</h3>
 </div>
 <div class="panel-body tile-panel-body">
 
-### What are the legal implications of creating an alternative currency?
+### Welche rechtlichen Auswirkungen hat die Schaffung einer alternativen Währung?
 
-What are the legal risks? Are there any subtle differences in the handling of
-the alternative currency that would influence if it's deemed legal or illegal?
+Was sind die rechtlichen Risiken? Gibt es subtile Unterschiede im Umgang mit
+der alternativen Währung, die beeinflussen, ob sie als legal oder illegal gilt?
 
-### Transparency vs. secrecy
+### Transparenz vs. Geheimhaltung
 
-Are there any **laws protecting company secrets** that would conflict with an open
-and transparent economy like in the Viridian project?
+Gibt es **Gesetze zum Schutz von Unternehmensgeheimnissen**, die einer offenen und
+transparenten Wirtschaft wie im Viridian-Projekt im Weg stehen würden?
 
-Of course, one cannot force companies to reveal information unless one changes
-the law, in which case the conflict would be removed. But in an ideal world,
-one would manage to encourage companies to reveal information voluntarily until
-everyone is doing it and it becomes normal practice.
+Natürlich kann man Unternehmen nicht dazu zwingen, Informationen preiszugeben,
+es sei denn, man ändert Gesetze, wodurch der Konflikt beseitigt würde. Aber in
+einer idealen Welt könnte man Unternehmen dazu ermutigen, Informationen freiwillig
+offen zu legen, bis es jeder macht es und es zur normalen Praxis wird.
 
-But still, are there any legal obstacles to the whole process?
+Gibt es dennoch rechtliche Hindernisse für den gesamten Prozess?
 
-### Any other law problems we didn't think about?
+### Irgendwelche anderen rechtlichen Probleme, an die wir nicht gedacht haben?
 
-Law can be very unintuitive and incomprehensible for laymen. Maybe there is
-**an obvious legal obstacle** that did not occur to us yet?
+Gesetze und Rechtsprechung können für Laien sehr unintuitiv und unverständlich sein.
+Vielleicht gibt es **ein offensichtliches rechtliches Hindernis**, das uns noch
+nicht aufgefallen ist?
 
-### Contact us
+### Kontaktiere uns
 
-If you think you can help, contact us at
+Falls du glaubst, dass du helfen kannst, kontaktiere uns über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
 htmltools::includeHTML("snippets/alternative_contact.html")
@@ -547,48 +559,49 @@ htmltools::includeHTML("snippets/alternative_contact.html")
 <div id="lca" class="anchor">
 <div class="panel panel-default">
 <div class="panel-heading tile-panel-heading">
-<h3 class="panel-title">Life-cycle analysis, external costs, sustainability</h3>
+<h3 class="panel-title">Lebenszyklusanalyse, Externe Kosten, Nachhaltigkeit</h3>
 </div>
 <div class="panel-body tile-panel-body">
 
-### How can the Viridian project benefit from existing LCA work?
 
-Life-cycle analysis (LCA) is the **assessment of environmental impacts** associated
-with the entire lifetime of a product, from the extraction of raw materials, via
-production and use, to its disposal and recycling.
+### Wie kann das Viridian-Projekt von bestehender Arbeit an LCA profitieren?
 
-**Databases and dedicated software products** for LCA already exist and are
-regularly updated by researchers. These would provide a solid base for the
-determination of many products' colors.
+Die Lebenszyklusanalyse (LCA) **untersucht die Umweltauswirkungen**
+während der gesamten Lebensdauer eines Produkts, von der Rohstoffgewinnung über
+die Herstellung und Verwendung bis hin zur Entsorgung und Verwertung.
 
-A problem is that existing LCA products like [ecoinvent](http://www.ecoinvent.org/)
-are usually **not freely available and open sourced**. Unless there are APIs allowing
-to interact with them, it will be rather complicated to use those third party
-software products. A very welcome open source software project is [openLCA](http://www.openlca.org/),
-which solves some of these problems.
-However, another problem is **licensation**, which might even prohibit the use of
-the data for such purposes as the Viridian project.
+**Datenbanken und spezielle Softwareprodukte** für LCA existieren bereits und werden
+regelmäßig von Forschern aktualisiert. Diese könnten eine solide Basis für die
+Bestimmung der "Farben" vieler Produkte bilden.
 
-The problem of course is that LCA is a very labor-intensive task and the
-researchers doing it must use licensation to ensure that they earn a living.
-In the Viridian economy, LCA researchers would turn into color miners that are
-paid fair rewards for their services, but only if they open up all their data.
-Therefore, they would be in a much different (and much more important and powerful)
-position than they are now. The question is: **how to organize the transition** from
-here to there?
+Ein Problem ist, dass bestehende LCA-Produkte wie [ecoinvent](http://www.ecoinvent.org/)
+in der Regel **nicht frei verfügbar und offen** sind. Wenn es keine APIs gibt, die es ermöglichen,
+mit ihnen zu interagieren, wird es ziemlich kompliziert sein, diese Softwareprodukte
+von Drittanbietern zu verwenden. Ein sehr willkommenes Open-Source-Softwareprojekt ist
+[openLCA](http://www.openlca.org/), das einige dieser Probleme löst. Ein weiteres Problem
+stellt jedoch die **Lizenzierung** dar, die sogar die Verwendung der Daten für
+solche Zwecke wie das Viridian-Projekt unmöglich machen könnte.
 
-### Are there better ways to assess external costs?
+Das Problem ist natürlich, dass LCA eine sehr arbeitsintensive Aufgabe ist und die
+Forscher, die daran arbeiten, müssen dafür über die Lizenzgebühren entlohnt werden.
+In der vollendeten Viridian-Wirtschaft würden sich LCA-Forscher in "Farb-Miner"
+verwandeln und eine angemessene Belohnung für ihre Dienste bezahlt bekommen, aber
+nur, wenn sie alle ihre Daten offenlegen. Daher hätten sie eine ganz andere Stellung
+als jetzt (sie wären viel wichtiger und mächtiger). Die Frage ist:
+**Wie organisiert man den Übergang dorthin?**
 
-Apart from LCA, can you think of alternative ways to determine external costs
-that are easier to use?
+### Gibt es bessere Möglichkeiten, externe Kosten zu ermitteln?
 
-Are there any other tools in the sustainability and external costs scene that
-would be really useful for the Viridian project?
+Kannst du dir neben LCA auch alternative Wege zur Ermittlung externer Kosten
+vorstellen, die einfacher zu handhaben sind?
 
-### Contact us
+Gibt es noch andere Instrumente in der Nachhaltigkeits- und Externe-Kosten-Szene,
+die wirklich nützlich für das Viridian-Projekt wären?
 
-If you are an LCA/external costs/sustainability expert and think you can help,
-contact us at
+### Kontaktiere uns
+
+Falls du ein\*e Expert\*in für LCA/externe Kosten/Nachhaltigkeit bist und glaubst,
+dass du helfen kannst, kontaktiere uns über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
 htmltools::includeHTML("snippets/alternative_contact.html")
@@ -601,27 +614,28 @@ htmltools::includeHTML("snippets/alternative_contact.html")
 <div id="auditing" class="anchor">
 <div class="panel panel-default">
 <div class="panel-heading tile-panel-heading">
-<h3 class="panel-title">Auditing, e.g. organic or fair trade</h3>
+<h3 class="panel-title">Audits, z.B. Bio oder Fairer Handel</h3>
 </div>
 <div class="panel-body tile-panel-body">
 
-### Any learned lessons from auditing practice?
+### Gibt es irgendwelche Lehren aus der Auditing-Praxis?
 
-Already existing sustainability certifications of products (fair trade, organic
-standards, etc.) usually involve audits, i.e. **systematic and unscheduled visits** to
-producers to check if the required standards are met and that there is no abuse
-of the certificate label.
+Bereits bestehende Nachhaltigkeitszertifizierungen von Produkten (Fairer Handel,
+Bio-Standards usw.) beinhalten normalerweise Audits, d.h. **systematische und unangekündigte Besuche**
+bei Herstellern, um zu prüfen, ob die geforderten Standards eingehalten werden und
+kein Missbrauch vorliegt.
 
-Do these kind of audits need to be a part of the color determination? How can
-they be organized as **efficient and corruption-safe** as possible? Are there any
-**mistakes** that can be avoided? Any thoughts on how to **scale audits up** in a good
-way? Or do you think audits are actually a bad thing and there are
-**better alternatives**, e.g. using social networks and personal contacts to people?
+Müssen solche Audits Teil der "Farb"-Festlegung sein? Wie können sie so
+**effizient und korruptionssicher** wie möglich organisiert werden? Gibt es
+irgendwelche **Fehler**, die vermieden werden können? Irgendwelche Ideen, wie man
+Audits auf eine gute Art **hochskalieren** kann? Oder sind Audits eigentlich eine
+schlechte Sache und gibt es **bessere Alternativen**, etwa die Nutzung sozialer
+Netzwerke und persönlicher Kontakte zu Menschen?
 
-### Contact us
+### Kontaktiere uns
 
-If you have experience from the auditing business and think you can help,
-please contact us at
+Falls du Erfahrung aus der Auditing-Branche mitbringst und glaubst, dass du
+helfen kannst, kontaktiere uns über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
 htmltools::includeHTML("snippets/alternative_contact.html")
@@ -634,60 +648,64 @@ htmltools::includeHTML("snippets/alternative_contact.html")
 <div id="sociology" class="anchor">
 <div class="panel panel-default">
 <div class="panel-heading tile-panel-heading">
-<h3 class="panel-title">Psychology and Sociology</h3>
+<h3 class="panel-title">Psychologie und Soziologie</h3>
 </div>
 <div class="panel-body tile-panel-body">
 
-### The rational brain and the emotional brain?
+### Das rationale Gehirn und das emotionale Gehirn?
 
-Economic decisions seem to be driven mostly by rational thinking and self-interest
-in the lines of **"cheaper is better" and "more is better"**. Negative
-effects on others or the environment are usually not considered when people buy
-things, or (to a lesser degree) even when they look for an employer.
+Wirtschaftliche Entscheidungen scheinen hauptsächlich durch rationales Denken
+und Eigennutz bestimmt zu sein, nach dem Muster **"billiger ist besser" und "mehr ist besser"**.
+Negative Auswirkungen auf andere Personen oder die Umwelt werden normalerweise
+nicht berücksichtigt, z.B. beim Kauf von Produkten oder sogar (wenn auch zu einem
+geringeren Grad) bei der Suche nach einem Arbeitgeber.
 
-But people are not just rational, but also social and emotional beings. The
-hypothesis is that while **conventional money stimulates mainly the rational part of the brain**,
-there could also be **a component of money that stimulates the emotional part**.
-With the emotional component putting an emphasis on empathy and
-ethics, the perception and use of money could become much more balanced and
-less one-dimensional and mechanistic than it is now. The color dimension of the
-Viridian money could provide this extra mechanism.
+Aber Menschen sind nicht nur rationale, sondern auch soziale und emotionale Wesen.
+Die Hypothese: während **konventionelles Geld hauptsächlich den rationalen Teil des Gehirns stimuliert**,
+könnte es auch **eine Komponente des Geldes geben, die den emotionalen Teil anregt**.
+Mit der emotionalen Komponente, die auf Empathie und Ethik Wert legt, könnten
+die Wahrnehmung und Verwendung von Geld ausgewogener werden,
+weniger eindimensional und mechanistisch als heute. Die "Farbdimension" der
+Viridianwährung könnte diese zusätzliche Komponente darstellen.
 
-Does this hypothesis have a sound foundation in psychology or is there a stark
-**contradiction with psychological research?**
+Hat diese Hypothese eine solide Grundlage in der Psychologie oder gibt es einen
+**Widerspruch zur psychologischen Forschung?**
 
-### How to use psychology to make Viridian attractive?
+### Wie kann man Viridian durch Psychologie attraktiver machen?
 
-Capitalist advertising makes use of all kinds of psychological tricks to entice
-people and encourage them to change their behavior (mostly to buy stuff they
-don't really need).
+Die kapitalistische Werbung nutzt alle Arten von psychologischen Tricks, um
+Menschen zu locken und zu ermutigen, bestimmte Dinge zu tun (meistens Sachen zu
+kaufen, die sie nicht wirklich brauchen).
 
-What kind of **psychological tricks** could be used **to convince people to use the ethical Vidirian money?**
-Could peer-pressure be used in a positive way to attract new users? Maybe in the
-lines of "Three of your friends already use Viridian, when do you come and join us?"
+Welche **psychologischen Tricks** könnten verwendet werden, um Menschen
+davon **zu überzeugen, das ethische Viridian-Geld zu verwenden?**
+Könnte "Gruppenzwang" auf eine positive Art genutzt werden, um neue Nutzer zu
+gewinnen? Vielleicht nach dem Muster "Drei deiner Freunde verwenden bereits Viridian,
+wann bist auch du dabei?"
 
-### What about socio-economic aspects?
+### Was ist mit sozioökonomischen Aspekten?
 
-The socio-economic situation of the people is important because it ultimately
-decides about what people perceive as "good and fair" and what they accept and
-support. If there is a perceived thread to peoples' lifestyle, there will be
-opposition.
+Die sozioökonomische Situation der Menschen ist wichtig, weil sie letztendlich darüber
+entscheidet, was als "gut" und "fair" empfunden wird und was die Menschen akzeptieren und
+unterstützen. Wenn der Eindruck entsteht, dass der Lebensstil der Menschen in Gefahr ist,
+wird es Widerstand geben.
 
-Environmental action and climate action is often put on the shoulders of the
-weakest. For example, when stricter regulations lead to higher prices, it is
-the poor that suffer most from it, while the rich might not even feel a difference.
-Therefore, it is **very important to implement sustainable development in a way that improves the socio-economic status**
-of the vast majority of people and **especially the poorest**. The rich are the
-biggest polluters, so they are also the ones that should pay for the transition
-towards a safe world.
+Umwelt- und Klimaschutzmaßnahmen werden häufig auf Kosten der Schwächsten durchgeführt.
+Wenn beispielsweise strengere Vorschriften zu höheren Preisen führen, sind es die Armen,
+die am meisten darunter leiden, während die Reichen vielleicht nicht einmal einen
+Unterschied spüren. Daher ist es
+**sehr wichtig, nachhaltige Entwicklung so umzusetzen, dass der sozioökonomische Status der Mehrheit der Menschen sich verbessert, vor allem der Ärmsten.**
+Die Reichen sind die die größten Umweltverschmutzer, also
+sollten sie auch für den Übergang in Richtung einer sicheren Welt zahlen.
 
-How can we design Viridian so that the improvement of the socio-economic status
-of most people is guaranteed, while the economy gets more sustainable at the
-same time?
+Wie können wir Viridian so gestalten, dass sich der sozioökonomische Status vom
+Großteil der Menschen verbessert, während die Wirtschaft gleichzeitig
+nachhaltiger wird?
 
-### Contact us
+### Kontaktiere uns
 
-Do you have any thoughts, ideas, comments, suggestions, improvements? Contact us at
+Hast du irgendwelche Gedankengänge, Ideen, Kommentare, Vorschläge, Verbesserungen?
+Kontaktiere uns über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
 htmltools::includeHTML("snippets/alternative_contact.html")
@@ -700,40 +718,43 @@ htmltools::includeHTML("snippets/alternative_contact.html")
 <div id="politics" class="anchor">
 <div class="panel panel-default">
 <div class="panel-heading tile-panel-heading">
-<h3 class="panel-title">Politics: Democracy and Voting</h3>
+<h3 class="panel-title">Politik: Demokratie und Wahlen</h3>
 </div>
 <div class="panel-body tile-panel-body">
 
-### How to organize ourselves?
+### Wie organisieren wir uns?
 
-Politics is all about power and who gets to decide what. Conventional political
-systems use **centralized structures for political decision making**. Computer
-technology may enable us to use better alternatives.
+In der Politik dreht sich alles um Macht und die Frage, wer was entscheidet.
+Konventionelle politische Systeme nutzen **zentralisierte Strukturen für die politische Entscheidungsfindung**.
+Computer-Technologie kann es uns ermöglichen, bessere Alternativen zu verwenden.
 
-In the Viridian project, we want **more decentralized and bottom-up** decision
-making to minimize corruption and increase societal acceptance. But because
-direct democracy can be very inefficient or prone to demagogical manipulation,
-a **middle way between direct and representative democracy** might prove very useful.
-*Delegative democracy*, also called *liquid democracy*, is a process, in
-which political decisions are not delegated completely to just one representative,
-but each voter can decide by topic whom to delegate questions to. Or, if the voter
-feels competent in the subject matter, she can choose to answer the question herself.
+Im Viridian-Projekt wollen wir eine Entscheidungsfindung, die **dezentralisierter**
+ist und **mehr von unten kommt** ("Bottom-Up"), um Korruption zu minimieren und die
+gesellschaftliche Akzeptanz zu erhöhen. Aber weil direkte Demokratie sehr ineffizient
+sein kann oder demagogischen Manipulationen unterliegen kann, könnte sich ein
+**Mittelweg zwischen direkter und repräsentativer Demokratie** als sehr nützlich erweisen.
+*Delegative Demokratie*, auch *Liquid Democracy* genannt, ist ein Prozess, bei
+dem politische Entscheidungen nicht vollständig an nur eine\* Vertreter\*in delegiert werden.
+Jede\* Wähler\*in kann je nach Thema entscheiden, an wen eine Frage delegiert wird.
+Oder, wenn die/der Wähler\*in sich in der Materie kompetent fühlt, kann sie/er die Frage auch
+selbst beantworten.
 
-Direct democracy has the general problem that it does not scale well. It works
-well in small groups, so that cooperatives, for instance, can be operated very
-efficiently. But a whole society, operated like a cooperative, is difficult to
-achieve. Liquid democracy might combine the best of both worlds: The direct
-involvement of direct democracy and the stability and efficiency of representative
-democracy. Liquid democracy involves a lot of communication between people,
-making use of social networks. That means, it can profit heavily from the use of
-information technology, without which it might be too cumbersome and slow and
-therefore inefficient.
+Direkte Demokratie hat das allgemeine Problem, dass sie nicht gut skaliert.
+In kleinen Gruppen funktioniert sie gut, so dass z.B. Genossenschaften sehr
+effizient betrieben werden können. Aber eine ganze Gesellschaft, die wie eine
+Genossenschaft betrieben wird, ist schwer umzusetzen. Liquid Democracy könnte
+die Vorteile von beidem vereinen: Die direkte Einbeziehung der direkten Demokratie
+und die Stabilität und Effizienz der repräsentativen Demokratie. Liquid Democracy
+erfordert viel zwischenmenschliche Kommunikation innerhalb von sozialen Netzwerken.
+Das heißt, sie kann stark von der Verwendung von Informationstechnologie profitieren,
+ohne die die viele Kommunikation zu umständlich und langsam und daher ineffizient
+sein könnte.
 
-### Contact us
+### Kontaktiere uns
 
-If you have any other ideas on how decisions in the Viridian project might become
-more democratic and legitimate, or if you have experience with liquid democracy
-or similar tools, contact us at
+Falls du irgendwelche anderen Ideen hast, wie Entscheidungen im Viridian-Projekt
+demokratischer und legitimer werden könnten, oder wenn du Erfahrung mit
+Liquid Democracy oder ähnlichen Tools hast, kontaktiere uns über
 ```{r, echo=FALSE}
 htmltools::includeHTML("snippets/email.html")
 htmltools::includeHTML("snippets/alternative_contact.html")
