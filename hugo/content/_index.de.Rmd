@@ -835,6 +835,7 @@ Datenbanken und Web-Plattformen nutzen:
     - [Christliche Initiative Romero e.V. (CIR): "Siegel von A-Z" und Publikation "Wegweiser durch das Label-Labyrinth"](https://www.ci-romero.de/kritischer-konsum/siegel-von-a-z/)
     - [Label-online von der Verbraucher Initiative e.V.](https://label-online.de/)
 - Produktdatenbanken:
+    - [Provenance](https://www.provenance.org/)
     - [Questionmark](https://www.thequestionmark.org/)
     - [WeGreen](https://web.archive.org/web/20181213124710/http://wegreen.de/) (mittlerweile offline)
     - [Buycott](https://www.buycott.com/)
