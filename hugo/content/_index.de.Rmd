@@ -408,7 +408,7 @@ Mit einer dezentralen Kryptowährung als dominierendes Zahlungsmittel wäre dies
 nicht mehr der Fall.
 
 Wie sollen Banken also in der Viridian-Wirtschaft behandelt werden? Werden auch
-den Dienstleistungen der Banken ["Farben"](../paper#two-dimensional-money) zugeordnet werden?
+den Dienstleistungen der Banken ["Farben"](/paper#two-dimensional-money) zugeordnet werden?
 **Werden Banken durch neue innovative Konzepte ersetzt**, z. B. Peer-to-Peer-Kredit-Systeme
 mit Risikostreuung durch die Verteilung von Investitionsgeldern auf viele Teilnehmer?
 
@@ -483,7 +483,7 @@ htmltools::includeHTML("snippets/alternative_contact.html")
 
 Das Viridian-Projekt würde notwendigerweise die Art und Weise beeinträchtigen,
 in der Menschen wirtschaften und handeln. Bei der Bestimmung der Einzelhandelspreise
-muss beispielsweise die ["Farbe"](../paper#two-dimensional-money) des Produkts berücksichtigt werden.
+muss beispielsweise die ["Farbe"](/paper#two-dimensional-money) des Produkts berücksichtigt werden.
 
 Was wären aus betriebswirtschaftlicher Sicht die wichtigsten **Bedenken und Einwände**,
 welche die Akzeptanz von Viridian stören könnten? Wie kann diesen Bedenken begegnet werden?
@@ -572,7 +572,7 @@ die Herstellung und Verwendung bis hin zur Entsorgung und Verwertung.
 
 **Datenbanken und spezielle Softwareprodukte** für LCA existieren bereits und werden
 regelmäßig von Forschern aktualisiert. Diese könnten eine solide Basis für die
-Bestimmung der ["Farben"](../paper#two-dimensional-money) vieler Produkte bilden.
+Bestimmung der ["Farben"](/paper#two-dimensional-money) vieler Produkte bilden.
 
 Ein Problem ist, dass bestehende LCA-Produkte wie [ecoinvent](http://www.ecoinvent.org/)
 in der Regel **nicht frei verfügbar und offen** sind. Wenn es keine APIs gibt, die es ermöglichen,
@@ -585,7 +585,7 @@ solche Zwecke wie das Viridian-Projekt unmöglich machen könnte.
 Das Problem ist natürlich, dass LCA eine sehr arbeitsintensive Aufgabe ist und die
 Forscher, die daran arbeiten, müssen dafür über die Lizenzgebühren entlohnt werden.
 In der vollendeten Viridian-Wirtschaft würden sich LCA-Forscher in
-["Farb-Miner"](../paper#the-color-database-or-color-blockchain)
+["Farb-Miner"](/paper#the-color-database-or-color-blockchain)
 verwandeln und eine angemessene Belohnung für ihre Dienste erhalten, aber
 nur, wenn sie alle ihre Daten offenlegen. Daher hätten sie eine ganz andere Stellung
 als jetzt (sie wären viel wichtiger und mächtiger). Die Frage ist:
@@ -626,7 +626,7 @@ Bio-Standards usw.) beinhalten normalerweise Audits, d.h. **systematische und un
 bei Herstellern, um zu prüfen, ob die geforderten Standards eingehalten werden und
 kein Missbrauch vorliegt.
 
-Müssen solche Audits Teil der ["Farb"-Bestimmung](../paper#two-dimensional-money) sein? Wie können sie so
+Müssen solche Audits Teil der ["Farb"-Bestimmung](/paper#two-dimensional-money) sein? Wie können sie so
 **effizient und korruptionssicher** wie möglich organisiert werden? Gibt es
 irgendwelche **Fehler**, die vermieden werden können? Irgendwelche Ideen, wie man
 Audits auf eine gute Art **hochskalieren** kann? Oder sind Audits eigentlich eine
@@ -667,7 +667,7 @@ könnte es auch **eine Komponente des Geldes geben, die den emotionalen Teil anr
 Mit der emotionalen Komponente, die auf Empathie und Ethik Wert legt, könnten
 die Wahrnehmung und Verwendung von Geld ausgewogener werden,
 weniger eindimensional und mechanistisch als heute. Die
-["Farbdimension"](../paper#two-dimensional-money) der Viridianwährung könnte
+["Farbdimension"](/paper#two-dimensional-money) der Viridianwährung könnte
 diese zusätzliche Komponente darstellen.
 
 Hat diese Hypothese eine solide Grundlage in der Psychologie oder gibt es einen
