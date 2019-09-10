@@ -754,7 +754,7 @@ Existing ideas for a more sustainable economy include:
 * [*Bioökonomie*](https://de.wikipedia.org/wiki/Bio%C3%B6konomie) (German)
 <!-- * True cost -->
 
-Look at [this comparison](technical/#comparison) to see the pros and cons of slected existing intiatives
+Look at [this comparison](technical/#comparison) to see the pros and cons of selected existing intiatives
 and what they lack compared to Viridian.
 
 </div>
