@@ -32,7 +32,7 @@ externer Kosten), möchte das Viridian-Projekt ein soziales Netzwerk entwickeln,
 mit dem die Nachhaltigkeit von Produkten und Unternehmen bewertet und verglichen werden kann.
 Die Bewertungen können zunächst die Transparenz für bewussten nachhaltigen
 Konsum erhöhen. Später könnten dann die wahren Preise der Produkte abgebildet
-werden (siehe **[Timeline](#timeline)**).
+werden (siehe [**Timeline**](#timeline)).
 
 Es wird erklärt, [**wie das Netzwerk konkret funktionieren soll**](#netzwerk-funktion)
 und wie die Datenstruktur aussehen muss.
@@ -42,9 +42,9 @@ Außerdem soll das Netzwerk [**dezentral**](#warum-dezentral) organisiert sein.
 Um das Netzwerk vor Manipulation zu schützen soll ein "Distributed Ledger", also
 [**eine Blockchain**](#warum-blockchain) zum Einsatz kommen.
 
-Zunächst folgt ein Überblick über den [zeitlichen Ablauf](#timeline) des Viridian-Projekts und ein
-[**Vergleich von Viridian mit bestehenden anderen Projekten**](#vergleich), was
-diesen Plattformen fehlt, bzw. wie Viridian diese ergänzt.
+Zunächst folgt ein Überblick über den [zeitlichen Ablauf des Viridian-Projekts](#timeline)
+und ein [**Vergleich von Viridian mit bestehenden anderen Projekten**](#vergleich):
+was diesen Plattformen fehlt, bzw. wie Viridian diese ergänzt.
 
 
 ## Timeline
@@ -67,7 +67,7 @@ die Überlegungen in die Implementierung eines ersten Prototyps einfließen.
   Das Ergebnis von Phase 2 ist dieser Artikel.
 
 - In **Phase 3** soll nach Festlegung der Design-Entscheidungen ein erster Prototyp
-  implementiert werden, der die wesentlichen Funktionen enthalten soll: das
+  implementiert werden, der die Hauptfunktion der Plattform aufweisen soll: das
   kollaborative Bearbeiten von Nachhaltigkeitsbewertungen durch User auf einem
   dezentral organisierten Blockchain-Netzwerk. Phase 3 besteht aus den folgenden
   Meilensteinen:
@@ -89,8 +89,8 @@ die Überlegungen in die Implementierung eines ersten Prototyps einfließen.
 
 - In **Phase 5** kann ein Algorithmus entwickelt werden, der aus den Bewertungen
   der User alternative Preise errechnet, die möglichst die beinhalteten externen
-  Kosten widerspiegeln. Hier ist es wichtig, dass die User diesem Prozess vertrauen
-  und zustimmen (Transparenz!), bzw. ihn sogar selbst mit beeinflussen. Wenn die
+  Kosten widerspiegeln. Hier ist es wichtig, dass die User dem Algorithmus
+  vertrauen und zustimmen, bzw. ihn sogar selbst mit beeinflussen. Wenn die
   User ihre Bewertungen abgeben, sollten sie sehen können, welche monetären
   Auswirkungen diese haben. Dann kann sich jede\(r\) überlegen, wie viel ihm/ihr
   persönlich die Nachhaltigkeit wert ist.
