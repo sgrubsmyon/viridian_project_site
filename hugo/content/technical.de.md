@@ -198,13 +198,13 @@ Anhand der geplanten Struktur der Datenbank soll hier die technische Funktionali
 des Viridian-Netzwerks erklärt werden. Im Zentrum stehen die **Produkte**, um deren
 Bewertungen es geht. Weitere wichtige Elemente sind die **Unternehmen**, von denen
 die Produkte hergestellt bzw. angeboten werden. Als dritte Ebene gibt es **Gütezeichen**
-oder Siegel, die meist Produkte, seltener auch Unternehmen, zertifizieren. Um diese
+oder Siegel, die meist Produkte, teilweise auch Unternehmen, zertifizieren. Um diese
 drei Elemente sind alle **Informationen** angeordnet, die durch **Bewertungen**
 mit dem Produkt/Unternehmen/Gütezeichen verknüpft werden. Die User können alle
 diese Elemente selbst erstellen und bearbeiten und können sich entweder vorhandenen
-Bewertungen anschließen oder eigene erstellen. Über einen Peer-Review-Prozess
-werden ein gewisser Schutz vor Vandalismus (Stichwort Internet-Trolle) und
-Qualitätsmanagement gewährleistet.
+Bewertungen anschließen oder eigene erstellen. Ein Peer-Review-Prozess
+bietet einen gewissen Schutz vor Vandalismus (Stichwort Internet-Trolle) und
+stellt grundlegendes Qualitätsmanagement sicher.
 
 Der folgende Abschnitt erklärt die Prinzipien im Detail mit Hilfe eines Graphen.
 
@@ -213,7 +213,7 @@ Der folgende Abschnitt erklärt die Prinzipien im Detail mit Hilfe eines Graphen
 Eine hilfreiche Darstellung des Datenbankschemas ist die in Form eines Graphen:
 
 <a href="/images/technical/database_schema_graph.svg">
-  <img src="/images/technical/database_schema_graph.svg" alt="Datenbankschema als Graph", style="height:600px;">
+  <img src="/images/technical/database_schema_graph.svg" alt="Datenbankschema als Graph", style="max-height: 600px;">
 </a>
 
 **Legende:**

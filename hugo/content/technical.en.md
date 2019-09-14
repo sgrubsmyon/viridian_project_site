@@ -190,4 +190,96 @@ Although many of the identified initiatives share some of the key characteristic
 
 ## How is the network supposed to work? {#network-how}
 
+Based on the planned structure of the database, the technical functionality of
+the Viridian network will be explained here. At the center are the **products**
+and their reviews. Other important elements are the **companies** that
+manufacture or sell the products. As a third level, there are (sustainability)
+**labels** that certify mostly products, but some also companies. Around these
+three elements, all **information** is arranged that is associated with the
+product/company/label via user ratings. Users can create and edit all these
+elements and can either join existing ratings or create their own. A peer-review
+process ensures some protection against vandalism (internet trolls) and provides
+basic quality management.
 
+The following section explains the principles in detail using a graph.
+
+### Database schema as graph {#graph}
+
+A helpful representation of the database schema is in form of a graph:
+
+<a href="/images/technical/database_schema_graph.svg">
+  <img src="/images/technical/database_schema_graph.svg" alt="Database schema as graph", style="max-height: 600px;">
+</a>
+
+**Legend:**
+
+- Red thick line = creation of an element
+- Blue thick line = up/down vote on rating
+- Black thick line = other up/down vote or decision in peer review
+
+#### Elements
+
+The division into the three elements **products** (pink), **companies** (orange)
+and **labels** (turquoise) is also reflected in the data on sustainability. Typically,
+each data source refers to either products (e.g. Life Cycle Assessments (LCA) or
+information on the ingredients of a product) or companies (e.g. Corporate Social
+Responsibility (CSR) or third-party studies) or labels. Also existing platforms
+with sustainability data (see [comparison](#comparison)) can usually be divided
+into one of three categories: there are product databases such as
+[Questionmark](https://www.thequestionmark.org/) or [OpenFoodFacts](https://world.openfoodfacts.org/),
+company databases such as [WikiRate](https://wikirate.org) or [Rank a Brand](https://www.rankabrand.org/)
+and label databases like [Kompass Nachhaltigkeit](https://www.kompass-nachhaltigkeit.de)
+and [Label online](https://label-online.de/). Their data could possibly be
+integrated later (see [Timeline](#timeline)).
+
+**Information** is grouped around the products, companies and labels (different
+colors in the graph: yellow, green, petrol, ocher, ...). There are also links
+between companies (who manufacture products) and their products, as well as between
+labels and products. The rating of companies and labels thus influences the
+evaluation of a product.
+
+First of all, information is only value-free facts about a product/company/label
+and should be provided with one or several verifiable **sources**. Any information
+can and should lead to a rating. The **rating** (in the graph red) corresponds to
+the mapping of the information onto an ethical value scale. For this, a user
+(blue in the graph) creates a new rating and arranges the information on their
+own accord on a scale. Other users can join this rating by voting it up (+1).
+If they disagree, they can vote it down (-1) and create an alternative rating.
+
+In addition, users can create **comments** (gray in the graph) on an information
+in which they can explain why they find this information particularly
+important or not important at all. The comment can also be used to justify a
+specific rating.
+
+#### Users determine the relevance via votes
+
+Users can not only vote on ratings with +1/-1 (upvote and downvote), but also on
+information. The sum of these votes is a **proxy of the relevance** of the
+information to the user community. This relevance provides the default sorting
+of information on the product profile page so that the information relevant to
+most users appears at the top. For the ratings, relevance has a special
+meaning: it corresponds to the **weight** of the rating in the calculation of the
+overall evaluation. The arithmetic mean of all ratings by all users, each weighted
+with the balance of the +1/-1 votes, gives the overall rating of the
+product/company/label.
+
+The ability to join existing ratings via upvote could be considered a form of
+**Liquid Democracy** in the sense of an "answer recommendation" system (see
+[here](https://uniteddiversity.coop/2013/07/19/liquid-democracy-is-not-delegative-democracy/)
+and [here](http://web.archive.org/web/20160403043216/https://seed.sourceforge.net/ld_k5_article_004.html)).
+However, a real Liquid Democracy would mean that one subscribes to the answer
+recommendations (in this case ratings) on a particular topic (product category?)
+from a particular person, which is not intended here.
+
+#### Peer review
+
+Another important component of the Viridian network is the **peer review (PR) process**.
+To prevent abuse and vandalism (e.g. by "trolls"), new content should be checked
+by other users. For example, it could be required that newly added products/companies/labels
+or information have to be confirmed by a certain number of users before they are
+published on the platform. In the PR, the users should check whether certain rules
+have been adhered to. Information should always include verifiable sources and
+should not be published without. Depending on the number and activity of the users,
+the PR request could be sent e.g. to five randomly selected users (the
+random selection is important to avoid collusion), of which at least three must
+approve the content before it is published.
