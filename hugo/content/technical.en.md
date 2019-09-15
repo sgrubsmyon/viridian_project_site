@@ -283,3 +283,6 @@ should not be published without. Depending on the number and activity of the use
 the PR request could be sent e.g. to five randomly selected users (the
 random selection is important to avoid collusion), of which at least three must
 approve the content before it is published.
+
+
+More coming soon...
