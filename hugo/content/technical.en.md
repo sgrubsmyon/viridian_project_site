@@ -51,7 +51,7 @@ what these platforms lack, or how Viridian complements them.
 
 The project consists of several phases, the first of which is completed and the
 second largely completed. **Currently, phase 3 begins**, in which the considerations
-go into the implementation of a first prototype.
+enter the implementation of a first prototype.
 
 ![](/images/technical/timeline.en.svg)
 
@@ -88,7 +88,7 @@ go into the implementation of a first prototype.
   from the user's ratings and votings that should as closely as possible reflect
   the external costs involved. Here it is important that users trust and agree
   with the algorithm, or even influence it themselves. When users submit their
-  reviews, they should be able to see what the monetary impact is. Then, everyone
+  ratings, they should be able to see what the monetary impact is. Then, everyone
   can think about how much they personally value sustainability.
 
 - In **phase 6**, the prices calculated in phase 5 can be applied in real-life.
@@ -192,14 +192,16 @@ Although many of the identified initiatives share some of the key characteristic
 
 Based on the planned structure of the database, the technical functionality of
 the Viridian network will be explained here. At the center are the **products**
-and their reviews. Other important elements are the **companies** that
+and their ratings. They are supplemented by **product categories** that aggregate
+information that is general for a category of product, but not specific to one
+exact product. Other important elements are the **companies** that
 manufacture or sell the products. As a third level, there are (sustainability)
-**labels** that certify mostly products, but some also companies. Around these
-three elements, all **information** is arranged that is associated with the
-product/company/label via user ratings. Users can create and edit all these
-elements and can either join existing ratings or create their own. A peer-review
-process ensures some protection against vandalism (internet trolls) and provides
-basic quality management.
+**labels** that certify mostly products, but some also companies.
+Around these four elements, all **information** is arranged that is associated with the
+product/category/company/label via users' **ratings**. Users can create and edit all these
+elements and can either agree/disagree with (upvote/downvote) existing ratings or
+create their own. A peer-review process ensures some protection against vandalism
+(internet trolls) and provides basic quality management.
 
 The following section explains the principles in detail using a graph.
 
@@ -219,32 +221,35 @@ A helpful representation of the database schema is in form of a graph:
 
 #### Elements
 
-The division into the three elements **products** (pink), **companies** (orange)
-and **labels** (turquoise) is also reflected in the data on sustainability. Typically,
-each data source refers to either products (e.g. Life Cycle Assessments (LCA) or
-information on the ingredients of a product) or companies (e.g. Corporate Social
-Responsibility (CSR) or third-party studies) or labels. Also existing platforms
-with sustainability data (see [comparison](#comparison)) can usually be divided
-into one of three categories: there are product databases such as
-[Questionmark](https://www.thequestionmark.org/) or [OpenFoodFacts](https://world.openfoodfacts.org/),
-company databases such as [WikiRate](https://wikirate.org) or [Rank a Brand](https://www.rankabrand.org/)
+The division into the elements **products** (pink), **product categories** (lavender),
+**companies** (orange) and **labels** (turquoise) is also reflected in the data
+on sustainability. Typically, each data source refers to either a single product/product category
+(e.g. information on the ingredients of a product or Life Cycle Assessments (LCA)),
+companies (e.g. Corporate Social Responsibility (CSR) reports or third-party studies)
+or labels (e.g. label recommendations). Also existing platforms with sustainability
+data (see [comparison](#comparison)) can usually be divided into one of these
+categories: there are product databases such as [Questionmark](https://www.thequestionmark.org/) or
+[OpenFoodFacts](https://world.openfoodfacts.org/), company databases such as
+[WikiRate](https://wikirate.org) or [Rank a Brand](https://www.rankabrand.org/)
 and label databases like [Kompass Nachhaltigkeit](https://www.kompass-nachhaltigkeit.de)
 and [Label online](https://label-online.de/). Their data could possibly be
 integrated later (see [Timeline](#timeline)).
 
-**Information** is grouped around the products, companies and labels (different
+**Information** is grouped around the products/categories, companies and labels (different
 colors in the graph: yellow, green, petrol, ocher, ...). There are also links
 between companies (who manufacture products) and their products, as well as between
-labels and products. The rating of companies and labels thus influences the
-evaluation of a product.
+labels and products (displayed as red "Inherit" nodes). The rating of companies
+and labels thus influences the evaluation of a product.
 
 First of all, information is only value-free facts about a product/company/label
 and should be provided with one or several verifiable **sources**. Any information
 can and should lead to a rating. The **rating** (in the graph red) corresponds to
 the mapping of the information onto an ethical value scale. For this, a user
 (blue in the graph) creates a new rating and arranges the information on their
-own accord on a scale. Other users can join this rating by voting it up (+1).
+own accord on a scale. Other users can agree to this rating by voting it up (+1).
 If they disagree, they can vote it down (-1) and create an alternative rating.
+The score inherited from e.g. the manufacturing company or a label is also voted
+up or down to determine its weight.
 
 In addition, users can create **comments** (gray in the graph) on an information
 in which they can explain why they find this information particularly
@@ -263,7 +268,7 @@ overall evaluation. The arithmetic mean of all ratings by all users, each weight
 with the balance of the +1/-1 votes, gives the overall rating of the
 product/company/label.
 
-The ability to join existing ratings via upvote could be considered a form of
+The ability to agree to existing ratings via upvote could be considered a form of
 **Liquid Democracy** in the sense of an "answer recommendation" system (see
 [here](https://uniteddiversity.coop/2013/07/19/liquid-democracy-is-not-delegative-democracy/)
 and [here](http://web.archive.org/web/20160403043216/https://seed.sourceforge.net/ld_k5_article_004.html)).
@@ -547,16 +552,297 @@ end up with blockchains.
 
 In addition, a blockchain has the added advantage over ordinary database
 transactions that the transactions are chained in blocks (linked via
-the hash value of the predecessor block). The concatenation has the result that
+the hash value of the preceding block). Thanks to the concatenation,
 modifications in the blockchain necessitate modifications in all later blocks as
 well. It is therefore time-consuming to change the history of transactions after
-the fact. With Bitcoin, the modification of the history would be almost impossible
+the fact. With Bitcoin, a modification would be almost impossible
 due to the high computational cost of proof-of-work: To complete a single modified
-block faster than the competition in the network is extremely difficult, let alone
-in the same time all subsequent blocks. Without a computationally intensive
-proof-of-work, it would not be very costly for an attacker,
+block faster than the competition in the network is extremely difficult---completing
+in the same time span all subsequent blocks as well is merely impossible. Without
+a computationally intensive proof-of-work, it would not be very costly for an attacker,
+nevertheless each modification would propagate to the most recent block and would
+be more visible than without blockchain.
+
+### Block Chain frameworks
+
+We looked at various options of blockchain frameworks. What we definitely do not
+want is the use of a proof-of-work blockchain like Bitcoin or Ethereum, since they
+consume enormous amounts of energy (see [here](#blockchain-energy)). One option are
+delegated proof-of-stake blockchains like EOS or Loom, which however seemed quite complicated
+to us and also have (like proof-of-work) undemocratic tendencies because nodes that
+own more (higher stakes) have more power.
+
+A very good approach is used by [FairCoin](https://fair-coin.org), where
+proof-of-work is replaced by proof-of-cooperation. All nodes have equal rights and
+together democratically secure the blockchain. However, FairCoin is not an
+arbitrarily extensible framework for blockchain applications, it's just a fork of
+bitcoin. FairCoin is therefore more geared towards financial transactions and it would
+take a lot of effort to run a social network like Viridian on it.
+
+### Excursus: IOTA and the Tangle
+
+An interesting alternative to blockchains is IOTA, which works with a directed
+acyclic graph (DAG) instead of a blockchain, also called "tangle". In a sense,
+it is a generalization of the blockchain because each transaction is individually
+validated and concatenated with other transactions, rather than many transactions
+together in blocks. In a blockchain, there is only one valid strand of blocks of
+transactions, but in the Tangle there are many parallel strands that can be
+entangled. The interesting thing about the Tangle is the philosophy behind it:
+In a blockchain, the node operators, i.e. the miners, are a small elite that
+offers the service of transaction validation to a larger group of users (almost
+centralized!). Instead, the Tangle adheres to the do-it-yourself principle: Every
+user who sends a transaction must validate two other transactions. In a way,
+mining is socialized and there is a kind of reciprocity: if you want something,
+first you have to do a favor yourself (instead of just paying a fee like in case
+of mining).
+
+Ultimately, we decided against IOTA, especially because the Tangle is not designed
+to store large amounts of data and retrieve them quickly. One would have to check
+if one can use the Tangle only as a communication medium to synchronize a state
+database, such as a CouchDB, in a fault tolerant way. But that would probably be
+associated with great effort.
+
+
+### Hyperledger Fabric
+
+We have decided for using the Hyperlinkger Fabric (HLF) blockchain framework,
+which is maintained by the Linux Foundation. It is a very modular and customizable
+framework for so-called "permissioned blockchains" or "consortium blockchains",
+as opposed to "permissionless blockchains" like Bitcoin or Ethereum. This means
+that one cannot directly participate in the network as a node, but first needs a
+permission, which is usually associated with an identity check.
+
+This eliminates the need for proof-of-work and proof-of-stake, but still provides
+consensus algorithms for fault tolerance. Unfortunately, HLF currently does not
+support BFT, but only CFT (Crash Fault Tolerance). That is, the network is protected
+from node failure, but not deliberate malicious manipulation. However, due to
+Hyperledger Fabric's architecture, this is less of a problem compared to other blockchains
+since a single node does not perform all tasks, but the processes of endorsement,
+ordering, and subsequent validation of transactions are distributed to different
+nodes (see also the [Fabric paper](https://arxiv.org/pdf/1801.10228.pdf)). The
+ordering service, which inserts the transactions only in the blockchain, does not
+support BFT, however it does not even audit transactions. An attacker would have to
+control and coordinate several nodes in order to manipulate endorsement as well as
+ordering and validation.
+
+Implementations of BFT in HLF are currently in progress (see [here](https://jira.hyperledger.org/browse/FAB-6135)
+and [here](https://jira.hyperledger.org/browse/FAB-378)). There is already a third
+party created [BFT plugin](https://github.com/bft-smart/fabric-orderingservice)
+(from the University of Lisbon) that could be used if needed. The documentation
+from HLF [says on the subject](https://hyperledger-fabric.readthedocs.io/en/release-1.4/whatis.html?highlight=byzantine#permissioned-vs-permissionless-blockchains)
+that BFT is in principle a lesser problem in a system that is "permissioned" and
+in which there exists more mutual trust than in a completely open one. Should misconduct
+occur, then the blockchain has documented exactly who was responsible for it and
+the node can be excluded from the network. The damage done could be remedied afterwards.
+In a growing network, in which the node operators know each other less and less,
+this could quickly become annoying and dangerous, if manipulation remains undetected
+for a long time.
+
+It remains to be determined with which configuration HLF can be optimally used in Viridan.
+This not only affects the configuration of the consensus algorithm, that is the so-called
+ordering service, but also the other components of HLF, in particular the peers, the
+membership service provider and the certificate authority. Because HLF is so modular and
+generic, there are many levers and decisions that need to be made. This is part
+of Phase 3 of the Viridian project (see [timeline](#timeline)).
+
+<!--
+An alternative to Hyperledger Fabric that could possibly be switched to is
+BigchainDB, which builds on Tendermint and uses MongoDB (instead of CouchDB).
+BigchainDB or rather Tendermint supports BFT. Also, if it is easier to configure
+and maintain than Hyperledger Fabric, it could be a good alternative.
+However, BigchainDB turned out to be no viable option because its asset-based
+data model is not suited for an open, editable social network. It is better for
+a system of value exchanged where ownership is transferred between users.
+-->
+
+<!-- See also: -->
+<!-- https://www.skcript.com/svr/consensus-hyperledger-fabric/ -->
+<!-- http://vukolic.com/iNetSec_2015.pdf -->
+<!-- https://www.usenix.org/legacy/events/hotdep08/tech/full_papers/preguica/preguica.pdf -->
+<!-- https://github.com/davebryson/bftdb -->
+
+
+### Doesn't the blockchain consume an incredible amount of energy? {#blockchain-energy}
+
+It's true that permissionless proof-of-work blockchain networks consume enormous
+amounts of energy. This is illustrated very clearly for Bitcoin and Ethereum at
+https://digiconomist.net/bitcoin-energy-consumption: e.g. approx. 50 -- 70 TWh/a,
+which is about as much as the power consumption of some entire European countries.
+
+However, the blockchain itself is not responsible for the high energy consumption.
+The blockchain is just an arrangement of blocks, each containing data (mostly
+transactions, for example digital cash transfers in case of Bitcoin). Each
+block consists of the data and a [hash value](https://en.wikipedia.org/wiki/Hash_function)
+of the data. The hash value is basically just a large number that always has about
+the same number of digits, no matter how big the dataset is. It's like some kind
+of fingerprint. Even a small change in the data results in a completely different
+hash value. The blockchain turns into a "chain" by adding the hash value of the
+previous block to the data of the new block. As a result, this hash value also
+influences the new hash value. If you change the data in one block, it alters
+its hash value. Because the hash value is also part of the next block, its hash
+value is changed as well and so on. This makes the blockchain relatively stable:
+data can not be subsequently changed without changing all subsequent blocks.
+
+#### Arms race of computing power: proof-of-work
+
+So where does the high energy consumption come from? Not really from the creation
+of the blockchain itself: To create a new block, you need to calculate a new hash
+value. This is very fast and consumes virtually no power. Already when Bitcoin was
+created in 2009, a standard CPU was able to calculate
+[1 to 25 million hash values per second](https://www.heise.de/select/ct/2019/02/1546924642860309).
+But that also means that it's pretty easy to modify a blockchain with even millions
+of blocks at will and recalculate all hashes.
+
+Therefore, Bitcoin introduces an additional obstacle: Only blocks are accepted whose
+data contain a random number (the so-called nonce) such that the hash value becomes
+smaller than a certain threshold. What the bitcoin miners do is permanently generating
+random nonces and calculating the corresponding hash value. They do this until the hash
+falls by chance below the threshold. Whoever achieves that first, obtains the privilege
+to complete the block. As a reward, the miner receives a small fee. The process is
+called proof-of-work, because you have to prove that you have done some work in exchange
+for the privilege of block-completion.
+
+The Blockchain network is controlled by whom who has the right to complete blocks.
+Beacause block completion includes checking whether transactions are valid, e.g.
+whether no money is transferred that has already been spent (so-called "double spend").
+Furthermore, it includes the decision about which transactions end up on the blockchain
+and thus become valid, and which not.
+
+Bitcoin is thus secured by the fact that in order to control the network, one would
+have to come up with more computing power than all other network participants together.
+Because the more computing power, the more often you can complete a block. The problem
+with that is that one is also rewarded more often if one has more computing power.
+This incentive leads to an arms race of computing power and drives the energy consumption
+into the extreme. One might think that the higher the computing power, the more efficient
+the network is because blocks can now be completed faster. That is not the case. The
+threshold below which the hash value must lie (the so-called "difficulty") is regularly
+adjusted to the current computing power of the network. The more computing power there
+is, the harder the puzzle gets. In the end, the time for completing one block is
+always roughly the same, about 10 minutes.
+
+So, Bitcoin is extremely inefficient. Millions of computers simultaneously crunch
+useless numbers, just for selecting one of them to validate and close the block
+in the end. One way to increase efficiency would be for the nodes to split up
+the work and process several blocks in parallel. But this is difficult to achieve
+with the structure of the blockchain. Another possibility is to replace the
+computation-intensive selection method of the block-terminating node with
+something else. Both approaches are implemented in Hyperledger Fabric.
+
+#### A possible solution
+
+The most obvious alternative to proof-of-work is a simple round-robin block-completion
+approach: all nodes of the network are in turn one after the other. The privilege
+of block completion is simply distributed evenly across all nodes. In permissionless
+blockchains like Bitcoin this is not an option: instead of high computing power,
+the maxim would be a high number of participating nodes. Whoever controls most nodes
+controls the network. This would only lead to the need for a lot of electronics instead
+of a lot of computing power (but it would probably reduce the consumption of resources,
+because it would be possible to use existing hardware, which can continue to perform other
+tasks in parallel). A problem that exists even with proof-of-work remains: who owns a lot,
+gets a lot of power (and reward). Proof-of-stake, the solution preferred by Ethereum and
+other cryptocurrencies, has the same flaw: whoever owns a lot (of cryptocurrency) has
+a lot of power over the network. This raises the hurdle for abuse, but it still
+has tendencies towards an oligarchy.
+
+A sensible and simple democratic approach would be: one person, one vote. One
+could use the round-robin method, along with the restriction that every real
+human being may only operate one node at a time. That would be roughly equivalent
+to the difference between corporations and cooperatives: in a cooperative, each
+shareholder has exactly one vote, no matter how much she/he owns. In a stock
+corporation, on the other hand, the voting rights increase with the shares
+(corresponding to proof-of-stake).
+
+The only disadvantage would be the abandonment of the anonymity of the participants.
+That is why the followers of Bitcoin or Ethereum will never pursue this approach.
+However, there is a cryptocurrency called [FairCoin](https://fair-coin.org) going
+in this direction.
+
+Also a permissioned blockchain like Hyperledger Fabric (see [here](#why-blockchain)),
+which we want to use in the Viridian project, makes this reasonable
+compromise. The loss of anonymity, which does not necessarily have to be associated
+with revealing the complete identity (see [here](#identitaet)), is a small price
+compared to the enormous saving of resources.
+
+The fact that Hyperledger Fabric works much more efficiently than Bitcoin and has
+a much lower resource footprint is shown in the paper
+["Hyperledger Fabric: A Distributed Operating System for Permissioned Blockchains"](https://arxiv.org/abs/1801.10228):
+On page 12 (Figure 7), you can see the transaction rate per second as a function
+of the number of CPUs. With 4 CPUs, about 1300 -- 1500 transactions per second (tps)
+are achieved. Assuming each CPU has a (conservatively estimated) consumption of
+[several 100 W](https://www.intel.com/content/www/us/en/products/processors/xeon/e7-processors/e7-8855-v4.html)
+at maximum load, this results in a usage of around 1000 W for 1000 tps,
+so 1 W/tps (or 1 J/transaction). This is contrasted with a bitcoin transaction
+rate of [up to about 10 tps](https://en.bitcoin.it/wiki/Maximum_transaction_rate)
+(see also [here](https://www.blockchain.com/charts/transactions-per-second)) at
+an energy consumption rate of [50 -- 70 TWh/a](https://digiconomist.net/bitcoin-energy-consumption),
+i.e. approx. 6 -- 8 GW. There, Bitcoin has an energy demand of about 600 -- 800 MW/tps
+or 600 -- 800 MJ/transaction. That is equivalent to 600 to 800 million times the
+consumption of the Hyperledger benchmark.
+
+Even if one would choose to have more than 4 nodes in the network for reasons of
+resilience, which slightly increases the consumption, these data show that the nodes
+would be under full load only at significantly more traffic than 100 transactions per second.
+At lower transaction rates, they would probably be idle most of the time. So if the
+number of nodes and thus the idle consumption does not increase exorbitantly, the energy
+requirements should remain in a very reasonable range and do not increase significantly
+by the use of a blockchain. However, it should not go unmentioned that Hyperledger Fabric
+does not use BFT by default, and by using BFT, the transaction rate may decrease slightly
+while resource requirements may go up a little bit.
 
 
 
 
-More coming soon...
+
+
+
+## Why do you need to know the identity of network participants? {#identity}
+
+In principle, we do not need to know the identity of our users and even node operators.
+But it must be ensured that a real existing person can register only once (or at most
+very few times) in the network in order to prevent interference. We do not want
+bot armies that distort or even determine public opinion (see e.g. [1](https://www.nytimes.com/2016/11/18/technology/automated-pro-trump-bots-overwhelmed-pro-clinton-messages-researchers-say.html),
+[2](https://comprop.oii.ox.ac.uk/)).
+<!-- [3](https://www.wired.com/2016/05/twitterbots-2/)). -->
+
+This is another compromise: Moving away from Bitcoin's/Ethereum's completely anonymous,
+trustless yet mining-secured system, and moving a small step towards traditional
+centralized systems. For example, it would be conceivable that one uses the
+central legal authority to check the identity of the user with the government-issued
+identity card or passport. The price to pay is a small loss of decentralization/autonomy,
+but in our view the gained protection against manipulation and the removed burden of
+[energy-hungry mining](#blockchain-energy) far outweigh the price.
+
+We are not interested in user data that allow identification, we don't even need to know
+their names. It would be quite enough if we store one unique feature, or just a
+hash of that feature, to make sure that the person with that feature cannot register
+more than once.
+
+Possible features that could be used:
+
+- The ID or passport number. An automated and counterfeit-proof recognition of the
+  number would be convenient, for example by means of image recognition of a photo
+  of the ID card/passport. If possible no card reader should be required because
+  almost no-one owns such a device. Until an algorithm has been developed, the
+  passport number could be verified via video chat.
+
+- Automatic face recognition. Biometric data such as the distance between the eyes,
+  the corners of the mouth, etc., may be sufficient to uniquely identify a face.
+  Since only the hash of these data needs to be stored, there is no way of
+  abusing that data. However, it must be ensured that the users present their
+  real face and not a random photo from the internet or a portrait generated by
+  an AI. Therefore, the photograph of an ID card/passport, rather not to be found
+  online, would be preferable (see above), provided that it can only be random-generated
+  at great expense.
+
+- The mobile phone number. A verification code will be sent to this number via
+  text message (SMS) to prove that you own that number. Although it is possible to
+  own more than one SIM card, this is usually linked with costs and it is unlikely
+  that a single person has more than a few phone numbers. Unfortunately, sending SMS
+  is also associated with costs for the platform.
+
+The email address would be a free alternative to the phone number. But it is trivial
+to create hundreds or thousands of fake email addresses, so email is not an option.
+
+**Conclusion:** Of course, the system can not and must not be 100% secure. But there
+must be a fair amount of security, such that abuse is not impossible (because no system
+can guarantee that), but expensive enough that it happens only rarely.

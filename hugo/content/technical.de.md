@@ -196,15 +196,17 @@ Obwohl viele der identifizierten Initiativen einige der Hauptmerkmale von Viridi
 
 Anhand der geplanten Struktur der Datenbank soll hier die technische Funktionalität
 des Viridian-Netzwerks erklärt werden. Im Zentrum stehen die **Produkte**, um deren
-Bewertungen es geht. Weitere wichtige Elemente sind die **Unternehmen**, von denen
+Bewertungen es geht. Ergänzt werden sie durch **Produktkategorien**, die Informationen
+aufnehmen, die allgemein für eine Kategorie gültig sind, nicht für ein spezifisches Produkt.
+Weitere wichtige Elemente sind die **Unternehmen**, von denen
 die Produkte hergestellt bzw. angeboten werden. Als dritte Ebene gibt es **Gütezeichen**
-oder Siegel, die meist Produkte, teilweise auch Unternehmen, zertifizieren. Um diese
-drei Elemente sind alle **Informationen** angeordnet, die durch **Bewertungen**
-mit dem Produkt/Unternehmen/Gütezeichen verknüpft werden. Die User können alle
-diese Elemente selbst erstellen und bearbeiten und können sich entweder vorhandenen
-Bewertungen anschließen oder eigene erstellen. Ein Peer-Review-Prozess
-bietet einen gewissen Schutz vor Vandalismus (Stichwort Internet-Trolle) und
-stellt grundlegendes Qualitätsmanagement sicher.
+oder Siegel, die meist Produkte, teilweise auch Unternehmen, zertifizieren.
+Um diese vier Elemente sind alle **Informationen** angeordnet, die durch **Bewertungen**
+mit dem Produkt/Produktkategorie/Unternehmen/Gütezeichen verknüpft werden. Die User
+können alle diese Elemente selbst erstellen und bearbeiten und können entweder vorhandene
+Bewertungen annehmen/ablehnen (per Upvote/Downvote) oder eigene erstellen. Ein
+Peer-Review-Prozess bietet einen gewissen Schutz vor Vandalismus (Stichwort
+Internet-Trolle) und stellt grundlegendes Qualitätsmanagement sicher.
 
 Der folgende Abschnitt erklärt die Prinzipien im Detail mit Hilfe eines Graphen.
 
@@ -224,13 +226,15 @@ Eine hilfreiche Darstellung des Datenbankschemas ist die in Form eines Graphen:
 
 #### Elemente
 
-Die Dreiteilung in **Produkte** (rosa), **Unternehmen** (orange) und **Gütezeichen/Siegel/Labels** (türkis)
-spiegelt sich auch in den Daten zur Nachhaltigkeit. Üblicherweise bezieht sich
-jede Datenquelle entweder auf Produkte (bspw. Lebenszyklusanalysen (LCA) oder
-Informationen zu den Inhaltsstoffen eines Produkts) oder auf Unternehmen (bspw.
-Berichte zur Corporate Social Responsibility (CSR) oder Studien von Dritten)
-oder auf Gütezeichen. Auch vorhandene Plattformen mit Nachhaltigkeitsdaten (siehe
-[Vergleich](#vergleich)) lassen sich meist in eine der drei Kategorien einteilen:
+Die Einteilung in **Produkte** (rosa) bzw. **Produktkategorien** (lila),
+**Unternehmen** (orange) und **Gütezeichen/Siegel/Labels** (türkis)
+spiegelt sich auch in den Daten zur Nachhaltigkeit.
+Üblicherweise bezieht sich jede Datenquelle entweder auf ein Produkt/eine
+Produktkategorie (bspw. Informationen zu den Inhaltsstoffen eines Produkts oder
+Lebenszyklusanalysen (LCA)), auf Unternehmen (bspw. Berichte zur Corporate Social
+Responsibility (CSR) oder Studien von Dritten) oder auf Gütezeichen (etwa Siegelratgeber).
+Auch vorhandene Plattformen mit Nachhaltigkeitsdaten (siehe [Vergleich](#vergleich))
+lassen sich meist in einen der Bereiche einteilen:
 es gibt Produktdatenbanken wie [Questionmark](https://www.thequestionmark.org/) oder
 [OpenFoodFacts](https://world.openfoodfacts.org/),
 Unternehmensdatenbanken wie [WikiRate](https://wikirate.org) oder
@@ -239,11 +243,12 @@ Unternehmensdatenbanken wie [WikiRate](https://wikirate.org) oder
 [Label online](https://label-online.de/). Deren Daten könnten später
 evtl. eingebunden werden (siehe [Timeline](#timeline)).
 
-Um die Produkte, Unternehmen und Gütezeichen herum gruppieren sich **Informationen**
+Um die Produkte/Kategorien, Unternehmen und Gütezeichen herum gruppieren sich **Informationen**
 (im Graph verschiedene Farben: gelb, grün, petrol, ocker, ...).
 Außerdem gibt es Verbindungen zwischen Unternehmen (die Produkte herstellen) und
-ihren Produkten sowie zwischen Gütezeichen und Produkten. Die Bewertung von
-Unternehmen und Gütezeichen fließt also in die Bewertung eines Produkts mit ein.
+ihren Produkten sowie zwischen Gütezeichen und Produkten (dargestellt als rote
+Knoten mit Beschriftung "Inherit"). Die Bewertung von Unternehmen und Gütezeichen
+fließt also in die Bewertung eines Produkts mit ein.
 
 Informationen sind zunächst einmal nur wertfreie Fakten über ein Produkt/Unternehmen/Gütezeichen
 und sollten mit einer oder mehreren verifizierbaren **Quellen** versehen sein.
@@ -253,7 +258,8 @@ Dafür erstellt ein User (im Graphen blau) eine neue Bewertung und ordnet die
 Information nach eigenem Ermessen auf einer Skala ein. Andere User können sich
 dieser Bewertung anschließen, indem sie sie positiv markieren (+1, "upvote"). Wenn sie
 anderer Meinung sind, können sie sie negativ markieren (-1, "downvote") und eine
-alternative eigene Bewertung erstellen.
+alternative eigene Bewertung erstellen. Auch die vom Hersteller oder Gütezeichen
+geerbte Bewertung wird mit Upvotes und Downvotes markiert, um deren Gewicht festzulegen.
 
 Außerdem können User **Kommentare** (im Graphen grau) zu Informationen anlegen, in denen sie
 z.B. erläutern, warum sie diese Information besonders wichtig oder gar nicht
@@ -703,12 +709,12 @@ aber vermutlich mit großem Aufwand verbunden.
 
 ### Hyperledger Fabric
 
-Wofür wir uns aktuell entschieden haben, ist das Blockchain-Framework
+Wofür wir uns entschieden haben, ist das Blockchain-Framework
 "Hyperledger Fabric" (HLF), das durch die Linux Foundation betreut wird.
 Es ist ein sehr modulares und anpassbares Framework für sogenannte
 "Permissioned Blockchains" oder "Consortium Blockchains", im Gegensatz
 zu "Permissionless Blockchains" wie Bitcoin oder Ethereum. Das bedeutet, dass
-nicht jeder an dem Netzwerk als Knoten teilnhemen kann, sondern erst eine
+man nicht direkt an dem Netzwerk als Knoten teilnhemen kann, sondern erst eine
 Erlaubnis braucht, die in der Regel mit einer Prüfung der Identität verbunden
 ist.
 
@@ -724,8 +730,8 @@ nachträglichen Validierung ("Validation") von Transaktionen auf verschiedene Kn
 (siehe dazu auch das [Fabric-Paper](https://arxiv.org/pdf/1801.10228.pdf)). Der
 Ordering-Service, der die Transaktionen nur in die Blockchain einfügt, unterstützt
 kein BFT, allerdings nimmt er die Prüfung von Transaktionen auch gar nicht vor.
-Ein Angreifer müsste also gleich mehrere Knoten kontrollieren, um sowohl die Prüfung,
-also auch die Sortierung und Validierung zu manipulieren.
+Ein Angreifer müsste also gleich mehrere Knoten kontrollieren und koordinieren,
+um sowohl die Prüfung als auch die Sortierung und Validierung zu manipulieren.
 
 Implementierungen von BFT in HLF sind derzeit in Arbeit (siehe [hier](https://jira.hyperledger.org/browse/FAB-6135)
 und [hier](https://jira.hyperledger.org/browse/FAB-378)). Es gibt
@@ -749,11 +755,17 @@ Authority. Da HLF so modular und generisch ist, gibt es viele Stellschrauben
 und Entscheidungen, die getroffen werden müssen. Dies ist Teil von Phase 3 des
 Viridian-Projekts (siehe [Timeline](#timeline)).
 
+<!--
 Eine Alternative zu Hyperledger Fabric, auf die man eventuell wechseln könnte, ist
 [BigchainDB](https://www.bigchaindb.com/), die auf [Tendermint](https://tendermint.com)
 aufbaut und MongoDB (anstatt CouchDB) verwendet. BigchainDB bzw. Tendermint
 unterstützt BFT. Wenn es zudem einfacher zu konfigurieren und warten ist als
 Hyperledger Fabric, könnte es eine gute Alternative sein.
+Allerdings stellte sich heraus, dass das Asset-basierte Datenmodell von BigchainDB
+nicht geeignet ist für ein öffentliches, von jedem editierbares soziales Netzwerk.
+Es eignet sich besser für die Verwaltung von Wertgegenständen, die zwische Usern
+transferiert werden.
+-->
 
 <!-- Siehe auch: -->
 <!-- https://www.skcript.com/svr/consensus-hyperledger-fabric/ -->
@@ -767,16 +779,16 @@ Hyperledger Fabric, könnte es eine gute Alternative sein.
 Es stimmt, dass die Netzwerke von Permissionless Proof-of-Work-Blockchains enorme
 Energiemengen verschlingen. Dies wird für Bitcoin und Ethereum sehr anschaulich
 dargestellt auf https://digiconomist.net/bitcoin-energy-consumption: Bsp. ca.
-50 - 70 TWh/a, das ist etwa so viel wie der Stromverbrauch mancher europäischer
+50 -- 70 TWh/a, das ist etwa so viel wie der Stromverbrauch mancher europäischer
 Länder.
 
 Allerdings ist die Blockchain selbst nicht für den hohen Energieverbrauch verantwortlich.
 Die Blockchain ist nur eine Aneinanderreihung von Blöcken, die jeweils Daten
 enthalten (meist Transaktionen, bei Bitcoin etwa Überweisungen von Bitcoins).
 Jeder Block besteht aus den Daten und einem [Hashwert](https://en.wikipedia.org/wiki/Hash_function)
-der Daten. Der Hashwert ist im Grunde einfach eine große Zahl, die immer gleich
-groß ist, egal wie groß die Datenmenge ist. Sie ist wie eine Art Fingerabdruck.
-Ändert sich auch nur eine Kleinigkeit in den Daten, ergibt sich ein vollkommen
+der Daten. Der Hashwert ist im Grunde einfach eine große Zahl, die immer etwa
+gleich viele Stellen hat, egal wie groß die Datenmenge ist. Sie ist wie eine Art
+Fingerabdruck. Ändert sich auch nur eine Kleinigkeit an den Daten, ergibt sich ein vollkommen
 anderer Hashwert. Die Blockchain wird dadurch zur "Kette", dass jeweils der
 Hashwert des vorherigen Blocks zu den Daten des neuen Blocks hinzugefügt wird.
 Dadurch hat auch dieser Hashwert Einfluss auf den neuen Hashwert. Ändert man die
@@ -788,9 +800,9 @@ Dadurch wird die Blockchain relativ stabil: Daten lassen sich nachträglich nich
 #### Wettrüsten der Rechenleistung: Proof-of-Work
 
 Woher kommt jetzt der hohe Stromverbrauch? Von der Erstellung der Blockchain
-selbst eigentlich nicht: Um neue Blöcke zu erstellen, muss man einen neuen
+selbst eigentlich nicht: Um einen neuen Block zu erstellen, muss man einen neuen
 Hashwert berechnen. Das geht sehr schnell und verbraucht so gut wie keinen Strom.
-Schon als Bitcoin im Jahr 2009 geschaffen wurde, konnten mit Standard-CPUs
+Schon als Bitcoin im Jahr 2009 geschaffen wurde, konnten mit einer Standard-CPU
 [1 bis 25 Millionen Hashwerte pro Sekunde](https://www.heise.de/select/ct/2019/02/1546924642860309)
 berechnet werden. Das bedeutet aber auch, dass es ziemlich leicht ist, selbst
 eine Blockchain mit Millionen von Blöcken nach Belieben zu modifizieren und alle
@@ -805,7 +817,7 @@ gehabt und darf den Block abschließen. Als Belohnung erhält der Miner eine kle
 Gebühr. Das Verfahren nennt sich Proof-of-Work, weil man für das Privileg des
 Block-Abschlusses beweisen muss, dass man Arbeit geleistet hat.
 
-Das Blockchain-Netzwerk kontrolliert, wer das Recht hat, Blöcke abzuschließen.
+Wer das Recht hat Blöcke abzuschließen, kontrolliert das Blockchain-Netzwerk.
 Denn dazu gehört zum einen die Prüfung, ob Transaktionen valide sind, ob z.B.
 kein Geld überwiesen wird, das bereits ausgegeben wurde (sog. "Double Spend").
 Zum anderen die Entscheidung darüber, welche Transaktionen auf der Blockchain
@@ -815,7 +827,7 @@ Bitcoin wird also dadurch abgesichert, dass man, um das Netzwerk zu kontrolliere
 mehr Rechenleistung aufbringen müsste als alle anderen Netzwerkteilnehmer zusammen.
 Denn je mehr Rechenleistung, umso öfter darf man einen Block abschließen. Das Problem
 an der Sache ist, dass man auch öfter belohnt wird, wenn man mehr Rechenleistung
-besitzt. Das führt zu einem Wettrüsten der Rechenleistung und treibt den
+besitzt. Dieser Anreiz führt zu einem Wettrüsten der Rechenleistung und treibt den
 Stromverbrauch extrem in die Höhe. Man könnte denken, je höher die Rechenleistung
 ist, umso effizienter arbeitet das Netzwerk, weil Blöcke nun schneller abgeschlossen
 werden können. Das ist aber nicht der Fall. Der Schwellwert, unter dem der Hashwert
@@ -824,7 +836,7 @@ des Netzwerks angepasst. Je mehr Rechenleistung vorhanden ist, umso schwerer wir
 das Rätsel, so dass es immer etwa gleich lang dauert (ca. 10 Minuten), bis ein
 Block abgeschlossen ist.
 
-Bitcoin ist also extrem ineffizient. Millionen Chips berechnen parallel unnützes
+Bitcoin ist also extrem ineffizient. Millionen Computer berechnen parallel unnützes
 Zeug, nur damit am Ende einer von ihnen den Block validieren und abschließen
 darf. Eine Möglichkeit der Effizienzerhöhung wäre, dass sich die Knoten die Arbeit
 aufteilen und mehrere Blöcke parallel bearbeitet werden. Das ist aber mit der
@@ -847,7 +859,7 @@ andere Tätigkeiten ausführen kann). Ein Problem, das auch schon bei Proof-of-W
 vorhanden ist, bleibt bestehen: Wer viel besitzt, bekommt viel Macht (und Belohnung).
 Genauso ist es auch bei der von Ethereum und anderen Kryptowährung bevorzugten
 Lösung Proof-of-Stake: wer viel (Kryptowährung) besitzt, bekommt viel Macht über
-das Netzwerk. Das soll die Hürde für Missbrauch hochsetzen, hat aber nach wie vor
+das Netzwerk. Das setzt die Hürde für Missbrauch höher, hat aber nach wie vor
 Tendenzen zu einer Oligarchie.
 
 Ein sinnvoller und einfacher demokratischer Ansatz wäre: Ein Mensch, ein Stimmrecht.
@@ -873,16 +885,16 @@ Dass Hyperledger Fabric viel effizienter arbeitet als Bitcoin und einen viel
 geringeren Ressourcenbedarf hat, zeigt das Paper
 ["Hyperledger Fabric: A Distributed Operating System for Permissioned Blockchains"](https://arxiv.org/abs/1801.10228):
 Auf Seite 12 (Figure 7) sieht man die Transaktionsrate pro Sekunde als Funktion
-der CPU-Anzahl. Mit 4 CPUs werden ca. 1300 - 1500 Transaktionen pro Sekunde (tps) erreicht.
+der CPU-Anzahl. Mit 4 CPUs werden ca. 1300 -- 1500 Transaktionen pro Sekunde (tps) erreicht.
 Angenommen jede CPU hat bei Maximalauslastung einen (großzügig geschätzten) Vebrauch von
 [einigen 100 W](https://www.intel.com/content/www/us/en/products/processors/xeon/e7-processors/e7-8855-v4.html),
 ergibt das einen Vebrauch von rund 1000 W für 1000 tps, bzw. 1 W/tps (oder 1 J/Transaktion).
 Dies steht einer Bitcoin-Transaktionsrate von
 [bis zu ca. 10 tps](https://en.bitcoin.it/wiki/Maximum_transaction_rate)
 (siehe auch [hier](https://www.blockchain.com/charts/transactions-per-second))
-bei einem Stromverbrauch von [50 - 70 TWh/a](https://digiconomist.net/bitcoin-energy-consumption),
-also ca. 6 - 8 GW, gegenüber. Bitcoin hat also einen Energiebedarf von etwa 600 - 800 MW/tps
-oder 600 - 800 MJ/Transaktion. Das entspricht also dem 600 bis 800 Millionenfachen
+bei einem Stromverbrauch von [50 -- 70 TWh/a](https://digiconomist.net/bitcoin-energy-consumption),
+also ca. 6 -- 8 GW, gegenüber. Bitcoin hat also einen Energiebedarf von etwa 600 -- 800 MW/tps
+oder 600 -- 800 MJ/Transaktion. Das entspricht also dem 600 bis 800 Millionenfachen
 Verbrauch des Hyperledger-Benchmarks.
 
 Auch wenn man aus Resilienzgründen vermutlich mehr als 4 Knoten im Netzwerk haben
@@ -903,7 +915,7 @@ BFT die Transaktionsrate etwas sinken und der Ressourcenbedarf etwas steigen kö
 
 Im Grunde brauchen wir die Identität unserer User und sogar Knotenbetreiber*innen nicht
 zu kennen. Es muss aber sichergestellt sein, dass sich eine real existierende Person
-nur einmal (oder höchstens ein paar mal) im Netzwerk registrieren kann, um
+nur einmal (oder höchstens wenige Male) im Netzwerk registrieren kann, um
 Beeinflussung zu verhindern. Wir wollen keine Bot-Armeen, die die öffentliche Meinung
 verzerren oder gar bestimmen (siehe etwa
 [1](https://www.nytimes.com/2016/11/18/technology/automated-pro-trump-bots-overwhelmed-pro-clinton-messages-researchers-say.html),
@@ -916,8 +928,8 @@ System von Bitcoin/Ethereum und geht ein Stück in Richtung herkömmlicher
 zentralisierter Systeme. Beispielsweise wäre es denkbar, dass man sich der
 zentralen staatlichen Instanz bedient und die Identität der User über den
 Personalausweis oder Reisepass prüft. Der Preis ist ein bisschen Verlust von
-Dezentralität/Autonomie, jedoch überwiegt der gewonnene Schutz vor Manipulation
-(und bei den Knotenbetreiber*innen der [Verzicht auf energiehungriges Mining](#blockchain-energie))
+Dezentralität/Autonomie, jedoch überwiegen der gewonnene Schutz vor Manipulation
+und der [Verzicht auf energiehungriges Mining](#blockchain-energie)
 den Preis aus unserer Sicht bei weitem.
 
 Wir interessieren uns gar nicht für identifizierende Daten der User, noch nicht einmal
@@ -930,16 +942,17 @@ Mögliche Merkmale, die verwendet werden könnten:
 - Die Ausweis- oder Reisepassnummer. Praktisch wäre eine automatisierte und
   möglichst fälschungssichere Einlesefähigkeit der Nummer, z.B. mittels Bilderkennung
   von einem Foto des Ausweises. Es sollte möglichst kein Kartenlesegerät benötigt
-  werden, das fast kein Bürger besitzt.
+  werden, das fast kein Bürger besitzt. Bis ein Algoritmus entwickelt wurde,
+  könnte die Ausweisnummer per Videochat verifiziert werden.
 
 - Automatische Gesichtserkennung. Biometrische Daten wie der Abstand von Augen,
   Mundwinkeln etc. können ausreichen, um ein Gesicht eindeutig zu identifizieren.
   Da nur der Hash dieser Daten gespeichert werden muss, gibt es keine Möglichkeit
   des Missbrauchs dieser Daten. Allerdings muss sichergestellt sein, dass die User
   wirklich ihr echtes Gesicht präsentieren und nicht etwa ein zufälliges Foto aus
-  dem Internet oder ein von einer KI generiertes. Daher wäre ein Ausweisfoto, das
-  man eher nicht online findet, vorzuziehen, vorausgesetzt, es lässt sich nur mit
-  hohem Aufwand zufallsgenerieren.
+  dem Internet oder ein von einer KI generiertes. Daher wäre das Foto eines Ausweises,
+  das man eher nicht online findet (siehe oben), vorzuziehen, vorausgesetzt, es lässt
+  sich nur mit hohem Aufwand zufallsgenerieren.
 
 - Die Mobiltelefonnummer. Ein Bestätigungscode wird per SMS an diese Nummer gesendet,
   um zu beweisen, dass man über die Nummer verfügt. Zwar kann man mehr als eine
