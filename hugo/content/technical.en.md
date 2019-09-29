@@ -284,5 +284,279 @@ the PR request could be sent e.g. to five randomly selected users (the
 random selection is important to avoid collusion), of which at least three must
 approve the content before it is published.
 
+Demanding a PR for all content changes, including comments and ratings, could
+be overwhelming and overload users with PR requests. Instead, one could offer the
+possibility to mark comments as unsuitable after publication. In this case, a PR
+will be triggered and the comment will be removed if enough users agree. To
+prevent trolling, a user cannot post content while one or more comments remain
+marked and the PR process is still in progess. If a comment was deleted due to the
+PR process, the user cannot submit any content for a certain penalty timespan.
+
+Of course, even with PR content can be flawed or simply obsolete. Therefore, it
+should be possible for users to request the **edit** or **deletion** of content.
+In a subsequent PR process, it will be decided about the edit or deletion.
+
+It remains to be seen how smoothly the platform will work with the PR mechanisms.
+With too little involvement of the users or too much abuse, the rules must be
+adjusted or changed. There should also be a mechanism for passing the PR request
+to another randomly selected user if the first user does not reply. If a user does
+not react to PR requests on several occasions, the likelihood that they will be
+selected for a PR should decrease. Similar to the question of
+[decentralization](#why-decentralized), a good compromise and a balance between
+resilience and efficiency must be found.
+
+#### Gamification/Incentives
+
+Every activity of a user could influence their reputation in the network. This
+rewards users who contribute information or participate in a peer review with
+reputation points. Based on the reputation, gamification elements could spur users.
+For example, at a certain score, medals could be awarded or awards for certain
+activities, such as the first contributed information or the first peer review.
+
+In the long term, when an alternative Viridian currency is implemented, there
+could be financial incentives to reward contributors for their hard work. They
+would be paid from a fund that is paid into when products with relatively bad
+score are purchased.
+
+
+
+### The rating score {#score}
+
+For sustainability assessment, it makes sense to differentiate various dimensions
+of sustainability. One possible classification is:
+
+- **Environment:** includes air pollution, water pollution, soil pollution, waste, harmful substances released into the environment (without greenhouse gases), ...
+- **Climate:** greenhouse gases and other climate-relevant activities such as land use change, ...
+- **Society:** working conditions, fair pay, workers' health, child labor, equal opportunities, treatment of suppliers, impact on society e.g. through charitable projects, ...
+- **Health:** means influence on the health of consumers (not workers), e.g. content of sugar and fat in food or toxic substances in textiles and toys
+- **Animal welfare:** if animals were involved in the production, were they treated with due respect? Can they lead a pleasant, healthy life?
+- **Economy:** from a consumer perspective, in the sense of 'value for money', e.g.: how durable is the product?
+
+A sustainability rating consists in each of these dimensions of a
+**number on a scale from -100 (especially bad, color red) over 0 (average, color yellow) to +100 (especially good, color green).**
+If desired, these numbers can easily be converted into school grades, e.g.
+according to the German system (1 to 6) or the American system (A to F).
+
+Information will usually only affect part of the dimensions. The remaining
+dimensions are then set to NULL (or simply omitted in the JSON document) so that
+they do not enter the overall score, which is the weighted arithmetic mean of
+all scores.
+
+It is easy to create an overall score that includes all dimensions by
+averaging individually for each dimension. A much more difficult and critical
+task is to project the individual dimensions onto a single scale, that is, to
+combine them into a single number (see ["multiple-criteria decision analysis"](https://en.wikipedia.org/wiki/Multiple-criteria_decision_analysis)).
+There is no meaningful objective solution. Each individual will set different
+priorities. Therefore, one solution is that each user defines her/his own
+priorities for combining the dimensions into one number. The reduction to one
+single scale simplifies the comparability of products and is therefore important.
+Each user will then be shown a different summary rating based on her/his
+preferences and will also get other suggestions for products with better ratings.
+Users who have no time or no desire to set own priorities can use the
+average of all users' priorities.
+
+
+
+### Database schema in JSON {#json}
+
+Since a document-based database is to be used with JSON, the database schema must
+be written in JSON. The current status (incomplete at the moment) can be viewed at
+https://github.com/viridian-project/database-schema/tree/master/asJSON.
+
+Here's an example of a JSON document for a product:
+
+```javascript
+{
+  "data": {
+    "id": "61b744a3-7f5d-4500-8c59-959913762ecd",
+    "gtin": "7612100055557",
+    "createdBy": "user123",
+    "createdAt": "2018-12-24 12:11:54 UTC",
+    "updatedBy": "user123",
+    "updatedAt": "2018-02-10 18:33:39 UTC",
+    "producer": "Wander AG",
+    "containedProducts": [],
+    "labels": [
+      {"id": "H2892sKSksksdkwops9", "name": {"de": "UTZ zertifiziert", "en": "UTZ certified"}}
+    ],
+    "locale": [
+      {
+        "lang": "de",
+        "name": "Ovomaltine crunchy cream — 400 g",
+        "price": "4.99",
+        "currency": "€",
+        "description": "Brotaufstrich mit malzhaltigem Getränkepulver Ovomaltine",
+        "quantity": "400 g",
+        "ingredients": "33% malzhaltiges Getränkepulver: Ovomaltine (Gerstenmalzextrakt, kondensierte Magermilch, kondensiertes Milchserum, fettarmer Kakao, Zucker, Fruktose, Magnesiumcarbonat, Calciumphosphat, Rapsöl, Vitamine [A, E, B1, B2, Pantothensäure, B6, Folsäure, B12, C, Biotin, Niacin], Kochsalz, Aroma Vanillin), Zucker, Pflanzenöle (Raps- und Palmöl), 2.6% Haselnüsse, Calciumphosphat, fettarmer Kakao, Emulgator Sonnenblumenlecithin, Aroma Vanillin.",
+        "packaging": ["Glas", "Plastik"],
+        "categories": ["Brotaufstriche", "Frühstück", "Nougatcremes"],
+        "image": "products/1/de_1.png",
+        "productUrl": "http://www.ovomaltine.de/produkte/ovomaltine-crunchy-cream-1/"
+      }
+    ]
+  },
+  "signature": "0x1f62a52c86fe9021b2834cd838392ed0192991a3",
+  "score": {"environment": -34,
+            "climate": -46,
+            "society": -7,
+            "health": -78,
+            "economy": 21},
+  "status": "active"
+}
+```
+
+
+
+
+
+
+## Why community-based? {#why-community}
+
+The Viridian project believes in the **"Wikipedia principle"**: that results obtained
+via the contribution of many are better and not worse. It's about the use of
+[collective intelligence](https://en.wikipedia.org/wiki/Collective_intelligence)
+or what could be called a "democratization of information".
+
+Of course, the collaborative approach is not perfect and has several issues, such
+as manipulation attempts or lack of quality. However, the success of the Wikipedia
+project shows that it ultimately works and good quality prevails in the end,
+even with a completely open community-based editorial. In the long run, projects
+like Wikipedia can even surpass commercial, proprietary solutions because they
+tend to be more agile and can rely on larger resources with the support of the
+crowd. This creates a **"commons"**, i.e. a common good that everyone cares for and
+benefits from. A similar approach, in terms of software rather than information,
+is being pursued by open source communities. We support and believe in this philosphy.
+
+Therefore, we believe that previous sustainability assessment solutions (see
+[comparison](#comparison)) are not sufficient because they lack this important
+principle. Information and ratings are collected only by a small group of
+experts on platforms like Questionmark or WeGreen (already offline). Other platforms,
+such as WikiRate, can be community-edited, but they are rather restricted to experts
+because of their complexity.
+
+The Viridian project follows an approach that, besides Wikipedia, is heavily
+influenced by StackOverflow. Depending on interest and knowledge, users can either
+go deep and enter detailed information or just look at the most relevant information
+and accept or reject it with upvotes/downvotes. In this way, one can still
+interact with the platform even if one has little time or knowledge. This makes
+the platform accessible to **a broad target group** and results in democratic
+legitimacy compared to a purely expert-based platform.
+
+A socially important topic like sustainability assessment and the inclusion of
+external costs should not be driven by individual interests and therefore the
+crowd-based Wikipedia principle seems appropriate. With the Viridian project,
+we want to **empower civil society** to gain data sovereignty over the sustainability
+of the economy. There is a large imbalance in power between producers and consumers
+and our project would shift the power a little bit in favor of the consumers.
+
+
+
+
+
+
+## Why decentralized?
+
+The Viridian network should be organized decentrally. That means, there should be no
+central server that stores the data and is operated by a single organization.
+Instead, the data should be distributed over several participants (nodes) of the network.
+
+We believe that decentralization is important and that **too much centrality is bad**.
+Following Belgian economist [Bernard Lietaer](https://en.wikipedia.org/wiki/Bernard_Lietaer),
+we believe that while centralized systems can be highly efficient, they are not very
+resilient. Therefore, it is important to find a balance between the two poles. But
+today's world is increasingly dominated by centralized systems: in business, only a
+handful of corporations often supply the entire market and can influence it. This
+often leads to disadvantages or damages for consumers, workers and the environment.
+
+A decentralized Viridian network does not really solve these problems
+(even though a generally negative score for large corporations could indirectly
+make a difference). However, in a system whose assessments could eventually
+decide on weal and woe of businesses, it will be important to prevent
+**abuse, which would be simplified by centrality**.
+
+Decentralization can take place on several levels or in several areas. In the
+article ["The Meaning of Decentralization"](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274),
+Vitalik Buterin, founder of Ethereum, distinguishes between physical
+decentralization (how many physically separate computers operate the network?)
+and political decentralization (how many people or organizations control these
+computers?). Buterin further mentions three important advantages of
+decentralization. The first two are realized rather via physical
+decentralization, the third through political decentralization:
+
+1. **Fault tolerance or reliability:** the more nodes participate in the network,
+   the less likely it becomes that enough nodes fail at the same time for the network
+   to break down. In contrast, in centralized systems there may be a single point
+   of failure. Even if the load is distributed over more than one computer: The
+   system breaks down when all servers are close to each other and there is a
+   fire, a power failure or similar.
+2. **Attack resistance:** The more distributed the system is, the more difficult
+   it becomes to influence the network from the outside (e.g. to "hack it"),
+   since one would have to attack many or all nodes simultaneously.
+3. **Collusion resistance:** A centralized system often results in a monopoly of
+   power that can be exploited by those in power to their own advantage. However,
+   if power is distributed among many nodes, it is more difficult for network
+   operators to create cartels that harm the general public.
+
+The network should therefore be operated by several actors, who may well have
+different interests and can control each other. Jointly, they keep the network safe.
+Participation in the network should in principle be **open to anyone who is interested**---in
+order to prevent the formation of cliques (with an environmental restriction to
+keep total computing power as low as possible). However, it is important that the same
+person or institution cannot control multiple nodes to prevent power imbalance.
+Therefore, in contrast to permissionless networks such as Bitcoin, participants
+[**should not be completely anonymous**](#identity), so that the network does not
+need to be secured via [tons of (expensive and ecologically catastrophic) computing power](#blockchain-energy).
+Bitcoin is manipulation-proof only because no individual and no clique can pay as
+much computing power as all other (honest) participants together. In our network,
+individuals shall not be able to bring up much computing power in the first place.
+
+
+
+
+
+## Why Blockchain?
+
+### Just a distributed database?
+
+We are primarily interested in a decentralized system, it does not
+necessarily have to be a blockchain. So we looked at several distributed databases
+like Apache Cassandra or Elasticsearch. CouchDB appealed to us the most because
+it's both well-documented and highly scalable, from the mobile device to the
+data center. In addition, CouchDB can even deal with temporary offline times and
+simply syncs changes as soon as the node is back online. We liked that, because
+the other solutions seem to be designed primarily for high-end computers in data
+centers that are always online.
+
+### Consensus and fault tolerance
+
+Nevertheless, also with CouchDB there is this question: How exactly can nodes by
+synchronized, making sure that a malicious participant does not simply
+modify data without permission and feed these changes into the network? After a
+little research, one ends up with [consensus algorithms](https://en.wikipedia.org/wiki/Consensus_(computer_science)), making sure that the different versions of the database are consistent and that
+the (hopefully honest) majority prevails. A secure consensus algorithm should
+have a so-called ["Byzantine Fault Tolerance" (BFT)](https://en.wikipedia.org/wiki/Byzantine_fault).
+In this type of fault tolerance, some nodes (up to 1/3) can be unreliable or
+dishonest (both unintentionally due to technical errors or intentional), without
+affecting the entire network.
+
+BFT is [one of the main features](https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419)
+[of blockchain networks](https://medium.com/loom-network/understanding-blockchain-fundamentals-part-2-proof-of-work-proof-of-stake-b6ae907c7edb) that are designed to run in a faulty environment. Classical
+blockchains achieve BFT via proof-of-work or similar principles. So, if you're
+looking for a distributed database with BFT replication, you'll almost inevitably
+end up with blockchains.
+
+In addition, a blockchain has the added advantage over ordinary database
+transactions that the transactions are chained in blocks (linked via
+the hash value of the predecessor block). The concatenation has the result that
+modifications in the blockchain necessitate modifications in all later blocks as
+well. It is therefore time-consuming to change the history of transactions after
+the fact. With Bitcoin, the modification of the history would be almost impossible
+due to the high computational cost of proof-of-work: To complete a single modified
+block faster than the competition in the network is extremely difficult, let alone
+in the same time all subsequent blocks. Without a computationally intensive
+proof-of-work, it would not be very costly for an attacker,
+
+
+
 
 More coming soon...

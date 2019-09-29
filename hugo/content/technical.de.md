@@ -297,23 +297,26 @@ und Bewertungen, könnte die Plattform zu träge machen und die User mit
 PR-Anfragen überlasten. Es könnte aber z.B. bei Kommentaren die
 Möglichkeit geben, sie nach der Veröffentlichung **als ungeeignet zu markieren**.
 Erst dann wird ein PR angestoßen und der Kommentar wird entfernt, wenn genug
-User zustimmen.
+User zustimmen. Um Trolle einzudämmen, kann ein User keine Inhalte beitragen,
+während ein oder mehrere Kommentare markiert sind und der PR-Prozess noch läuft.
+Wenn ein Kommentar als Ergebnis des PR-Prozesses entfernt wurde, wird der User
+für einen gewissen Zeitraum gesperrt und kann gar keine Inhalte mehr hinzufügen.
 
 Auch mit PR können Inhalte natürlich fehlerhaft sein oder schlichtweg veraltet.
 Deshalb sollte es für User die Möglichkeit geben, die **Bearbeitung** oder
-**Löschung** von Inhalten beantragen. In einem weiteren PR-Prozess wird dann
+**Löschung** von Inhalten zu beantragen. In einem weiteren PR-Prozess wird dann
 darüber entschieden.
 
 Es bleibt abzuwarten, wie reibungslos die Plattform mit den PR-Mechanismen funktoniert.
 Bei zu wenig Beteiligung der User oder zu viel Missbrauch müssen die Regeln
-angepasst oder verändert werden. Es sollte auch Mechanismen geben, die bei
+angepasst oder verändert werden. Es sollte auch einen Mechanismus geben, der bei
 ausbleibender Antwort eines Users die PR-Anfrage an einen anderen zufällig
 ausgewählten User weitergibt. Reagiert ein User mehrfach nicht auf PR-Anfragen,
-sollte die Wahrscheinlichkeit, dass er/sie für ein PR ausgewählt wird, sinken.
-Auch hier muss ein guter Kompromiss und eine Balance zwischen Resilienz und
-Effizienz gefunden werden.
+sollte die Wahrscheinlichkeit, dass sie/er für ein PR ausgewählt wird, sinken.
+Es muss, wie auch bei der [Dezentralität](#warum-dezentral), ein guter Kompromiss
+und eine Balance zwischen Resilienz und Effizienz gefunden werden.
 
-#### Gamification
+#### Gamification/Anreize
 
 Jede Aktivität eines Users könnte seine **Reputation** im Netzwerks beeinflussen.
 Dadurch könnten User, die eine Information beisteuern oder an einem Peer-Review
@@ -323,6 +326,11 @@ bestimmten Punktestand Medaillen verliehen werden oder Auszeichnungen
 für bestimmte Tätigkeiten, z.B. für die erste beigetragene Information oder das
 erste Peer-Review.
 
+Langfristig könnte es, nachdem eine alternative Viridian-Währung eingeführt wurde,
+finanzielle Anreize als Belohnung für harte Arbeit an der Nachhaltigkeitsbewertung
+geben. Die Beitragenden würden aus einem Fonds bezahlt, in den eingezahlt wird,
+wenn Produkte mit vergleichsweise schlechter Bewertung gekauft werden.
+
 
 
 ### Die Bewertungsskala {#skala}
@@ -330,19 +338,19 @@ erste Peer-Review.
 Für die Nachhaltigkeitsbewertung ist es sinnvoll, verschiedene Dimensionen der
 Nachhaltigkeit zu unterscheiden. Eine mögliche Einteilung ist:
 
-- **Umwelt:** beinhaltet Luftverschmutzung, Wasserverschmutzung, Bodenverschmutzung, Abfall, in die Umwelt entlassene schädliche Substanzen (ohne Treibhaushase), ...
+- **Umwelt:** beinhaltet Luftverschmutzung, Wasserverschmutzung, Bodenverschmutzung, Abfall, in die Umwelt entlassene schädliche Substanzen (ohne Treibhausgase), ...
 - **Klima:** Treibhausgase und andere klimarelevante Handlungen wie veränderte Landnutzung, ...
-- **Gesellschaft:** Arbeitsbedingungen, fairer Lohn, Kinderarbeit, Gleichstellung, Umgang mit den Lieferanten, Einfluss auf Gesellschaft z.B. über gemeinnützige Projekte, ...
-- **Gesundheit:** gemeint ist Einfluss auf die Gesundheit der Verbraucher*innen, z.B. Gehalt von Zucker und Fett in Lebensmitteln oder toxische Substanzen in Textilien und Spielzeug
+- **Gesellschaft:** Arbeitsbedingungen, fairer Lohn, Gesundheit der Arbeitenden, Kinderarbeit, Gleichstellung, Umgang mit den Lieferanten, Einfluss auf Gesellschaft z.B. über gemeinnützige Projekte, ...
+- **Gesundheit:** gemeint ist Einfluss auf die Gesundheit der Verbraucher\*innen (nicht Produzent\*innen), z.B. Gehalt von Zucker und Fett in Lebensmitteln oder toxische Substanzen in Textilien und Spielzeug
 - **Tierwohl:** wenn Tiere an der Produktion beteiligt waren, wurden sie mit angemessenem Respekt behandelt? Können sie ein angenehmes, gesundes Leben führen?
 - **Ökonomie:** aus Verbraucherperspektive, im Sinne von 'Preis-/Leistungsverhältnis', z.B.: Wie langlebig ist das Produkt?
 
 <!-- Ist der Preis zu hoch auf Grund des Markenimage? -->
 
-Eine Nachhaltigkeitsbewertung kann in jeder dieser Dimensionen mit einer
-**Zahl auf einer Skala von -100 (besonders schlecht, Farbe rot) über 0 (durchschnittlich, Farbe gelb) bis +100 (besonders gut, Farbe grün)**
-bewertet werden. Falls gewünscht, können diese Zahlen sehr einfach in Schulnoten
-nach dem deutschen System (1 bis 6) oder dem amerikanischen System (A bis F) umgerechnet werden.
+Eine Nachhaltigkeitsbewertung besteht in jeder dieser Dimensionen aus einer
+**Zahl auf einer Skala von -100 (besonders schlecht, Farbe rot) über 0 (durchschnittlich, Farbe gelb) bis +100 (besonders gut, Farbe grün).**
+Falls gewünscht, können diese Zahlen sehr einfach in Schulnoten,
+bspw. nach dem deutschen System (1 bis 6) oder dem amerikanischen System (A bis F) umgerechnet werden.
 
 Eine Information wird üblicherweise nur einen Teil der Dimensionen betreffen. Die übrigen
 Dimensionen werden dann auf NULL gesetzt (oder im JSON-Dokument einfach weggelassen) werden, sodass
@@ -352,16 +360,27 @@ eingehen.
 Zwar kann man leicht eine Gesamtbewertung erstellen, die noch alle Dimensionen enthält, indem man
 für jede Dimension einzeln über alle Bewertungen mittelt. Eine viel schwierigere und kritischere
 Aufgabe ist es, die einzelnen Dimensionen auf eine einzelne Skala zu projizieren, also zu einer
-einzigen Zahl zusammenzufassen (Stichwort ["multikriterielle Analyse"](https://de.wikipedia.org/wiki/Multi_Criteria_Analysis)). Hierfür gibt es eigentlich
-keine sinnvolle objektive Lösung, bzw. ist diese nur unter extremem Aufwand zu finden.
-Jede\(r\) Einzelne wird andere Präferenzen setzen. Daher ist es denkbar, dass
-jeder User ihre/seine Präferenzen selbst festlegt, nach denen dann die verschiedenen
-Dimensionen zu einer Zahl zusammengefasst werden. Die Zusammenfassung in einer
-einzigen Skala macht die Vergleichbarkeit von Produkten sehr viel leichter und
-ist daher wichtig. Jeder User wird dann also auf Basis ihrer/seiner Präferenzen
-eine andere zusammengefasste Bewertung angezeigt bekommen und auch andere Vorschläge
-für Produkte mit besseren Bewertungen erhalten.
+einzigen Zahl zusammenzufassen (Stichwort ["multikriterielle Analyse"](https://de.wikipedia.org/wiki/Multi_Criteria_Analysis)).
+Hierfür gibt es eigentlich keine sinnvolle objektive Lösung. Jede\(r\) Einzelne
+wird andere Präferenzen setzen. Daher ist es denkbar, dass jeder User ihre/seine
+Präferenzen selbst festlegt, nach denen dann die Dimensionen zu
+einer Zahl zusammengefasst werden. Die Zusammenfassung in einer einzigen Skala
+macht die Vergleichbarkeit von Produkten sehr viel leichter und ist daher wichtig.
+Jeder User wird dann also auf Basis ihrer/seiner Präferenzen eine andere
+zusammengefasste Bewertung angezeigt bekommen und auch andere Vorschläge für
+Produkte mit besseren Bewertungen erhalten. User, die keine Zeit oder keine Lust
+haben, eigene Präferenzen festzulegen, können zunächst den Mittelwert der
+Präferenzen aller User nutzen.
 
+<!--
+Die Fragebögen zur Ermitlung der relativen Gewichte könnten z.B. so gestaltet sein:
+Für ein Produkt, das X € kostet, wie viel teurer sollte das Produkt sein, wenn:
+a) es das Klima stark belastet
+b) es die Umwelt stark schädigt
+c) ...
+Oder man verwendet die Likert-Skala und macht paarweise Vergleiche zur relativen
+Wichtigkeit der Dimensionen.
+-->
 
 
 
@@ -511,7 +530,7 @@ Zwar löst ein dezentrales Viridian-Netzwerk diese Probleme nicht wirklich (obwo
 die negative Bewertung großer Konzerne indirekt Einfluss nehmen könnte). Jedoch
 wird es bei einem System, dessen Bewertungen irgendwann über Wohl und Wehe
 von Betrieben entscheiden könnten, wichtig sein, **Missbrauch** zu verhindern, der
-**durch Zentralität stark vereinfacht wird**.
+**durch Zentralität vereinfacht wird**.
 
 Dezentralisierung kann auf mehreren Ebenen, bzw. in mehreren Bereichen stattfinden.
 Im Artikel ["The Meaning of Decentralization"](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274)
@@ -522,32 +541,35 @@ diese Rechner?). Buterin nennt weiter drei wichtige Vorteile von Dezentralisieru
 von denen die ersten beiden eher durch die physische, der dritte durch die politische
 Dezentralisierung zustande kommt:
 
-1. **Fehlertoleranz, bzw. Ausfallsicherheit**: Je mehr Knoten am Netzwerk teilnehmen,
-  umso unwahrscheinlicher wird es, dass so viele Knoten gleichzeitig ausfallen, dass
-  davon das Netz zum Erliegen kommt. Im Gegensatz dazu kann es in zentralisierten
-  Systemen einen "Single Point of Failre" geben. Selbst wenn die Last auf mehr
-  als einen Rechner verteilt wird: Das System bricht zusammen, wenn alle Server
-  in unmittelbarer Nähe stehen und es einen Brand, einen Stromausfall o.ä. gibt.
-2. **Angriffsresistenz**: Je verteilter das System ist, umso schwieriger wird es,
-  auf das Netz von außen Einfluss zu nehmen (z.B. es zu "hacken"), da man den
-  Angriff auf viele oder alle Knoten gleichzeitig ausführen müsste.
-3. **"Klüngelresistenz"**: (engl. "collusion resistance", "collusion" =
-  "geheime Absprache") Ein zentralisiertes System führt häufig zu einem Machtmonopol,
-  das von den Inhabern dieser Macht zu ihrem eigenen Vorteil ausgenutzt werden kann.
-  Ist die Macht jedoch auf viele Knoten verteilt, macht es das den Netzwerkbetreiber*innen
-  schwerer, Kartelle zum Schaden der Allgemeinheit zu bilden.
+1. **Fehlertoleranz, bzw. Ausfallsicherheit:** Je mehr Knoten am Netzwerk teilnehmen,
+   umso unwahrscheinlicher wird es, dass so viele Knoten gleichzeitig ausfallen, dass
+   davon das Netz zum Erliegen kommt. Im Gegensatz dazu kann es in zentralisierten
+   Systemen einen "Single Point of Failre" geben. Selbst wenn die Last auf mehr
+   als einen Rechner verteilt wird: Das System bricht zusammen, wenn alle Server
+   in unmittelbarer Nähe stehen und es einen Brand, einen Stromausfall o.ä. gibt.
+2. **Angriffsresistenz:** Je verteilter das System ist, umso schwieriger wird es,
+   auf das Netz von außen Einfluss zu nehmen (z.B. es zu "hacken"), da man den
+   Angriff auf viele oder alle Knoten gleichzeitig ausführen müsste.
+3. **"Klüngelresistenz":** (engl. "collusion resistance", "collusion" =
+   "geheime Absprache") Ein zentralisiertes System führt häufig zu einem Machtmonopol,
+   das von den Inhabern dieser Macht zu ihrem eigenen Vorteil ausgenutzt werden kann.
+   Ist die Macht jedoch auf viele Knoten verteilt, macht es das den Netzwerkbetreiber*innen
+   schwerer, Kartelle zum Schaden der Allgemeinheit zu bilden.
 
 Das Netzwerk sollte also von mehreren Akteuren betrieben werden, die durchaus
 unterschiedliche Interessen haben können und sich gegenseitig kontrollieren,
 bzw. gemeinsam das Netz sicher halten. Die Teilnahme am Netzwerk sollte prinzipiell
-**jedem Interesierten offenstehen**, um Cliquenbildung und Klüngel vorzubeugen. Es ist
-jedoch wichtig, dass nicht mehrere Knoten von derselben Person oder Institution
-kontrolliert werden, um Einflussnahme zu verhindern. Daher sollte im Gegensatz zu
-dezentralisierten Netzwerken wie Bitcoin [**auf Anonymität verzichtet werden**](#identitaet),
-damit das Netz nicht über [Unmengen von (teurer und ökologisch katastrophaler) Rechenleistung](#blockchain-energie)
+**jedem Interesierten offenstehen**, um Cliquenbildung und Klüngel vorzubeugen (mit
+der ökologischen Einschränkung, den Ressourcenverbrauch insgesamt so gering wie
+möglich zu halten). Es ist jedoch wichtig, dass nicht mehrere Knoten von derselben
+Person oder Institution kontrolliert werden, um Einflussnahme zu verhindern. Daher
+sollte im Gegensatz zu unbeschränkt zugänglichen ("permissionless") Netzwerken wie Bitcoin
+[**auf vollständige Anonymität verzichtet werden**](#identitaet), damit das Netz nicht über
+[Unmengen von (teurer und ökologisch katastrophaler) Rechenleistung](#blockchain-energie)
 abgesichert werden muss. Bitcoin ist ja nur dadurch manipulationssicher, dass kein
 Individuum und keine Clique so viel Rechenleistung bezahlen kann, wie alle anderen
-(ehrlichen) Teilnehmer zusammen.
+(ehrlichen) Teilnehmer zusammen. In unserem Netzwerk soll es dem Individuum gar
+nicht erst möglich sein, viel Rechenleistung bereitzustellen.
 
 
 
@@ -583,15 +605,15 @@ als auch gewollt), ohne dass dies Auswirkungen für das gesamte Netz hat.
 BFT ist [eine Kernkompetenz](https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419)
 [von Blockchain-Netzwerken](https://medium.com/loom-network/understanding-blockchain-fundamentals-part-2-proof-of-work-proof-of-stake-b6ae907c7edb),
 die darauf ausgelegt sind, in einem fehlerbehafteten Umfeld ausgeführt zu werden.
-BFT wird in einer Blockchain durch Proof-of-Work o.ä. Prinzipien hergestellt.
+BFT wird in einer klassischen Blockchain durch Proof-of-Work o.ä. Prinzipien hergestellt.
 Wenn man also eine verteilte Datenbank mit BFT-Replikation sucht, landet man
 fast unweigerlich bei Blockchains.
 
 Außerdem hat eine Blockchain den zusätzlichen Vorteil gegenüber gewöhnlichen
-Datenbanktransaktionen, dass die Transaktionen ja in Blöcken zusammengefasst
+Datenbanktransaktionen, dass die Transaktionen in Blöcken zusammengefasst
 aneinander gekettet werden (über den Hash-Wert des Vorgängerblocks miteinander
 verknüpft). Die Verkettung führt dazu, dass Modifikationen in der Blockchain
-automatisch Modifikationen in allen späteren Blöcken notwendig machen. Es ist
+Modifikationen auch in allen späteren Blöcken notwendig machen. Es ist
 also aufwendig, die Chronik der Transaktionen im Nachhinein zu verändern.
 Bei Bitcoin wäre die Modifikation der Chronik durch den hohen Rechenaufwand
 von Proof-of-Work quasi unmöglich: Schon einen einzelnen modifizierten Block
