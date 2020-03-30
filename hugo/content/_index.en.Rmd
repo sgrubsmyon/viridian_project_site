@@ -5,6 +5,16 @@ author: mvoge
 date: '2019-03-24'
 ---
 
+<div style="display: flex; flex-direction: column; align-items: center;">
+
+### [Get a first glimpse of how the Viridian app could look like:](/mockup/products-search-results.html)
+
+<p style="width: 60%;">
+[![Mockup Screenshot](/images/home/mockup_screenshot.png){.img-hover-effect .thick-border style="width: 100%;"}](/mockup/products-search-results.html)
+</p>
+
+</div>
+
 ## For a Sustainable and Fair Economy
 
 We live in a world where many things seem to be **going wrong**. Growing
@@ -46,9 +56,10 @@ as soon as needed.
 -->
 
 <p class="flex-grid">
-  <a href="/paper" class="btn btn-info flex-grid-item" role="button">Read the whitepaper (concepts)</a>
+  <a href="/paper" class="btn btn-info flex-grid-item" role="button">Read the whitepaper</a>
   <a href="flyer.pdf" class="btn btn-info flex-grid-item" role="button">Look at our flyer</a>
   <a href="technical" class="btn btn-info flex-grid-item" role="button">Read the technical article</a>
+  <a href="https://github.com/viridian-project" class="btn btn-info flex-grid-item" role="button"><i class="fa fa-github"></i> Code on GitHub</a>
 </p>
 
 ## Goals
