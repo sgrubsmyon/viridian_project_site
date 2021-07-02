@@ -7,10 +7,10 @@ date: '2019-03-24'
 
 <div style="display: flex; flex-direction: column; align-items: center;">
 
-### [Get a first glimpse of how the Viridian app could look like:](/mockup/products-search-results.html)
+### [Get a first glimpse of how the Viridian app could look like:](/mockup/)
 
 <p style="width: 60%;">
-[![Mockup Screenshot](/images/home/mockup_screenshot.png){.img-hover-effect .thick-border style="width: 100%;"}](/mockup/products-search-results.html)
+[![Mockup Screenshot](/images/home/mockup_screenshot.png){.img-hover-effect .thick-border style="width: 100%;"}](/mockup/)
 </p>
 
 </div>
