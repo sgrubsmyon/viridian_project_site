@@ -28,7 +28,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
         title = "The Viridian Project"
         #subtitle = "A simple subtitle"
         # Copyright notice. This is displayer in the footer.
-        copyright = "Copyright &copy; 2018-2020 Viridian Project"
+        copyright = "Copyright &copy; 2018-2021 Viridian Project"
         [languages.en.menu]
             [[languages.en.menu.main]]
                 name = "Documents"
@@ -63,7 +63,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
         languageName = "Deutsch"
         title = "Das Viridian-Projekt"
         #subtitle = "Ein einfacher Untertitel"
-        copyright = "Copyright &copy; 2018-2020 Viridian Project"
+        copyright = "Copyright &copy; 2018-2021 Viridian Project"
         [languages.de.menu]
             [[languages.de.menu.main]]
                 name = "Dokumente"
