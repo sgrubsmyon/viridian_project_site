@@ -1,4 +1,6 @@
 public
 static/paper
 static/mockup
+static/de/slides
+static/en/slides
 content/*.html
